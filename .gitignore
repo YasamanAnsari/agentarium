@@ -4,6 +4,7 @@ data/raw/**
 !data/raw/**/
 !data/raw/**/manifest.json
 data/staging/
+site/dist/
 .venv/
 __pycache__/
 *.egg-info/

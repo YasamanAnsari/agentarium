@@ -1,0 +1,517 @@
+'use strict';
+
+// Every record comes from the catalog's CSV files, which the build copies into data/.
+const TASK_STYLES = {
+  analyze_data: {color:'#bb8c27',species:'Nautilus',shape:'nautilus',short:'Data'},
+  browse_web: {color:'#3fa6c9',species:'Pufferfish',shape:'puffer',short:'Web'},
+  handle_customer_support: {color:'#c05a88',species:'Dolphin',shape:'dolphin',short:'Support'},
+  operate_computer: {color:'#579362',species:'Crab',shape:'crab',short:'Computer'},
+  research_topic: {color:'#208f9e',species:'Manta ray',shape:'manta',short:'Research'},
+  review_code: {color:'#d07a3c',species:'Jellyfish',shape:'jelly',short:'Review'},
+  write_code: {color:'#8064d2',species:'Octopus',shape:'octopus',short:'Code'},
+  write_document: {color:'#3e7ec8',species:'Clownfish',shape:'clownfish',short:'Docs'}
+};
+const NO_TASK = {color:'#7f8ea3',species:'Minnow',shape:'minnow',short:'None'};
+const NONE = 'none';
+const SHAPES = {
+  octopus:'M46 58C42 38 51 17 78 16C104 15 115 36 112 58C106 74 50 74 46 58ZM54 67C52 80 32 82 31 94M65 69C63 84 50 87 49 100M77 70V101M89 69C95 85 106 86 107 99M101 66C108 79 126 80 130 94M58 46H98V61H58Z',
+  manta:'M80 27C62 50 35 61 10 48C28 80 58 72 80 81C102 72 131 80 151 48C126 61 99 50 80 27ZM70 38L68 21M91 38L93 21M80 81C74 93 82 99 92 105M66 49H95V61H66Z',
+  dolphin:'M14 62C34 42 53 39 63 38C75 20 86 18 99 21L84 38C103 35 121 41 133 51L151 35L147 55L151 75L131 62C111 75 89 79 62 75C43 76 28 70 24 65L10 65M68 74C69 86 78 92 88 95M37 48H65V62H37Z',
+  nautilus:'M61 54C61 33 75 18 96 18C117 18 132 34 132 55C132 76 117 91 96 91C75 91 61 76 61 54ZM96 54C86 41 74 50 76 62C78 79 104 80 114 64C126 44 107 27 90 31C75 34 70 46 71 55M62 55C43 48 40 79 63 79M47 60H61M46 68H61M45 56L22 48M43 64L16 63M47 73L24 84',
+  clownfish:'M23 55C23 17 130 17 130 55C130 92 23 92 23 55ZM124 50L151 32L146 56L151 80L125 65M60 29L56 81M86 27L86 83M109 34L112 77M28 46H52V63H28ZM59 29C69 15 84 20 96 28M62 79C75 96 88 87 95 80',
+  crab:'M38 54C38 23 123 23 123 54C123 85 38 85 38 54ZM42 47L24 37L19 22M119 47L137 35L143 21M49 69L39 85L25 96M66 74L60 94L56 103M81 77V105M96 73L104 92L111 103M111 68L124 84L138 95M17 27L7 18L13 10L19 19L27 10L31 19L23 29M141 27L132 18L137 10L144 19L151 10L157 19L148 30M55 33L54 19M88 31L91 17M50 46H86V64H50Z',
+  puffer:'M50 55C50 30 110 30 110 55C110 80 50 80 50 55ZM110 55L130 40L126 55L130 70ZM80 30V18M64 34L58 24M96 34L102 24M80 80V92M64 76L58 86M96 76L102 86M52 44L42 36M52 66L42 74M58 47H90V62H58Z',
+  jelly:'M40 58C40 22 120 22 120 58C110 64 50 64 40 58ZM52 62C48 76 58 86 52 102M68 63C70 80 62 90 68 106M84 63C82 80 90 90 84 106M100 62C104 76 94 86 100 102M62 42H98V56H62Z',
+  minnow:'M30 55C50 32 104 32 124 55C104 78 50 78 30 55ZM124 55L146 40V70ZM70 34L80 22L92 34M60 46H92V62H60Z'
+};
+const AGENT_COLUMNS = ['agent_id','name','url','description','organization','source_url','first_seen'];
+const PUBLISHERS = [['Organization','#4779be'],['Personal account','#8b67cc'],['Product website','#239ba4']];
+const HABITAT_SIZE = 36;
+let TASKS = [];
+let DATA = [];
+let CLAIMS = 0;
+const $ = s=>document.querySelector(s);
+const $$ = s=>Array.from(document.querySelectorAll(s));
+const esc = value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const pad = n=>String(n).padStart(2,'0');
+const agentCount = n=>`${n} agent${n===1?'':'s'}`;
+
+function styleFor(taskId){
+  if(!taskId||taskId===NONE)return NO_TASK;
+  return TASK_STYLES[taskId]||{...NO_TASK,species:'Fish',short:taskName(taskId)};
+}
+const taskName = taskId=>taskId===NONE?'No documented task':(TASKS.find(t=>t.task_id===taskId)?.name||taskId);
+function fishSVG(taskId){
+  const s=styleFor(taskId);
+  return `<svg viewBox="0 0 160 110" fill="none" style="color:${s.color}" aria-hidden="true"><path d="${SHAPES[s.shape]}" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M65 53h6m7 0h6" stroke="currentColor" stroke-width="2.5"/><circle cx="131" cy="91" r="2" fill="currentColor" opacity=".45"/></svg>`;
+}
+
+/** RFC 4180 CSV text -> row objects keyed by the header. */
+function parseCsv(text,path){
+  const rows=[];let row=[],field='',quoted=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(quoted){if(c!=='"')field+=c;else if(text[i+1]==='"'){field+='"';i++;}else quoted=false;}
+    else if(c==='"')quoted=true;
+    else if(c===','){row.push(field);field='';}
+    else if(c==='\n'){row.push(field);rows.push(row);row=[];field='';}
+    else if(c!=='\r')field+=c;
+  }
+  if(field||row.length){row.push(field);rows.push(row);}
+  if(!rows.length)throw new Error(`${path} is empty`);
+  const [header,...body]=rows;
+  return body.map(r=>Object.fromEntries(header.map((h,i)=>[h,r[i]??''])));
+}
+async function fetchTable(path){
+  const response=await fetch(path,{cache:'no-cache'});
+  if(!response.ok)throw new Error(`${path}: HTTP ${response.status}`);
+  return parseCsv(await response.text(),path);
+}
+function publisherOf(agent){
+  const source=new URL(agent.source_url);
+  if(source.hostname!=='github.com')return {kind:'Product website',name:agent.organization||source.hostname.replace(/^www\./,'')};
+  return {kind:agent.organization?'Organization':'Personal account',name:agent.organization||source.pathname.split('/')[1]};
+}
+async function loadCatalog(){
+  const [agents,tasks,links]=await Promise.all(['data/agents.csv','data/tasks.csv','data/agent_tasks.csv'].map(fetchTable));
+  TASKS=tasks;
+  CLAIMS=links.length;
+  const order=new Map(tasks.map((t,i)=>[t.task_id,i]));
+  const byAgent=new Map();
+  for(const link of links){if(!byAgent.has(link.agent_id))byAgent.set(link.agent_id,[]);byAgent.get(link.agent_id).push(link);}
+  DATA=agents.map(agent=>{
+    const claims=(byAgent.get(agent.agent_id)||[]).sort((a,b)=>order.get(a.task_id)-order.get(b.task_id));
+    const publisher=publisherOf(agent);
+    return {...agent,id:agent.agent_id,claims,taskIds:claims.map(c=>c.task_id),kind:publisher.kind,publisher:publisher.name};
+  });
+}
+// Tasks that at least one agent claims, in vocabulary order, then agents with no task.
+function presentTasks(){
+  const ids=TASKS.map(t=>t.task_id).filter(id=>DATA.some(d=>d.taskIds.includes(id)));
+  return DATA.some(d=>!d.taskIds.length)?[...ids,NONE]:ids;
+}
+const agentsWith = taskId=>taskId==='All'?DATA:taskId===NONE?DATA.filter(d=>!d.taskIds.length):DATA.filter(d=>d.taskIds.includes(taskId));
+const firstTask = d=>d.taskIds[0]||NONE;
+function shuffled(list){const copy=list.slice();for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
+function sourceLink(url,label){
+  return /^https?:\/\//.test(url)?`<a class="inline-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`:esc(label);
+}
+function shortUrl(url){const u=new URL(url);const text=u.hostname.replace(/^www\./,'')+u.pathname.replace(/\/$/,'');return text.length>48?text.slice(0,47)+'…':text;}
+
+let activeSpecies='All';
+let habitatPaused=false;
+const reducedQuery=window.matchMedia('(prefers-reduced-motion: reduce)');
+let motionPaused=reducedQuery.matches;
+let page=0;
+const pageSize=6;
+let sortBy='seen',sortDirection=-1;
+let activeSection=0;
+const sections=$$('.depth-section');
+const depths=sections.map(el=>Number(el.dataset.depth));
+const levelNavigationQuery=window.matchMedia('(min-width: 801px) and (min-height: 650px) and (hover: hover) and (pointer: fine)');
+let diveFrame=0;
+let diveAnimating=false;
+let settleTimer=0;
+let lastWheelAt=0;
+let gestureDirection=0;
+let gestureActive=false;
+let pointerDown=false;
+
+function cancelDive(){
+  if(diveFrame)cancelAnimationFrame(diveFrame);
+  clearTimeout(settleTimer);
+  diveFrame=0;diveAnimating=false;
+}
+
+function navigateToSection(index,{settling=false}={}){
+  const section=sections[Math.max(0,Math.min(sections.length-1,index))];
+  const start=window.scrollY;
+  const destination=Math.min(section.offsetTop,document.documentElement.scrollHeight-window.innerHeight);
+  const distance=destination-start;
+  cancelDive();
+  if(!settling)gestureActive=false;
+  if(reducedQuery.matches||Math.abs(distance)<2){window.scrollTo(0,destination);gestureActive=false;updateScroll();return;}
+  const duration=settling?Math.min(460,Math.max(140,Math.abs(distance)*.43)):Math.min(650,420+Math.abs(distance)/12);
+  const began=performance.now();
+  diveAnimating=true;
+  function glide(now){
+    const progress=Math.min(1,(now-began)/duration);
+    const eased=1-Math.pow(1-progress,3);
+    window.scrollTo(0,start+distance*eased);
+    if(progress<1)diveFrame=requestAnimationFrame(glide);
+    else{diveFrame=0;diveAnimating=false;gestureActive=false;updateScroll();}
+  }
+  diveFrame=requestAnimationFrame(glide);
+}
+
+function useLevelNavigation(){
+  document.documentElement.classList.toggle('level-navigation',levelNavigationQuery.matches&&!reducedQuery.matches);
+  gestureActive=false;
+  clearTimeout(settleTimer);
+}
+
+function settleAtLevel(){
+  if(!gestureActive||diveAnimating||pointerDown||!levelNavigationQuery.matches||reducedQuery.matches||$$('dialog[open]').length)return;
+  const position=window.scrollY;
+  let nearest=0,distance=Infinity;
+  sections.forEach((section,i)=>{const d=Math.abs(section.offsetTop-position);if(d<distance){distance=d;nearest=i;}});
+  // Passive wheel events may arrive after the compositor has already scrolled.
+  // Choose from the visible interval and input direction, never a sampled start Y.
+  const threshold=Math.min(48,window.innerHeight*.05);
+  for(let i=0;i<sections.length-1;i++){
+    const lower=sections[i].offsetTop,upper=sections[i+1].offsetTop;
+    if(position>=lower&&position<upper){
+      if(gestureDirection>0&&position-lower>=threshold)nearest=i+1;
+      if(gestureDirection<0&&upper-position>=threshold)nearest=i;
+      break;
+    }
+  }
+  navigateToSection(nearest,{settling:true});
+}
+
+function scheduleSettle(){
+  clearTimeout(settleTimer);
+  if(gestureActive&&!diveAnimating&&!pointerDown)settleTimer=setTimeout(settleAtLevel,150);
+}
+
+// Wheel input always scrolls natively. Only after the gesture and its inertia
+// finish do we gently align the page. Every new input immediately cancels alignment.
+function onDiveWheel(event){
+  if(event.ctrlKey||event.shiftKey||Math.abs(event.deltaX)>Math.abs(event.deltaY)||!event.deltaY||$$('dialog[open]').length)return;
+  const target=event.target instanceof Element?event.target:null;
+  if(target?.closest('select,textarea,[contenteditable="true"]'))return;
+  const now=performance.now();
+  const wasAligning=diveAnimating;
+  cancelDive();
+  if(!gestureActive||wasAligning||now-lastWheelAt>250){
+    gestureActive=true;
+  }
+  gestureDirection=Math.sign(event.deltaY);
+  lastWheelAt=now;
+  scheduleSettle();
+}
+
+// Colour a creature by the task being filtered on, so every fish in a filtered view matches the chip.
+const shownTask = d=>activeSpecies!=='All'&&d.taskIds.includes(activeSpecies)?activeSpecies:firstTask(d);
+function setSpecies(fn){
+  activeSpecies=fn;
+  $$('.species-chip').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.function===fn)));
+  renderCreatures();
+}
+function renderCreatures(){
+  const pool=agentsWith(activeSpecies);
+  const shown=shuffled(pool).slice(0,HABITAT_SIZE);
+  const narrow=window.innerWidth<580;
+  $('#creatures').innerHTML=shown.length?shown.map((d,i)=>{
+    const duration=65+(i*11)%49;
+    const x=(i*37+7)%95;
+    const reverse=i%3===1;
+    const progress=reverse?(x+24)/130:(106-x)/130;
+    const size=Math.min(narrow?123:202,56+24*d.taskIds.length)*(narrow?.82:1);
+    const task=shownTask(d),style=styleFor(task);
+    return `<div class="creature-lane ${reverse?'reverse':''}" data-function="${esc(task)}" style="--y:${2+(i*23)%72}%;--duration:${duration}s;--delay:${-progress*duration}s;--static-x:${x}%;--size:${size.toFixed(1)}px;--bob-duration:${3.1+i%5*.5}s;--bob-delay:${-i*.7}s;--creature-color:${style.color}"><button class="creature" data-agent="${esc(d.id)}" aria-label="Inspect ${esc(d.name)}, ${esc(taskName(task))}, ${esc(style.species)}">${fishSVG(task)}<span class="creature-label">${esc(d.name)}</span></button></div>`;
+  }).join(''):`<p class="habitat-empty mono">${DATA.length?'NO AGENTS CLAIM THIS TASK':'THE DAILY COLLECTION HAS NOT PUBLISHED ANY AGENTS YET'}</p>`;
+  $$('.creature').forEach(b=>b.addEventListener('click',()=>showSpecimen(b.dataset.agent)));
+  $('#habitat-count').textContent=shown.length;
+  $('#habitat-pool').textContent=`OF ${pool.length} ${activeSpecies==='All'?'IN THE CATALOG':'WITH THIS TASK'}`;
+  $('#habitat-shuffle').hidden=pool.length<=HABITAT_SIZE;
+}
+function renderHabitat(){
+  $('#species-filters').innerHTML=['All',...presentTasks()].map(fn=>`<button class="species-chip" data-function="${esc(fn)}" aria-pressed="${fn==='All'}" style="--species-color:${fn==='All'?'#c3d9df':styleFor(fn).color}"><span class="color-dot"></span>${esc(fn==='All'?'All':taskName(fn))}</button>`).join('');
+  $$('.species-chip').forEach(b=>b.addEventListener('click',()=>setSpecies(b.dataset.function)));
+  renderCreatures();
+}
+
+function renderScenery(){
+  const kelp=`<path d="M53 231C76 185 25 176 54 134C81 96 36 73 58 28C44 71 98 91 73 137C46 183 88 195 69 231Z"/><path d="M37 231C15 202 40 181 23 152C6 125 30 100 23 78C47 105 25 131 41 153C58 181 31 205 49 231Z"/><path d="M79 231C97 210 72 179 91 157C111 133 89 108 105 79C102 110 132 133 110 163C91 186 116 216 94 231Z"/><path d="M60 230C56 199 70 178 61 163C44 146 59 129 55 110C77 134 60 147 77 167C91 189 67 204 74 231Z"/>`;
+  const fan=`<g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><path d="M65 232Q62 185 68 152T57 82Q48 54 58 21"/><path d="M64 174Q41 162 30 135T22 86M63 191Q92 179 102 148T111 100M66 146Q91 133 92 98T104 57M59 102Q33 91 27 58M91 112Q115 102 123 80M31 135Q12 129 9 108M100 157Q119 149 126 126M57 59Q79 49 83 25M28 80Q9 71 12 50"/></g><g fill="currentColor"><circle cx="58" cy="21" r="3.4"/><circle cx="104" cy="57" r="3"/><circle cx="83" cy="25" r="3"/><circle cx="12" cy="50" r="2.7"/></g>`;
+  const sprigs=`<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M48 232Q33 202 45 175T43 122M59 232Q71 208 62 183T70 142M70 232Q89 214 82 192T95 155M34 232Q14 214 26 191M78 232Q112 218 105 198"/></g>`;
+  const plants=[{x:-2,w:130,h:185,c:'#64cecf',p:kelp,o:.34},{x:6,w:75,h:120,c:'#6094dc',p:sprigs,o:.34},{x:13,w:90,h:154,c:'#a28be8',p:fan,o:.32},{x:23,w:64,h:93,c:'#64cecf',p:kelp,o:.23},{x:37,w:47,h:68,c:'#7a99dd',p:sprigs,o:.26},{x:61,w:61,h:83,c:'#64cecf',p:sprigs,o:.24},{x:73,w:97,h:154,c:'#a28be8',p:fan,o:.35},{x:83,w:74,h:132,c:'#629ddb',p:kelp,o:.33},{x:91,w:124,h:206,c:'#64cecf',p:kelp,o:.36}];
+  $('#seabed').innerHTML=`<svg class="seafloor" viewBox="0 0 1200 180" preserveAspectRatio="none" aria-hidden="true"><path d="M0 115Q170 143 320 151T630 162Q870 122 1200 138V180H0Z" fill="#17264b" opacity=".24"/><path d="M0 145Q180 128 340 164Q520 176 720 157Q965 141 1200 158V180H0Z" fill="#121e3d" opacity=".7"/><path d="M0 146Q160 130 340 164M720 157Q965 141 1200 158" stroke="#668bc0" opacity=".11" fill="none"/><ellipse cx="182" cy="174" rx="39" ry="11" fill="#263553" opacity=".4"/><ellipse cx="1008" cy="174" rx="49" ry="12" fill="#263553" opacity=".4"/></svg>`+plants.map((d,i)=>`<svg viewBox="0 0 135 235" style="left:${d.x}%;width:${d.w}px;height:${d.h}px;color:${d.c};opacity:${d.o};animation-duration:${4.5+i*.7}s;animation-delay:${-i*.8}s" aria-hidden="true" fill="currentColor">${d.p}</svg>`).join('');
+  let bubbles=$('.habitat-bubbles');
+  if(!bubbles){bubbles=document.createElement('div');bubbles.className='habitat-bubbles';bubbles.setAttribute('aria-hidden','true');$('#habitat-ocean').append(bubbles);}
+  bubbles.innerHTML=Array.from({length:12},(_,i)=>`<span class="habitat-bubble" style="--bubble-left:${5+(i*31)%92}%;--bubble-size:${2+i%3}px;--bubble-duration:${8+i%5*1.7}s;--bubble-delay:${-i*2.3}s"></span>`).join('');
+}
+
+// Months from the first to the last first-seen date, keeping the most recent twelve.
+function firstSeenMonths(){
+  const seen=DATA.map(d=>d.first_seen.slice(0,7)).sort();
+  if(!seen.length)return [];
+  const months=[];
+  for(let [y,m]=seen[0].split('-').map(Number);`${y}-${pad(m)}`<=seen.at(-1);m===12?(y++,m=1):m++)months.push(`${y}-${pad(m)}`);
+  return months.slice(-12);
+}
+const monthLabel = month=>new Date(month+'-01T00:00:00Z').toLocaleString('en-US',{month:'short',year:'numeric',timeZone:'UTC'});
+function renderFigures(){
+  const tasks=presentTasks();
+  const order=tasks.slice().sort((a,b)=>agentsWith(b).length-agentsWith(a).length);
+  const max=Math.max(1,...order.map(t=>agentsWith(t).length));
+  $('#findings-tag').textContent=`${DATA.length} AGENTS · ${CLAIMS} QUOTED CLAIMS`;
+  $('#function-chart').innerHTML=order.map(t=>{const n=agentsWith(t).length;return `<button class="bar-row" data-function="${esc(t)}" aria-label="Explore ${esc(taskName(t))}: ${agentCount(n)}"><span class="bar-label">${fishSVG(t)}<span>${esc(taskName(t))}</span></span><span class="bar-track"><span class="bar-fill" style="--bar-color:${styleFor(t).color};width:${n/max*100}%"></span></span><span class="bar-number">${n}</span></button>`;}).join('');
+  $('#function-axis').innerHTML=`<span>0</span><span>${agentCount(max)}</span>`;
+  $$('.bar-row').forEach(b=>b.addEventListener('click',()=>{setSpecies(b.dataset.function);navigateToSection(1);}));
+  const top=order[0];
+  $('#function-highlight').innerHTML=top?fishSVG(top)+`<span><strong>${esc(taskName(top))} / ${esc(styleFor(top).species)}</strong>The most documented task: ${agentsWith(top).length} of ${agentCount(DATA.length)}.</span>`:'';
+  const months=firstSeenMonths();
+  const perMonth=month=>DATA.filter(d=>d.first_seen.startsWith(month));
+  const monthMax=Math.max(1,...months.map(m=>perMonth(m).length));
+  $('#time-chart').innerHTML=months.map(month=>{
+    const agents=perMonth(month);
+    return `<div class="time-column" style="--total-height:${agents.length/monthMax*85}%" role="img" aria-label="${monthLabel(month)}: ${agentCount(agents.length)} first seen">${tasks.map(t=>{
+      const n=agents.filter(d=>firstTask(d)===t).length;
+      return n?`<div class="time-segment" title="${monthLabel(month)} · ${esc(taskName(t))}: ${n}" style="height:${n/monthMax*85}%;background:${styleFor(t).color}"></div>`:'';
+    }).join('')}<span class="cohort-total">${agents.length}</span></div>`;
+  }).join('');
+  $('#time-labels').innerHTML=months.map(m=>`<span>${esc(monthLabel(m))}</span>`).join('');
+  $('#time-legend').innerHTML=tasks.map(t=>`<span class="legend-item"><i class="legend-dot" style="background:${styleFor(t).color}"></i>${esc(taskName(t))}</span>`).join('');
+  $('#owner-chart').innerHTML=tasks.map(t=>{
+    const agents=agentsWith(t);
+    return `<div class="owner-row"><span class="owner-row-label">${esc(taskName(t))}</span><div class="owner-track" role="img" aria-label="${esc(taskName(t))} publishers: ${PUBLISHERS.map(([kind])=>kind+' '+Math.round(agents.filter(d=>d.kind===kind).length/agents.length*100)+'%').join(', ')}">${PUBLISHERS.map(([kind,color])=>{
+      const n=agents.filter(d=>d.kind===kind).length;
+      return n?`<span class="owner-segment" style="flex:${n};background:${color}" title="${esc(kind)}: ${n} of ${agents.length}"></span>`:'';
+    }).join('')}</div></div>`;
+  }).join('');
+  $('#owner-legend').innerHTML=PUBLISHERS.map(([kind,color])=>`<span class="legend-item"><i class="legend-dot" style="background:${color}"></i>${esc(kind)}</span>`).join('');
+}
+
+function getFiltered(){
+  const q=$('#catalog-search').value.trim().toLowerCase();
+  const fn=$('#catalog-function').value;
+  const text=d=>[d.name,d.description,d.publisher,d.kind,...d.taskIds,...d.taskIds.map(taskName)].join(' ').toLowerCase();
+  const byName=(a,b)=>a.name.localeCompare(b.name);
+  return agentsWith(fn).filter(d=>!q||text(d).includes(q)).sort((a,b)=>sortDirection*(sortBy==='seen'?a.first_seen.localeCompare(b.first_seen)||byName(a,b):byName(a,b)));
+}
+function renderTable(){
+  const filtered=getFiltered();
+  const totalPages=Math.max(1,Math.ceil(filtered.length/pageSize));
+  page=Math.min(page,totalPages-1);
+  const rows=filtered.slice(page*pageSize,(page+1)*pageSize);
+  $('#catalog-body').innerHTML=rows.map(d=>{const color=styleFor(firstTask(d)).color;return `<tr style="--row-color:${color}"><td><button class="agent-link" data-agent="${esc(d.id)}">${fishSVG(firstTask(d))}${esc(d.name)}</button></td><td><span class="function-badge" style="--badge-color:${color}">${d.kind==='Product website'?'Website':'GitHub'}</span></td><td>${d.taskIds.map(t=>`<span class="task-tag">${esc(t)}</span>`).join('')||'<span class="task-tag">none</span>'}</td><td>${esc(d.publisher)}</td><td>${esc(d.first_seen)}</td></tr>`;}).join('');
+  $('#empty-state').textContent=DATA.length?'No agents match this search. Try another name or task.':'The daily collection has not published any agents yet.';
+  $('#empty-state').hidden=filtered.length>0;
+  $('#catalog-count').textContent=filtered.length?`${page*pageSize+1}–${Math.min((page+1)*pageSize,filtered.length)} OF ${filtered.length} AGENTS`:'0 AGENTS';
+  $('#page-number').textContent=`${page+1} / ${totalPages}`;
+  $('#previous-page').disabled=page===0;
+  $('#next-page').disabled=page>=totalPages-1;
+  $('#sort-name').closest('th').setAttribute('aria-sort',sortBy==='name'?(sortDirection===1?'ascending':'descending'):'none');
+  $('#sort-seen').closest('th').setAttribute('aria-sort',sortBy==='seen'?(sortDirection===1?'ascending':'descending'):'none');
+  $('#sort-name span').textContent=sortBy==='name'?(sortDirection===1?'↑':'↓'):'↕';
+  $('#sort-seen span').textContent=sortBy==='seen'?(sortDirection===1?'↑':'↓'):'↕';
+  $$('.agent-link').forEach(b=>b.addEventListener('click',()=>showSpecimen(b.dataset.agent)));
+}
+
+function showSpecimen(id){
+  const d=DATA.find(d=>d.id===id);if(!d)return;
+  const task=shownTask(d);
+  const claims=d.claims.length?`<ol class="evidence-list">${d.claims.map(c=>`<li style="--evidence-color:${styleFor(c.task_id).color}"><span class="task-tag">${esc(c.task_id)}</span> <strong>${esc(taskName(c.task_id))}</strong><blockquote>“${esc(c.evidence_quote)}”</blockquote>${sourceLink(c.source_url,'Quoted from '+shortUrl(c.source_url)+' →')}</li>`).join('')}</ol>`:'<p class="specimen-summary">The text the collection saved supported none of the tasks in the vocabulary.</p>';
+  $('#specimen-details').innerHTML=`<div class="specimen-hero">${fishSVG(task)}<div><p class="eyebrow">${esc(d.id)} / ${esc(styleFor(task).species)}</p><h2 id="specimen-title">${esc(d.name)}</h2></div></div><p class="specimen-summary">${esc(d.description)}</p><dl class="specimen-data"><div><dt>Homepage</dt><dd>${sourceLink(d.url,shortUrl(d.url))}</dd></div><div><dt>Source</dt><dd>${sourceLink(d.source_url,shortUrl(d.source_url))}</dd></div><div><dt>Publisher</dt><dd>${esc(d.publisher)} · ${esc(d.kind)}</dd></div><div><dt>First seen</dt><dd>${esc(d.first_seen)}</dd></div></dl><div class="specimen-tasks"><h3>DOCUMENTED TASKS · ${d.claims.length}</h3>${claims}</div><p class="specimen-disclaimer">Each quote is copied word for word from the source text the daily collection saved. It records what the project says it does, not a measured capability.</p>`;
+  $('#specimen-dialog').showModal();
+}
+
+function downloadCSV(){
+  const rows=getFiltered();
+  const quote=v=>/[",\n\r]/.test(v)?'"'+v.replaceAll('"','""')+'"':v;
+  const content=[AGENT_COLUMNS,...rows.map(d=>AGENT_COLUMNS.map(c=>d[c]))].map(row=>row.map(quote).join(',')).join('\n')+'\n';
+  const url=URL.createObjectURL(new Blob([content],{type:'text/csv;charset=utf-8'}));
+  const link=document.createElement('a');link.href=url;link.download='agentarium-agents.csv';link.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
+  const toast=$('#toast');toast.textContent=`Downloaded ${rows.length} agents`;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3000);
+}
+
+function updateScroll(){
+  const position=window.scrollY;
+  const max=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
+  const progression=Math.max(0,Math.min(1,position/max));
+  document.documentElement.style.setProperty('--ocean-depth',(progression*.84).toFixed(3));
+  $('#dive-progress').style.width=(progression*100).toFixed(2)+'%';
+  let closest=0,distance=Infinity;
+  sections.forEach((section,i)=>{const d=Math.abs(section.getBoundingClientRect().top);if(d<distance){distance=d;closest=i;}});
+  activeSection=closest;
+  document.body.dataset.tone=sections[closest].dataset.tone||'dark';
+  let depth=depths[closest];
+  for(let i=0;i<sections.length-1;i++){
+    const top=sections[i].offsetTop,next=sections[i+1].offsetTop;
+    if(position>=top&&position<=next){const fraction=(position-top)/(next-top);depth=Math.round(depths[i]+(depths[i+1]-depths[i])*fraction);break;}
+  }
+  $('#depth-value').textContent=String(closest+1).padStart(2,'0');
+  $('#depth-label').textContent=sections[closest].dataset.label;
+  $('#level-number').textContent=`${String(closest+1).padStart(2,'0')} / 06`;
+  $('#next-label').textContent=closest===sections.length-1?'OVERVIEW ↑':'CONTINUE ↓';
+  $('#next-depth').setAttribute('aria-label',closest===sections.length-1?'Return to overview':'Continue to '+sections[closest+1].dataset.label);
+  const ids=['surface','habitat','functions','functions','catalog','method'];
+  $$('.site-header nav a').forEach(a=>{if(a.hash==='#'+ids[closest])a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
+}
+
+// The introduction has exactly three large ASCII fish. The text forms their bodies.
+const asciiCanvas=$('#ascii-fish'),asciiCtx=asciiCanvas.getContext('2d');
+let asciiSize={w:0,h:0};
+const planktonCanvas=$('#plankton'),planktonCtx=planktonCanvas.getContext('2d');
+let planktonSize={w:0,h:0};
+function resizeCanvas(canvas,ctx){
+  const rect=canvas.getBoundingClientRect();const dpr=Math.min(window.devicePixelRatio||1,1.5);
+  canvas.width=Math.round(rect.width*dpr);canvas.height=Math.round(rect.height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);return {w:rect.width,h:rect.height};
+}
+function resize(){asciiSize=resizeCanvas(asciiCanvas,asciiCtx);planktonSize=resizeCanvas(planktonCanvas,planktonCtx);updateScroll();}
+const seeded=(i,k)=>{const v=Math.sin(i*12.9898+k*78.233)*43758.5453;return v-Math.floor(v);};
+function drawAscii(t){
+  const {w,h}=asciiSize;if(!w||!h)return;
+  asciiCtx.clearRect(0,0,w,h);
+  const narrow=w<600;
+  const fishes=narrow?[{x:.12,y:.12,l:125,c:'#77cfe9',rx:50,ry:13,speed:.48,phase:0},{x:.92,y:.49,l:150,c:'#b6a0f1',rx:45,ry:22,speed:.42,phase:2.3},{x:.25,y:.88,l:110,c:'#84b7f2',rx:65,ry:14,speed:.38,phase:4.8}]:[{x:.18,y:.19,l:210,c:'#77cfe9',rx:Math.min(w*.12,165),ry:26,speed:.43,phase:0},{x:.88,y:.77,l:245,c:'#b6a0f1',rx:Math.min(w*.09,130),ry:28,speed:.36,phase:2.3},{x:.27,y:.83,l:170,c:'#84b7f2',rx:Math.min(w*.17,225),ry:22,speed:.32,phase:4.8}];
+  const ramp='.:=+*#%@';
+  const font=narrow?7:9;
+  const cw=font*.61,ch=font*1.1;
+  asciiCtx.font=`${font}px ${getComputedStyle(document.body).getPropertyValue('--mono')}`;
+  asciiCtx.textAlign='center';asciiCtx.textBaseline='middle';
+  fishes.forEach((f,fi)=>{
+    const a=f.l/2;
+    const phase=t*f.speed+f.phase;
+    const dir=Math.cos(phase)>=0?1:-1;
+    const px=f.x*w+Math.sin(phase)*f.rx;
+    const py=f.y*h+Math.sin(phase*1.6+fi)*f.ry;
+    const turn=.68+Math.abs(Math.cos(phase))*.32;
+    const top=Math.floor((py-a*.63)/ch),bottom=Math.ceil((py+a*.63)/ch);
+    const left=Math.floor((px-a*1.25)/cw),right=Math.ceil((px+a*1.25)/cw);
+    for(let r=top;r<bottom;r++)for(let c=left;c<right;c++){
+      let u=((c+.5)*cw-px)/(a*turn)*dir;
+      let v=((r+.5)*ch-py)/a;
+      v-=Math.sin(t*3.2+u*3+fi)*.018;
+      const bodyX=(u-.10)/.84;
+      let density=0;
+      const ellipse=bodyX*bodyX+Math.pow(v/.43,2);
+      if(ellipse<1)density=.25+(1-ellipse)*.65;
+      const wag=Math.sin(t*3+fi)*.1;
+      if(u<-.58&&u>-1.15){const tail=(-.58-u)/.57;const av=Math.abs(v-wag*tail);if(av<tail*.37&&av>tail*.055)density=.45;}
+      if(u>-.23&&u<.38){const dorsal=-.43*Math.sqrt(Math.max(0,1-bodyX*bodyX));const fin=.19*(1-Math.abs(u-.02)/.36);if(v<dorsal&&v>dorsal-fin)density=.36;}
+      if(u>-.05&&u<.30&&v>.36&&v<.49-Math.abs(u-.13)*.35)density=.32;
+      if(!density)continue;
+      const vx=(u-.48)/.28,vy=(v+.025)/.19;
+      const face=vx*vx+vy*vy;
+      if(face<1)density=.12;
+      const eye=Math.pow((u-.54)/.07,2)+Math.pow((v+.035)/.075,2);
+      if(eye<1)density=1;
+      const glint=Math.pow((u-.17)/.40,2)+Math.pow((v+.24)/.07,2);if(glint<1)density=.75;
+      const variation=seeded(c+fi*100,r)*.1;
+      const index=Math.min(ramp.length-1,Math.max(0,Math.floor((density+variation)*(ramp.length-1))));
+      asciiCtx.fillStyle=f.c;asciiCtx.globalAlpha=(narrow?.4:.64)*(density>.9?1.4:1);
+      asciiCtx.fillText(ramp[index],(c+.5)*cw,(r+.5)*ch);
+    }
+  });asciiCtx.globalAlpha=1;
+}
+function drawPlankton(t){
+  const {w,h}=planktonSize;if(!w||!h)return;
+  planktonCtx.clearRect(0,0,w,h);
+  const n=w<600?30:65;
+  for(let i=0;i<n;i++){
+    const x=(seeded(i,1)*w+Math.sin(t*.04+i)*9);
+    const y=((seeded(i,2)*h-t*(1.4+seeded(i,3)*2))%h+h)%h;
+    planktonCtx.globalAlpha=.08+seeded(i,4)*.18;
+    planktonCtx.fillStyle=i%4===0?'#b9a3ff':'#8acdd2';
+    const s=i%9===0?1.5:.7;
+    planktonCtx.fillRect(x,y,s,s);
+  }planktonCtx.globalAlpha=1;
+}
+let simTime=0,lastFrame=0,lastDraw=0;
+function animation(now){
+  const dt=lastFrame?Math.min(.05,(now-lastFrame)/1000):0;lastFrame=now;
+  if(!motionPaused&&!document.hidden)simTime+=dt;
+  if(now-lastDraw>30&&!document.hidden){
+    if(window.scrollY<sections[0].offsetHeight)drawAscii(simTime);
+    drawPlankton(simTime);lastDraw=now;
+  }
+  requestAnimationFrame(animation);
+}
+function applyMotion(){
+  document.body.classList.toggle('motion-paused',motionPaused);
+  const b=$('#motion-toggle');b.textContent=motionPaused?'>':'II';b.setAttribute('aria-label',motionPaused?'Resume ambient motion':'Pause ambient motion');b.title=motionPaused?'Resume ambient motion':'Pause ambient motion';
+}
+
+function renderCatalog(){
+  const latest=DATA.map(d=>d.first_seen).sort().at(-1);
+  $('#data-status').textContent=latest?`${agentCount(DATA.length)} · latest added ${latest}`:'No agents published yet';
+  $('#overview-agents').textContent=pad(DATA.length);
+  $('#overview-tasks').textContent=pad(TASKS.length);
+  $('#overview-claims').textContent=pad(CLAIMS);
+  presentTasks().forEach(t=>{const option=document.createElement('option');option.value=t;option.textContent=taskName(t);$('#catalog-function').append(option);});
+  renderHabitat();renderFigures();renderObservationField();renderTable();
+}
+function showLoadError(error){
+  $('#data-status').textContent='Catalog failed to load';
+  $('#creatures').innerHTML='<p class="habitat-empty mono">THE CATALOG COULD NOT BE LOADED. PLEASE RELOAD THE PAGE.</p>';
+  const toast=$('#toast');toast.textContent=`Could not load the catalog: ${error.message}`;toast.classList.add('show');
+  console.error(error);
+}
+
+renderScenery();applyMotion();useLevelNavigation();resize();requestAnimationFrame(animation);
+loadCatalog().then(renderCatalog,showLoadError);
+$('#habitat-shuffle').addEventListener('click',renderCreatures);
+$('#motion-toggle').addEventListener('click',()=>{motionPaused=!motionPaused;applyMotion();});
+reducedQuery.addEventListener('change',e=>{motionPaused=e.matches;applyMotion();cancelDive();useLevelNavigation();});
+levelNavigationQuery.addEventListener('change',()=>{cancelDive();useLevelNavigation();});
+$('#habitat-pause').addEventListener('click',()=>{habitatPaused=!habitatPaused;$('#habitat-ocean').classList.toggle('is-paused',habitatPaused);$('#habitat-pause').textContent=habitatPaused?'> Resume habitat':'II Pause habitat';$('#habitat-pause').setAttribute('aria-pressed',String(habitatPaused));});
+$('#catalog-search').addEventListener('input',()=>{page=0;renderTable();});
+$('#catalog-function').addEventListener('change',()=>{page=0;renderTable();});
+$('#previous-page').addEventListener('click',()=>{page=Math.max(0,page-1);renderTable();});
+$('#next-page').addEventListener('click',()=>{page++;renderTable();});
+$('#sort-name').addEventListener('click',()=>{sortDirection=sortBy==='name'?-sortDirection:1;sortBy='name';page=0;renderTable();});
+$('#sort-seen').addEventListener('click',()=>{sortDirection=sortBy==='seen'?-sortDirection:-1;sortBy='seen';page=0;renderTable();});
+$('#download-csv').addEventListener('click',downloadCSV);
+$('#schema-button').addEventListener('click',()=>$('#schema-dialog').showModal());
+$$('dialog').forEach(dialog=>{
+  dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
+  dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+});
+$('#next-depth').addEventListener('click',()=>navigateToSection(activeSection===sections.length-1?0:activeSection+1));
+$$('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{
+  const target=document.getElementById(link.hash.slice(1));
+  const section=target?.closest('.depth-section');
+  if(!section)return;
+  event.preventDefault();
+  if(location.hash!==link.hash)history.pushState(null,'',link.hash);
+  navigateToSection(sections.indexOf(section));
+  if(link.classList.contains('skip-link')){target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}
+}));
+window.addEventListener('popstate',()=>{const target=document.getElementById(location.hash.slice(1))||sections[0];const section=target.closest('.depth-section');if(section)navigateToSection(sections.indexOf(section));});
+window.addEventListener('wheel',onDiveWheel,{passive:true});
+window.addEventListener('touchstart',()=>{cancelDive();gestureActive=false;},{passive:true});
+window.addEventListener('pointerdown',()=>{pointerDown=true;cancelDive();gestureActive=false;},{passive:true});
+window.addEventListener('pointerup',()=>{pointerDown=false;},{passive:true});
+window.addEventListener('scroll',()=>{updateScroll();scheduleSettle();},{passive:true});
+window.addEventListener('resize',resize,{passive:true});
+document.addEventListener('keydown',event=>{
+  if($$('dialog[open]').length||/INPUT|SELECT|TEXTAREA|BUTTON/.test(document.activeElement.tagName))return;
+  if(!['PageDown','PageUp','ArrowDown','ArrowUp',' ','Home','End'].includes(event.key))return;
+  cancelDive();
+  gestureActive=true;
+  gestureDirection=event.key==='PageUp'||event.key==='ArrowUp'||event.key==='Home'||(event.key===' '&&event.shiftKey)?-1:1;
+  lastWheelAt=performance.now();
+  scheduleSettle();
+});
+
+// One point per agent-task claim, stacked in a grid above each task's label.
+// ponytail: below a 4px pitch (about 600 claims in one column) the stacks overflow the top; then plot one point per N claims.
+function renderObservationField(){
+  const svg=document.querySelector('#field-plot');if(!svg)return;
+  const tasks=presentTasks();
+  const left=62,right=512,top=48,bottom=288;
+  const colWidth=(right-left)/Math.max(1,tasks.length);
+  const max=Math.max(1,...tasks.map(t=>agentsWith(t).length));
+  let pitch=16;
+  while(pitch>4&&Math.ceil(max/Math.max(1,Math.floor(colWidth*.8/pitch)))*pitch>bottom-top)pitch--;
+  const perRow=Math.max(1,Math.floor(colWidth*.8/pitch));
+  $('#field-count').textContent=`${CLAIMS} CLAIMS`;
+  let html='<title>Documented task claims</title><desc>One point for each agent and task it documents, grouped by task. Select a point to inspect the agent.</desc>';
+  html+=`<line x1="${left}" y1="${bottom}" x2="${right}" y2="${bottom}" stroke="#c9d9ec" opacity=".18"/>`;
+  html+='<text x="62" y="27" fill="#7188a3" font-size="9" font-family="monospace" letter-spacing="1">QUOTED TASK CLAIMS / ONE POINT EACH</text>';
+  if(!DATA.length)html+='<text x="287" y="170" text-anchor="middle" fill="#8fa3ba" font-size="10" font-family="monospace">NO AGENTS PUBLISHED YET</text>';
+  tasks.forEach((t,ci)=>{
+    const cx=left+colWidth*(ci+.5),style=styleFor(t),agents=agentsWith(t).slice().sort((a,b)=>a.name.localeCompare(b.name));
+    html+=`<text x="${cx}" y="310" text-anchor="middle" fill="#8fa3ba" font-size="9" font-family="monospace">${esc(style.short)}</text>`;
+    html+=`<text x="${cx}" y="${bottom-Math.ceil(agents.length/perRow)*pitch-6}" text-anchor="middle" fill="#7e93ad" font-size="8" font-family="monospace">${agents.length}</text>`;
+    agents.forEach((d,k)=>{
+      const x=cx-(perRow-1)*pitch/2+(k%perRow)*pitch,y=bottom-pitch/2-Math.floor(k/perRow)*pitch;
+      html+=`<a href="#" class="observation-point" data-agent="${esc(d.id)}" aria-label="Inspect ${esc(d.name)}, ${esc(taskName(t))}"><title>${esc(d.name)} · ${esc(taskName(t))}</title><circle cx="${x}" cy="${y}" r="${pitch/2}" fill="transparent"/><circle cx="${x}" cy="${y}" r="${Math.max(1.5,pitch*.3)}" fill="${style.color}" stroke="#0a1730" stroke-width="1"/></a>`;
+    });
+  });
+  svg.innerHTML=html;
+  svg.querySelectorAll('a').forEach(a=>a.addEventListener('click',event=>{event.preventDefault();showSpecimen(a.dataset.agent);}));
+}

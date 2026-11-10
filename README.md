@@ -2,6 +2,8 @@
 
 A CSV catalog of AI agents and the tasks their own documentation says they perform. Every factual claim carries a source URL, and every task link carries a quote copied verbatim from that source.
 
+Explore the catalog online: [agentarium.yasamanansari.com](https://agentarium.yasamanansari.com). The site in `site/` reads the three tables in `data/core/` and rebuilds on every daily update.
+
 ## What is in it
 
 Three tables in `data/core/`, described field by field in [docs/schema.md](docs/schema.md):
