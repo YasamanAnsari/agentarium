@@ -58,7 +58,7 @@ A row records a claim made by the source, not demonstrated performance.
 
 - A link whose quote is not found verbatim in the saved text, or whose task is not in `tasks.csv`, is never written.
 - When an agent is rechecked and both the fetch and the classification succeed, its links become exactly those the recheck found. If either step fails, its rows are left as they were.
-- An agent the recheck no longer judges to be an agent is kept and reported, not deleted.
+- An agent the recheck no longer judges to be an agent is removed with its links, and counted under `recheck_not_an_agent`.
 
 ## agent_declined.csv
 
@@ -75,7 +75,7 @@ Primary key: `date` and `reason` together. One row per day and reason, counting 
 | `no_description` | The record has no description or no text, so no row can be filled. |
 | `classification_failed` | The model call failed or its answer was malformed; the record is retried the next day. |
 | `not_an_agent` | The model judged the record not to be an agent. |
-| `recheck_not_an_agent` | An agent already in the catalog was judged not to be one. Its rows are kept. |
+| `recheck_not_an_agent` | An agent already in the catalog was judged not to be one. Its rows are removed. |
 | `quote_not_in_text` | A task claim's quote is not in the saved text. |
 | `unknown_task` | A task claim names a task that is not in `tasks.csv`. |
 | `duplicate_task` | A second claim for a task the record already supports. |
