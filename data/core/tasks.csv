@@ -1,0 +1,9 @@
+task_id,name,definition
+analyze_data,Analyze data,"Query, transform or compute over a dataset to answer a question or produce a result."
+browse_web,Browse the web,Navigate websites and interact with web pages to reach a goal.
+handle_customer_support,Handle customer support,Answer customer requests and resolve support tickets.
+operate_computer,Operate a computer,"Control a desktop or mobile interface through clicks, typing and application actions."
+research_topic,Research a topic,Gather information from several sources and synthesize findings on a question.
+review_code,Review code,Inspect existing code or a code change and report defects or improvements.
+write_code,Write code,Write or modify source code to implement a requested change.
+write_document,Write a document,"Draft a report, article or other long-form document."

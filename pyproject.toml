@@ -1,0 +1,20 @@
+[project]
+name = "agentarium"
+version = "0.1.0"
+description = "A CSV catalog of AI agents and their documented capabilities."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+agentarium = "agentarium.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

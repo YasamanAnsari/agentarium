@@ -1,0 +1,11 @@
+.env
+# Raw downloads stay local; only each folder's manifest of URL and hash is tracked.
+data/raw/**
+!data/raw/**/
+!data/raw/**/manifest.json
+data/staging/
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.DS_Store
