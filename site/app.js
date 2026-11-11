@@ -435,12 +435,9 @@ function animation(now){
 }
 function applyMotion(){
   document.body.classList.toggle('motion-paused',motionPaused);
-  const b=$('#motion-toggle');b.textContent=motionPaused?'>':'II';b.setAttribute('aria-label',motionPaused?'Resume ambient motion':'Pause ambient motion');b.title=motionPaused?'Resume ambient motion':'Pause ambient motion';
 }
 
 function renderCatalog(){
-  const latest=DATA.map(d=>d.first_seen).sort().at(-1);
-  $('#data-status').textContent=latest?`${agentCount(DATA.length)} · latest added ${latest}`:'No agents published yet';
   $('#overview-agents').textContent=pad(DATA.length);
   $('#overview-tasks').textContent=pad(TASKS.length);
   $('#overview-claims').textContent=pad(CLAIMS);
@@ -448,7 +445,6 @@ function renderCatalog(){
   renderHabitat();renderFigures();renderObservationField();renderTable();
 }
 function showLoadError(error){
-  $('#data-status').textContent='Catalog failed to load';
   $('#creatures').innerHTML='<p class="habitat-empty mono">THE CATALOG COULD NOT BE LOADED. PLEASE RELOAD THE PAGE.</p>';
   const toast=$('#toast');toast.textContent=`Could not load the catalog: ${error.message}`;toast.classList.add('show');
   console.error(error);
@@ -457,7 +453,6 @@ function showLoadError(error){
 renderScenery();applyMotion();useLevelNavigation();resize();requestAnimationFrame(animation);
 loadCatalog().then(renderCatalog,showLoadError);
 $('#habitat-shuffle').addEventListener('click',renderCreatures);
-$('#motion-toggle').addEventListener('click',()=>{motionPaused=!motionPaused;applyMotion();});
 reducedQuery.addEventListener('change',e=>{motionPaused=e.matches;applyMotion();cancelDive();useLevelNavigation();});
 levelNavigationQuery.addEventListener('change',()=>{cancelDive();useLevelNavigation();});
 $('#habitat-pause').addEventListener('click',()=>{habitatPaused=!habitatPaused;$('#habitat-ocean').classList.toggle('is-paused',habitatPaused);$('#habitat-pause').textContent=habitatPaused?'> Resume habitat':'II Pause habitat';$('#habitat-pause').setAttribute('aria-pressed',String(habitatPaused));});
@@ -505,7 +500,7 @@ function renderObservationField(){
   const left=58,right=522,top=22,bottom=300;
   const plotted=DATA.filter(d=>d.created_on&&starsOf(d));
   const yearOf=d=>{const t=new Date(d.created_on+'T00:00:00Z');return t.getUTCFullYear()+(t-Date.UTC(t.getUTCFullYear(),0,1))/31557600000;};
-  const axis='fill="#7f94ad" font-size="9" font-family="monospace"';
+  const axis='fill="#7f94ad" font-size="12" font-family="monospace"';
   $('#field-count').textContent=`${agentCount(plotted.length)}`;
   let html='<title>Agents by repository creation date and GitHub stars</title><desc>One point per agent. Horizontal position is the year its repository was created; vertical position is its GitHub stars on a log scale; colour is its main task. Select a point to inspect the agent.</desc>';
   if(!plotted.length){
