@@ -147,6 +147,8 @@ class Candidate:
     organization: str
     source_url: str
     retrieved_on: str
+    created_on: str  # repository creation date; empty for web pages
+    stars: str  # stargazer count at retrieval; empty for web pages
     text: str
 
 
@@ -165,6 +167,8 @@ def candidate(source: str, raw: dict[str, Any]) -> Candidate:
             organization=owner["login"] if owner.get("type") == "Organization" else "",
             source_url=record["html_url"],
             retrieved_on=retrieved_on,
+            created_on=record["created_at"][:10],
+            stars=str(record["stargazers_count"]),
             text=raw["text"],
         )
     return Candidate(
@@ -175,6 +179,8 @@ def candidate(source: str, raw: dict[str, Any]) -> Candidate:
         organization="",
         source_url=raw["source_url"],
         retrieved_on=retrieved_on,
+        created_on="",
+        stars="",
         text=raw["text"],
     )
 

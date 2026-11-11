@@ -37,9 +37,12 @@ class Table:
 
 AGENTS = Table(
     "agents",
-    ("agent_id", "name", "url", "description", "organization", "source_url", "first_seen"),
+    (
+        "agent_id", "name", "url", "description", "organization", "source_url",
+        "first_seen", "created_on", "stars", "main_task",
+    ),
     ("agent_id",),
-    optional=frozenset({"organization"}),
+    optional=frozenset({"organization", "created_on", "stars", "main_task"}),
 )
 TASKS = Table("tasks", ("task_id", "name", "definition"), ("task_id",))
 AGENT_TASKS = Table(
@@ -66,9 +69,12 @@ def _is_iso_date(value: str) -> bool:
 FORMATS = {
     "agent_id": re.compile(r"ag_[0-9a-f]{10}").fullmatch,
     "task_id": re.compile(r"[a-z][a-z0-9]*(_[a-z0-9]+)*").fullmatch,
+    "main_task": re.compile(r"[a-z][a-z0-9]*(_[a-z0-9]+)*").fullmatch,
     "url": _is_http_url,
     "source_url": _is_http_url,
     "first_seen": _is_iso_date,
+    "created_on": _is_iso_date,
+    "stars": re.compile(r"0|[1-9][0-9]*").fullmatch,
 }
 
 
@@ -116,6 +122,16 @@ def validate(catalog: Catalog) -> None:
             problems.append(f"agent_tasks.csv: unknown agent_id {row.get('agent_id')!r}")
         if row.get("task_id") not in task_ids:
             problems.append(f"agent_tasks.csv: unknown task_id {row.get('task_id')!r}")
+
+    linked: dict[str, set[str]] = {}
+    for row in catalog.get("agent_tasks", []):
+        linked.setdefault(row.get("agent_id", ""), set()).add(row.get("task_id", ""))
+    for row in catalog.get("agents", []):
+        tasks, main = linked.get(row.get("agent_id", ""), set()), row.get("main_task", "")
+        if tasks and main not in tasks:
+            problems.append(f"agents.csv: {row.get('agent_id')} main_task {main!r} is not one of its tasks")
+        elif not tasks and main:
+            problems.append(f"agents.csv: {row.get('agent_id')} has main_task {main!r} but no tasks")
 
     if problems:
         raise SchemaError(problems)

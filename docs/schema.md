@@ -23,6 +23,9 @@ Primary key: `agent_id`.
 | `organization` | no | The owning GitHub organization, when the owner is an organization. |
 | `source_url` | yes | Where the row's facts come from: the repository or the page. |
 | `first_seen` | yes | Date the agent was first fetched, `YYYY-MM-DD`. |
+| `created_on` | no | Date the GitHub repository was created, `YYYY-MM-DD`. Empty for website records. |
+| `stars` | no | The repository's GitHub star count when it was last fetched. Empty for website records. Stars measure attention, not users. |
+| `main_task` | no | The one task, among the agent's linked tasks, that the classifier judged best describes what the agent is mainly for. Required when the agent has tasks, empty when it has none. A model judgment, not a quote. |
 
 ### How an agent ID is made
 

@@ -21,6 +21,9 @@ def small_catalog() -> schema.Catalog:
                 "organization": "",
                 "source_url": "https://github.com/example/example",
                 "first_seen": "2026-11-10",
+                "created_on": "2024-03-01",
+                "stars": "1200",
+                "main_task": "write_code",
             }
         ],
         "tasks": [
@@ -53,7 +56,7 @@ def test_write_uses_csv_conventions(tmp_path: Path) -> None:
         "write_code,Write code,Write code.",
     ]
     agents = (tmp_path / "agents.csv").read_text(encoding="utf-8").splitlines()
-    assert agents[1].endswith(',"Says ""hello"", then waits",,https://github.com/example/example,2026-11-10')
+    assert agents[1].endswith(',"Says ""hello"", then waits",,https://github.com/example/example,2026-11-10,2024-03-01,1200,write_code')
     assert schema.load(tmp_path) == small_catalog() | {
         "tasks": sorted(small_catalog()["tasks"], key=lambda r: r["task_id"])
     }
@@ -81,6 +84,16 @@ def test_invalid_references_are_rejected() -> None:
     found = problems(catalog)
     assert "unknown agent_id 'ag_0000000000'" in found
     assert "unknown task_id 'fly_plane'" in found
+
+
+def test_main_task_must_be_one_of_the_agents_tasks() -> None:
+    catalog = small_catalog()
+    catalog["agents"][0]["main_task"] = "browse_web"
+    assert "main_task 'browse_web' is not one of its tasks" in problems(catalog)
+    catalog["agent_tasks"] = []
+    assert "has main_task 'browse_web' but no tasks" in problems(catalog)
+    catalog["agents"][0]["main_task"] = ""
+    schema.validate(catalog)
 
 
 def test_missing_evidence_and_bad_values_are_rejected() -> None:
