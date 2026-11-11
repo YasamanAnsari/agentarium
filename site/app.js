@@ -24,7 +24,7 @@ const SHAPES = {
   jelly:'M40 58C40 22 120 22 120 58C110 64 50 64 40 58ZM52 62C48 76 58 86 52 102M68 63C70 80 62 90 68 106M84 63C82 80 90 90 84 106M100 62C104 76 94 86 100 102M62 42H98V56H62Z',
   minnow:'M30 55C50 32 104 32 124 55C104 78 50 78 30 55ZM124 55L146 40V70ZM70 34L80 22L92 34M60 46H92V62H60Z'
 };
-const AGENT_COLUMNS = ['agent_id','name','url','description','organization','source_url','first_seen'];
+const AGENT_COLUMNS = ['agent_id','name','url','description','organization','source_url','first_seen','created_on','stars','main_task'];
 const PUBLISHERS = [['Organization','#4779be'],['Personal account','#8b67cc'],['Product website','#239ba4']];
 const HABITAT_SIZE = 36;
 let TASKS = [];
@@ -91,7 +91,15 @@ function presentTasks(){
   return DATA.some(d=>!d.taskIds.length)?[...ids,NONE]:ids;
 }
 const agentsWith = taskId=>taskId==='All'?DATA:taskId===NONE?DATA.filter(d=>!d.taskIds.length):DATA.filter(d=>d.taskIds.includes(taskId));
-const firstTask = d=>d.taskIds[0]||NONE;
+const mainTask = d=>d.main_task||NONE;
+const starsOf = d=>Number(d.stars)||0;
+const starLabel = n=>n>=1e6?(n/1e6).toFixed(1).replace(/\.0$/,'')+'M':n>=1000?(n/1000).toFixed(n>=10000?0:1).replace(/\.0$/,'')+'k':String(n);
+// Position of an agent's stars between the catalog's least and most starred agents, on a log scale.
+function starShare(d){
+  const logs=DATA.filter(starsOf).map(a=>Math.log10(starsOf(a)));
+  const lo=Math.min(...logs),hi=Math.max(...logs);
+  return starsOf(d)&&hi>lo?(Math.log10(starsOf(d))-lo)/(hi-lo):0;
+}
 function shuffled(list){const copy=list.slice();for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
 function sourceLink(url,label){
   return /^https?:\/\//.test(url)?`<a class="inline-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`:esc(label);
@@ -104,7 +112,7 @@ const reducedQuery=window.matchMedia('(prefers-reduced-motion: reduce)');
 let motionPaused=reducedQuery.matches;
 let page=0;
 const pageSize=6;
-let sortBy='seen',sortDirection=-1;
+let sortBy='stars',sortDirection=-1;
 let activeSection=0;
 const sections=$$('.depth-section');
 const depths=sections.map(el=>Number(el.dataset.depth));
@@ -192,7 +200,7 @@ function onDiveWheel(event){
 }
 
 // Colour a creature by the task being filtered on, so every fish in a filtered view matches the chip.
-const shownTask = d=>activeSpecies!=='All'&&d.taskIds.includes(activeSpecies)?activeSpecies:firstTask(d);
+const shownTask = d=>activeSpecies!=='All'&&d.taskIds.includes(activeSpecies)?activeSpecies:mainTask(d);
 function setSpecies(fn){
   activeSpecies=fn;
   $$('.species-chip').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.function===fn)));
@@ -200,16 +208,20 @@ function setSpecies(fn){
 }
 function renderCreatures(){
   const pool=agentsWith(activeSpecies);
-  const shown=shuffled(pool).slice(0,HABITAT_SIZE);
+  // Biggest first, so smaller fish stay on top and clickable.
+  const shown=shuffled(pool).slice(0,HABITAT_SIZE).sort((a,b)=>starsOf(b)-starsOf(a));
   const narrow=window.innerWidth<580;
   $('#creatures').innerHTML=shown.length?shown.map((d,i)=>{
     const duration=65+(i*11)%49;
     const x=(i*37+7)%95;
     const reverse=i%3===1;
     const progress=reverse?(x+24)/130:(106-x)/130;
-    const size=Math.min(narrow?123:202,56+24*d.taskIds.length)*(narrow?.82:1);
+    // A steeper curve than plain log, so the few very popular agents stand out from the many with a few thousand stars.
+    const grow=starShare(d)**1.4;
+    const size=narrow?36+124*grow:48+232*grow;
     const task=shownTask(d),style=styleFor(task);
-    return `<div class="creature-lane ${reverse?'reverse':''}" data-function="${esc(task)}" style="--y:${2+(i*23)%72}%;--duration:${duration}s;--delay:${-progress*duration}s;--static-x:${x}%;--size:${size.toFixed(1)}px;--bob-duration:${3.1+i%5*.5}s;--bob-delay:${-i*.7}s;--creature-color:${style.color}"><button class="creature" data-agent="${esc(d.id)}" aria-label="Inspect ${esc(d.name)}, ${esc(taskName(task))}, ${esc(style.species)}">${fishSVG(task)}<span class="creature-label">${esc(d.name)}</span></button></div>`;
+    const stars=starsOf(d)?` · ★ ${starLabel(starsOf(d))}`:'';
+    return `<div class="creature-lane ${reverse?'reverse':''}" data-function="${esc(task)}" style="--y:${2+(i*23)%72}%;--duration:${duration}s;--delay:${-progress*duration}s;--static-x:${x}%;--size:${size.toFixed(1)}px;--bob-duration:${3.1+i%5*.5}s;--bob-delay:${-i*.7}s;--creature-color:${style.color}"><button class="creature" data-agent="${esc(d.id)}" aria-label="Inspect ${esc(d.name)}, ${esc(taskName(task))}, ${esc(style.species)}${stars?`, ${starsOf(d)} GitHub stars`:''}">${fishSVG(task)}<span class="creature-label">${esc(d.name)}${stars}</span></button></div>`;
   }).join(''):`<p class="habitat-empty mono">${DATA.length?'NO AGENTS CLAIM THIS TASK':'THE DAILY COLLECTION HAS NOT PUBLISHED ANY AGENTS YET'}</p>`;
   $$('.creature').forEach(b=>b.addEventListener('click',()=>showSpecimen(b.dataset.agent)));
   $('#habitat-count').textContent=shown.length;
@@ -233,15 +245,15 @@ function renderScenery(){
   bubbles.innerHTML=Array.from({length:12},(_,i)=>`<span class="habitat-bubble" style="--bubble-left:${5+(i*31)%92}%;--bubble-size:${2+i%3}px;--bubble-duration:${8+i%5*1.7}s;--bubble-delay:${-i*2.3}s"></span>`).join('');
 }
 
-// Months from the first to the last first-seen date, keeping the most recent twelve.
-function firstSeenMonths(){
-  const seen=DATA.map(d=>d.first_seen.slice(0,7)).sort();
-  if(!seen.length)return [];
-  const months=[];
-  for(let [y,m]=seen[0].split('-').map(Number);`${y}-${pad(m)}`<=seen.at(-1);m===12?(y++,m=1):m++)months.push(`${y}-${pad(m)}`);
-  return months.slice(-12);
+// The last eight creation years, with every earlier year in one first column.
+function creationYears(){
+  const years=DATA.filter(d=>d.created_on).map(d=>Number(d.created_on.slice(0,4)));
+  if(!years.length)return [];
+  const last=Math.max(...years),first=Math.max(Math.min(...years),last-7);
+  const buckets=[];
+  for(let y=first;y<=last;y++)buckets.push({label:y===first&&Math.min(...years)<first?`≤${y}`:String(y),has:d=>{const n=Number(d.created_on.slice(0,4));return y===first?n<=y:n===y;}});
+  return buckets;
 }
-const monthLabel = month=>new Date(month+'-01T00:00:00Z').toLocaleString('en-US',{month:'short',year:'numeric',timeZone:'UTC'});
 function renderFigures(){
   const tasks=presentTasks();
   const order=tasks.slice().sort((a,b)=>agentsWith(b).length-agentsWith(a).length);
@@ -252,17 +264,17 @@ function renderFigures(){
   $$('.bar-row').forEach(b=>b.addEventListener('click',()=>{setSpecies(b.dataset.function);navigateToSection(1);}));
   const top=order[0];
   $('#function-highlight').innerHTML=top?fishSVG(top)+`<span><strong>${esc(taskName(top))} / ${esc(styleFor(top).species)}</strong>The most documented task: ${agentsWith(top).length} of ${agentCount(DATA.length)}.</span>`:'';
-  const months=firstSeenMonths();
-  const perMonth=month=>DATA.filter(d=>d.first_seen.startsWith(month));
-  const monthMax=Math.max(1,...months.map(m=>perMonth(m).length));
-  $('#time-chart').innerHTML=months.map(month=>{
-    const agents=perMonth(month);
-    return `<div class="time-column" style="--total-height:${agents.length/monthMax*85}%" role="img" aria-label="${monthLabel(month)}: ${agentCount(agents.length)} first seen">${tasks.map(t=>{
-      const n=agents.filter(d=>firstTask(d)===t).length;
-      return n?`<div class="time-segment" title="${monthLabel(month)} · ${esc(taskName(t))}: ${n}" style="height:${n/monthMax*85}%;background:${styleFor(t).color}"></div>`:'';
+  const years=creationYears();
+  const perYear=year=>DATA.filter(d=>d.created_on&&year.has(d));
+  const yearMax=Math.max(1,...years.map(y=>perYear(y).length));
+  $('#time-chart').innerHTML=years.map(year=>{
+    const agents=perYear(year);
+    return `<div class="time-column" style="--total-height:${agents.length/yearMax*85}%" role="img" aria-label="${year.label}: ${agentCount(agents.length)} created">${tasks.map(t=>{
+      const n=agents.filter(d=>mainTask(d)===t).length;
+      return n?`<div class="time-segment" title="${year.label} · ${esc(taskName(t))}: ${n}" style="height:${n/yearMax*85}%;background:${styleFor(t).color}"></div>`:'';
     }).join('')}<span class="cohort-total">${agents.length}</span></div>`;
   }).join('');
-  $('#time-labels').innerHTML=months.map(m=>`<span>${esc(monthLabel(m))}</span>`).join('');
+  $('#time-labels').innerHTML=years.map(y=>`<span>${esc(y.label)}</span>`).join('');
   $('#time-legend').innerHTML=tasks.map(t=>`<span class="legend-item"><i class="legend-dot" style="background:${styleFor(t).color}"></i>${esc(taskName(t))}</span>`).join('');
   $('#owner-chart').innerHTML=tasks.map(t=>{
     const agents=agentsWith(t);
@@ -279,32 +291,33 @@ function getFiltered(){
   const fn=$('#catalog-function').value;
   const text=d=>[d.name,d.description,d.publisher,d.kind,...d.taskIds,...d.taskIds.map(taskName)].join(' ').toLowerCase();
   const byName=(a,b)=>a.name.localeCompare(b.name);
-  return agentsWith(fn).filter(d=>!q||text(d).includes(q)).sort((a,b)=>sortDirection*(sortBy==='seen'?a.first_seen.localeCompare(b.first_seen)||byName(a,b):byName(a,b)));
+  const compare={stars:(a,b)=>starsOf(a)-starsOf(b),created:(a,b)=>a.created_on.localeCompare(b.created_on),name:()=>0}[sortBy];
+  return agentsWith(fn).filter(d=>!q||text(d).includes(q)).sort((a,b)=>sortDirection*(compare(a,b)||byName(a,b)));
 }
 function renderTable(){
   const filtered=getFiltered();
   const totalPages=Math.max(1,Math.ceil(filtered.length/pageSize));
   page=Math.min(page,totalPages-1);
   const rows=filtered.slice(page*pageSize,(page+1)*pageSize);
-  $('#catalog-body').innerHTML=rows.map(d=>{const color=styleFor(firstTask(d)).color;return `<tr style="--row-color:${color}"><td><button class="agent-link" data-agent="${esc(d.id)}">${fishSVG(firstTask(d))}${esc(d.name)}</button></td><td><span class="function-badge" style="--badge-color:${color}">${d.kind==='Product website'?'Website':'GitHub'}</span></td><td>${d.taskIds.map(t=>`<span class="task-tag">${esc(t)}</span>`).join('')||'<span class="task-tag">none</span>'}</td><td>${esc(d.publisher)}</td><td>${esc(d.first_seen)}</td></tr>`;}).join('');
+  $('#catalog-body').innerHTML=rows.map(d=>{const color=styleFor(mainTask(d)).color;return `<tr style="--row-color:${color}"><td><button class="agent-link" data-agent="${esc(d.id)}">${fishSVG(mainTask(d))}${esc(d.name)}</button></td><td><span class="function-badge" style="--badge-color:${color}">${d.kind==='Product website'?'Website':'GitHub'}</span></td><td>${d.taskIds.map(t=>`<span class="task-tag">${esc(t)}</span>`).join('')||'<span class="task-tag">none</span>'}</td><td>${esc(d.publisher)}</td><td>${starsOf(d)?esc(starLabel(starsOf(d))):'—'}</td><td>${esc(d.created_on||'—')}</td></tr>`;}).join('');
   $('#empty-state').textContent=DATA.length?'No agents match this search. Try another name or task.':'The daily collection has not published any agents yet.';
   $('#empty-state').hidden=filtered.length>0;
   $('#catalog-count').textContent=filtered.length?`${page*pageSize+1}–${Math.min((page+1)*pageSize,filtered.length)} OF ${filtered.length} AGENTS`:'0 AGENTS';
   $('#page-number').textContent=`${page+1} / ${totalPages}`;
   $('#previous-page').disabled=page===0;
   $('#next-page').disabled=page>=totalPages-1;
-  $('#sort-name').closest('th').setAttribute('aria-sort',sortBy==='name'?(sortDirection===1?'ascending':'descending'):'none');
-  $('#sort-seen').closest('th').setAttribute('aria-sort',sortBy==='seen'?(sortDirection===1?'ascending':'descending'):'none');
-  $('#sort-name span').textContent=sortBy==='name'?(sortDirection===1?'↑':'↓'):'↕';
-  $('#sort-seen span').textContent=sortBy==='seen'?(sortDirection===1?'↑':'↓'):'↕';
+  for(const key of ['name','stars','created']){
+    $(`#sort-${key}`).closest('th').setAttribute('aria-sort',sortBy===key?(sortDirection===1?'ascending':'descending'):'none');
+    $(`#sort-${key} span`).textContent=sortBy===key?(sortDirection===1?'↑':'↓'):'↕';
+  }
   $$('.agent-link').forEach(b=>b.addEventListener('click',()=>showSpecimen(b.dataset.agent)));
 }
 
 function showSpecimen(id){
   const d=DATA.find(d=>d.id===id);if(!d)return;
   const task=shownTask(d);
-  const claims=d.claims.length?`<ol class="evidence-list">${d.claims.map(c=>`<li style="--evidence-color:${styleFor(c.task_id).color}"><span class="task-tag">${esc(c.task_id)}</span> <strong>${esc(taskName(c.task_id))}</strong><blockquote>“${esc(c.evidence_quote)}”</blockquote>${sourceLink(c.source_url,'Quoted from '+shortUrl(c.source_url)+' →')}</li>`).join('')}</ol>`:'<p class="specimen-summary">The text the collection saved supported none of the tasks in the vocabulary.</p>';
-  $('#specimen-details').innerHTML=`<div class="specimen-hero">${fishSVG(task)}<div><p class="eyebrow">${esc(d.id)} / ${esc(styleFor(task).species)}</p><h2 id="specimen-title">${esc(d.name)}</h2></div></div><p class="specimen-summary">${esc(d.description)}</p><dl class="specimen-data"><div><dt>Homepage</dt><dd>${sourceLink(d.url,shortUrl(d.url))}</dd></div><div><dt>Source</dt><dd>${sourceLink(d.source_url,shortUrl(d.source_url))}</dd></div><div><dt>Publisher</dt><dd>${esc(d.publisher)} · ${esc(d.kind)}</dd></div><div><dt>First seen</dt><dd>${esc(d.first_seen)}</dd></div></dl><div class="specimen-tasks"><h3>DOCUMENTED TASKS · ${d.claims.length}</h3>${claims}</div><p class="specimen-disclaimer">Each quote is copied word for word from the source text the daily collection saved. It records what the project says it does, not a measured capability.</p>`;
+  const claims=d.claims.length?`<ol class="evidence-list">${d.claims.map(c=>`<li style="--evidence-color:${styleFor(c.task_id).color}"><span class="task-tag">${esc(c.task_id)}</span> <strong>${esc(taskName(c.task_id))}</strong>${c.task_id===d.main_task?' <span class="task-tag main-tag">MAIN TASK</span>':''}<blockquote>“${esc(c.evidence_quote)}”</blockquote>${sourceLink(c.source_url,'Quoted from '+shortUrl(c.source_url)+' →')}</li>`).join('')}</ol>`:'<p class="specimen-summary">The text the collection saved supported none of the tasks in the vocabulary.</p>';
+  $('#specimen-details').innerHTML=`<div class="specimen-hero">${fishSVG(task)}<div><p class="eyebrow">${esc(d.id)} / ${esc(styleFor(task).species)}</p><h2 id="specimen-title">${esc(d.name)}</h2></div></div><p class="specimen-summary">${esc(d.description)}</p><dl class="specimen-data"><div><dt>Homepage</dt><dd>${sourceLink(d.url,shortUrl(d.url))}</dd></div><div><dt>Source</dt><dd>${sourceLink(d.source_url,shortUrl(d.source_url))}</dd></div><div><dt>Publisher</dt><dd>${esc(d.publisher)} · ${esc(d.kind)}</dd></div>${d.created_on?`<div><dt>Repository created</dt><dd>${esc(d.created_on)}</dd></div>`:''}${starsOf(d)?`<div><dt>GitHub stars</dt><dd>${starsOf(d).toLocaleString('en-US')}</dd></div>`:''}</dl><div class="specimen-tasks"><h3>DOCUMENTED TASKS · ${d.claims.length}</h3>${claims}</div><p class="specimen-disclaimer">Each quote is copied word for word from the source text the daily collection saved. It records what the project says it does, not a measured capability.</p>`;
   $('#specimen-dialog').showModal();
 }
 
@@ -452,8 +465,7 @@ $('#catalog-search').addEventListener('input',()=>{page=0;renderTable();});
 $('#catalog-function').addEventListener('change',()=>{page=0;renderTable();});
 $('#previous-page').addEventListener('click',()=>{page=Math.max(0,page-1);renderTable();});
 $('#next-page').addEventListener('click',()=>{page++;renderTable();});
-$('#sort-name').addEventListener('click',()=>{sortDirection=sortBy==='name'?-sortDirection:1;sortBy='name';page=0;renderTable();});
-$('#sort-seen').addEventListener('click',()=>{sortDirection=sortBy==='seen'?-sortDirection:-1;sortBy='seen';page=0;renderTable();});
+for(const [key,first] of [['name',1],['stars',-1],['created',-1]])$(`#sort-${key}`).addEventListener('click',()=>{sortDirection=sortBy===key?-sortDirection:first;sortBy=key;page=0;renderTable();});
 $('#download-csv').addEventListener('click',downloadCSV);
 $('#schema-button').addEventListener('click',()=>$('#schema-dialog').showModal());
 $$('dialog').forEach(dialog=>{
@@ -487,31 +499,36 @@ document.addEventListener('keydown',event=>{
   scheduleSettle();
 });
 
-// One point per agent-task claim, stacked in a grid above each task's label.
-// ponytail: below a 4px pitch (about 600 claims in one column) the stacks overflow the top; then plot one point per N claims.
+// Scatter of every GitHub agent: repository creation date across, stars up on a log scale, colour = main task.
 function renderObservationField(){
   const svg=document.querySelector('#field-plot');if(!svg)return;
-  const tasks=presentTasks();
-  const left=62,right=512,top=48,bottom=288;
-  const colWidth=(right-left)/Math.max(1,tasks.length);
-  const max=Math.max(1,...tasks.map(t=>agentsWith(t).length));
-  let pitch=16;
-  while(pitch>4&&Math.ceil(max/Math.max(1,Math.floor(colWidth*.8/pitch)))*pitch>bottom-top)pitch--;
-  const perRow=Math.max(1,Math.floor(colWidth*.8/pitch));
-  $('#field-count').textContent=`${CLAIMS} CLAIMS`;
-  let html='<title>Documented task claims</title><desc>One point for each agent and task it documents, grouped by task. Select a point to inspect the agent.</desc>';
-  html+=`<line x1="${left}" y1="${bottom}" x2="${right}" y2="${bottom}" stroke="#c9d9ec" opacity=".18"/>`;
-  html+='<text x="62" y="27" fill="#7188a3" font-size="9" font-family="monospace" letter-spacing="1">QUOTED TASK CLAIMS / ONE POINT EACH</text>';
-  if(!DATA.length)html+='<text x="287" y="170" text-anchor="middle" fill="#8fa3ba" font-size="10" font-family="monospace">NO AGENTS PUBLISHED YET</text>';
-  tasks.forEach((t,ci)=>{
-    const cx=left+colWidth*(ci+.5),style=styleFor(t),agents=agentsWith(t).slice().sort((a,b)=>a.name.localeCompare(b.name));
-    html+=`<text x="${cx}" y="310" text-anchor="middle" fill="#8fa3ba" font-size="9" font-family="monospace">${esc(style.short)}</text>`;
-    html+=`<text x="${cx}" y="${bottom-Math.ceil(agents.length/perRow)*pitch-6}" text-anchor="middle" fill="#7e93ad" font-size="8" font-family="monospace">${agents.length}</text>`;
-    agents.forEach((d,k)=>{
-      const x=cx-(perRow-1)*pitch/2+(k%perRow)*pitch,y=bottom-pitch/2-Math.floor(k/perRow)*pitch;
-      html+=`<a href="#" class="observation-point" data-agent="${esc(d.id)}" aria-label="Inspect ${esc(d.name)}, ${esc(taskName(t))}"><title>${esc(d.name)} · ${esc(taskName(t))}</title><circle cx="${x}" cy="${y}" r="${pitch/2}" fill="transparent"/><circle cx="${x}" cy="${y}" r="${Math.max(1.5,pitch*.3)}" fill="${style.color}" stroke="#0a1730" stroke-width="1"/></a>`;
-    });
-  });
+  const left=58,right=522,top=22,bottom=300;
+  const plotted=DATA.filter(d=>d.created_on&&starsOf(d));
+  const yearOf=d=>{const t=new Date(d.created_on+'T00:00:00Z');return t.getUTCFullYear()+(t-Date.UTC(t.getUTCFullYear(),0,1))/31557600000;};
+  const axis='fill="#7f94ad" font-size="9" font-family="monospace"';
+  $('#field-count').textContent=`${agentCount(plotted.length)}`;
+  let html='<title>Agents by repository creation date and GitHub stars</title><desc>One point per agent. Horizontal position is the year its repository was created; vertical position is its GitHub stars on a log scale; colour is its main task. Select a point to inspect the agent.</desc>';
+  if(!plotted.length){
+    svg.innerHTML=html+`<text x="290" y="165" text-anchor="middle" ${axis}>NO AGENTS PUBLISHED YET</text>`;
+    return;
+  }
+  const firstYear=Math.floor(Math.min(...plotted.map(yearOf))),lastYear=Math.floor(Math.max(...plotted.map(yearOf)))+1;
+  const lowExp=Math.floor(Math.log10(Math.min(...plotted.map(starsOf)))),highExp=Math.ceil(Math.log10(Math.max(...plotted.map(starsOf))));
+  // Most agents are recent, so years before the last four share a narrow band at the left.
+  const split=Math.max(firstYear,lastYear-4),band=split>firstYear?46:0;
+  const x=year=>year<split?left+(year-firstYear)/(split-firstYear)*(band-10):left+band+(year-split)/(lastYear-split)*(right-left-band);
+  const y=stars=>bottom-(Math.log10(stars)-lowExp)/(highExp-lowExp)*(bottom-top);
+  for(let e=lowExp;e<=highExp;e++){
+    html+=`<line x1="${left}" y1="${y(10**e)}" x2="${right}" y2="${y(10**e)}" stroke="#c9d9ec" opacity="${e===lowExp?.22:.07}"/><text x="${left-8}" y="${y(10**e)+3}" text-anchor="end" ${axis}>${starLabel(10**e)}</text>`;
+  }
+  if(band)html+=`<line x1="${left+band-5}" y1="${top}" x2="${left+band-5}" y2="${bottom}" stroke="#c9d9ec" opacity=".25" stroke-dasharray="2 3"/><text x="${left+(band-10)/2}" y="${bottom+18}" text-anchor="middle" ${axis}>≤${split-1}</text>`;
+  for(let year=split;year<lastYear;year++)html+=`<text x="${x(year+.5)}" y="${bottom+18}" text-anchor="middle" ${axis}>${year}</text>`;
+  html+=`<text x="${left}" y="${top-8}" ${axis} letter-spacing="1">↑ GITHUB STARS</text><text x="${right}" y="${bottom+38}" text-anchor="end" ${axis} letter-spacing="1">REPOSITORY CREATED →</text>`;
+  $('#field-legend').innerHTML=presentTasks().map(t=>`<span class="legend-item"><i class="legend-dot" style="background:${styleFor(t).color}"></i>${esc(taskName(t))}</span>`).join('');
+  for(const d of plotted){
+    const cx=x(yearOf(d)).toFixed(1),cy=y(starsOf(d)).toFixed(1),style=styleFor(mainTask(d));
+    html+=`<a href="#" class="observation-point" data-agent="${esc(d.id)}" aria-label="Inspect ${esc(d.name)}, ${starsOf(d)} stars, created ${esc(d.created_on)}"><title>${esc(d.name)} · ★ ${starLabel(starsOf(d))} · ${esc(d.created_on)} · ${esc(taskName(mainTask(d)))}</title><circle cx="${cx}" cy="${cy}" r="5" fill="transparent"/><circle cx="${cx}" cy="${cy}" r="2.6" fill="${style.color}" opacity=".85"/></a>`;
+  }
   svg.innerHTML=html;
   svg.querySelectorAll('a').forEach(a=>a.addEventListener('click',event=>{event.preventDefault();showSpecimen(a.dataset.agent);}));
 }

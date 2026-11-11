@@ -36,10 +36,11 @@
           <p class="hero-footnote mono">CLAIMS QUOTED FROM PUBLIC SOURCES · NOT MEASURED CAPABILITIES</p>
         </div>
         <figure class="hero-observation">
-          <figcaption><span class="mono">OBSERVATION FIELD / 001</span><span class="mono" id="field-count"></span></figcaption>
-          <div class="observation-plot"><svg id="field-plot" viewBox="0 0 540 355" role="group" aria-label="Documented task claims, grouped by task"></svg></div>
-          <div class="observation-caption"><span><i></i> Each point is one agent's quoted claim to a task.</span><span>Inspect a point →</span></div>
-          <p class="plot-disclaimer">An agent with several documented tasks appears once in each task's column.</p>
+          <figcaption><span class="mono">EVERY AGENT BY AGE AND GITHUB STARS</span><span class="mono" id="field-count"></span></figcaption>
+          <div class="observation-plot"><svg id="field-plot" viewBox="0 0 540 355" role="group" aria-label="Agents by repository creation year and GitHub stars"></svg></div>
+          <div id="field-legend" class="chart-legend"></div>
+          <div class="observation-caption"><span><i></i> One point per agent. Colour is its main task.</span><span>Inspect a point →</span></div>
+          <p class="plot-disclaimer">Left to right: the year its repository was created. Bottom to top: GitHub stars, on a log scale. Stars measure attention, not users.</p>
         </figure>
       </div>
       <div class="surface-bottom"><span class="mono">YASAMAN ANSARI / AI AGENT RESEARCH</span><span class="scroll-invitation mono">EXPLORE THE CATALOG <span aria-hidden="true">↓</span></span><span class="mono">UPDATED DAILY</span></div>
@@ -49,7 +50,7 @@
       <div class="section-content habitat-content">
         <div class="section-heading">
           <div><p class="eyebrow">01 / AGENT HABITAT</p><h2>An ecosystem, in view.</h2></div>
-          <p class="section-intro">Every creature is an agent in the catalog. Form and colour show a documented task; select one to read its record and the quotes behind it.</p>
+          <p class="section-intro">Every creature is an agent in the catalog. Form and colour show its main task, and bigger fish have more GitHub stars. Select one to read its record and the quotes behind it.</p>
         </div>
         <div class="habitat-toolbar">
           <div id="species-filters" class="species-filters" role="group" aria-label="Filter habitat by task"></div>
@@ -61,7 +62,7 @@
           <div class="sonar-ring" aria-hidden="true"></div>
           <div id="creatures" class="creatures"></div>
           <div id="seabed" class="seabed" aria-hidden="true"></div>
-          <div class="habitat-caption mono"><span>COLOUR + SPECIES = DOCUMENTED TASK</span><span>SIZE = NUMBER OF DOCUMENTED TASKS</span></div>
+          <div class="habitat-caption mono"><span>COLOUR + SPECIES = MAIN TASK</span><span>BIGGER FISH = MORE GITHUB STARS</span></div>
         </div>
         <div class="habitat-note"><span id="habitat-note">A random selection from the catalog, drawn again on every visit.</span><a class="inline-link" href="#catalog">View tabular records →</a></div>
       </div>
@@ -79,9 +80,9 @@
 
     <section class="depth-section patterns-section" id="patterns" data-depth="700" data-label="Time & ownership" data-tone="paper">
       <div class="section-content">
-        <div class="section-heading"><div><p class="eyebrow">03 / FINDINGS · TIME & OWNERSHIP</p><h2>Patterns across the catalog.</h2></div><p class="section-intro">When the catalog first recorded each agent, and who publishes it, give two more views of the same records.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">03 / FINDINGS · TIME & OWNERSHIP</p><h2>Patterns across the catalog.</h2></div><p class="section-intro">When each agent's repository was created, and who publishes it, give two more views of the same records.</p></div>
         <div class="patterns-grid">
-          <figure class="pattern-figure"><figcaption><span class="figure-number mono">FIGURE 02 / TIME</span><h3>When the catalog found them</h3><p>Agents by the month the catalog first recorded them.</p></figcaption><div id="time-chart" class="time-chart"></div><div class="time-labels mono" id="time-labels"></div><div id="time-legend" class="chart-legend"></div><p class="figure-note">The first-seen date is when the daily collection first recorded an agent, not when the agent was released. Colour shows each agent's first documented task.</p></figure>
+          <figure class="pattern-figure"><figcaption><span class="figure-number mono">FIGURE 02 / TIME</span><h3>When were the agents created?</h3><p>Agents by the year their repository was created.</p></figcaption><div id="time-chart" class="time-chart"></div><div class="time-labels mono" id="time-labels"></div><div id="time-legend" class="chart-legend"></div><p class="figure-note">Dates are GitHub's record of when each repository was created; a project may be older than its repository. Colour shows each agent's main task.</p></figure>
           <figure class="pattern-figure"><figcaption><span class="figure-number mono">FIGURE 03 / PUBLISHER</span><h3>Who publishes the agents?</h3><p>Share of agents with each task, by where the record comes from.</p></figcaption><div id="owner-chart" class="owner-chart"></div><div id="owner-legend" class="chart-legend"></div><p class="figure-note">GitHub records are split by whether the repository belongs to an organization or a personal account. Publishing an agent does not establish who uses it.</p></figure>
         </div>
       </div>
@@ -91,7 +92,7 @@
       <div class="section-content">
         <div class="section-heading"><div><p class="eyebrow">04 / DATASET</p><h2>Inspect the underlying records.</h2></div><p class="section-intro">Search the catalog, compare documented tasks, and inspect the record behind each agent.</p></div>
         <div class="catalog-toolbar"><label class="search-field"><span aria-hidden="true">⌕</span><input id="catalog-search" type="search" placeholder="Search agents, descriptions, publishers, or tasks…" aria-label="Search agents"></label><label class="select-wrap"><span class="sr-only">Filter catalog by task</span><select id="catalog-function"><option value="All">All tasks</option></select></label><button id="download-csv" class="outline-button">Download these rows <span aria-hidden="true">→</span></button></div>
-        <div class="table-shell"><table><caption class="sr-only">Agent catalog. Select an agent name to inspect its record and evidence.</caption><thead><tr><th scope="col"><button id="sort-name" class="sort-button">AGENT <span aria-hidden="true">↕</span></button></th><th scope="col">SOURCE</th><th scope="col">DOCUMENTED TASKS</th><th scope="col">PUBLISHER</th><th scope="col"><button id="sort-seen" class="sort-button">FIRST SEEN <span aria-hidden="true">↓</span></button></th></tr></thead><tbody id="catalog-body"></tbody></table><p id="empty-state" class="empty-state" hidden>No agents match this search. Try another name or task.</p></div>
+        <div class="table-shell"><table><caption class="sr-only">Agent catalog. Select an agent name to inspect its record and evidence.</caption><thead><tr><th scope="col"><button id="sort-name" class="sort-button">AGENT <span aria-hidden="true">↕</span></button></th><th scope="col">SOURCE</th><th scope="col">DOCUMENTED TASKS</th><th scope="col">PUBLISHER</th><th scope="col"><button id="sort-stars" class="sort-button">STARS <span aria-hidden="true">↓</span></button></th><th scope="col"><button id="sort-created" class="sort-button">CREATED <span aria-hidden="true">↕</span></button></th></tr></thead><tbody id="catalog-body"></tbody></table><p id="empty-state" class="empty-state" hidden>No agents match this search. Try another name or task.</p></div>
         <div class="table-footer"><span id="catalog-count" class="mono" aria-live="polite"></span><div class="pagination"><button id="previous-page" class="icon-button" aria-label="Previous table page">←</button><span id="page-number" class="mono"></span><button id="next-page" class="icon-button" aria-label="Next table page">→</button></div><span class="table-disclaimer">Every task links to a quote from its source</span></div>
       </div>
     </section>
@@ -108,7 +109,7 @@
 
   <div class="dive-instrument" aria-label="Current section"><div class="instrument-depth mono"><span id="depth-value">0000</span><span class="depth-unit">/</span><span class="instrument-divider"></span><span id="depth-label">Overview</span></div><div class="dive-track" aria-hidden="true"><span id="dive-progress"></span></div><button id="next-depth" class="next-depth mono" aria-label="Descend to the next section"><span id="level-number">01 / 06</span><span id="next-label">DESCEND ↓</span></button></div>
   <dialog id="specimen-dialog" class="specimen-dialog" aria-labelledby="specimen-title"><button class="dialog-close icon-button" aria-label="Close specimen details">×</button><div id="specimen-details"></div></dialog>
-  <dialog id="schema-dialog" class="schema-dialog" aria-labelledby="schema-title"><button class="dialog-close icon-button" aria-label="Close schema details">×</button><p class="eyebrow">DATA DICTIONARY</p><h2 id="schema-title">Three tables. Clear connections.</h2><div class="schema-description"><h3>agents.csv</h3><p>One row per agent. A permanent <code>agent_id</code>, display name, description, homepage, source URL, and first-seen date.</p><h3>tasks.csv</h3><p>A shared task vocabulary. Each <code>task_id</code> has a name and definition, so equivalent tasks use the same label.</p><h3>agent_tasks.csv</h3><p>One agent–task connection, identified by <code>agent_id + task_id</code>, with a source URL and a verbatim evidence quote.</p></div><p class="schema-disclaimer">Download the full tables: <a class="inline-link" href="data/agents.csv" download>agents.csv</a> · <a class="inline-link" href="data/tasks.csv" download>tasks.csv</a> · <a class="inline-link" href="data/agent_tasks.csv" download>agent_tasks.csv</a>. A documented claim records what a project says it does. It is not a measured capability.</p></dialog>
+  <dialog id="schema-dialog" class="schema-dialog" aria-labelledby="schema-title"><button class="dialog-close icon-button" aria-label="Close schema details">×</button><p class="eyebrow">DATA DICTIONARY</p><h2 id="schema-title">Three tables. Clear connections.</h2><div class="schema-description"><h3>agents.csv</h3><p>One row per agent. A permanent <code>agent_id</code>, display name, description, homepage, source URL, first-seen date, repository creation date, GitHub stars, and main task.</p><h3>tasks.csv</h3><p>A shared task vocabulary. Each <code>task_id</code> has a name and definition, so equivalent tasks use the same label.</p><h3>agent_tasks.csv</h3><p>One agent–task connection, identified by <code>agent_id + task_id</code>, with a source URL and a verbatim evidence quote.</p></div><p class="schema-disclaimer">Download the full tables: <a class="inline-link" href="data/agents.csv" download>agents.csv</a> · <a class="inline-link" href="data/tasks.csv" download>tasks.csv</a> · <a class="inline-link" href="data/agent_tasks.csv" download>agent_tasks.csv</a>. A documented claim records what a project says it does. It is not a measured capability.</p></dialog>
   <div id="toast" class="toast" role="status"></div>
 </body>
 </html>

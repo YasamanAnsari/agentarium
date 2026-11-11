@@ -230,3 +230,4 @@ dialog .eyebrow{color:#788aa1}
 .evidence-list .inline-link,.specimen-data .inline-link{white-space:normal;overflow-wrap:anywhere;font-size:11px;color:#3d6b9a}
 .habitat-empty{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:0 24px;text-align:center;font-size:10px;letter-spacing:1.4px;color:#8fa3ba}
 .habitat-toolbar .text-button[hidden]{display:none}
+.evidence-list .main-tag{border-color:var(--evidence-color);color:var(--evidence-color);font-weight:600}
