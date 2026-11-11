@@ -4,8 +4,5 @@ date,reason,count
 2026-11-10,not_an_agent,1161
 2026-11-10,quote_not_in_text,708
 2026-11-10,unknown_task,2
-2026-11-11,classification_failed,2096
-2026-11-11,no_description,56
-2026-11-11,not_an_agent,461
-2026-11-11,quote_not_in_text,33
-2026-11-11,recheck_not_an_agent,215
+2026-11-11,classification_failed,2146
+2026-11-11,no_description,1

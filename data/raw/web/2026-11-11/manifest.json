@@ -5,10 +5,22 @@
     "sha256": "a6ad032207818d054d8b8cfab5cf9edb7c70ae18e1df23636f8221229a6a19c3",
     "url": "https://encodesoftware.com.au/?url=%2Fslack2.png&w=1920&q=75"
   },
+  "0238965ee176f120-20261111T151902912592Z.json": {
+    "bytes": 4615,
+    "fetched_at": "2026-11-11T15:19:02.912592+00:00",
+    "sha256": "d8c354c5ba5c9ba5af2090cd4a5f39466160f9a7c492ebbc4119d4e757bcc0c9",
+    "url": "https://encodesoftware.com.au/?url=%2Fslack2.png&w=1920&q=75"
+  },
   "03db80c87946d4ee-20261111T004835653639Z.json": {
     "bytes": 158586,
     "fetched_at": "2026-11-11T00:48:35.653639+00:00",
     "sha256": "ebcd776ab7f2f17c3a3fae2b8f357907800eb74fc3c6e5860b9110fea12f696e",
+    "url": "https://testdriver.ai/"
+  },
+  "03db80c87946d4ee-20261111T152022118953Z.json": {
+    "bytes": 158476,
+    "fetched_at": "2026-11-11T15:20:22.118953+00:00",
+    "sha256": "1145d54ebbe088e06c81b37d229021dcffea9a4d69249b379d0577bd85e179bd",
     "url": "https://testdriver.ai/"
   },
   "0478788ec0a6ef31-20261111T004124476202Z.json": {
@@ -17,10 +29,22 @@
     "sha256": "c9127e391924b64758de040cecb25351b798ad1f4e19ce10fa75df3869f864f8",
     "url": "https://superagi.com/"
   },
+  "0478788ec0a6ef31-20261111T151446757474Z.json": {
+    "bytes": 84688,
+    "fetched_at": "2026-11-11T15:14:46.757474+00:00",
+    "sha256": "bfcc73408273daa46d1481fafd30a224ba8f9a25eae8e70f2e60a9ba31ca353b",
+    "url": "https://superagi.com/"
+  },
   "06cfe0c472a13bc6-20261111T004005902646Z.json": {
     "bytes": 38840,
     "fetched_at": "2026-11-11T00:40:05.902646+00:00",
     "sha256": "fd0874f5faf9d42e9001daab36d2697d1e9eb74bb318bd236cf522a77d0087b6",
+    "url": "https://kaveenk.com/"
+  },
+  "06cfe0c472a13bc6-20261111T145854245878Z.json": {
+    "bytes": 38857,
+    "fetched_at": "2026-11-11T14:58:54.245878+00:00",
+    "sha256": "47ac5292c108bd0f13dc10a4ec5b900cfb316b52da67d5352e4ca90c0086a6fc",
     "url": "https://kaveenk.com/"
   },
   "07e28e0326d64781-20261111T003328355130Z.json": {
@@ -29,10 +53,22 @@
     "sha256": "6829b254c7d2515f68b67634588b002c5dd78918d6948efa8a60158c1c511a6e",
     "url": "https://automata.readthedocs.io/en/latest/"
   },
+  "07e28e0326d64781-20261111T145448438114Z.json": {
+    "bytes": 45217,
+    "fetched_at": "2026-11-11T14:54:48.438114+00:00",
+    "sha256": "5a0d7c7e07e7e8bb30790f5bf003d5bd8001f4c9775a5942b53277f9a9b7c0cd",
+    "url": "https://automata.readthedocs.io/en/latest/"
+  },
   "0803907685f4dacf-20261111T004041442804Z.json": {
     "bytes": 224855,
     "fetched_at": "2026-11-11T00:40:41.442804+00:00",
     "sha256": "5cff0ffef2edd04af0b37e0293bdc884e52783a28eba1d823d7b9a6d56f91c70",
+    "url": "https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
+  },
+  "0803907685f4dacf-20261111T151402757458Z.json": {
+    "bytes": 224855,
+    "fetched_at": "2026-11-11T15:14:02.757458+00:00",
+    "sha256": "0901452b190c6d4232b71c93de7c278d1605084f00f00e18ec88fddc4415f21c",
     "url": "https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
   },
   "087d0b60951e92c5-20261111T004817821494Z.json": {
@@ -41,10 +77,22 @@
     "sha256": "9f2139cf8fe3fc71afa1bf7351dd2a20a548a7b5e3e7ff275ea96cacdf46a6c9",
     "url": "https://saga.so/ai"
   },
+  "087d0b60951e92c5-20261111T151955026410Z.json": {
+    "bytes": 188460,
+    "fetched_at": "2026-11-11T15:19:55.026410+00:00",
+    "sha256": "4f908ca9a6114ce0d278f851a85cc853cb2eb5957336cc87c7fcf25239dc76cb",
+    "url": "https://saga.so/ai"
+  },
   "08b049980300b828-20261111T004524982686Z.json": {
     "bytes": 216505,
     "fetched_at": "2026-11-11T00:45:24.982686+00:00",
     "sha256": "64ba13d4c88877143a12eefda7f228af4991f9ccb00705c382367f3a1c4856e6",
+    "url": "https://www.ellipsis.dev:443/docs"
+  },
+  "08b049980300b828-20261111T151901024575Z.json": {
+    "bytes": 216505,
+    "fetched_at": "2026-11-11T15:19:01.024575+00:00",
+    "sha256": "84cc0e3fbda2cdfe1432165df0b4d67f4e6b6e6d2d508061fcea9ecf622d72ca",
     "url": "https://www.ellipsis.dev:443/docs"
   },
   "091d189678e4bc21-20261111T004041828769Z.json": {
@@ -53,10 +101,22 @@
     "sha256": "db00b6d66653991dd574040137f1516e6c68cc1d8ac60de3c0e6b05242e2da83",
     "url": "https://www.magickml.com/"
   },
+  "091d189678e4bc21-20261111T151403308961Z.json": {
+    "bytes": 19197,
+    "fetched_at": "2026-11-11T15:14:03.308961+00:00",
+    "sha256": "1eba9b8a8724330878ada786032a8894fc10708349466c070d7debfb4248775c",
+    "url": "https://www.magickml.com/"
+  },
   "0c1d24ec833cfcb0-20261111T003320061296Z.json": {
     "bytes": 551535,
     "fetched_at": "2026-11-11T00:33:20.061296+00:00",
     "sha256": "796237eecef4d4773d7615d7b11aaa7f58ae6be6228be7f8685f2c044d6b6272",
+    "url": "https://docs.e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
+  },
+  "0c1d24ec833cfcb0-20261111T145440935950Z.json": {
+    "bytes": 551535,
+    "fetched_at": "2026-11-11T14:54:40.935950+00:00",
+    "sha256": "a1f0f3b0cc35ab8c52025d6593cf4cbc2de751f8fcf6f501d3177edc97ec1144",
     "url": "https://docs.e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
   },
   "0e0c9d142aa63cc4-20261111T004535323754Z.json": {
@@ -65,10 +125,22 @@
     "sha256": "40a62e966180675f27ba47cec9fdb69b7cf6d483e4b01e6054b679eca3310a37",
     "url": "https://thelobby.ai/"
   },
+  "0e0c9d142aa63cc4-20261111T151910362793Z.json": {
+    "bytes": 76390,
+    "fetched_at": "2026-11-11T15:19:10.362793+00:00",
+    "sha256": "55acb5047aa1948215b6b7d24d91dfd4fdd2175ac6f30c4b15152cccd34efed6",
+    "url": "https://thelobby.ai/"
+  },
   "1021a37152779975-20261111T004128086246Z.json": {
     "bytes": 37140,
     "fetched_at": "2026-11-11T00:41:28.086246+00:00",
     "sha256": "3e1c93f559649c35b1504c9ba1a371ab6354a89da5d6bff7aa689d7b6f7968b4",
+    "url": "https://vanna.ai/"
+  },
+  "1021a37152779975-20261111T151450628842Z.json": {
+    "bytes": 37140,
+    "fetched_at": "2026-11-11T15:14:50.628842+00:00",
+    "sha256": "2ff5b98f9e731211ac910f47c0847b306fdae176d7a4d852f93cf1825cab6231",
     "url": "https://vanna.ai/"
   },
   "110bada7df573a67-20261111T004045670584Z.json": {
@@ -77,10 +149,22 @@
     "sha256": "62746bbec8f18d4f8421f2eb36dd5f28eba5d2c2f33f518a42f41b83603a49c8",
     "url": "https://www.loom.com/share/b6bec93065794eb8a47e2109697afa39"
   },
+  "110bada7df573a67-20261111T151406699071Z.json": {
+    "bytes": 45730,
+    "fetched_at": "2026-11-11T15:14:06.699071+00:00",
+    "sha256": "67055a08efde17342c8911bc7b3afe1239f07a76f3d5c82fcc83b9409fc3f450",
+    "url": "https://www.loom.com/share/b6bec93065794eb8a47e2109697afa39"
+  },
   "11ef54088186b643-20261111T004606080202Z.json": {
     "bytes": 112338,
     "fetched_at": "2026-11-11T00:46:06.080202+00:00",
     "sha256": "d2ea06b53acbbfe5f695359494b9ff3ad32f4624adfdbcbe68c1b0de21f87f04",
+    "url": "https://magicloops.dev/"
+  },
+  "11ef54088186b643-20261111T151939614747Z.json": {
+    "bytes": 112338,
+    "fetched_at": "2026-11-11T15:19:39.614747+00:00",
+    "sha256": "4ca1b43fd2faa741e8f63b7085caa3ede408fee56a8f31bb8bfc7e0a7f6a844f",
     "url": "https://magicloops.dev/"
   },
   "124142dfc956f93d-20261111T004215722453Z.json": {
@@ -89,10 +173,22 @@
     "sha256": "c0d610f1532a94a982c6d475b2a194295718ea6003ae3adc57b67ede0c971766",
     "url": "https://www.askyourdatabase.com/"
   },
+  "124142dfc956f93d-20261111T151543269970Z.json": {
+    "bytes": 325836,
+    "fetched_at": "2026-11-11T15:15:43.269970+00:00",
+    "sha256": "ac94685bea19313a089717ac7d408071451506003092772b4380a93e2da95632",
+    "url": "https://www.askyourdatabase.com/"
+  },
   "13f9cdbcc34919f7-20261111T004549165054Z.json": {
     "bytes": 439825,
     "fetched_at": "2026-11-11T00:45:49.165054+00:00",
     "sha256": "6e8e85ae1c85f339a04383c53e16506b762ed0c0fe931968710c206e14537d0c",
+    "url": "https://www.kadoa.com/"
+  },
+  "13f9cdbcc34919f7-20261111T151924754879Z.json": {
+    "bytes": 439825,
+    "fetched_at": "2026-11-11T15:19:24.754879+00:00",
+    "sha256": "6a5cf652d8681cc6754083d53a56711fc9ed0e4ddfe94d241f8679b2567a3fda",
     "url": "https://www.kadoa.com/"
   },
   "1517a01433f77b70-20261111T004638669791Z.json": {
@@ -101,10 +197,22 @@
     "sha256": "bc41c003bb0c599f3a211e90023e3da4fd8798190f771eadad5e5d269b3a9013",
     "url": "https://minion.ai/"
   },
+  "1517a01433f77b70-20261111T151941428358Z.json": {
+    "bytes": 687,
+    "fetched_at": "2026-11-11T15:19:41.428358+00:00",
+    "sha256": "109fb71b84e9af6a0e3a0ce5ea88ab4f1c65315812f55536750c6dca13e3b218",
+    "url": "https://minion.ai/"
+  },
   "1558a640651fe8ac-20261111T004454767043Z.json": {
     "bytes": 378627,
     "fetched_at": "2026-11-11T00:44:54.767043+00:00",
     "sha256": "a1c7b42eff9c6c8058c3679be1c718a0da90c4ab8291b416edd2e9c3c2e26e26",
+    "url": "https://www.butternut.ai/"
+  },
+  "1558a640651fe8ac-20261111T151824532365Z.json": {
+    "bytes": 378627,
+    "fetched_at": "2026-11-11T15:18:24.532365+00:00",
+    "sha256": "d25fb78a210c89388a000e7b9d8211e3da96f980425c34eb1abf0c3b9ce97160",
     "url": "https://www.butternut.ai/"
   },
   "15cd85fdd0a91f0d-20261111T003327629436Z.json": {
@@ -113,10 +221,22 @@
     "sha256": "361e3592204205716e15f9c690aea8c83a601bb3e43fb2d11e2ccbb6aedf26a5",
     "url": "https://aider.chat/"
   },
+  "15cd85fdd0a91f0d-20261111T145447805189Z.json": {
+    "bytes": 34650,
+    "fetched_at": "2026-11-11T14:54:47.805189+00:00",
+    "sha256": "efa9750c01e1b180efb9355f262331325923e40d0c67211e41dcb7267e86eae8",
+    "url": "https://aider.chat/"
+  },
   "15f2bd5aff94769e-20261111T004218494641Z.json": {
     "bytes": 671155,
     "fetched_at": "2026-11-11T00:42:18.494641+00:00",
     "sha256": "43a235c39308ce511cef8653bed269e99c8a8d917390e7438fd26ae634b2da32",
+    "url": "https://www.blackbox.ai/"
+  },
+  "15f2bd5aff94769e-20261111T151549128098Z.json": {
+    "bytes": 660170,
+    "fetched_at": "2026-11-11T15:15:49.128098+00:00",
+    "sha256": "0dbd77c3b4a1fb2cae22c0ec0446d2d833bbe5bd62a21f5bb2d2c4cf090b30e9",
     "url": "https://www.blackbox.ai/"
   },
   "170e0a2bd4d867c8-20261111T004822677795Z.json": {
@@ -125,16 +245,40 @@
     "sha256": "6fd1cb8ed9af08b331507ae2d98915c34f27a2880b90bafe302d51e05e37d48a",
     "url": "https://spell.so/"
   },
+  "170e0a2bd4d867c8-20261111T151959081365Z.json": {
+    "bytes": 1169,
+    "fetched_at": "2026-11-11T15:19:59.081365+00:00",
+    "sha256": "3ec2c9240b744ff811b24d4af16735be1fe4b7687008599b6879edece414a519",
+    "url": "https://spell.so/"
+  },
   "19472db6d6f483d5-20261111T003441864116Z.json": {
     "bytes": 181091,
     "fetched_at": "2026-11-11T00:34:41.864116+00:00",
     "sha256": "40fb9b0a12127267a5498e249073ee7f0bf486a859354b1823d9ad579c7adef1",
     "url": "https://lilianweng.github.io/posts/2023-06-23-agent/"
   },
+  "19472db6d6f483d5-20261111T145600541947Z.json": {
+    "bytes": 181091,
+    "fetched_at": "2026-11-11T14:56:00.541947+00:00",
+    "sha256": "ae1eb914cd5eed32eb9aa9125e273abd6fac6a588a2ea253e35a98695ef95022",
+    "url": "https://lilianweng.github.io/posts/2023-06-23-agent/"
+  },
+  "1a700e5bbc2347c5-20261111T145606153837Z.json": {
+    "bytes": 302925,
+    "fetched_at": "2026-11-11T14:56:06.153837+00:00",
+    "sha256": "eb1715f25b8d26bdff9f3aa680e23021c1c7416d06f5856855fe495b62eb5a43",
+    "url": "https://www.nature.com/articles/d41586-023-03266-1?error=cookies_not_supported&code=3a720030-d764-4b3f-b3e3-e3113c60656f"
+  },
   "1ae048b7af4d428c-20261111T004548640128Z.json": {
     "bytes": 158288,
     "fetched_at": "2026-11-11T00:45:48.640128+00:00",
     "sha256": "63b2269e4b3c15c9c9092f79619f7062cfafa95a6fda54194d3046e254b135fd",
+    "url": "https://julius.ai/use-cases"
+  },
+  "1ae048b7af4d428c-20261111T151923241182Z.json": {
+    "bytes": 158288,
+    "fetched_at": "2026-11-11T15:19:23.241182+00:00",
+    "sha256": "207e983e4a126180f3438fcf7d82869fda1c51b984afb9b56d461b30b94445fc",
     "url": "https://julius.ai/use-cases"
   },
   "1ca8683a153b0117-20261111T004553711328Z.json": {
@@ -143,10 +287,22 @@
     "sha256": "faec82b28150d0be9898c7dc938b9f48ddf18fdf5e274599c7ad05e8e932f91f",
     "url": "https://kusho.ai/"
   },
+  "1ca8683a153b0117-20261111T151929068840Z.json": {
+    "bytes": 551591,
+    "fetched_at": "2026-11-11T15:19:29.068840+00:00",
+    "sha256": "df9a5d6c76fe6e9ff8eed2bc103b8695122f661236027bce8ce1edc926062d77",
+    "url": "https://kusho.ai/"
+  },
   "1e5fc236b0a81f9c-20261111T004004936224Z.json": {
     "bytes": 496233,
     "fetched_at": "2026-11-11T00:40:04.936224+00:00",
     "sha256": "d324714d5189f480766c3883332534c01121d64e06bc0680d917dd1cfd1069fb",
+    "url": "https://flowiseai.com/"
+  },
+  "1e5fc236b0a81f9c-20261111T145853392246Z.json": {
+    "bytes": 496233,
+    "fetched_at": "2026-11-11T14:58:53.392246+00:00",
+    "sha256": "7858fa67fa0e73bfd269542300caa3444dcc867b6cfbaacbcc580656b65ffa22",
     "url": "https://flowiseai.com/"
   },
   "1fdcfff5a7777471-20261111T003322677415Z.json": {
@@ -155,10 +311,22 @@
     "sha256": "032b52d5984a7aacd7e14b191e22b116bd4bd581b635cf73b228fd0cb6cd3c94",
     "url": "https://grouplens.org/datasets/movielens/1m/"
   },
+  "1fdcfff5a7777471-20261111T145443229700Z.json": {
+    "bytes": 32254,
+    "fetched_at": "2026-11-11T14:54:43.229700+00:00",
+    "sha256": "3dfef7ebd916435a13fd700272c7d14a1cf0023097de5281c877c36e20b52d7a",
+    "url": "https://grouplens.org/datasets/movielens/1m/"
+  },
   "2006bd3991a73473-20261111T004118749153Z.json": {
     "bytes": 134142,
     "fetched_at": "2026-11-11T00:41:18.749153+00:00",
     "sha256": "b83572b24cbe8bb94db52c4c6a9e6fff7a07e853eca2fbd2d1436176cf3f166c",
+    "url": "https://smol.ai/"
+  },
+  "2006bd3991a73473-20261111T151439812438Z.json": {
+    "bytes": 134074,
+    "fetched_at": "2026-11-11T15:14:39.812438+00:00",
+    "sha256": "27b7659c8c887e7cbf22b6e96627ad982cbe7014d39c2d9191388d9dfd2fac8c",
     "url": "https://smol.ai/"
   },
   "2242156b8e4e97c6-20261111T004131638414Z.json": {
@@ -167,10 +335,22 @@
     "sha256": "12215f3270310408fd59fb54c41281ed10590277f66136c38fc4af84124ca761",
     "url": "https://www.getwren.ai/blog"
   },
+  "2242156b8e4e97c6-20261111T151454886938Z.json": {
+    "bytes": 164049,
+    "fetched_at": "2026-11-11T15:14:54.886938+00:00",
+    "sha256": "1b3fa4cb70563a558ef23844c764eda9452317a7b6d959e535d81a25751afbaf",
+    "url": "https://www.getwren.ai/blog"
+  },
   "2259d2525b5fb009-20261111T003441371990Z.json": {
     "bytes": 453378,
     "fetched_at": "2026-11-11T00:34:41.371990+00:00",
     "sha256": "005562e5e3ca4235379e0a52b7ec13bd5dddb46320fdc91e67063d81d18b7f17",
+    "url": "https://www.linkf7fire138.com/account/login"
+  },
+  "2259d2525b5fb009-20261111T145600249748Z.json": {
+    "bytes": 453378,
+    "fetched_at": "2026-11-11T14:56:00.249748+00:00",
+    "sha256": "4d9ec59336ae5fa37934af8c71b0cbe6b60a955b3f1a92b68b5b611ecf816496",
     "url": "https://www.linkf7fire138.com/account/login"
   },
   "24147bd3728fc92f-20261111T003321857973Z.json": {
@@ -179,10 +359,22 @@
     "sha256": "22b64e1459b209a337b1c07a9085d836ed436fe8fe8cb5dee590d97f9b711a26",
     "url": "https://humansignal.github.io/Adala/"
   },
+  "24147bd3728fc92f-20261111T145442635905Z.json": {
+    "bytes": 27565,
+    "fetched_at": "2026-11-11T14:54:42.635905+00:00",
+    "sha256": "c414fec5a619f2c6a0ba632b9a24e3a4a1772377207245e25c9f876339c503c7",
+    "url": "https://humansignal.github.io/Adala/"
+  },
   "270fa20413d75a87-20261111T004711926035Z.json": {
     "bytes": 873087,
     "fetched_at": "2026-11-11T00:47:11.926035+00:00",
     "sha256": "01940a32dafc59259afd18638740396d3757bd5d842008e6eeab9d028ede280a",
+    "url": "https://chromewebstore.google.com/detail/hyperwrite-ai-writing-ass/kljjoeapehcmaphfcjkmbhkinoaopdnd"
+  },
+  "270fa20413d75a87-20261111T151945298683Z.json": {
+    "bytes": 774030,
+    "fetched_at": "2026-11-11T15:19:45.298683+00:00",
+    "sha256": "a76155b125925e347dbfc850e97a0513a6c8d233162d9d38ff29bf7fd5238d32",
     "url": "https://chromewebstore.google.com/detail/hyperwrite-ai-writing-ass/kljjoeapehcmaphfcjkmbhkinoaopdnd"
   },
   "28c2ac4eb25b53b6-20261111T004511658027Z.json": {
@@ -191,10 +383,22 @@
     "sha256": "9e06518fc7e59660eaf90ac2c8902663e33b83c4e275077ff2f6ca58e085dbd0",
     "url": "https://www.qodo.ai/"
   },
+  "28c2ac4eb25b53b6-20261111T151851369103Z.json": {
+    "bytes": 223467,
+    "fetched_at": "2026-11-11T15:18:51.369103+00:00",
+    "sha256": "84be0d37221dc3921d2820a7818f02113a7d4109f69e727a76042a2643b0de90",
+    "url": "https://www.qodo.ai/"
+  },
   "2a4b1a5deec88f16-20261111T004842179980Z.json": {
     "bytes": 1315935,
     "fetched_at": "2026-11-11T00:48:42.179980+00:00",
     "sha256": "1729a1e34b67cbfafddb200e9ace1e3cc06e475fffc1d6a773636c7b966ce8d1",
+    "url": "https://zapier.com/agents"
+  },
+  "2a4b1a5deec88f16-20261111T152032942502Z.json": {
+    "bytes": 1315935,
+    "fetched_at": "2026-11-11T15:20:32.942502+00:00",
+    "sha256": "2309e2d3a191015e28cd92f116e4b77c539c24c1f2b496ed1efcd61c5f76d4d9",
     "url": "https://zapier.com/agents"
   },
   "311b3acdf7449155-20261111T004513504187Z.json": {
@@ -203,10 +407,22 @@
     "sha256": "3d5f47253f04ae5064ce2f93ca80c8ac0958623496e8a69b9a69b140b3c27436",
     "url": "https://e2b.dev/resources/about-deployment-evaluation-and-testing-of-agents-with-sully-omar-the-ceo-of-cognosys-ai?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
   },
+  "311b3acdf7449155-20261111T151853936155Z.json": {
+    "bytes": 209434,
+    "fetched_at": "2026-11-11T15:18:53.936155+00:00",
+    "sha256": "7d9ffda6fb71074e7945bd1afde5dbe93283ee474108e2674230cd32c7339cf2",
+    "url": "https://e2b.dev/resources/about-deployment-evaluation-and-testing-of-agents-with-sully-omar-the-ceo-of-cognosys-ai?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
+  },
   "319160ab29b85ed3-20261111T004515155256Z.json": {
     "bytes": 127107,
     "fetched_at": "2026-11-11T00:45:15.155256+00:00",
     "sha256": "1f844e972a60835d786888ab988088c3c45872b822aece626ff3c9ff7260e01a",
+    "url": "https://www.cykel.ai/"
+  },
+  "319160ab29b85ed3-20261111T151855053656Z.json": {
+    "bytes": 127107,
+    "fetched_at": "2026-11-11T15:18:55.053656+00:00",
+    "sha256": "359dd1940f82bdb80e7481d95769f01d79051263a36c040970f6c98f29a02686",
     "url": "https://www.cykel.ai/"
   },
   "31afa040aa4882a8-20261111T004129585747Z.json": {
@@ -215,10 +431,22 @@
     "sha256": "c21951d4e07a7e8f4194d9650ec022df7edd1b16832c431650ec39da253a8660",
     "url": "https://theolvs.github.io/westworld/"
   },
+  "31afa040aa4882a8-20261111T151453100577Z.json": {
+    "bytes": 43710,
+    "fetched_at": "2026-11-11T15:14:53.100577+00:00",
+    "sha256": "b5c89cbb4f6c129361eba611ca25ecd71015f9b12a9cc8e145b430f000136a78",
+    "url": "https://theolvs.github.io/westworld/"
+  },
   "3484455baf71792e-20261111T004453985147Z.json": {
     "bytes": 497088,
     "fetched_at": "2026-11-11T00:44:53.985147+00:00",
     "sha256": "b26baf4f3c9f3ed5af9feeb0b32b0bff1d2f11d501ddc017fa86adcfbd1ea2df",
+    "url": "https://www.broadn.io/?utm_source=awesome-ai-agents"
+  },
+  "3484455baf71792e-20261111T151823063617Z.json": {
+    "bytes": 497088,
+    "fetched_at": "2026-11-11T15:18:23.063617+00:00",
+    "sha256": "c8f9790037451f43cda6fb1b89d6c677910c63f5c504ce7cf7f1e76bcff6b9f5",
     "url": "https://www.broadn.io/?utm_source=awesome-ai-agents"
   },
   "350134babd646047-20261111T004838895241Z.json": {
@@ -227,10 +455,22 @@
     "sha256": "a0c5ff6d3a0472c3e50b9069991594b6add69138b2b2fcf22df750ba9cbdc13e",
     "url": "https://chromewebstore.google.com/detail/empty-title/nbljfchpacfegmmmajcneihieeglpofc"
   },
+  "350134babd646047-20261111T152024692055Z.json": {
+    "bytes": 563721,
+    "fetched_at": "2026-11-11T15:20:24.692055+00:00",
+    "sha256": "7d145a518e0d12b8bead2f3eb8e7e1a4d8693953f585736e90a8602945dabf8a",
+    "url": "https://chromewebstore.google.com/detail/empty-title/nbljfchpacfegmmmajcneihieeglpofc"
+  },
   "35c2a462a7edf5d2-20261111T004539463214Z.json": {
     "bytes": 1348128,
     "fetched_at": "2026-11-11T00:45:39.463214+00:00",
     "sha256": "4d49211937a69e0ebdd238d69441ff01c0b305a9d92ed28519a29f2dadc79f00",
+    "url": "https://www.gumloop.com/"
+  },
+  "35c2a462a7edf5d2-20261111T151914413814Z.json": {
+    "bytes": 1348212,
+    "fetched_at": "2026-11-11T15:19:14.413814+00:00",
+    "sha256": "39b17d513f7705ecd64195d9607c9addd9a103d4ea8204bd0fa253e2facaef21",
     "url": "https://www.gumloop.com/"
   },
   "3bc3f8473cf1724c-20261111T004638293038Z.json": {
@@ -239,10 +479,22 @@
     "sha256": "f3ab4552834ae4c0454bc1c1c10fd05594d3049a118a6aac7ea1cf66c16f8f85",
     "url": "https://www.ycombinator.com/companies/cmux"
   },
+  "3bc3f8473cf1724c-20261111T151941053901Z.json": {
+    "bytes": 143977,
+    "fetched_at": "2026-11-11T15:19:41.053901+00:00",
+    "sha256": "7608592ef57be93b699cceeb8413855115a16cdd98ea9134b66146ad13965b7e",
+    "url": "https://www.ycombinator.com/companies/cmux"
+  },
   "3c02673825249701-20261111T004005494617Z.json": {
     "bytes": 1626,
     "fetched_at": "2026-11-11T00:40:05.494617+00:00",
     "sha256": "ed77acd903b2d671c26b965585a3045a064680629cc8f9ef11025c7f218051f3",
+    "url": "https://godmode.space/"
+  },
+  "3c02673825249701-20261111T145853925662Z.json": {
+    "bytes": 1626,
+    "fetched_at": "2026-11-11T14:58:53.925662+00:00",
+    "sha256": "8bdc6d3d96bb2b06c3965ee11d7d702bf7a997a68d202591f86fb3132d103a91",
     "url": "https://godmode.space/"
   },
   "3c88ea1282d7e929-20261111T004453395986Z.json": {
@@ -251,10 +503,22 @@
     "sha256": "e1d501b2e0b49969a839fe8cb27bf7eedf9de11df7436d3bb248cf5a463258e4",
     "url": "https://help.nurgo-software.com/collection/148-brainsoup"
   },
+  "3c88ea1282d7e929-20261111T151822612554Z.json": {
+    "bytes": 14968,
+    "fetched_at": "2026-11-11T15:18:22.612554+00:00",
+    "sha256": "d4d834310bb8309128bd62c2eb364061e7af280021a7aae0e821e6d64547d1d5",
+    "url": "https://help.nurgo-software.com/collection/148-brainsoup"
+  },
   "3e7b920d3c17b8eb-20261111T004115376536Z.json": {
     "bytes": 319415,
     "fetched_at": "2026-11-11T00:41:15.376536+00:00",
     "sha256": "c884257cd0f512e68c2d06cc9e6ee4197237adda907f65c6c4e7d3a0b973f328",
+    "url": "https://docs.reactagent.io/"
+  },
+  "3e7b920d3c17b8eb-20261111T151436899650Z.json": {
+    "bytes": 319415,
+    "fetched_at": "2026-11-11T15:14:36.899650+00:00",
+    "sha256": "cad588b539fc3690be31409745ba7d5ce1c2c712ac36f7e31119fb57294bcd23",
     "url": "https://docs.reactagent.io/"
   },
   "3f9873f073fd1653-20261111T004711477402Z.json": {
@@ -263,10 +527,22 @@
     "sha256": "2bacfe788e020158d9f5692a3d3e19c3fddaa65ab1124f284971bdf59abb583c",
     "url": "https://www.hyperwriteai.com/"
   },
+  "3f9873f073fd1653-20261111T151944946979Z.json": {
+    "bytes": 168979,
+    "fetched_at": "2026-11-11T15:19:44.946979+00:00",
+    "sha256": "a7ffc7722e6f2478f1bd2715bcfbf3265c8b6cfaf3eba330d210aea6b2989b62",
+    "url": "https://www.hyperwriteai.com/"
+  },
   "401a164b8f14b702-20261111T004530323937Z.json": {
     "bytes": 58981,
     "fetched_at": "2026-11-11T00:45:30.323937+00:00",
     "sha256": "8784d56b8786ada2e4618e52b55326fafa6316d6f8692fc5ef0d9fa4b0e8f82c",
+    "url": "https://fine-tuner.ai/"
+  },
+  "401a164b8f14b702-20261111T151905438261Z.json": {
+    "bytes": 58981,
+    "fetched_at": "2026-11-11T15:19:05.438261+00:00",
+    "sha256": "7013ff1677679115326def5a8989967e9dad74a40b60e11db88240c389cc8a8c",
     "url": "https://fine-tuner.ai/"
   },
   "4325645604e94ee9-20261111T004040425981Z.json": {
@@ -275,10 +551,22 @@
     "sha256": "4433c8e9d381c2510512bb943dbd1eed50fc585c3f8fd1990f161f012064151d",
     "url": "https://maige.app"
   },
+  "4325645604e94ee9-20261111T151402124524Z.json": {
+    "bytes": 294000,
+    "fetched_at": "2026-11-11T15:14:02.124524+00:00",
+    "sha256": "a7db4aa18c443e4b3ae36835a2bed7af2c4c28697417cacf2a3e25ec6186bf25",
+    "url": "https://maige.app"
+  },
   "43fc4699bb58ef08-20261111T004743834216Z.json": {
     "bytes": 7489,
     "fetched_at": "2026-11-11T00:47:43.834216+00:00",
     "sha256": "3610c1022bfdde3dbb2467d98a91271a82f8e190478877e4e1b15d60d6159323",
+    "url": "https://proficientai.com"
+  },
+  "43fc4699bb58ef08-20261111T151951344786Z.json": {
+    "bytes": 7489,
+    "fetched_at": "2026-11-11T15:19:51.344786+00:00",
+    "sha256": "edbe81bdfc676798e3c7714b3b9020df221c2c1e3ea84a6d769971584b7ca1a1",
     "url": "https://proficientai.com"
   },
   "442f6d33f830a463-20261111T004124941149Z.json": {
@@ -287,10 +575,22 @@
     "sha256": "f8c4d33491f0043a1a7f0e37de24a13064bb1fe5694b7c547b1ce8cb0b00021d",
     "url": "https://huggingface.co/spaces/cr7-gjx/Suspicion-Agent-Data-Visualization"
   },
+  "442f6d33f830a463-20261111T151447327282Z.json": {
+    "bytes": 37321,
+    "fetched_at": "2026-11-11T15:14:47.327282+00:00",
+    "sha256": "9e6696a08f85b8d21df7ade1ab0665738c4d4b9def156e2b7ecbffc70d508b84",
+    "url": "https://huggingface.co/spaces/cr7-gjx/Suspicion-Agent-Data-Visualization"
+  },
   "4553b0cb40ff6c64-20261111T004742541224Z.json": {
     "bytes": 247076,
     "fetched_at": "2026-11-11T00:47:42.541224+00:00",
     "sha256": "f8ad0926310bcdaac3dab67b82bb5bcaedae436ca88a7b4a188f11bcd8a1379c",
+    "url": "https://powerdrill.ai/"
+  },
+  "4553b0cb40ff6c64-20261111T151946124039Z.json": {
+    "bytes": 236830,
+    "fetched_at": "2026-11-11T15:19:46.124039+00:00",
+    "sha256": "4700b02310b8368f3cc9d4e44a851712d15eefdade7a90c8d4212029aef86771",
     "url": "https://powerdrill.ai/"
   },
   "47b4d605257aa5af-20261111T003437949623Z.json": {
@@ -299,10 +599,22 @@
     "sha256": "094e2b4dc73b53ee51c1e1ba7f908720278bdd6e33f5942fd5d396ff5b36db93",
     "url": "https://www.camel-ai.org/"
   },
+  "47b4d605257aa5af-20261111T145558470139Z.json": {
+    "bytes": 383063,
+    "fetched_at": "2026-11-11T14:55:58.470139+00:00",
+    "sha256": "58ca717ea7e2167654072719ff58597a83f91e1970fdf1a91c881a8f661c21b4",
+    "url": "https://www.camel-ai.org/"
+  },
   "48c90cf541f91fe9-20261111T004545070315Z.json": {
     "bytes": 4103,
     "fetched_at": "2026-11-11T00:45:45.070315+00:00",
     "sha256": "792e2791a376e0128b36d5fb354941a7eaa768d3e0fd668dc86fadc7ff78aa3d",
+    "url": "https://heymoon.ai/"
+  },
+  "48c90cf541f91fe9-20261111T151919869202Z.json": {
+    "bytes": 4103,
+    "fetched_at": "2026-11-11T15:19:19.869202+00:00",
+    "sha256": "74afe954d25425a517359299ffb8b59808fdd345ee6a4c3d3454feee71f8f203",
     "url": "https://heymoon.ai/"
   },
   "4a7c84542faf9299-20261111T004128810247Z.json": {
@@ -311,10 +623,22 @@
     "sha256": "ef451c918b362612a4f142a3961cc413ef27559f1d1672c5df3f56994d037f31",
     "url": "https://voyager.minedojo.org/"
   },
+  "4a7c84542faf9299-20261111T151451559714Z.json": {
+    "bytes": 59546,
+    "fetched_at": "2026-11-11T15:14:51.559714+00:00",
+    "sha256": "72845818be7b72ae383975dac257be8ba6dd237d9998d884a522e5e749c27006",
+    "url": "https://voyager.minedojo.org/"
+  },
   "4b16d5456e12d078-20261111T004045009472Z.json": {
     "bytes": 624510,
     "fetched_at": "2026-11-11T00:40:45.009472+00:00",
     "sha256": "885bede042e59f49613a94333830dedeb16f21ca5d8288e56af5a967f6d3166f",
+    "url": "https://www.mentat.codes/"
+  },
+  "4b16d5456e12d078-20261111T151406099857Z.json": {
+    "bytes": 624510,
+    "fetched_at": "2026-11-11T15:14:06.099857+00:00",
+    "sha256": "983604c38e28b0fef0b81caaae71b43a6f4de8a13f965a0445e18d560f6c1962",
     "url": "https://www.mentat.codes/"
   },
   "4bbadd8d8685394e-20261111T004553177787Z.json": {
@@ -323,10 +647,22 @@
     "sha256": "2d21be85ed1059078c06f18753e7c80240ef64f5f8df12331f00b211fba89f63",
     "url": "https://app.gitbook.com/o/imeRHIUdVjBT4RfsolRc/sites/site_q2Q81/kompas-ai-intro/service-introduction"
   },
+  "4bbadd8d8685394e-20261111T151928504678Z.json": {
+    "bytes": 9617,
+    "fetched_at": "2026-11-11T15:19:28.504678+00:00",
+    "sha256": "1101d5feaae0e62942f458189809b76323dbf9e44af182f6cec6e0be4376c1ac",
+    "url": "https://app.gitbook.com/o/imeRHIUdVjBT4RfsolRc/sites/site_q2Q81/kompas-ai-intro/service-introduction"
+  },
   "4dfd17902759d117-20261111T004536822271Z.json": {
     "bytes": 32978,
     "fetched_at": "2026-11-11T00:45:36.822271+00:00",
     "sha256": "8424576e31cfdf6667bc3c70ee553e50cbff5cb346ad4b15b3dc65c0406295a3",
+    "url": "https://www.graphlit.com/"
+  },
+  "4dfd17902759d117-20261111T151911988397Z.json": {
+    "bytes": 32978,
+    "fetched_at": "2026-11-11T15:19:11.988397+00:00",
+    "sha256": "e17633f9e0baeadf67aff9fac09b88d12285450b67e877c0d49b9c78c341fb5d",
     "url": "https://www.graphlit.com/"
   },
   "4feff04f01008e5f-20261111T004134434329Z.json": {
@@ -335,10 +671,22 @@
     "sha256": "3ff854e983ab64d26ade56c27644d959a2940edf68b385c34964e3876a80a7d9",
     "url": "https://www.agents.inc/"
   },
+  "4feff04f01008e5f-20261111T151502000367Z.json": {
+    "bytes": 225005,
+    "fetched_at": "2026-11-11T15:15:02.000367+00:00",
+    "sha256": "656baa5831cd3bd994904264181b75a17611dd6ac55ede6cb1b2c9b1aeb47add",
+    "url": "https://www.agents.inc/"
+  },
   "504901d1b0e7153e-20261111T004844188547Z.json": {
     "bytes": 633823,
     "fetched_at": "2026-11-11T00:48:44.188547+00:00",
     "sha256": "772feac21887905fc5b4957dac9b8ad6a44975fc590eae361b6075f51099a302",
+    "url": "https://docs.langchain.com/oss/python/integrations/providers/overview"
+  },
+  "504901d1b0e7153e-20261111T152034308001Z.json": {
+    "bytes": 633823,
+    "fetched_at": "2026-11-11T15:20:34.308001+00:00",
+    "sha256": "0393cdce0464c8a74fa94bbe0f1590313556250494fdffc838a029b6a7e75705",
     "url": "https://docs.langchain.com/oss/python/integrations/providers/overview"
   },
   "50843e5fc2737ea0-20261111T004510970081Z.json": {
@@ -347,10 +695,22 @@
     "sha256": "37639c893c501544b215f255260d3f2715d7bdaf62ecd59ab260d59f6eef5024",
     "url": "https://telex.automattic.ai/"
   },
+  "50843e5fc2737ea0-20261111T151851125400Z.json": {
+    "bytes": 8640,
+    "fetched_at": "2026-11-11T15:18:51.125400+00:00",
+    "sha256": "81d9051278ab0e5aa157420729889555340ef9ee097498ab932542a42d2c2027",
+    "url": "https://telex.automattic.ai/"
+  },
   "508830dd376fbddd-20261111T004457530023Z.json": {
     "bytes": 181085,
     "fetched_at": "2026-11-11T00:44:57.530023+00:00",
     "sha256": "fae2fbb1fbc83bfe6bea0351ff59b1e8e679ed5013feec33d7bd8c79c971447a",
+    "url": "https://chathelp.ai/"
+  },
+  "508830dd376fbddd-20261111T151827634803Z.json": {
+    "bytes": 181085,
+    "fetched_at": "2026-11-11T15:18:27.634803+00:00",
+    "sha256": "ad373063ce888a67031d13d6399cc7a9710937688f7a4a3123b8e38da47849a0",
     "url": "https://chathelp.ai/"
   },
   "52311044d272f975-20261111T004037858579Z.json": {
@@ -359,10 +719,22 @@
     "sha256": "3349d65cbbf32d94ce851afb2a60d82fcdc6b4a1b5f8548489bb7625b9f1f013",
     "url": "https://langroid.github.io/langroid/"
   },
+  "52311044d272f975-20261111T151358568032Z.json": {
+    "bytes": 137319,
+    "fetched_at": "2026-11-11T15:13:58.568032+00:00",
+    "sha256": "ed15cf2fc9ce415737bcad9b8844a422922c13f627d39fbb88d8e5070ce6af66",
+    "url": "https://langroid.github.io/langroid/"
+  },
   "53f5afc0943a8596-20261111T003436066193Z.json": {
     "bytes": 106608,
     "fetched_at": "2026-11-11T00:34:36.066193+00:00",
     "sha256": "3ae3261deb77a43da9ef926ad3841fb716942371d22ae912caeca4c1f966583b",
+    "url": "https://docs.xeol.io/bumpgen/home"
+  },
+  "53f5afc0943a8596-20261111T145555766251Z.json": {
+    "bytes": 106608,
+    "fetched_at": "2026-11-11T14:55:55.766251+00:00",
+    "sha256": "7aa37e749d97cf1b87eaa7032d9a1f404bc63250bc1952287f4294d529ed4390",
     "url": "https://docs.xeol.io/bumpgen/home"
   },
   "54807d3661166820-20261111T004641081162Z.json": {
@@ -371,16 +743,34 @@
     "sha256": "a73b7e7edd0a45dcc2589a77fc4e1ca5486d7d215090735179a7f4b9e1c7d0f6",
     "url": "https://chat.ruliad.co/"
   },
+  "54807d3661166820-20261111T151944358803Z.json": {
+    "bytes": 53512,
+    "fetched_at": "2026-11-11T15:19:44.358803+00:00",
+    "sha256": "a54440a1dd6ce005420ce420ebd26dd224a9e6f522a6caf2af9df51b4d5bcda2",
+    "url": "https://chat.ruliad.co/"
+  },
   "5714b30316eeed22-20261111T003333564278Z.json": {
     "bytes": 95797,
     "fetched_at": "2026-11-11T00:33:33.564278+00:00",
     "sha256": "d8a1fda111a8fa88c1694fdb4424d640b0fa3d39a523fecf3ae7a8bc83ce2fa9",
     "url": "https://replit.com/login?source=root-profile&goto=%2F%40YoheiNakajima"
   },
+  "5714b30316eeed22-20261111T145453643987Z.json": {
+    "bytes": 96163,
+    "fetched_at": "2026-11-11T14:54:53.643987+00:00",
+    "sha256": "b79e3fb6f41a2543739455cad74f4ec58ef98603473c3d741f1d6b69e3c4c065",
+    "url": "https://replit.com/login?source=root-profile&goto=%2F%40YoheiNakajima"
+  },
   "58afa35433e74a75-20261111T004213546839Z.json": {
     "bytes": 271340,
     "fetched_at": "2026-11-11T00:42:13.546839+00:00",
     "sha256": "ddab346dbadff53df0e2faffd4d3a17049b6e8013d32a803e0ed77c04955e8b1",
+    "url": "https://apidna.ai/index.html"
+  },
+  "58afa35433e74a75-20261111T151541392004Z.json": {
+    "bytes": 271340,
+    "fetched_at": "2026-11-11T15:15:41.392004+00:00",
+    "sha256": "ab62c109e7b8a90dbccc54411fd108fef45ade7c6eec3e82d153693c174ee7e8",
     "url": "https://apidna.ai/index.html"
   },
   "5b46d8bb7f108a4f-20261111T003447842292Z.json": {
@@ -395,10 +785,22 @@
     "sha256": "8923f6be67cd6adc8d35151751ca3836776df3d25646f11b250cc34bd6894056",
     "url": "https://www.cognee.ai/"
   },
+  "5b9643f2c865bc01-20261111T151435441345Z.json": {
+    "bytes": 396011,
+    "fetched_at": "2026-11-11T15:14:35.441345+00:00",
+    "sha256": "46dc060e6e67216b83578b5cbea669a36ee975515aa132f459a9527bd41742fb",
+    "url": "https://www.cognee.ai/"
+  },
   "5c9c5ab7036bf7e0-20261111T004111237940Z.json": {
     "bytes": 14899,
     "fetched_at": "2026-11-11T00:41:11.237940+00:00",
     "sha256": "20cc0be9c088de44ea628426b633d3aee0a7cec5fd701ad7141d9c59cb6f174f",
+    "url": "https://chat.xlang.ai/"
+  },
+  "5c9c5ab7036bf7e0-20261111T151432627393Z.json": {
+    "bytes": 14899,
+    "fetched_at": "2026-11-11T15:14:32.627393+00:00",
+    "sha256": "8aa04e0248232e7284298ace807986aa4434fb80a08da9e63b22db9105dc814f",
     "url": "https://chat.xlang.ai/"
   },
   "5dff7820ee9e4395-20261111T003958752323Z.json": {
@@ -407,10 +809,22 @@
     "sha256": "4ab141992c34d2bd27bb25f7e3e60fdb11db645409481a5845572560bbe9b24b",
     "url": "https://huggingface.co/spaces/melihunsal/demogpt"
   },
+  "5dff7820ee9e4395-20261111T145848072386Z.json": {
+    "bytes": 34409,
+    "fetched_at": "2026-11-11T14:58:48.072386+00:00",
+    "sha256": "ed5ffde5b0ac20f797d2a6d24df22a2bb089488ebfb19f1ff4623d760d365896",
+    "url": "https://huggingface.co/spaces/melihunsal/demogpt"
+  },
   "6057ea4fe7083c43-20261111T004043114216Z.json": {
     "bytes": 63477,
     "fetched_at": "2026-11-11T00:40:43.114216+00:00",
     "sha256": "4d7afee51cf300547650df80e48ef9ee654f4a7c4613f5dac5ba8f9231198d42",
+    "url": "https://www.memfree.me"
+  },
+  "6057ea4fe7083c43-20261111T151404624819Z.json": {
+    "bytes": 63460,
+    "fetched_at": "2026-11-11T15:14:04.624819+00:00",
+    "sha256": "d8d060cea297ff16c0adcd9209bcb2b038b464956481ef9449e27fdbb9c62879",
     "url": "https://www.memfree.me"
   },
   "60c09d1ebcec9ae5-20261111T003331248026Z.json": {
@@ -419,10 +833,22 @@
     "sha256": "66248325a5d12b6cb0dfd733ef4fb1c41843940c32025d353c024228504e3a78",
     "url": "https://replit.com/@YoheiNakajima/BabyBeeAGI?v=1"
   },
+  "60c09d1ebcec9ae5-20261111T145451106672Z.json": {
+    "bytes": 271084,
+    "fetched_at": "2026-11-11T14:54:51.106672+00:00",
+    "sha256": "59b6a52aa67a873fafcbd925a8e7b2f02e74adebd00758b15f24984bce48a8e1",
+    "url": "https://replit.com/@YoheiNakajima/BabyBeeAGI?v=1"
+  },
   "617cab96ab0b0814-20261111T003435051457Z.json": {
     "bytes": 343565,
     "fetched_at": "2026-11-11T00:34:35.051457+00:00",
     "sha256": "f9c8a2dbd9f89559c13978d05ceae6297536837a57bc8e0e82169729ba98800d",
+    "url": "https://hub.docker.com/r/krohling/bondai"
+  },
+  "617cab96ab0b0814-20261111T145554892767Z.json": {
+    "bytes": 341476,
+    "fetched_at": "2026-11-11T14:55:54.892767+00:00",
+    "sha256": "14410d8ac69f82b98c2f02e19dbc3c977ca88f4623fe77718e6f3ad341581b9c",
     "url": "https://hub.docker.com/r/krohling/bondai"
   },
   "622ce8cd5641f6f4-20261111T004212474066Z.json": {
@@ -431,10 +857,22 @@
     "sha256": "194426f245a8d9d3c457ca15d844b34a4977a2bec90279f81699ccb27ff069ff",
     "url": "https://heybento.ai/?utm_source=awesome-ai-agents"
   },
+  "622ce8cd5641f6f4-20261111T151540026576Z.json": {
+    "bytes": 346852,
+    "fetched_at": "2026-11-11T15:15:40.026576+00:00",
+    "sha256": "d5678d49a74cc5de8df51507735ff29cabee66bb1a27b80e0cdf293f606f8c28",
+    "url": "https://heybento.ai/?utm_source=awesome-ai-agents"
+  },
   "6512c33cd87bc805-20261111T004747322452Z.json": {
     "bytes": 17878,
     "fetched_at": "2026-11-11T00:47:47.322452+00:00",
     "sha256": "253833e360aad245eff0ff00a1e85dfb1398ee36020461fa528049d6a96acd75",
+    "url": "https://rebyte.ai/"
+  },
+  "6512c33cd87bc805-20261111T151954323127Z.json": {
+    "bytes": 17878,
+    "fetched_at": "2026-11-11T15:19:54.323127+00:00",
+    "sha256": "a836ae620116a4e1445df3776f22fc06f2d03640cb9be39fd304ca947abbf081",
     "url": "https://rebyte.ai/"
   },
   "65ebc27da0a358bd-20261111T004841585343Z.json": {
@@ -443,10 +881,22 @@
     "sha256": "d81496fdb6a24247faa4df702c1b00d87bcf7948cf356de2faae30153684945d",
     "url": "https://workhub.ai/"
   },
+  "65ebc27da0a358bd-20261111T152032401154Z.json": {
+    "bytes": 429135,
+    "fetched_at": "2026-11-11T15:20:32.401154+00:00",
+    "sha256": "7eaca078bedecd30f55e33b4d4418e99926e00c9df09059520dfdceb179fc726",
+    "url": "https://workhub.ai/"
+  },
   "662417dc371ef332-20261111T004535813149Z.json": {
     "bytes": 281032,
     "fetched_at": "2026-11-11T00:45:35.813149+00:00",
     "sha256": "8fd19e0c33b113ba838f84efba0264435a135b97cd8e2529f362ee5c8590d18f",
+    "url": "https://about.gitlab.com/gitlab-duo-agent-platform/"
+  },
+  "662417dc371ef332-20261111T151910674091Z.json": {
+    "bytes": 281032,
+    "fetched_at": "2026-11-11T15:19:10.674091+00:00",
+    "sha256": "632978864197ed87178da6cb940138bfbe13e64f3af81f160fd286ceb3ae5902",
     "url": "https://about.gitlab.com/gitlab-duo-agent-platform/"
   },
   "67039eef39f7e26f-20261111T004208726262Z.json": {
@@ -461,10 +911,28 @@
     "sha256": "4754a16e48202d2c2523fc578722c31265385d6e132ec0615de695ebe65ae762",
     "url": "https://www.salesforce.com/agentforce/?bc=OTH"
   },
+  "67039eef39f7e26f-20261111T151536901480Z.json": {
+    "bytes": 636166,
+    "fetched_at": "2026-11-11T15:15:36.901480+00:00",
+    "sha256": "c4d61333c6716c1094456b85a3f28cb715728ac4a6fce57578c0efe7398c3ad2",
+    "url": "https://www.salesforce.com/agentforce/?bc=OTH"
+  },
+  "67039eef39f7e26f-20261111T151539117258Z.json": {
+    "bytes": 636424,
+    "fetched_at": "2026-11-11T15:15:39.117258+00:00",
+    "sha256": "d7f30af12a67f757b291ab779280a1ba23fa9553298e59c940c724930243c66c",
+    "url": "https://www.salesforce.com/agentforce/?bc=OTH"
+  },
   "679197cbf116300e-20261111T004836953165Z.json": {
     "bytes": 142609,
     "fetched_at": "2026-11-11T00:48:36.953165+00:00",
     "sha256": "8d791314a760879094af84702655712e6dd9b15fd59ced6114da2572ec458520",
+    "url": "https://www.ycombinator.com/companies/tusk"
+  },
+  "679197cbf116300e-20261111T152023225850Z.json": {
+    "bytes": 142923,
+    "fetched_at": "2026-11-11T15:20:23.225850+00:00",
+    "sha256": "dc14063436e2e56fc14276d8ace3c577c865c9389668decf92fe3f249a5aefc2",
     "url": "https://www.ycombinator.com/companies/tusk"
   },
   "687b9d13242dcbe5-20261111T004130246410Z.json": {
@@ -473,10 +941,22 @@
     "sha256": "fde0e3a8d019ec7ad6edc8b478c1fb4aecee9bce8c5a557929203c5fecf8bf75",
     "url": "https://www.getwren.ai/"
   },
+  "687b9d13242dcbe5-20261111T151453592602Z.json": {
+    "bytes": 268318,
+    "fetched_at": "2026-11-11T15:14:53.592602+00:00",
+    "sha256": "b8a811a40d1bd9141fe4c82ee8a674c5237d987de2829c73c50fae922b1f88a6",
+    "url": "https://www.getwren.ai/"
+  },
   "68c6e289f411fa81-20261111T004134845915Z.json": {
     "bytes": 18289,
     "fetched_at": "2026-11-11T00:41:34.845915+00:00",
     "sha256": "cc7b94175c069cef167c6b3ab02c247e27dbe9812c17222944e68dcac7d71d9e",
+    "url": "https://agentscale.ai/"
+  },
+  "68c6e289f411fa81-20261111T151502564965Z.json": {
+    "bytes": 18289,
+    "fetched_at": "2026-11-11T15:15:02.564965+00:00",
+    "sha256": "7898bfc338fc51950d1ca9d46e18ec7889936dacf5d4905c74dc47f5428c9e6f",
     "url": "https://agentscale.ai/"
   },
   "6b31063b5e3041e4-20261111T004821271947Z.json": {
@@ -485,10 +965,22 @@
     "sha256": "bda0afc079deedc71ded659c52a0ed858bbc19eec291844370f0abf28205e04d",
     "url": "https://shoppal.ai"
   },
+  "6b31063b5e3041e4-20261111T151957878594Z.json": {
+    "bytes": 48524,
+    "fetched_at": "2026-11-11T15:19:57.878594+00:00",
+    "sha256": "74e65deb4d596af4bd89a2b46355091fe0e73bf87bf35cda3439eca8614ed277",
+    "url": "https://shoppal.ai"
+  },
   "6e25654b1985f2e4-20261111T004600499123Z.json": {
     "bytes": 165256,
     "fetched_at": "2026-11-11T00:46:00.499123+00:00",
     "sha256": "c483ebd96204ace861837a535972f72c9b1bb6650960109b5252d6373a81e26f",
+    "url": "https://www.lindy.ai/"
+  },
+  "6e25654b1985f2e4-20261111T151934369006Z.json": {
+    "bytes": 190423,
+    "fetched_at": "2026-11-11T15:19:34.369006+00:00",
+    "sha256": "1c0520e0851f2263b3921fd60426bacafdca0ca09067a15123a317eb04262cdb",
     "url": "https://www.lindy.ai/"
   },
   "6fc37b2ab4e1d2ca-20261111T004127323078Z.json": {
@@ -497,10 +989,22 @@
     "sha256": "cf5e8b8ab77cb43a4f3d21eeb6cb4ca3e698f35bdefb45292b6dd3fd0b62d5e8",
     "url": "https://sweep-ai.notion.site/Tricks-for-prompting-Sweep-3124d090f42e42a6a53618eaa88cdbf1"
   },
+  "6fc37b2ab4e1d2ca-20261111T151449488302Z.json": {
+    "bytes": 24465,
+    "fetched_at": "2026-11-11T15:14:49.488302+00:00",
+    "sha256": "270be3694e8ac3877c073a02b2743cd588dda57a79d55cd6df0bd6d49227de5b",
+    "url": "https://sweep-ai.notion.site/Tricks-for-prompting-Sweep-3124d090f42e42a6a53618eaa88cdbf1"
+  },
   "70b4186c9169b906-20261111T004450876142Z.json": {
     "bytes": 946354,
     "fetched_at": "2026-11-11T00:44:50.876142+00:00",
     "sha256": "ce93580bfc55b35c52473cdb10014ab94fb454b4a1fb79db87d7c09c8025e0e1",
+    "url": "https://chromewebstore.google.com/detail/blackboxai/mcgbeeipkmelnpldkobichboakdfaeon"
+  },
+  "70b4186c9169b906-20261111T151820370452Z.json": {
+    "bytes": 847292,
+    "fetched_at": "2026-11-11T15:18:20.370452+00:00",
+    "sha256": "2123cf8179a4aec3451d1c47e6ebb713654ac72d2bda72d5af78c75dcbb85985",
     "url": "https://chromewebstore.google.com/detail/blackboxai/mcgbeeipkmelnpldkobichboakdfaeon"
   },
   "715cabac40caee53-20261111T004002204642Z.json": {
@@ -509,10 +1013,22 @@
     "sha256": "66b8c3694bc70df2d61f43c09c2e581124305681e05eb58c76699eaffaa63f19",
     "url": "https://www.kuafuai.net/"
   },
+  "715cabac40caee53-20261111T145850379843Z.json": {
+    "bytes": 72232,
+    "fetched_at": "2026-11-11T14:58:50.379843+00:00",
+    "sha256": "7ec0de166ca5fee6a9e342f736521e53364ba1484f8469cb73a27c99ad1be7a7",
+    "url": "https://www.kuafuai.net/"
+  },
   "7339a54c20569a5c-20261111T003444791721Z.json": {
     "bytes": 46503,
     "fetched_at": "2026-11-11T00:34:44.791721+00:00",
     "sha256": "ad674e9d2c121e7e0d8bf2b07f1a39a60050563f01f745d8ec7639edfb68a37b",
+    "url": "https://continue.dev/"
+  },
+  "7339a54c20569a5c-20261111T145603122728Z.json": {
+    "bytes": 46503,
+    "fetched_at": "2026-11-11T14:56:03.122728+00:00",
+    "sha256": "d0365188279db1862650f1dd047afacc03f70b454fcc3dfc4a37108f7e229aa6",
     "url": "https://continue.dev/"
   },
   "77a12a234e9ff5d1-20261111T004039643583Z.json": {
@@ -521,10 +1037,22 @@
     "sha256": "e644e1dd40878ec07a691d4ff4f50ba46385e8f5b696eb486584c65fa93216fe",
     "url": "https://llmstack.ai/blog"
   },
+  "77a12a234e9ff5d1-20261111T151400081415Z.json": {
+    "bytes": 65220,
+    "fetched_at": "2026-11-11T15:14:00.081415+00:00",
+    "sha256": "2a10640882f9cba73454edf1111b99ad6d773e59a888aa4d39dc5685b03f501a",
+    "url": "https://llmstack.ai/blog"
+  },
   "7b68bdf23bc8335c-20261111T003440265149Z.json": {
     "bytes": 321311,
     "fetched_at": "2026-11-11T00:34:40.265149+00:00",
     "sha256": "fa2ee77332af989a4a6519c14604d8040e8ecdd596469df10a2356588c1b0ade",
+    "url": "https://huggingface.co/camel-ai"
+  },
+  "7b68bdf23bc8335c-20261111T145559376630Z.json": {
+    "bytes": 321061,
+    "fetched_at": "2026-11-11T14:55:59.376630+00:00",
+    "sha256": "b49f53619170631a21970a95332e1db1cbe02c81dfb965f0accf519cfac45af8",
     "url": "https://huggingface.co/camel-ai"
   },
   "7cfe1dadab3c5a31-20261111T004601077603Z.json": {
@@ -533,10 +1061,22 @@
     "sha256": "42e90afb84dba1998f5aba24aad375a3a3d117b02d1610a696aa33d61ce61e60",
     "url": "https://lutra.ai/"
   },
+  "7cfe1dadab3c5a31-20261111T151934944913Z.json": {
+    "bytes": 2576,
+    "fetched_at": "2026-11-11T15:19:34.944913+00:00",
+    "sha256": "6889e7ac5f09ce7124fe5a301be38881a1f6610aa4067a5b7760ba6ee2464bbb",
+    "url": "https://lutra.ai/"
+  },
   "7db0395919f56f26-20261111T004044077519Z.json": {
     "bytes": 169201,
     "fetched_at": "2026-11-11T00:40:44.077519+00:00",
     "sha256": "4ae07789bcaaa089df1e1967c09c96743be76c6ba860d39dce705407c5701803",
+    "url": "https://memgpt.readme.io/docs/index"
+  },
+  "7db0395919f56f26-20261111T151405469156Z.json": {
+    "bytes": 169201,
+    "fetched_at": "2026-11-11T15:14:05.469156+00:00",
+    "sha256": "41ced2b95162c885758989e5121f8a9edc851588ae817bbd0279b5b43c7a8959",
     "url": "https://memgpt.readme.io/docs/index"
   },
   "83b7b42384854a81-20261111T004543969790Z.json": {
@@ -545,10 +1085,22 @@
     "sha256": "4fb21248da3e4411798ef99406a4e57fbabc076ab451883acfaf224cf1ad88b0",
     "url": "https://hex.tech/blog/magic-private-beta/"
   },
+  "83b7b42384854a81-20261111T151918803709Z.json": {
+    "bytes": 125070,
+    "fetched_at": "2026-11-11T15:19:18.803709+00:00",
+    "sha256": "660d32a7247a225782ff30f2fb53620bb08f3bc8f7afe000617ddd3816d1f639",
+    "url": "https://hex.tech/blog/magic-private-beta/"
+  },
   "83e02986194dcfc9-20261111T004452416702Z.json": {
     "bytes": 53113,
     "fetched_at": "2026-11-11T00:44:52.416702+00:00",
     "sha256": "aa15a1d1cc1ff7891aae08e0e283ff4f4eda415127a631126f36687727363b48",
+    "url": "https://www.nurgo-software.com/products/brainsoup"
+  },
+  "83e02986194dcfc9-20261111T151821961957Z.json": {
+    "bytes": 53194,
+    "fetched_at": "2026-11-11T15:18:21.961957+00:00",
+    "sha256": "399a59f2ab8d0dec2e7da217474a8b031f93da16349b2d1bfada5e21924ab223",
     "url": "https://www.nurgo-software.com/products/brainsoup"
   },
   "849efdba3289775f-20261111T004516040295Z.json": {
@@ -557,10 +1109,22 @@
     "sha256": "50a1877bf7481451d2259c2c117ec3bca836d08c8a0954bcbd94701023aa2a55",
     "url": "https://cognition.com/blog/introducing-devin"
   },
+  "849efdba3289775f-20261111T151855684458Z.json": {
+    "bytes": 162122,
+    "fetched_at": "2026-11-11T15:18:55.684458+00:00",
+    "sha256": "c7c67d936d9f36f0d7b7008aa31a1c0f35b3e049b5ceec0d99fac8b2d9502dd5",
+    "url": "https://cognition.com/blog/introducing-devin"
+  },
   "85229c2b1b2fd5d0-20261111T004038833683Z.json": {
     "bytes": 54935,
     "fetched_at": "2026-11-11T00:40:38.833683+00:00",
     "sha256": "8f3ea3643788339d788285474586b06cdd3d47df870a069d6d3b8937cc1ac7df",
+    "url": "https://www.paepper.com/blog/posts/intelligent-agents-guided-by-llms/"
+  },
+  "85229c2b1b2fd5d0-20261111T151359589130Z.json": {
+    "bytes": 54935,
+    "fetched_at": "2026-11-11T15:13:59.589130+00:00",
+    "sha256": "9cfe3ef06fb6673719eba1f2d1fd79802d73129438bf33f680e08cd30535c4ab",
     "url": "https://www.paepper.com/blog/posts/intelligent-agents-guided-by-llms/"
   },
   "8753fcc6e163a6eb-20261111T003325553469Z.json": {
@@ -569,10 +1133,22 @@
     "sha256": "e9a14100ecaf07c92de95f6ac6256807cf5939ec2b2c5639d46f293bbaad4dc7",
     "url": "https://agents-readthedocsio.readthedocs.io/en/latest/index.html"
   },
+  "8753fcc6e163a6eb-20261111T145445756948Z.json": {
+    "bytes": 14542,
+    "fetched_at": "2026-11-11T14:54:45.756948+00:00",
+    "sha256": "cb144a05a976a1ac97df941b6c6a81fcdebce9957322bac046d5da017cc3e527",
+    "url": "https://agents-readthedocsio.readthedocs.io/en/latest/index.html"
+  },
   "879a793bdc606a46-20261111T004838338761Z.json": {
     "bytes": 1146865,
     "fetched_at": "2026-11-11T00:48:38.338761+00:00",
     "sha256": "8c55f5b2f0cac646b9e48e5f443cb0047a1d3220e5d929b9861635b8af6151d2",
+    "url": "https://v0.app/"
+  },
+  "879a793bdc606a46-20261111T152024191208Z.json": {
+    "bytes": 1164411,
+    "fetched_at": "2026-11-11T15:20:24.191208+00:00",
+    "sha256": "3fa00eff76eaef26bcc70705379365ebddc613d9fadb84813e15629cc9a88f0b",
     "url": "https://v0.app/"
   },
   "87d078ff41b50f76-20261111T004746770708Z.json": {
@@ -581,10 +1157,22 @@
     "sha256": "eb85debbcc7effba9fead759708c3bfaeebbc8cd12061ba24f7d056e1a5a2f5e",
     "url": "https://questflow.ai"
   },
+  "87d078ff41b50f76-20261111T151953841278Z.json": {
+    "bytes": 152120,
+    "fetched_at": "2026-11-11T15:19:53.841278+00:00",
+    "sha256": "5a2b8dc2befe483238d5ee4278c61464a348285051f3cc19621b6b6f49505732",
+    "url": "https://questflow.ai"
+  },
   "88ab7e74863947c8-20261111T004509153160Z.json": {
     "bytes": 112507,
     "fetched_at": "2026-11-11T00:45:09.153160+00:00",
     "sha256": "968c2d37c671270b39630bf57db2e6cdf178be44b0b68c1d3eb37df785e24474",
+    "url": "https://university.clay.com/lessons/enriching-with-claygent"
+  },
+  "88ab7e74863947c8-20261111T151848843983Z.json": {
+    "bytes": 112507,
+    "fetched_at": "2026-11-11T15:18:48.843983+00:00",
+    "sha256": "9004423c180a3b1f83fe65762be54841125edb707e3d0765dbfd8def2767d53c",
     "url": "https://university.clay.com/lessons/enriching-with-claygent"
   },
   "8926f9425a08b88f-20261111T004545975507Z.json": {
@@ -593,10 +1181,22 @@
     "sha256": "517bb66a0a8f7ac778b92d4d67c36e3bb946ebb1c31ee1ac86691d14baa66905",
     "url": "https://useinput.com/"
   },
+  "8926f9425a08b88f-20261111T151920642433Z.json": {
+    "bytes": 332,
+    "fetched_at": "2026-11-11T15:19:20.642433+00:00",
+    "sha256": "d96f3341752b372a2b422eda145b7429c2595e6af75a4e0f057f1ca22baba8c9",
+    "url": "https://useinput.com/"
+  },
   "8adeefb1aedd6366-20261111T004820186323Z.json": {
     "bytes": 102092,
     "fetched_at": "2026-11-11T00:48:20.186323+00:00",
     "sha256": "97a86f9419827cbc0a0c9374a386e911e2162e8b0f4bed14c603c24641e59a00",
+    "url": "https://www.ycombinator.com/companies/second"
+  },
+  "8adeefb1aedd6366-20261111T151956894820Z.json": {
+    "bytes": 102100,
+    "fetched_at": "2026-11-11T15:19:56.894820+00:00",
+    "sha256": "cd222da38ca34e47078841045702edaa2c00a4e0ca8a6adbfda9a0c7a160d740",
     "url": "https://www.ycombinator.com/companies/second"
   },
   "8d7c6586d2d08f78-20261111T004042682524Z.json": {
@@ -605,10 +1205,22 @@
     "sha256": "d482d6a22c90321163ec34231b902e1f533225a04f74e50eb6c49ac285f3ce6d",
     "url": "https://www.memfree.me/docs"
   },
+  "8d7c6586d2d08f78-20261111T151404110036Z.json": {
+    "bytes": 62912,
+    "fetched_at": "2026-11-11T15:14:04.110036+00:00",
+    "sha256": "2fffd7dbbf730bc8251e73b6c4a5f4a11a30ab91ad7c5a87a37ae0439a4c10ac",
+    "url": "https://www.memfree.me/docs"
+  },
   "8dfd1a5c9b431a87-20261111T004548134495Z.json": {
     "bytes": 182039,
     "fetched_at": "2026-11-11T00:45:48.134495+00:00",
     "sha256": "44f1259e588ee05a1f7106aa130186fc23b00da0bd70965caf4b38301cfbaf4a",
+    "url": "https://julius.ai/docs/get-started/quickstart"
+  },
+  "8dfd1a5c9b431a87-20261111T151922747198Z.json": {
+    "bytes": 182039,
+    "fetched_at": "2026-11-11T15:19:22.747198+00:00",
+    "sha256": "ac231c9703e1d97dac193b42ea320aab271bd55df79ea454f85eeb3f08d11f2a",
     "url": "https://julius.ai/docs/get-started/quickstart"
   },
   "8e13984a7aa8c19c-20261111T004745334074Z.json": {
@@ -617,10 +1229,22 @@
     "sha256": "e7526fd8b833d2a337d42b9900cb859d7e35b08a852f40726247d9cac975ab5c",
     "url": "https://q-bot.suchica.com/"
   },
+  "8e13984a7aa8c19c-20261111T151952665756Z.json": {
+    "bytes": 56388,
+    "fetched_at": "2026-11-11T15:19:52.665756+00:00",
+    "sha256": "13e326e285d29d8e4a3de85e4df5ce5eb960a18aebd3138da0dd804eb8aaa562",
+    "url": "https://q-bot.suchica.com/"
+  },
   "8e4eab90a232e636-20261111T004125650862Z.json": {
     "bytes": 659,
     "fetched_at": "2026-11-11T00:41:25.650862+00:00",
     "sha256": "ff90b7f20878a7bd5016b65db8691fb8186421fd3fd541648bacee4976185116",
+    "url": "https://swe-agent.com/"
+  },
+  "8e4eab90a232e636-20261111T151448355684Z.json": {
+    "bytes": 659,
+    "fetched_at": "2026-11-11T15:14:48.355684+00:00",
+    "sha256": "ed2edfe31172b4cb2a1aebddc16c70c492f4b2b4cfa1b524ad6c14d916dd04c2",
     "url": "https://swe-agent.com/"
   },
   "8f6f904158de4346-20261111T004522031427Z.json": {
@@ -629,10 +1253,22 @@
     "sha256": "34bcca4dd288b95646bbc92b1ebd71a6103aafc2ebcf927af69f501ff964188c",
     "url": "https://www.getdot.ai/"
   },
+  "8f6f904158de4346-20261111T151857442669Z.json": {
+    "bytes": 281787,
+    "fetched_at": "2026-11-11T15:18:57.442669+00:00",
+    "sha256": "c0dc7d99a9a38974561c8da60fb75f51cbd438db28207b5308818f2e0f77412c",
+    "url": "https://www.getdot.ai/"
+  },
   "90f2bf11e4fb71c8-20261111T003325221468Z.json": {
     "bytes": 1677794,
     "fetched_at": "2026-11-11T00:33:25.221468+00:00",
     "sha256": "c465ea66f09fbf93f0b0baed3edaff5d15ce955010cec30789100afb4fd14a77",
+    "url": "https://developers.openai.com/api/docs/guides/function-calling"
+  },
+  "90f2bf11e4fb71c8-20261111T145445441316Z.json": {
+    "bytes": 1678909,
+    "fetched_at": "2026-11-11T14:54:45.441316+00:00",
+    "sha256": "67f6e8d445b8f53c2ba45e0a0aa14fc23394f7a18009530e6a321f0f22fd4781",
     "url": "https://developers.openai.com/api/docs/guides/function-calling"
   },
   "91a914873f01357d-20261111T004213150507Z.json": {
@@ -641,10 +1277,22 @@
     "sha256": "1d2c28f416743bbfcc9b92708ff8f5d9cc956748cf26793d9f38df1edd9bff78",
     "url": "https://e2b.dev/resources/david-zhang-from-aomni-gives-his-view-agents-reliability-debugging-and-orchestration?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
   },
+  "91a914873f01357d-20261111T151540671606Z.json": {
+    "bytes": 210429,
+    "fetched_at": "2026-11-11T15:15:40.671606+00:00",
+    "sha256": "72a776e50b3de7170bc6d40a248ad95c6b66e1fe685b00d097afa84fb9f5322f",
+    "url": "https://e2b.dev/resources/david-zhang-from-aomni-gives-his-view-agents-reliability-debugging-and-orchestration?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
+  },
   "9207b1cf0eb920a8-20261111T003324659517Z.json": {
     "bytes": 115912,
     "fetched_at": "2026-11-11T00:33:24.659517+00:00",
     "sha256": "0855ab2c85787f92e42df44f65446a4b248d67559fe86a1a1c9ffbee96f9547c",
+    "url": "https://docs.reworkd.ai/introduction"
+  },
+  "9207b1cf0eb920a8-20261111T145445031041Z.json": {
+    "bytes": 115912,
+    "fetched_at": "2026-11-11T14:54:45.031041+00:00",
+    "sha256": "fe0b551f72a8fa547e4facfc42d24742c3bebbc201815466a0017d3f6c057ea1",
     "url": "https://docs.reworkd.ai/introduction"
   },
   "927cc0c574a47120-20261111T004524076523Z.json": {
@@ -653,10 +1301,22 @@
     "sha256": "3a8ea57e03b30125a6505c07c30ef8ed2c217237eca177a54f36a105ba5da56a",
     "url": "https://www.ellipsis.dev/?utm_source=awesome-ai-agents"
   },
+  "927cc0c574a47120-20261111T151859763287Z.json": {
+    "bytes": 408606,
+    "fetched_at": "2026-11-11T15:18:59.763287+00:00",
+    "sha256": "004b78eaccbe326ac7427714d899d2df971d9cf9f3d5d77d9e1ae6b591399168",
+    "url": "https://www.ellipsis.dev/?utm_source=awesome-ai-agents"
+  },
   "94287f7afe0ee3c6-20261111T004450429555Z.json": {
     "bytes": 3641,
     "fetched_at": "2026-11-11T00:44:50.429555+00:00",
     "sha256": "e69bf03db702e0b5f9ebb99281fbfee26e510211feed748e356ffbb9645a8a21",
+    "url": "https://pypi.org/project/blackboxai/"
+  },
+  "94287f7afe0ee3c6-20261111T151820051150Z.json": {
+    "bytes": 3641,
+    "fetched_at": "2026-11-11T15:18:20.051150+00:00",
+    "sha256": "c173b135848d0e20c428916941f55ef93bd3a4d0b3b42c542a2dd03a1ca5efb9",
     "url": "https://pypi.org/project/blackboxai/"
   },
   "95287905d6111bf7-20261111T003320757469Z.json": {
@@ -665,10 +1325,22 @@
     "sha256": "9428570d3dd384cf21183982fe37be2be03b36c9d1770b17d2483d6a514ecb4c",
     "url": "https://e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
   },
+  "95287905d6111bf7-20261111T145441660328Z.json": {
+    "bytes": 977291,
+    "fetched_at": "2026-11-11T14:54:41.660328+00:00",
+    "sha256": "af715f254d32abd62db9dfb1dcfa89262de8a956dca84d25305ecf7e4d32c07c",
+    "url": "https://e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
+  },
   "968223f286235284-20261111T004045249836Z.json": {
     "bytes": 27467,
     "fetched_at": "2026-11-11T00:40:45.249836+00:00",
     "sha256": "c743df379c9d4701fc64bb3a0c9a57eb7a88b399bce415d7e48cd334da588e71",
+    "url": "https://composable-models.github.io/llm_debate/"
+  },
+  "968223f286235284-20261111T151406359578Z.json": {
+    "bytes": 27467,
+    "fetched_at": "2026-11-11T15:14:06.359578+00:00",
+    "sha256": "8a6dc84c5e89b66657be94dac201e440c7e8758d3745c59af746a9f88ed52f49",
     "url": "https://composable-models.github.io/llm_debate/"
   },
   "974116f6b2e6e477-20261111T004217133621Z.json": {
@@ -677,10 +1349,22 @@
     "sha256": "435a4866668c287c53c4409b1d0054b058332088f6b51e9a79b8f790a2d59b23",
     "url": "https://www.bardeen.ai/"
   },
+  "974116f6b2e6e477-20261111T151544280143Z.json": {
+    "bytes": 192834,
+    "fetched_at": "2026-11-11T15:15:44.280143+00:00",
+    "sha256": "cb2865c5bcf982a5606c84a465d9fb31c07004293566a1854fb2db9897398432",
+    "url": "https://www.bardeen.ai/"
+  },
   "976967e07d6f3b9b-20261111T003323702654Z.json": {
     "bytes": 46708,
     "fetched_at": "2026-11-11T00:33:23.702654+00:00",
     "sha256": "7562a7c9d129c39a2316719d7af00d63fa6b8de676807903184cd2817646d57e",
+    "url": "https://agentgpt.reworkd.ai/"
+  },
+  "976967e07d6f3b9b-20261111T145444314836Z.json": {
+    "bytes": 46708,
+    "fetched_at": "2026-11-11T14:54:44.314836+00:00",
+    "sha256": "59844669765d3cdaeb94c15f39fac24a27e869804329e97967acf7ddb34fd362",
     "url": "https://agentgpt.reworkd.ai/"
   },
   "9840b4af866dc79d-20261111T004522534652Z.json": {
@@ -689,16 +1373,46 @@
     "sha256": "70fee83349d610dc71b379559e95a7ca2867c0a2b7d6e76ec5dd899f223f6ae5",
     "url": "https://duckie.ai/"
   },
+  "9840b4af866dc79d-20261111T151857924794Z.json": {
+    "bytes": 178300,
+    "fetched_at": "2026-11-11T15:18:57.924794+00:00",
+    "sha256": "0b7f2e9b2fb74c485d0fe13d4d484d25b077fdf9735312b368fc67ba44de1cc0",
+    "url": "https://duckie.ai/"
+  },
   "98e7b2e006b25b6a-20261111T004521500251Z.json": {
     "bytes": 261075,
     "fetched_at": "2026-11-11T00:45:21.500251+00:00",
     "sha256": "b66e21f258f08bf894883b734860fdf3e362646b90b19973912d6d0254887517",
     "url": "https://dosu.dev/"
   },
+  "98e7b2e006b25b6a-20261111T151857114681Z.json": {
+    "bytes": 261075,
+    "fetched_at": "2026-11-11T15:18:57.114681+00:00",
+    "sha256": "5296908920c031da0d48fcc55792eb1ac5eb1c2d92d6edd6de603ab3e00506f4",
+    "url": "https://dosu.dev/"
+  },
+  "98f8e14c761d17e1-20261111T145608506025Z.json": {
+    "bytes": 287213,
+    "fetched_at": "2026-11-11T14:56:08.506025+00:00",
+    "sha256": "3cc9f982a3c68dbdcde57c5d4e50e1585236494a93f78e6f9d35a6531aa411ae",
+    "url": "https://www.askli.co/"
+  },
+  "9b067c6c5a9705ff-20261111T152035015104Z.json": {
+    "bytes": 289076,
+    "fetched_at": "2026-11-11T15:20:35.015104+00:00",
+    "sha256": "357c4af141611521f1172c07e0b6a45234c846e8d2251101fe987b4db6e3718c",
+    "url": "https://e2b.dev/resources/build-ai-data-analyst-with-langchain-and-e2b?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
+  },
   "9d4fd1113357e3fa-20261111T004541426191Z.json": {
     "bytes": 1382340,
     "fetched_at": "2026-11-11T00:45:41.426191+00:00",
     "sha256": "34dead4b3b2d678932d6169445d4f9661bb4efff5b9c12f5410e7a6f4912fbfd",
+    "url": "https://www.gumloop.com/use-cases"
+  },
+  "9d4fd1113357e3fa-20261111T151916347828Z.json": {
+    "bytes": 1382340,
+    "fetched_at": "2026-11-11T15:19:16.347828+00:00",
+    "sha256": "9c7afec17d34565dc5f0f216928107b6a408d933235ca5175d814763e0a15281",
     "url": "https://www.gumloop.com/use-cases"
   },
   "a1bd29d7f742f33f-20261111T003323298747Z.json": {
@@ -707,10 +1421,22 @@
     "sha256": "39fbe12f43c0ca1bf0875e1db9ff0181179a6d99a6fc61a0681b2df7f4763887",
     "url": "https://agentforge.net/"
   },
+  "a1bd29d7f742f33f-20261111T145443860973Z.json": {
+    "bytes": 28666,
+    "fetched_at": "2026-11-11T14:54:43.860973+00:00",
+    "sha256": "f04a1190eb5e1b98df7e1f85f7de2de0d377cc54625369eebf4c2e5b11504e36",
+    "url": "https://agentforge.net/"
+  },
   "a383fba26b37cb4e-20261111T004547634577Z.json": {
     "bytes": 144757,
     "fetched_at": "2026-11-11T00:45:47.634577+00:00",
     "sha256": "c108dce4a174c257fc12b33638762b77cc0fa0128310a1139cbbf6354a4f53f6",
+    "url": "https://julius.ai/"
+  },
+  "a383fba26b37cb4e-20261111T151922255892Z.json": {
+    "bytes": 144757,
+    "fetched_at": "2026-11-11T15:19:22.255892+00:00",
+    "sha256": "beae513ced12c475e1e0833736206b231f8474e005844ef1b1139137daa69017",
     "url": "https://julius.ai/"
   },
   "a43fd78f838b7ca5-20261111T004123519940Z.json": {
@@ -719,10 +1445,22 @@
     "sha256": "decf60c3084457da6b348b36eacba9b701da625dcc95ad32b425da7a0d94b201",
     "url": "https://e2b.dev/resources/discussing-agents-challenges-with-ismail-pelaseyed-the-founder-of-superagent?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
   },
+  "a43fd78f838b7ca5-20261111T151445637446Z.json": {
+    "bytes": 216189,
+    "fetched_at": "2026-11-11T15:14:45.637446+00:00",
+    "sha256": "0518a58224949a17c38a10debc7aecb3de6d1876f50a8e6662edcf4a90e70319",
+    "url": "https://e2b.dev/resources/discussing-agents-challenges-with-ismail-pelaseyed-the-founder-of-superagent?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
+  },
   "a506eb7b51ad2f63-20261111T003330692579Z.json": {
     "bytes": 83880,
     "fetched_at": "2026-11-11T00:33:30.692579+00:00",
     "sha256": "37916185fc6b0ead692adaf3871c50f06d57de29d3ba258f0afafd9f130d6858",
+    "url": "https://yoheinakajima.com/babybeeagi-task-management-and-functionality-expansion-on-top-of-babyagi/"
+  },
+  "a506eb7b51ad2f63-20261111T145450473919Z.json": {
+    "bytes": 83880,
+    "fetched_at": "2026-11-11T14:54:50.473919+00:00",
+    "sha256": "d907a77d1971ff9c3e023be5010e204323be50b765238413b59aa2419dce98ab",
     "url": "https://yoheinakajima.com/babybeeagi-task-management-and-functionality-expansion-on-top-of-babyagi/"
   },
   "a74a72658c3c36f4-20261111T003444387287Z.json": {
@@ -731,10 +1469,22 @@
     "sha256": "a7423cb2913e435e280a9932a31e5f508815074b6a63f74ec4feac96c31806de",
     "url": "https://sourcegraph.com/docs/cody"
   },
+  "a74a72658c3c36f4-20261111T145602931369Z.json": {
+    "bytes": 118421,
+    "fetched_at": "2026-11-11T14:56:02.931369+00:00",
+    "sha256": "975bf4e621a6f14849b35a5c337189f77d25d6c61bf1548712f2b10c4a1928aa",
+    "url": "https://sourcegraph.com/docs/cody"
+  },
   "a811fc1fc2c5db96-20261111T004833964725Z.json": {
     "bytes": 900119,
     "fetched_at": "2026-11-11T00:48:33.964725+00:00",
     "sha256": "60c4d79ad3ce5f3fbd3ab4cd0164651613df8faad4c5f9dec5c48ef529c3527d",
+    "url": "https://www.taskade.com/"
+  },
+  "a811fc1fc2c5db96-20261111T152020986784Z.json": {
+    "bytes": 900135,
+    "fetched_at": "2026-11-11T15:20:20.986784+00:00",
+    "sha256": "0834b79d08b254467651fcdb30f71c3c3251d1005a027f0322c8af2c5204fff1",
     "url": "https://www.taskade.com/"
   },
   "a8f04e0a885cdd6e-20261111T004839341716Z.json": {
@@ -743,10 +1493,22 @@
     "sha256": "1b0d5bbab007386c0efef045007416e5d7fbb5aaee420f172520df2215522cc2",
     "url": "https://www.wordware.ai/"
   },
+  "a8f04e0a885cdd6e-20261111T152024912300Z.json": {
+    "bytes": 73292,
+    "fetched_at": "2026-11-11T15:20:24.912300+00:00",
+    "sha256": "e1133db669ae8611228230729447df0909659ef1036f6bcbc0df2fe2fa96cff9",
+    "url": "https://www.wordware.ai/"
+  },
   "ab839ec5b15d5528-20261111T004119203848Z.json": {
     "bytes": 218115,
     "fetched_at": "2026-11-11T00:41:19.203848+00:00",
     "sha256": "5108eef8834839b30e6515d76469a61b8c5b51ab69cc28ecf2024d9c5e59532b",
+    "url": "https://www.superagent.sh/"
+  },
+  "ab839ec5b15d5528-20261111T151440570790Z.json": {
+    "bytes": 218657,
+    "fetched_at": "2026-11-11T15:14:40.570790+00:00",
+    "sha256": "2b93819100028a24fff7e6f63622e1c0e52b9f212fd8b1b1c346947ce40e84d7",
     "url": "https://www.superagent.sh/"
   },
   "acc08c0ca537da25-20261111T004113598301Z.json": {
@@ -755,16 +1517,34 @@
     "sha256": "49210545ea6a4ffcf892bb483e38102be4982869b69a497a50c38edf33321913",
     "url": "https://www.privategpt.io/"
   },
+  "acc08c0ca537da25-20261111T151435041272Z.json": {
+    "bytes": 28121,
+    "fetched_at": "2026-11-11T15:14:35.041272+00:00",
+    "sha256": "9a4089b698721870719834477c5e5de4828c90f91bd3fb3b54506e69ef9c29fa",
+    "url": "https://www.privategpt.io/"
+  },
   "ad7688fb06313e93-20261111T003443493822Z.json": {
     "bytes": 2635,
     "fetched_at": "2026-11-11T00:34:43.493822+00:00",
     "sha256": "23851f5f6d7939c88f52f1aa6ab93055e0f05c922f112eb75cde1702717de594",
     "url": "https://lev.la/"
   },
+  "ad7688fb06313e93-20261111T145602387406Z.json": {
+    "bytes": 2635,
+    "fetched_at": "2026-11-11T14:56:02.387406+00:00",
+    "sha256": "d655451177d1dce577646ff6a9d619b86d90031604b5fbb2fe8f8b659391354f",
+    "url": "https://lev.la/"
+  },
   "af71050ca72a249e-20261111T004003708772Z.json": {
     "bytes": 104207,
     "fetched_at": "2026-11-11T00:40:03.708772+00:00",
     "sha256": "891bdd8abcfe0a455f4d159785ec6cdb5f8b0cca091b8a41d9a5b11497b64ee1",
+    "url": "https://www.eidolonai.com/"
+  },
+  "af71050ca72a249e-20261111T145851828507Z.json": {
+    "bytes": 104207,
+    "fetched_at": "2026-11-11T14:58:51.828507+00:00",
+    "sha256": "e10ea5e183989714eca6653f0fbf70577bbe0d0be61702e0b516f74cf1b1846b",
     "url": "https://www.eidolonai.com/"
   },
   "b23d59f9765cbab6-20261111T004532337814Z.json": {
@@ -779,10 +1559,28 @@
     "sha256": "715471571fcc45bb8638a917b0cfe55456d9c527c400ba5d0ef9e17b995e9b44",
     "url": "https://www.ultravox.ai/?fromFixie=true"
   },
+  "b23d59f9765cbab6-20261111T151907246673Z.json": {
+    "bytes": 409012,
+    "fetched_at": "2026-11-11T15:19:07.246673+00:00",
+    "sha256": "0ed703663862feab81e996bfb7f4fd88e364e7434ef659c04a4673a03417ea45",
+    "url": "https://www.ultravox.ai/?fromFixie=true"
+  },
+  "b23d59f9765cbab6-20261111T151908060587Z.json": {
+    "bytes": 409013,
+    "fetched_at": "2026-11-11T15:19:08.060587+00:00",
+    "sha256": "049c9feb5d7fc430380fd1ece13f19bdd3236baef30ddaaf13f090c239d8c396",
+    "url": "https://www.ultravox.ai/?fromFixie=true"
+  },
   "b2738481111a1f62-20261111T004122827334Z.json": {
     "bytes": 974824,
     "fetched_at": "2026-11-11T00:41:22.827334+00:00",
     "sha256": "5da9e394661f9a630748ea480df31aa5a5276b797a191bea915d693b5c48340d",
+    "url": "https://www.superagent.sh/docs"
+  },
+  "b2738481111a1f62-20261111T151445087911Z.json": {
+    "bytes": 1020051,
+    "fetched_at": "2026-11-11T15:14:45.087911+00:00",
+    "sha256": "2a98e9d148ee20afc354ebb73fab1f3111f88839736657215be36dcb8f723a78",
     "url": "https://www.superagent.sh/docs"
   },
   "b2a7f166bf1d303c-20261111T003438128346Z.json": {
@@ -791,10 +1589,22 @@
     "sha256": "e2df915a36c9055a67c99f55c7f97b78367d23e8dfd9dab209ff65a101bde2b7",
     "url": "https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing"
   },
+  "b2a7f166bf1d303c-20261111T145558997221Z.json": {
+    "bytes": 101290,
+    "fetched_at": "2026-11-11T14:55:58.997221+00:00",
+    "sha256": "a7ff1d2ad0c3c5255d70f28d80cb5fd2c5809238850db6c0f1ddf3d29ef35e6f",
+    "url": "https://colab.research.google.com/drive/1AzP33O8rnMW__7ocWJhVBXjKziJXPtim?usp=sharing"
+  },
   "b2be3de4b51cb259-20261111T004546347119Z.json": {
     "bytes": 552,
     "fetched_at": "2026-11-11T00:45:46.347119+00:00",
     "sha256": "b4135f98feae0452292454d94a68e98d2ee1bc02f4cfe976a23a468e0b646d3a",
+    "url": "https://useinput.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FlightLogo.196eccc1.png&w=640&q=75"
+  },
+  "b2be3de4b51cb259-20261111T151920883132Z.json": {
+    "bytes": 552,
+    "fetched_at": "2026-11-11T15:19:20.883132+00:00",
+    "sha256": "af7ec6856d6dff9af4f02c615bc39a8269b5b5a7279f84774d2486b0b252743f",
     "url": "https://useinput.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FlightLogo.196eccc1.png&w=640&q=75"
   },
   "b65fa7f026f76f66-20261111T004551139904Z.json": {
@@ -803,10 +1613,22 @@
     "sha256": "b8e4ef80647fa79098782a89b06a738985f8657f60cd5be163969f00447b6b7c",
     "url": "https://www.kadoa.com/workflow/new"
   },
+  "b65fa7f026f76f66-20261111T151926463889Z.json": {
+    "bytes": 29907,
+    "fetched_at": "2026-11-11T15:19:26.463889+00:00",
+    "sha256": "6ed057dcf7bc7c9cf871b99da8a77a8b00a5142e1167253440a0ee433bd0e4e5",
+    "url": "https://www.kadoa.com/workflow/new"
+  },
   "b7151a6ad2f47d0a-20261111T004540577158Z.json": {
     "bytes": 1660131,
     "fetched_at": "2026-11-11T00:45:40.577158+00:00",
     "sha256": "3f505923860d51a07d39a091789e745acb6ec8b5074c003155200f80a31708af",
+    "url": "https://docs.gumloop.com/"
+  },
+  "b7151a6ad2f47d0a-20261111T151915909003Z.json": {
+    "bytes": 1660131,
+    "fetched_at": "2026-11-11T15:19:15.909003+00:00",
+    "sha256": "f38b14b79ecc8eb60eecb0a7484a243e7c7251166b2b74ba2f6a752bfa76354b",
     "url": "https://docs.gumloop.com/"
   },
   "b815f69a3ef84617-20261111T004007523828Z.json": {
@@ -815,10 +1637,22 @@
     "sha256": "a9b68fe9044703753a36c1e995b6cddadc37517e813f1af23cf1a9a32bb27cd0",
     "url": "https://www.tavily.com/"
   },
+  "b815f69a3ef84617-20261111T151328235027Z.json": {
+    "bytes": 191380,
+    "fetched_at": "2026-11-11T15:13:28.235027+00:00",
+    "sha256": "2a98ff0d6ae201248f81f49fbd7098d7a1b04896547730431265f5de84f232f5",
+    "url": "https://www.tavily.com/"
+  },
   "b9783ea1054d2df6-20261111T004606670129Z.json": {
     "bytes": 103958,
     "fetched_at": "2026-11-11T00:46:06.670129+00:00",
     "sha256": "0ef688da30933c857d245c39f7b78b3b7e3362c2a3030abe315921e2bad4b72c",
+    "url": "https://makedraft.com/"
+  },
+  "b9783ea1054d2df6-20261111T151940014504Z.json": {
+    "bytes": 103958,
+    "fetched_at": "2026-11-11T15:19:40.014504+00:00",
+    "sha256": "2aa9b51626844fd3af0857b279651396c049abae7e4d66503a5f9a3a33d84fff",
     "url": "https://makedraft.com/"
   },
   "b9be14074173bb45-20261111T004004220310Z.json": {
@@ -827,10 +1661,28 @@
     "sha256": "a18c695b498bc098cdb7492f3b6db51776891c0b2f6008ad1e389ce94b34bb53",
     "url": "https://fastagency.ai/latest/"
   },
+  "b9be14074173bb45-20261111T145852748417Z.json": {
+    "bytes": 33927,
+    "fetched_at": "2026-11-11T14:58:52.748417+00:00",
+    "sha256": "2e15395602a9583700409da0f29b2b87a498f29cbb18e84c83e8fd4a2ef8c7bb",
+    "url": "https://fastagency.ai/latest/"
+  },
+  "ba2d590d67854c78-20261111T151940638597Z.json": {
+    "bytes": 177646,
+    "fetched_at": "2026-11-11T15:19:40.638597+00:00",
+    "sha256": "0b605a8f07ad13fd4ff76a7a1c3a67b3ba10103625bb4243310f8b67ca3e565c",
+    "url": "https://manaflow.com/"
+  },
   "bbba856f6f338511-20261111T004514712509Z.json": {
     "bytes": 637498,
     "fetched_at": "2026-11-11T00:45:14.712509+00:00",
     "sha256": "d51f8a5227cc8e74cb21742caa69d08a7e418469fa4f15d5eeb44cacaa8c0fdb",
+    "url": "https://cursor.com/"
+  },
+  "bbba856f6f338511-20261111T151854841509Z.json": {
+    "bytes": 637498,
+    "fetched_at": "2026-11-11T15:18:54.841509+00:00",
+    "sha256": "e83d7e694b0b41d285fc58562ed30db64db6d293a2a69e1593562371b8bbefde",
     "url": "https://cursor.com/"
   },
   "bbcbbe43042ffceb-20261111T004206708452Z.json": {
@@ -839,10 +1691,22 @@
     "sha256": "f2495e39bd5e9ab25a98355efac80750d7d3b09e98b05b960469080d774e19f1",
     "url": "https://ailaflow.com"
   },
+  "bbcbbe43042ffceb-20261111T151534870497Z.json": {
+    "bytes": 51592,
+    "fetched_at": "2026-11-11T15:15:34.870497+00:00",
+    "sha256": "8cd546aa519ecb8636a7062a297ec14e54758e5fc8d1afb67b7c075f89d27046",
+    "url": "https://ailaflow.com"
+  },
   "bc85383d240b396e-20261111T004135282846Z.json": {
     "bytes": 33917,
     "fetched_at": "2026-11-11T00:41:35.282846+00:00",
     "sha256": "43e310a22b7312f9db2e83abbc16b39a744483e9edf45fc328ead39908ee9e92",
+    "url": "https://jetnew.io/"
+  },
+  "bc85383d240b396e-20261111T151503273741Z.json": {
+    "bytes": 33917,
+    "fetched_at": "2026-11-11T15:15:03.273741+00:00",
+    "sha256": "97380cc6b5969ad86ceb1216fe09791015e3a271e84b77e45c9b351f53ab0f20",
     "url": "https://jetnew.io/"
   },
   "bcd1a9114c7f410a-20261111T004834657602Z.json": {
@@ -851,10 +1715,22 @@
     "sha256": "471934fd51e1c4d066a39e5bbc2beaed881488d90d12c55e0560aafc6a6aa3e5",
     "url": "https://www.thinkchain.ai/"
   },
+  "bcd1a9114c7f410a-20261111T152021399822Z.json": {
+    "bytes": 64435,
+    "fetched_at": "2026-11-11T15:20:21.399822+00:00",
+    "sha256": "788416db61c1e97815eca7a3a00c7c2ccf2dbc72359a036ead87fbc94c7e0f88",
+    "url": "https://www.thinkchain.ai/"
+  },
   "be2442f6f020d1fd-20261111T004542661385Z.json": {
     "bytes": 142470,
     "fetched_at": "2026-11-11T00:45:42.661385+00:00",
     "sha256": "ce06b868fefa3ace53f4a2283477f27661b8974fbb2bd4d75e7aa8df7e50b203",
+    "url": "https://www.heightsplatform.com/features/ai"
+  },
+  "be2442f6f020d1fd-20261111T151917726956Z.json": {
+    "bytes": 142470,
+    "fetched_at": "2026-11-11T15:19:17.726956+00:00",
+    "sha256": "833af4a20319d9940677db9217148216b4f917dd59cf1ea1de0c0f911e7c13b3",
     "url": "https://www.heightsplatform.com/features/ai"
   },
   "c6f5b399d7d80932-20261111T004513784847Z.json": {
@@ -863,10 +1739,22 @@
     "sha256": "023408cd95c084f336020b50bc490319b935b89ce6a0857071781a724651ef7f",
     "url": "https://contextqa.com/"
   },
+  "c6f5b399d7d80932-20261111T151854178507Z.json": {
+    "bytes": 711425,
+    "fetched_at": "2026-11-11T15:18:54.178507+00:00",
+    "sha256": "286f86fdbccdb93ae1acfc620378d86b9f7158e196f5b4ccb15bb593594c4621",
+    "url": "https://contextqa.com/"
+  },
   "ca519bd10b4958ee-20261111T004523327015Z.json": {
     "bytes": 130205,
     "fetched_at": "2026-11-11T00:45:23.327015+00:00",
     "sha256": "5b1ea079a51dfae4a380cf4fc34a14b06a6640c956a3a068f59e1d462905ae78",
+    "url": "https://www.ycombinator.com/companies/duckie"
+  },
+  "ca519bd10b4958ee-20261111T151858377084Z.json": {
+    "bytes": 130477,
+    "fetched_at": "2026-11-11T15:18:58.377084+00:00",
+    "sha256": "6e8b91d8c4e23d904824466f1c01de40adb969b56a664035e49de068ff3816fb",
     "url": "https://www.ycombinator.com/companies/duckie"
   },
   "cad4a3c65d7424ff-20261111T003437158856Z.json": {
@@ -875,16 +1763,34 @@
     "sha256": "a2c046afd7fd267dd43c392380ae0e7989a1f9d65a30edcc85a760ef75935ec3",
     "url": "https://cal.com/ai"
   },
+  "cad4a3c65d7424ff-20261111T145558155751Z.json": {
+    "bytes": 751574,
+    "fetched_at": "2026-11-11T14:55:58.155751+00:00",
+    "sha256": "efdda9a2bf64c68c5657231a3e92e7eda3cb293b936876bc548e7f1b2915c302",
+    "url": "https://cal.com/ai"
+  },
   "cbe12a5204592569-20261111T004006930495Z.json": {
     "bytes": 2641,
     "fetched_at": "2026-11-11T00:40:06.930495+00:00",
     "sha256": "da4934b2ebb32acfeaf547f47528e0d65f1066c4b699f7c036a47a16dbe10c02",
     "url": "https://gpt-migrate.com/"
   },
+  "cbe12a5204592569-20261111T151327491926Z.json": {
+    "bytes": 2641,
+    "fetched_at": "2026-11-11T15:13:27.491926+00:00",
+    "sha256": "f9c50aa1315d3c62bb394ae64224f5d228b4af9ce00ea29e142f75f7b79dff1c",
+    "url": "https://gpt-migrate.com/"
+  },
   "cca42f5bc5d3b805-20261111T004124080305Z.json": {
     "bytes": 212088,
     "fetched_at": "2026-11-11T00:41:24.080305+00:00",
     "sha256": "734b2933d140027439c5c3ba2f48039662a9102da799210f2d0c176e1cad6335",
+    "url": "https://e2b.dev/resources/ai-agents-in-2024?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
+  },
+  "cca42f5bc5d3b805-20261111T151446101310Z.json": {
+    "bytes": 212133,
+    "fetched_at": "2026-11-11T15:14:46.101310+00:00",
+    "sha256": "0395ce6ee3ba0b9c17e656fadc0e09e8e8730d09f86a152ccc5787a0a3ff4cf0",
     "url": "https://e2b.dev/resources/ai-agents-in-2024?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
   },
   "ccbec4cc0814cdd1-20261111T004526009219Z.json": {
@@ -899,10 +1805,28 @@
     "sha256": "cfb36c3adb10de2da711fbe91cf09e97731bb67bba668e3a6f5c8c430018116d",
     "url": "https://encodesoftware.com.au/"
   },
+  "ccbec4cc0814cdd1-20261111T151902067821Z.json": {
+    "bytes": 4543,
+    "fetched_at": "2026-11-11T15:19:02.067821+00:00",
+    "sha256": "627501f3b07ef8f56ac324f491c2dba63dd64eefe8a5ce0cc828fc6a187abdd4",
+    "url": "https://encodesoftware.com.au/"
+  },
+  "ccbec4cc0814cdd1-20261111T151903717967Z.json": {
+    "bytes": 4548,
+    "fetched_at": "2026-11-11T15:19:03.717967+00:00",
+    "sha256": "1111e516ee44db785ea1677956710cd4e509d0340f0b28c9db4c3259f44be06b",
+    "url": "https://encodesoftware.com.au/"
+  },
   "cd1080a7e591903b-20261111T004112036640Z.json": {
     "bytes": 22706,
     "fetched_at": "2026-11-11T00:41:12.036640+00:00",
     "sha256": "091480ffdc9444ca3eac819205079a5fe3afeea67e02d788c1d498d9d3ef1740",
+    "url": "https://www.openinterpreter.com/"
+  },
+  "cd1080a7e591903b-20261111T151433296257Z.json": {
+    "bytes": 22706,
+    "fetched_at": "2026-11-11T15:14:33.296257+00:00",
+    "sha256": "7b6aae69df7a76b709d17d7951a3fff3d11d54e38f3ca77962ad1f3a3129c80a",
     "url": "https://www.openinterpreter.com/"
   },
   "d0e8e7e8d04fa906-20261111T003328138388Z.json": {
@@ -911,10 +1835,22 @@
     "sha256": "45adea280e7b693225ddee3c7b7352df7c15a23f42e8ed787e6f4ba22635f458",
     "url": "https://agpt.co/?utm_source=awesome-ai-agents"
   },
+  "d0e8e7e8d04fa906-20261111T145448219832Z.json": {
+    "bytes": 368270,
+    "fetched_at": "2026-11-11T14:54:48.219832+00:00",
+    "sha256": "3121c75c7df00ef51aaa1662f2574c2c24a6dddae9c0815097e202ccdebe3efb",
+    "url": "https://agpt.co/?utm_source=awesome-ai-agents"
+  },
   "d1bd4e72a6f32af7-20261111T004640128246Z.json": {
     "bytes": 600453,
     "fetched_at": "2026-11-11T00:46:40.128246+00:00",
     "sha256": "2e67e6ae7f6fe6a0498108e1cec0215795653f135cce21bffb884e9d78b45814",
+    "url": "https://theagi.company/"
+  },
+  "d1bd4e72a6f32af7-20261111T151943365720Z.json": {
+    "bytes": 600453,
+    "fetched_at": "2026-11-11T15:19:43.365720+00:00",
+    "sha256": "2283e75fa1c906adcdcdc625c3a49e4bf1313c02052045ab36da632089444c71",
     "url": "https://theagi.company/"
   },
   "d1c2df16f1f98f84-20261111T003329918034Z.json": {
@@ -923,10 +1859,22 @@
     "sha256": "7ecef786b016ef816a6a4874f41dd73829c22482319df94a0cbed6aae37134e6",
     "url": "https://yoheinakajima.com/task-driven-autonomous-agent-utilizing-gpt-4-pinecone-and-langchain-for-diverse-applications/"
   },
+  "d1c2df16f1f98f84-20261111T145449614752Z.json": {
+    "bytes": 89596,
+    "fetched_at": "2026-11-11T14:54:49.614752+00:00",
+    "sha256": "099550223c6182b9b15fa0072e8a0b1364d72c9d5de3361127897f30b26c7a73",
+    "url": "https://yoheinakajima.com/task-driven-autonomous-agent-utilizing-gpt-4-pinecone-and-langchain-for-diverse-applications/"
+  },
   "d2d860f8d142110a-20261111T004512048630Z.json": {
     "bytes": 326,
     "fetched_at": "2026-11-11T00:45:12.048630+00:00",
     "sha256": "db18edda81aadb52bea31fdbc95525d29749cf937b11bb71fd54b58289db4862",
+    "url": "https://commit.dev"
+  },
+  "d2d860f8d142110a-20261111T151853077620Z.json": {
+    "bytes": 326,
+    "fetched_at": "2026-11-11T15:18:53.077620+00:00",
+    "sha256": "2106931f5ba4ba4b9baafbc6db5f6feb5869ee46b626ab841adcdf8221303a63",
     "url": "https://commit.dev"
   },
   "d4a1593bf06c6c2c-20261111T004536265276Z.json": {
@@ -935,10 +1883,22 @@
     "sha256": "2b403bfcc5d18884eb08a199d39f90f9b4e77887163d6b27ae9fcd8ae0de9abc",
     "url": "https://www.gitwit.dev/"
   },
+  "d4a1593bf06c6c2c-20261111T151911320259Z.json": {
+    "bytes": 117301,
+    "fetched_at": "2026-11-11T15:19:11.320259+00:00",
+    "sha256": "6fe48fc61a4b93c744fa3c0b0e2a589ec4fed9471b1b31e1fe4c09df21cdcc00",
+    "url": "https://www.gitwit.dev/"
+  },
   "d4a4aa9f6aec4b8c-20261111T004126755980Z.json": {
     "bytes": 217670,
     "fetched_at": "2026-11-11T00:41:26.755980+00:00",
     "sha256": "f78b8110fa7c5b5ef5d5417a5a518a76d75bc9eeeb23da49fbda5acceeff597b",
+    "url": "https://e2b.dev/resources/sweep-founders-share-learnings-from-building-an-ai-coding-assistant?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
+  },
+  "d4a4aa9f6aec4b8c-20261111T151449181129Z.json": {
+    "bytes": 217625,
+    "fetched_at": "2026-11-11T15:14:49.181129+00:00",
+    "sha256": "26df74dce321e2e723a3e8cfe9b111b79865b4dff8268800d5d7e0f99ffb5daa",
     "url": "https://e2b.dev/resources/sweep-founders-share-learnings-from-building-an-ai-coding-assistant?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents"
   },
   "d541ce1d1f6fc8bb-20261111T004528886033Z.json": {
@@ -947,10 +1907,22 @@
     "sha256": "be04c8034686dfff592d8c61135cf1c5179efc765711c0c0fbf7075fc9855489",
     "url": "https://factory.com/"
   },
+  "d541ce1d1f6fc8bb-20261111T151904478955Z.json": {
+    "bytes": 249063,
+    "fetched_at": "2026-11-11T15:19:04.478955+00:00",
+    "sha256": "57de5bd706972e106f6b1571bcb775500f7c6d3879bb11836661881ccfe5e1ec",
+    "url": "https://factory.com/"
+  },
   "d5fe084bcb0c8ede-20261111T003331690921Z.json": {
     "bytes": 273354,
     "fetched_at": "2026-11-11T00:33:31.690921+00:00",
     "sha256": "3e097a73a0c46e4d2ea001300eedf0afab83ec565d8f7a5b30a676d777e17963",
+    "url": "https://replit.com/@YoheiNakajima/BabyCatAGI"
+  },
+  "d5fe084bcb0c8ede-20261111T145451651241Z.json": {
+    "bytes": 273110,
+    "fetched_at": "2026-11-11T14:54:51.651241+00:00",
+    "sha256": "2f6a34ac903b586cd7874d32b8e39d898ef51e85a8f7e1278f5234bfbab49941",
     "url": "https://replit.com/@YoheiNakajima/BabyCatAGI"
   },
   "d761b46003ab307a-20261111T003326158289Z.json": {
@@ -959,16 +1931,40 @@
     "sha256": "c1245e50a3914b2e02fc29199db13edb5c07fe0d6ca6c1faab98d6231575b3e1",
     "url": "https://huggingface.co/spaces/AgentVerse/agentVerse"
   },
+  "d761b46003ab307a-20261111T145446177436Z.json": {
+    "bytes": 35913,
+    "fetched_at": "2026-11-11T14:54:46.177436+00:00",
+    "sha256": "a9e0155eaaf94af81ced78f8f5f37a00039dc39a434c601b138b1829d7848dec",
+    "url": "https://huggingface.co/spaces/AgentVerse/agentVerse"
+  },
   "dac76c7b89eee4ae-20261111T004543467654Z.json": {
     "bytes": 173584,
     "fetched_at": "2026-11-11T00:45:43.467654+00:00",
     "sha256": "0243442cd7dc3d38c7f5834114bfafddd7c8aa76346edbb90ace625cd4d42be3",
     "url": "https://hex.tech/capability/ai/"
   },
+  "dac76c7b89eee4ae-20261111T151918327957Z.json": {
+    "bytes": 173584,
+    "fetched_at": "2026-11-11T15:19:18.327957+00:00",
+    "sha256": "4d5dce6a7d9ba718e5a81ce00b002ca510218688cc66613c9ff3c5387370e58d",
+    "url": "https://hex.tech/capability/ai/"
+  },
+  "dc95e9cef4490604-20261111T151944739908Z.json": {
+    "bytes": 2319,
+    "fetched_at": "2026-11-11T15:19:44.739908+00:00",
+    "sha256": "56dc78f1b19986211113d7a22be1cb43c18055b80c15cc7fac8626edf591964e",
+    "url": "https://gpt.nexus/"
+  },
   "dd31b9a53331b92a-20261111T004510408579Z.json": {
     "bytes": 66061,
     "fetched_at": "2026-11-11T00:45:10.408579+00:00",
     "sha256": "564343da4ced8fc583d7eb7f7ce4f224a058cb56add1fc2996cad63603cd798f",
+    "url": "https://codegen.com/"
+  },
+  "dd31b9a53331b92a-20261111T151849960913Z.json": {
+    "bytes": 66061,
+    "fetched_at": "2026-11-11T15:18:49.960913+00:00",
+    "sha256": "e2c563de47d8c7c21ad85c8942a3c2f1a4250343352b4a10efa86d5d8f0de2b2",
     "url": "https://codegen.com/"
   },
   "de65050d28f20196-20261111T004542008286Z.json": {
@@ -977,10 +1973,22 @@
     "sha256": "fa72a45843aa5f0105062c5b262db7a412b27762b58c47ef3bea02aa8df6ae2c",
     "url": "https://www.heightsplatform.com/"
   },
+  "de65050d28f20196-20261111T151917134443Z.json": {
+    "bytes": 136705,
+    "fetched_at": "2026-11-11T15:19:17.134443+00:00",
+    "sha256": "5746945ec4b8cf64b9221e6541da0cd3cb412164a1633008b214e563315e9e97",
+    "url": "https://www.heightsplatform.com/"
+  },
   "e023f9685b3c1a19-20261111T003321589120Z.json": {
     "bytes": 173167,
     "fetched_at": "2026-11-11T00:33:21.589120+00:00",
     "sha256": "5736982caebe54a5947e9e00ec45c4de1ea2fe312fddeda825e58b380f19a291",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLScndOs3bQ8aBtqqqhvlC_qgJmg16jmwOfEoLter6I921vfmvQ/viewform?usp=send_form"
+  },
+  "e023f9685b3c1a19-20261111T145442391512Z.json": {
+    "bytes": 173326,
+    "fetched_at": "2026-11-11T14:54:42.391512+00:00",
+    "sha256": "77cc0239b96bc39ac10dd18b7a53774d44d4c0f23bd4e3949b5f6f00d36d9716",
     "url": "https://docs.google.com/forms/d/e/1FAIpQLScndOs3bQ8aBtqqqhvlC_qgJmg16jmwOfEoLter6I921vfmvQ/viewform?usp=send_form"
   },
   "e36ded5ca5d5460d-20261111T004818622118Z.json": {
@@ -989,10 +1997,22 @@
     "sha256": "48f33c7641a18d434e7edca8fb370f2a381bfea199bf063517a55083666b0b29",
     "url": "https://sagahq.canny.io/"
   },
+  "e36ded5ca5d5460d-20261111T151955810131Z.json": {
+    "bytes": 90272,
+    "fetched_at": "2026-11-11T15:19:55.810131+00:00",
+    "sha256": "1f7bdd3d519703a7264368601fe4e231ed2440bb507842f4ee2a3b63ca73e591",
+    "url": "https://sagahq.canny.io/"
+  },
   "e3a6e3fbb0c6ae62-20261111T004215114858Z.json": {
     "bytes": 95925,
     "fetched_at": "2026-11-11T00:42:15.114858+00:00",
     "sha256": "e3363ac290c871988ebafbc040c025fee9c4790942706929fbcacb1bcbdae746",
+    "url": "https://askpandi.com/ask"
+  },
+  "e3a6e3fbb0c6ae62-20261111T151542755025Z.json": {
+    "bytes": 95925,
+    "fetched_at": "2026-11-11T15:15:42.755025+00:00",
+    "sha256": "3c6bd2227f6d1c6ed40ebcabd61eb0fd1f59cf7927803f8f127e5c07e90d80a8",
     "url": "https://askpandi.com/ask"
   },
   "e5f1c0da6f782ecb-20261111T004744686457Z.json": {
@@ -1001,10 +2021,22 @@
     "sha256": "23db2a87e07edd85f31fab0652ec8dd33f25d1c1b6a67cf24a79f2a4a5c28821",
     "url": "https://docs.proficientai.com/intro"
   },
+  "e5f1c0da6f782ecb-20261111T151952074461Z.json": {
+    "bytes": 164068,
+    "fetched_at": "2026-11-11T15:19:52.074461+00:00",
+    "sha256": "665ab717d21015670c548bc50d4091714d40304492cb79f149a99d9ebeef3073",
+    "url": "https://docs.proficientai.com/intro"
+  },
   "e83b8b7a1c27da17-20261111T004538941459Z.json": {
     "bytes": 53816,
     "fetched_at": "2026-11-11T00:45:38.941459+00:00",
     "sha256": "e5fb5510f061662beaed8f02ae17c1b853c8ce4e814893088406178a595860f2",
+    "url": "https://docs.grit.io/"
+  },
+  "e83b8b7a1c27da17-20261111T151913819660Z.json": {
+    "bytes": 53816,
+    "fetched_at": "2026-11-11T15:19:13.819660+00:00",
+    "sha256": "d2b7e599a35b2dfbc19e509a23c23df1a2ddaa8e6238872f72024fe637a1c4f1",
     "url": "https://docs.grit.io/"
   },
   "e938916fecf65d46-20261111T004044357494Z.json": {
@@ -1013,10 +2045,22 @@
     "sha256": "9d6953b6d9a4b0bdafc6c8b9c29f530c0382e3dbabe0d4982c38d5685cb4831a",
     "url": "https://huggingface.co/MemGPT"
   },
+  "e938916fecf65d46-20261111T151405809161Z.json": {
+    "bytes": 128353,
+    "fetched_at": "2026-11-11T15:14:05.809161+00:00",
+    "sha256": "3b6b5b957531bcf9af8e1bf065d623baf41b76c2aeba3916db595cf01462cd8d",
+    "url": "https://huggingface.co/MemGPT"
+  },
   "ebadc6e107d5a2a5-20261111T003327211144Z.json": {
     "bytes": 168638,
     "fetched_at": "2026-11-11T00:33:27.211144+00:00",
     "sha256": "5b58301246511e1ac16bfb7b19932407f754ca154d50f2c8ae5399c01301a840",
+    "url": "https://gpt3demo.com/apps/ai-legion"
+  },
+  "ebadc6e107d5a2a5-20261111T145447479271Z.json": {
+    "bytes": 168638,
+    "fetched_at": "2026-11-11T14:54:47.479271+00:00",
+    "sha256": "7a266918196a719288ef039bebb485ed22fb1f1385f2678f8b112b685f68c083",
     "url": "https://gpt3demo.com/apps/ai-legion"
   },
   "ebbdac9884c0e0aa-20261111T004545607508Z.json": {
@@ -1025,10 +2069,22 @@
     "sha256": "49fb255454300d878565ffdb843bf16d9d7f989d6ca6ebf2f5aafa99976c0af5",
     "url": "https://www.imean.ai/"
   },
+  "ebbdac9884c0e0aa-20261111T151920400316Z.json": {
+    "bytes": 205320,
+    "fetched_at": "2026-11-11T15:19:20.400316+00:00",
+    "sha256": "b8b8179adf98616160a735894e6f97dcb3ff0cd5aa9e9e3637b36d9b5cd7f930",
+    "url": "https://www.imean.ai/"
+  },
   "ebc3d4d70545cc4f-20261111T004217953408Z.json": {
     "bytes": 701362,
     "fetched_at": "2026-11-11T00:42:17.953408+00:00",
     "sha256": "8eafe8f092c139176abff27dcf25f4f4dbe621212612e303712941ee37cd7eda",
+    "url": "https://beam.ai/"
+  },
+  "ebc3d4d70545cc4f-20261111T151548881869Z.json": {
+    "bytes": 701361,
+    "fetched_at": "2026-11-11T15:15:48.881869+00:00",
+    "sha256": "8eb4d743e18deb4f5ca6000ea77d26ba0e8aee0c1d2fbfaa5d56803426950d31",
     "url": "https://beam.ai/"
   },
   "ebf4732dafc49992-20261111T004039260862Z.json": {
@@ -1037,10 +2093,22 @@
     "sha256": "554d792b0f7c7637badd1d02397d07bdb2ae2274660b8313a34317b86d268d82",
     "url": "https://llmstack.ai/"
   },
+  "ebf4732dafc49992-20261111T151359786410Z.json": {
+    "bytes": 84188,
+    "fetched_at": "2026-11-11T15:13:59.786410+00:00",
+    "sha256": "31d783d87c8cee5646c614d64ed4c9e2622a5cc6be7f8ad10003d3487984b65e",
+    "url": "https://llmstack.ai/"
+  },
   "f0bbd748505d8bcf-20261111T004124727706Z.json": {
     "bytes": 35919,
     "fetched_at": "2026-11-11T00:41:24.727706+00:00",
     "sha256": "5964aa2f4c69805b64763e9d46d851214c612adb193b0687435a95dba6aab4f8",
+    "url": "https://huggingface.co/spaces/cr7-gjx/Suspicion-Agent-Demo"
+  },
+  "f0bbd748505d8bcf-20261111T151447042625Z.json": {
+    "bytes": 35919,
+    "fetched_at": "2026-11-11T15:14:47.042625+00:00",
+    "sha256": "9f908c060b824fafcd422fa6bedb6d7e36ad9caedda88095103c78de777ceea2",
     "url": "https://huggingface.co/spaces/cr7-gjx/Suspicion-Agent-Demo"
   },
   "f242f50af2b4b14b-20261111T004129338106Z.json": {
@@ -1049,10 +2117,22 @@
     "sha256": "069d4caae1ed4d6465d449c564644e8dc5ac3e41015a6b46ff4d79fb15a77d93",
     "url": "https://w3gpt.ai/"
   },
+  "f242f50af2b4b14b-20261111T151452885422Z.json": {
+    "bytes": 89025,
+    "fetched_at": "2026-11-11T15:14:52.885422+00:00",
+    "sha256": "143ad714224f8ea8ae39c9308b9e5b448cc5567f7a3e0c04529943dee2385fa5",
+    "url": "https://w3gpt.ai/"
+  },
   "f3866e2048faff07-20261111T004559495859Z.json": {
     "bytes": 20735,
     "fetched_at": "2026-11-11T00:45:59.495859+00:00",
     "sha256": "ff74a550999676fbf0d264f6cc0c9f759a234c0aa925debf78c92dc2cf69e7da",
+    "url": "https://blog.kusho.ai/"
+  },
+  "f3866e2048faff07-20261111T151933668571Z.json": {
+    "bytes": 20735,
+    "fetched_at": "2026-11-11T15:19:33.668571+00:00",
+    "sha256": "dee2d6b7b81a1b5cd9848f4ae4fcfc32e0945d1fa65abfe92741428bd56a1a87",
     "url": "https://blog.kusho.ai/"
   },
   "f82a02fe03a9b0a4-20261111T004132652981Z.json": {
@@ -1061,10 +2141,22 @@
     "sha256": "5e03b5bff76244f1e6436e5870530fd9b40af481c2309f8af90aee42e885332e",
     "url": "https://www.ability.ai/"
   },
+  "f82a02fe03a9b0a4-20261111T151455900944Z.json": {
+    "bytes": 207061,
+    "fetched_at": "2026-11-11T15:14:55.900944+00:00",
+    "sha256": "e2476b081381784ccca1921cd3e1336df6336cf4b90e8cdbbd5f50db242b46d9",
+    "url": "https://www.ability.ai/"
+  },
   "f8548860027a91f3-20261111T004128465122Z.json": {
     "bytes": 27857,
     "fetched_at": "2026-11-11T00:41:28.465122+00:00",
     "sha256": "d9c6b137cb3ca2cd364fdda2d349fd011efabce2b95978f55efd1130801365ab",
+    "url": "https://vanna.ai/docs"
+  },
+  "f8548860027a91f3-20261111T151451017685Z.json": {
+    "bytes": 27857,
+    "fetched_at": "2026-11-11T15:14:51.017685+00:00",
+    "sha256": "2dbd8f00ef9aa5f313e93bfe239c68a2d7967ab3ab47421001d4bbac62f4b8ca",
     "url": "https://vanna.ai/docs"
   },
   "fa190d77a69b8185-20261111T004520907984Z.json": {
@@ -1073,10 +2165,22 @@
     "sha256": "39d2f3a8abb265ef3fb85db0a5b806d8c3e156a5b47d20064d9931b9e4d7a3f1",
     "url": "https://docketai.net/"
   },
+  "fa190d77a69b8185-20261111T151856353249Z.json": {
+    "bytes": 2084,
+    "fetched_at": "2026-11-11T15:18:56.353249+00:00",
+    "sha256": "4c164deff95d20632ac4e76e074c50436c44abf26fb9f4617e79c7646ea8ccd0",
+    "url": "https://docketai.net/"
+  },
   "fb50bd50a0912c73-20261111T003334072151Z.json": {
     "bytes": 94708,
     "fetched_at": "2026-11-11T00:33:34.072151+00:00",
     "sha256": "f7dad7623f810648cad84ee57db99e0e71c7bc8701c3173f4e9d6a842ee613bf",
+    "url": "https://marketplace.visualstudio.com/items?itemName=blinky.blinky"
+  },
+  "fb50bd50a0912c73-20261111T145453998145Z.json": {
+    "bytes": 94708,
+    "fetched_at": "2026-11-11T14:54:53.998145+00:00",
+    "sha256": "60e2f26ea1881e2900ee0ced1ab4cda770886cf7ec6ab3d7c31204e550aae8ce",
     "url": "https://marketplace.visualstudio.com/items?itemName=blinky.blinky"
   },
   "fe4c5b46aab484b3-20261111T004836490937Z.json": {
@@ -1085,10 +2189,28 @@
     "sha256": "afeb3f23ebfc12281827c079d41c74a7abe27c5edf0e38dc366cf03730c996d9",
     "url": "https://www.usetusk.ai/"
   },
+  "fe4c5b46aab484b3-20261111T152022931178Z.json": {
+    "bytes": 97463,
+    "fetched_at": "2026-11-11T15:20:22.931178+00:00",
+    "sha256": "6d35af4d0fc7bdc76e4f8c44bbf0a8dcc9c69686c2084e084ff8a6f7ef96d423",
+    "url": "https://www.usetusk.ai/"
+  },
   "fee0bbee032ae220-20261111T004552065066Z.json": {
     "bytes": 739349,
     "fetched_at": "2026-11-11T00:45:52.065066+00:00",
     "sha256": "f98ad0959fee48c4fd5832938e861390a81cca1809a3cf091c4574ea809e6961",
     "url": "https://www.heyjuno.co/"
+  },
+  "fee0bbee032ae220-20261111T151927700572Z.json": {
+    "bytes": 739349,
+    "fetched_at": "2026-11-11T15:19:27.700572+00:00",
+    "sha256": "337af6cf5ade13a23146c5f934f5e0ff6ae7043a70decb961907893e5b603c11",
+    "url": "https://www.heyjuno.co/"
+  },
+  "ff20f00519bcd4bd-20261111T151954582365Z.json": {
+    "bytes": 320837,
+    "fetched_at": "2026-11-11T15:19:54.582365+00:00",
+    "sha256": "599ed63ef757244b290ae84afd6afbe3a64393b9ad9ecfe7d672371d27d09797",
+    "url": "https://relevanceai.com/"
   }
 }
