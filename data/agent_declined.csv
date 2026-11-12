@@ -6,7 +6,5 @@ date,reason,count
 2026-11-10,unknown_task,2
 2026-11-11,classification_failed,2146
 2026-11-11,no_description,1
-2026-11-12,classification_failed,32
-2026-11-12,not_an_agent,45
-2026-11-12,quote_not_in_text,5
-2026-11-12,recheck_not_an_agent,3
+2026-11-12,model_refused,32
+2026-11-12,not_an_agent,44

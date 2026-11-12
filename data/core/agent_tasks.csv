@@ -295,9 +295,9 @@ ag_493a8113a6,write_code,https://github.com/RooCodeInc/Roo-Code,Generate Code fr
 ag_493a8113a6,write_document,https://github.com/RooCodeInc/Roo-Code,Write & Update documentation
 ag_499ed7d861,analyze_data,https://github.com/iDC-NEU/YiGraph,"Users only need to describe business problems in **natural language**, and the system will automatically plan the analysis process, complete calculations, and generate **clear, interpretable, and traceable analysis reports**."
 ag_499ed7d861,write_document,https://github.com/iDC-NEU/YiGraph,"generate **clear, interpretable, and traceable analysis reports**"
-ag_49a9b3b3c6,review_code,https://github.com/OpenHands/OpenHands,"you can share an Agent Server with your team for agents doing
-code review and dependency updates"
-ag_49a9b3b3c6,write_document,https://github.com/OpenHands/OpenHands,like generating reports that publish to Slack
+ag_49a9b3b3c6,review_code,https://github.com/OpenHands/OpenHands,code review and dependency updates
+ag_49a9b3b3c6,write_code,https://github.com/OpenHands/OpenHands,The self-hosted developer control center for coding agents and automations.
+ag_49a9b3b3c6,write_document,https://github.com/OpenHands/OpenHands,generating reports that publish to Slack
 ag_4a553cc275,analyze_data,https://github.com/Alpha-Dojo/DojoAgents,"Instantly fetches, structures, and cross-references raw multi-market data (K-lines, financials, news)."
 ag_4a553cc275,research_topic,https://github.com/Alpha-Dojo/DojoAgents,"it autonomously conducts background market research, tracks sector rotations, and monitors your risk exposure while you sleep."
 ag_4aa0e79be8,review_code,https://github.com/zgsm-ai/costrict,Repository-wide RAG-based code analysis with multi-expert model verification
@@ -557,7 +557,7 @@ ag_7e882d098f,browse_web,https://github.com/Pickle-Pixel/ApplyPilot,"Claude Code
 ag_7e882d098f,write_document,https://github.com/Pickle-Pixel/ApplyPilot,"Writes a targeted cover letter per job referencing the specific company, role, and how your experience maps to their requirements."
 ag_7ec3cfafe4,browse_web,https://github.com/heshengtao/super-agent-party,"AI Browser: Equips your AI agents with their own browser, supporting automatic control"
 ag_7ec3cfafe4,operate_computer,https://github.com/heshengtao/super-agent-party,"Through desktop vision combined with a toolchain for controlling the mouse, keyboard, and terminal, AI agents can accomplish any task on a computer!"
-ag_80154719b4,write_document,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,AI 帮你规划世界与角色、逐章写作、检查和保存，让长篇创作有一条可以继续走下去的路。
+ag_80154719b4,write_document,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,V2 围绕授权范围推进近期规划、章节任务、场景、正文、检查与保存
 ag_80571d43a2,write_code,https://marketplace.visualstudio.com/items?itemName=blinky.blinky,Blinky is an open-source AI debugging agent for VSCode that uses LLMs to help identify and fix backend code errors (inspired by
 ag_80629be084,research_topic,https://github.com/Doriandarko/make-it-heavy,User: Research the latest developments in AI and summarize them
 ag_80629be084,write_document,https://github.com/Doriandarko/make-it-heavy,Single Agent: Comprehensive research report
@@ -636,8 +636,8 @@ ag_8d68c292f2,write_document,https://github.com/shiwenwen/hope-agent,turn a brie
 ag_8d87c74bc0,write_document,https://github.com/s2b-dev/smart-second-brain,"that read and write your notes, draw charts and dashboards live from them as"
 ag_8dc9c8896c,research_topic,https://github.com/assafelovic/gpt-researcher,GPT Researcher the first open deep research agent designed for both web and local research on any given task.
 ag_8dc9c8896c,write_document,https://github.com/assafelovic/gpt-researcher,"The agent produces detailed, factual, and unbiased research reports with citations."
-ag_8dcc0c1b05,analyze_data,https://www.lindy.ai/,Data analysis
-ag_8dcc0c1b05,handle_customer_support,https://www.lindy.ai/,Customer support
+ag_8dcc0c1b05,analyze_data,https://www.lindy.ai/,"Every morning at 8am, I check spend, ROAS and CPA against target, pause what’s wasting money and move budget to what’s working."
+ag_8dcc0c1b05,handle_customer_support,https://www.lindy.ai/,Customer Service Rep
 ag_8dcc0c1b05,research_topic,https://www.lindy.ai/,"When a new lead comes in, I research them, score the fit and draft a personal reply within minutes."
 ag_8dcc0c1b05,write_document,https://www.lindy.ai/,"Every Friday I pull each client’s numbers and draft their report in your format, ready for your OK."
 ag_8e121381b8,research_topic,https://www.cykel.ai/,Sampson researches and produces professional quality analyst reports.
@@ -851,7 +851,7 @@ ag_c5784d7fcb,operate_computer,https://github.com/HKUDS/PhoneCLI,"Online, those 
 ag_c581ed7eb6,review_code,https://github.com/mattzcarey/shippie,"It runs an agent loop that reads your diff, explores the codebase with real developer tools, and posts focused review comments"
 ag_c68b8beb76,write_code,https://github.com/open-gsd/gsd-pi,"Break work into milestones, slices, and tasks, then let auto mode plan, implement, verify, and advance."
 ag_c6ac5cbd1a,browse_web,https://github.com/AtomicBot-ai/atomic-agent,"It works across your machine: browse the web, read and edit files, run approved shell commands, inspect documents, remember context across sessions, schedule follow-ups, and call external tools over MCP."
-ag_c6ac5cbd1a,write_code,https://github.com/AtomicBot-ai/atomic-agent,"Drives your browser, edits files, runs approved commands, and remembers context across sessions."
+ag_c6ac5cbd1a,operate_computer,https://github.com/AtomicBot-ai/atomic-agent,"Drives your browser, edits files, runs approved commands, and remembers context across sessions."
 ag_c6f48add9d,research_topic,https://github.com/byt3bl33d3r/SILENTTRINITY,The aim of this tool and the BYOI concept is to shift the paradigm back to PowerShell style like attacks (as it offers much more flexibility over traditional C# tradecraft) only without using PowerShell in anyway.
 ag_c6f48add9d,write_code,https://github.com/byt3bl33d3r/SILENTTRINITY,"As of the time of writing the most useful thing you can contribute are post-ex modules: this would allow me to concentrate efforts on the framework itself, user experience, QOL features etc..."
 ag_c75780912a,operate_computer,https://github.com/OS-Copilot/OS-Copilot,"automatically interfacing with comprehensive elements in an operating system (OS), including the web, code terminals, files, multimedia, and various third-party applications"

@@ -55,7 +55,6 @@ ag_0953012997,tool_class,code_execution,https://github.com/nearai/ironclaw,Isola
 ag_0953012997,tool_class,file_system,https://github.com/nearai/ironclaw,"Flexible path-based storage for notes, logs, and context"
 ag_0961684724,audience,organization,https://github.com/beenuar/AiSOC,"An open-source, self-hostable AI Security Operations Center.** It ingests your security telemetry"
 ag_0961684724,autonomy,approver,https://github.com/beenuar/AiSOC,"investigates them with AI agents whose reasoning is fully auditable, and proposes responses a human approves."
-ag_0961684724,tool_class,custom_apis,https://github.com/beenuar/AiSOC,by configuring one of **92 click-and-connect data connectors** in **Settings → Connectors**
 ag_0a363d0548,autonomy,collaborator,https://github.com/liliu-z/stashbase,Side by side with your agent.
 ag_0a363d0548,tool_class,file_system,https://github.com/liliu-z/stashbase,"Ask your agent to file new material,
   update your notes, and link them back to their sources."
@@ -811,8 +810,8 @@ ag_7cd7de9545,tool_class,code_execution,https://github.com/alfredfrancis/ai-chat
 ag_7cd7de9545,tool_class,file_system,https://github.com/alfredfrancis/ai-chatbot-framework,"Four tools (`read`, `write`, `edit`, `bash`)"
 ag_7ce3ab9fd8,autonomy,observer,https://github.com/jihe520/MathModelAgent,一条 `/1start-mathmodel` 命令全自动完成，中间阶段自动串联，无需人工干预。
 ag_7ce3ab9fd8,tool_class,code_execution,https://github.com/jihe520/MathModelAgent,编写并运行求解代码，生成数据图表
+ag_7d28e5f0e5,autonomy,collaborator,https://v0.app/,"Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web."
 ag_7d28e5f0e5,tool_class,custom_apis,https://v0.app/,"Build with your favorite tools and APIs. Automatic integration, no accounts required."
-ag_7d28e5f0e5,tool_class,file_system,https://v0.app/,Connect to GitHub and push code directly to your repository.
 ag_7d52b0179e,autonomy,observer,https://github.com/openai/openai-cua-sample-app,Use **Stop** to interrupt a run
 ag_7d52b0179e,tool_class,browser,https://github.com/openai/openai-cua-sample-app,one runs JavaScript with **Playwright** to control a browser
 ag_7d52b0179e,tool_class,code_execution,https://github.com/openai/openai-cua-sample-app,we build this loop around models that write code to interact with software.
@@ -846,8 +845,8 @@ ag_7ec3cfafe4,autonomy,observer,https://github.com/heshengtao/super-agent-party,
 ag_7ec3cfafe4,tool_class,browser,https://github.com/heshengtao/super-agent-party,"AI Browser: Equips your AI agents with their own browser, supporting automatic control"
 ag_7ec3cfafe4,tool_class,file_system,https://github.com/heshengtao/super-agent-party,"Through desktop vision combined with a toolchain for controlling the mouse, keyboard, and terminal, AI agents can accomplish any task on a computer!"
 ag_80154719b4,audience,non_expert,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,它面向第一次写小说的人
-ag_80154719b4,autonomy,approver,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,在需要确认的阶段保存结果，等待你核对后继续；正文在批次收尾确认
-ag_80154719b4,tool_class,search_retrieval,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,知识库与 RAG 检索召回相关资料，配合本书世界、角色和写法组装章节上下文
+ag_80154719b4,autonomy,approver,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,在需要确认的阶段保存结果，等待你核对后继续
+ag_80154719b4,tool_class,search_retrieval,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,知识库与 RAG 检索召回相关资料
 ag_80571d43a2,audience,practitioner,https://marketplace.visualstudio.com/items?itemName=blinky.blinky,we thought it would be cool to have SWE-agent embedded within VSCode so devs can use it during development and provide feedback to it midway using the VSCode extension UI
 ag_80571d43a2,autonomy,approver,https://marketplace.visualstudio.com/items?itemName=blinky.blinky,"Once the agent is done, you will be presented with the UI to accept or reject the changes that the agent has made."
 ag_80571d43a2,tool_class,code_execution,https://marketplace.visualstudio.com/items?itemName=blinky.blinky,"Verify
@@ -884,7 +883,7 @@ ag_84706fefa6,autonomy,observer,https://github.com/TaxyAI/browser-extension,"The
 ag_84706fefa6,tool_class,browser,https://github.com/TaxyAI/browser-extension,Taxy uses GPT-4 to control your browser and perform repetitive actions on your behalf.
 ag_84a2d5846a,audience,practitioner,https://www.bardeen.ai/,"Bardeen is ideal for GTM teams across various roles including Sales (SDRs, AEs), Customer Success (CSMs), Revenue Operations, Sales Engineering, and Sales Leadership."
 ag_84a2d5846a,tool_class,business_systems,https://www.bardeen.ai/,"Bardeen integrates broadly with CRMs, communication platforms, lead generation tools, project and task management tools, and customer success tools."
-ag_84a2d5846a,tool_class,search_retrieval,https://www.bardeen.ai/,Research leads with AI search.
+ag_84a2d5846a,tool_class,search_retrieval,https://www.bardeen.ai/,"Research or generate leads at scale using leading AI and websearch providers, or leverage AI to instantly find answers on a website."
 ag_84bc97e8f9,audience,organization,https://github.com/langchain-ai/open-swe,"Built by LangChain, it is open source and deployable in your infrastructure."
 ag_84bc97e8f9,autonomy,approver,https://github.com/langchain-ai/open-swe,"Workflow-file approval prompts guard detected Git pushes, not every possible shell or API write."
 ag_84bc97e8f9,tool_class,code_execution,https://github.com/langchain-ai/open-swe,"Cloud coding runs in persistent, per-thread Linux sandboxes with tooling supplied by workspace scripts or snapshots."
@@ -992,7 +991,7 @@ ag_8dcc0c1b05,autonomy,approver,https://www.lindy.ai/,"At first, anything with o
 ag_8dcc0c1b05,tool_class,business_systems,https://www.lindy.ai/,Lead added to HubSpot
 ag_8dcc0c1b05,tool_class,custom_apis,https://www.lindy.ai/,"I work in Slack, email, text and your calendar, with 3,000+ integrations + MCP."
 ag_8dcc0c1b05,tool_class,email_calendar,https://www.lindy.ai/,"I run your inbox, calendar and meetings, so you walk into every one ready."
-ag_8dcc0c1b05,tool_class,voice,https://www.lindy.ai/,"I pick up your calls and fill your calendar, day or night."
+ag_8dcc0c1b05,tool_class,voice,https://www.lindy.ai/,"Every week I follow up on open proposals and overdue invoices by email, and by phone when it drags on, until they’re signed or paid."
 ag_8e121381b8,audience,organization,https://www.cykel.ai/,Digital workers are AI agents that automate complex business tasks 24/7.
 ag_8e121381b8,autonomy,observer,https://www.cykel.ai/,"Handle complex workflows independently. Securely access your company data, take action, learn and improve over time."
 ag_8e121381b8,tool_class,business_systems,https://www.cykel.ai/,"Digital workers operate within your existing software environment, whether that's your ATS, CRM, or other business tools."
@@ -1309,7 +1308,7 @@ ag_c581ed7eb6,tool_class,browser,https://github.com/mattzcarey/shippie,"Shippie 
 ag_c581ed7eb6,tool_class,file_system,https://github.com/mattzcarey/shippie,Local mode reviews your **staged changes** (`git diff --cached`) and writes results to `.shippie/review/local_*.md`:
 ag_c68b8beb76,audience,practitioner,https://github.com/open-gsd/gsd-pi,"GSD Pi is a local-first coding agent for planning, implementing, verifying, and tracking project work from the command line."
 ag_c68b8beb76,tool_class,file_system,https://github.com/open-gsd/gsd-pi,"Store project requirements, decisions, runtime notes, generated plans, summaries, and validation evidence under `.gsd/`."
-ag_c6ac5cbd1a,autonomy,approver,https://github.com/AtomicBot-ai/atomic-agent,"Drives your browser, edits files, runs approved commands, and remembers context across sessions."
+ag_c6ac5cbd1a,autonomy,approver,https://github.com/AtomicBot-ai/atomic-agent,runs approved commands
 ag_c6ac5cbd1a,tool_class,browser,https://github.com/AtomicBot-ai/atomic-agent,"Drives your browser, edits files, runs approved commands, and remembers context across sessions."
 ag_c6ac5cbd1a,tool_class,code_execution,https://github.com/AtomicBot-ai/atomic-agent,run approved shell commands
 ag_c6ac5cbd1a,tool_class,custom_apis,https://github.com/AtomicBot-ai/atomic-agent,call external tools over MCP
