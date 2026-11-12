@@ -8,7 +8,16 @@ from agentarium.sources import candidate, github_repo, is_product_link, web_key,
 from agentarium.sources.awesome_lists import extract_links
 from agentarium.sources.aws_marketplace import listing_text
 from agentarium.sources.github import SEARCH_CAP, star_ranges
+from agentarium.sources.packages import without_repeats
 from agentarium.sources.swe_bench import address, resolved_count
+
+
+def test_a_package_in_several_channels_is_one_row() -> None:
+    row = {"agent_id": "ag_a", "ecosystem": "nixpkgs", "package": "pentestgpt", "downloads_last_month": "",
+           "source_url": "https://packages.ecosyste.ms/x"}
+    assert without_repeats([row, dict(row), row | {"package": "other"}], "r") == [row, row | {"package": "other"}]
+    with pytest.raises(ValueError, match="different downloads"):
+        without_repeats([row, row | {"downloads_last_month": "5"}], "r")
 
 
 def test_resolved_is_a_list_of_instances_or_a_count() -> None:

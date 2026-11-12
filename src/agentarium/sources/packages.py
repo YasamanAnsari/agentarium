@@ -40,5 +40,16 @@ def lookup(agent_id: str, repository_url: str) -> list[dict[str, str]]:
         except (KeyError, TypeError, AttributeError) as err:
             raise ValueError(f"{url}: a package entry lacks {err}") from err
         if len(found) < PAGE_SIZE:
-            return rows
+            return without_repeats(rows, repository_url)
     raise RuntimeError(f"more than 999 pages of packages for {repository_url}")
+
+
+def without_repeats(rows: list[dict[str, str]], repository_url: str) -> list[dict[str, str]]:
+    """One row per package: the lookup lists a package once per registry of an ecosystem (each nixpkgs
+    channel, for example), and those copies are identical rows. Copies that differ raise ValueError."""
+    unique: dict[tuple[str, str], dict[str, str]] = {}
+    for row in rows:
+        key = (row["ecosystem"], row["package"])
+        if unique.setdefault(key, row) != row:
+            raise ValueError(f"{repository_url}: {key} is listed twice with different downloads")
+    return list(unique.values())

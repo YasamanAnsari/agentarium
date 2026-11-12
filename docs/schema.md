@@ -114,7 +114,7 @@ Primary key: `agent_id`, `ecosystem` and `package` together. One row per registr
 | `downloads_last_month` | no | Downloads in the last month, as the registry reports them. Empty when the registry reports no monthly count. |
 | `source_url` | yes | The lookup request the row comes from. |
 
-Every package that names the repository is kept, because the lookup cannot tell the project's own package from third-party copies that republish it. The download counts show which is which: for browser-use the lookup returns 11 packages, of which the real one has about 8 million monthly downloads and the copies a few hundred at most. The daily run refreshes about 200 agents a day, so counts can be up to about five days old.
+Every package that names the repository is kept, because the lookup cannot tell the project's own package from third-party copies that republish it. A package the lookup lists once per registry of an ecosystem, such as each nixpkgs channel, is one row. The download counts show which is which: for browser-use the lookup returns 11 packages, of which the real one has about 8 million monthly downloads and the copies a few hundred at most. The daily run refreshes about 200 agents a day, so counts can be up to about five days old.
 
 ## agent_results.csv
 
