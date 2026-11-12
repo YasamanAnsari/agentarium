@@ -578,8 +578,7 @@ function renderOccupations(){
     return;
   }
   const top=claimed.slice().sort((a,b)=>shareOf(b)-shareOf(a)||Number(b.tasks_claimed)-Number(a.tasks_claimed)).slice(0,OCCUPATION_ROWS);
-  const max=shareOf(top[0]);
-  $('#occupation-chart').innerHTML=top.map(o=>`<div class="occupation-row" title="${esc(o.title)}: ${o.tasks_claimed} of ${o.tasks} tasks, claimed by ${agentCount(Number(o.agents))}"><span class="occupation-label">${esc(o.title)}</span><span class="occupation-track"><span style="width:${shareOf(o)/max*100}%"></span></span><span class="occupation-number mono">${percent(shareOf(o))}</span></div>`).join('');
+  $('#occupation-chart').innerHTML=top.map(o=>`<div class="occupation-row" title="${esc(o.title)}: ${o.tasks_claimed} of ${o.tasks} tasks, claimed by ${agentCount(Number(o.agents))}"><span class="occupation-label">${esc(o.title)}</span><span class="occupation-track"><span style="width:${shareOf(o)*100}%"></span></span><span class="occupation-number mono">${percent(shareOf(o))}</span></div>`).join('');
 
   const plotted=OCCUPATIONS.filter(o=>Number(o.annual_mean_wage)&&Number(o.employment));
   const left=58,right=522,plotTop=18,bottom=282;
@@ -589,7 +588,7 @@ function renderOccupations(){
   const x=wage=>left+(Math.log10(wage)-lo)/(hi-lo)*(right-left);
   const y=share=>bottom-share/yMax*(bottom-plotTop);
   const maxEmployment=Math.max(...plotted.map(o=>Number(o.employment)));
-  let html='<title>Occupations by mean annual wage and share of tasks claimed by agents</title><desc>One circle per occupation. Horizontal position is its mean annual wage on a log scale; vertical position is the share of its O*NET tasks that at least one agent claims; circle area is its employment.</desc>';
+  let html='<title>Occupations by mean annual wage and share of tasks claimed by agents</title><desc>One circle per occupation. Horizontal position is its mean annual wage on a log scale; vertical position is the share of its O*NET tasks that at least five agents claim; circle area is its employment.</desc>';
   for(let s=0;s<=yMax+1e-9;s+=yMax/4)html+=`<line x1="${left}" y1="${y(s)}" x2="${right}" y2="${y(s)}" stroke="#20324826"/><text x="${left-8}" y="${y(s)+4}" text-anchor="end" ${axis}>${percent(s)}</text>`;
   for(const wage of [25000,50000,100000,200000])if(Math.log10(wage)>=lo&&Math.log10(wage)<=hi)html+=`<text x="${x(wage)}" y="${bottom+18}" text-anchor="middle" ${axis}>$${wage/1000}k</text>`;
   html+=`<text x="${left}" y="${plotTop-6}" ${axis} letter-spacing="1">↑ SHARE OF TASKS CLAIMED</text><text x="${right}" y="${bottom+38}" text-anchor="end" ${axis} letter-spacing="1">MEAN ANNUAL WAGE →</text>`;

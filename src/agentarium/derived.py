@@ -13,6 +13,9 @@ from agentarium import ROOT, onet, schema
 
 DERIVED_DIR = ROOT / "data" / "derived"
 BLS_PATH = ROOT / "data" / "reference" / "bls" / "oews_national_m2025.csv"
+# ponytail: a fixed bar that keeps one mistaken link from claiming a task; it is not a measured error rate.
+# Set it from the reviewed accuracy sample once that exists.
+MIN_AGENTS = 5
 COLUMNS = ("soc_code", "title", "tasks", "tasks_claimed", "agents", "annual_mean_wage", "employment")
 
 
@@ -23,15 +26,16 @@ def _bls() -> dict[str, dict[str, str]]:
 
 
 def occupation_coverage(catalog: schema.Catalog) -> list[dict[str, str]]:
-    """One row per 6-digit SOC occupation with O*NET tasks: how many of its tasks at least one agent claims.
+    """One row per 6-digit SOC occupation with O*NET tasks: how many of its tasks agents claim.
 
     A task is claimed when one of its Detailed Work Activities (O*NET's own Tasks to DWAs file) is in
-    agent_activities. O*NET occupations such as 15-1252.00 and 15-1252.01 are pooled under their SOC code
-    so they join to BLS wages. Tasks with no activity link count in `tasks` and can never be claimed.
+    agent_activities for at least MIN_AGENTS agents. O*NET occupations such as 15-1252.00 and 15-1252.01
+    are pooled under their SOC code so they join to BLS wages. Tasks with no activity link count in `tasks` and can never be claimed.
     """
-    agents_by_dwa: dict[str, set[str]] = defaultdict(set)
+    agents_by_activity: dict[str, set[str]] = defaultdict(set)
     for row in catalog["agent_activities"]:
-        agents_by_dwa[row["dwa_id"]].add(row["agent_id"])
+        agents_by_activity[row["dwa_id"]].add(row["agent_id"])
+    agents_by_dwa = {dwa: agents for dwa, agents in agents_by_activity.items() if len(agents) >= MIN_AGENTS}
     dwas_by_task: dict[str, set[str]] = defaultdict(set)
     for row in onet.read("Tasks to DWAs"):
         dwas_by_task[row["Task ID"]].add(row["DWA ID"])
@@ -43,8 +47,8 @@ def occupation_coverage(catalog: schema.Catalog) -> list[dict[str, str]]:
 
     rows = []
     for soc, tasks in sorted(tasks_by_soc.items()):
-        claimed = {task for task in tasks if any(agents_by_dwa.get(dwa) for dwa in dwas_by_task[task])}
-        agents = set().union(*(agents_by_dwa[dwa] for task in claimed for dwa in dwas_by_task[task]))
+        claimed = {task for task in tasks if any(dwa in agents_by_dwa for dwa in dwas_by_task[task])}
+        agents = set().union(*(agents_by_dwa.get(dwa, set()) for task in claimed for dwa in dwas_by_task[task]))
         wages = bls.get(soc, {})
         rows.append({
             "soc_code": soc,

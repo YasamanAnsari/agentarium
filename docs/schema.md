@@ -178,12 +178,12 @@ Computed by `src/agentarium/derived.py` after every daily run; never edited by h
 | `soc_code` | The SOC code, e.g. `15-1252`. O*NET occupations under one SOC code, such as `15-1252.00` and `15-1252.01`, are pooled so they join to BLS wages. |
 | `title` | O*NET's title for `<soc_code>.00`, or the BLS title when O*NET has no `.00` occupation. |
 | `tasks` | The occupation's task statements in O*NET 29.2, of every task type (core, supplemental, and the 1,157 O*NET marks `n/a`). |
-| `tasks_claimed` | Those tasks linked, through O*NET's `Tasks to DWAs` file, to at least one activity in `agent_activities.csv`. |
-| `agents` | Agents with at least one such activity. |
+| `tasks_claimed` | Those tasks linked, through O*NET's `Tasks to DWAs` file, to at least one activity that five or more agents have in `agent_activities.csv`. |
+| `agents` | Agents with at least one of those activities. |
 | `annual_mean_wage` | BLS mean annual wage, May 2025. Empty where BLS publishes none (`*`) or has no row for the code. |
 | `employment` | BLS employment, May 2025. Empty where BLS has no row for the code. |
 
-A claimed task means an agent's text says it performs one of the task's work activities. It does not show that the agent does the task well, that anyone uses it for that task, or how much of the task it covers. 301 of O*NET's 18,796 task statements have no activity link and can never be claimed.
+A claimed task means the text of at least five agents says they perform the same one of the task's work activities. The bar of five keeps a single mistaken link from claiming a task; it is a fixed choice, not a measured error rate. A claimed task does not show that those agents do the task well, that anyone uses them for that task, or how much of the task they cover. 301 of O*NET's 18,796 task statements have no activity link and can never be claimed.
 
 ## Reference files
 
