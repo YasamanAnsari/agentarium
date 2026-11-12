@@ -151,6 +151,7 @@ Primary key: `date` and `reason` together. One row per day and reason, counting 
 |---|---|
 | `no_description` | The record has no description or no text, so no row can be filled. |
 | `classification_failed` | The model call failed or its answer was malformed; the record is retried the next day. |
+| `model_refused` | The model declined to answer about the record; it is asked again only when its text changes. |
 | `not_an_agent` | The model judged the record not to be an agent. |
 | `recheck_not_an_agent` | An agent already in the catalog was judged not to be one. Its rows are removed. |
 | `quote_not_in_text` | A task, activity or profile claim's quote is not in the saved text. |
