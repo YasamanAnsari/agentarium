@@ -386,7 +386,7 @@ function updateScroll(){
   $('#level-number').textContent=`${String(closest+1).padStart(2,'0')} / ${pad(sections.length)}`;
   $('#next-label').textContent=closest===sections.length-1?'OVERVIEW ↑':'CONTINUE ↓';
   $('#next-depth').setAttribute('aria-label',closest===sections.length-1?'Return to overview':'Continue to '+sections[closest+1].dataset.label);
-  const ids=['surface','habitat','functions','functions','functions','catalog','method'];
+  const ids=['surface','habitat','functions','functions','functions','functions','functions','catalog','method'];
   $$('.site-header nav a').forEach(a=>{if(a.hash==='#'+ids[closest])a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
 }
 
@@ -478,7 +478,7 @@ function renderCatalog(){
   $('#overview-tasks').textContent=pad(TASKS.length);
   $('#overview-claims').textContent=pad(CLAIMS);
   presentTasks().forEach(t=>{const option=document.createElement('option');option.value=t;option.textContent=taskName(t);$('#catalog-function').append(option);});
-  renderHabitat();renderFigures();renderObservationField();renderOccupations();renderTable();
+  renderHabitat();renderFigures();renderObservationField();renderOccupations();renderGroups();renderProfiles();renderTable();
 }
 function showLoadError(error){
   $('#creatures').innerHTML='<p class="habitat-empty mono">THE CATALOG COULD NOT BE LOADED. PLEASE RELOAD THE PAGE.</p>';
@@ -598,4 +598,51 @@ function renderOccupations(){
     html+=`<circle cx="${x(Number(o.annual_mean_wage)).toFixed(1)}" cy="${y(shareOf(o)).toFixed(1)}" r="${r.toFixed(1)}" fill="${Number(o.tasks_claimed)?'#3e7ec8':'#9aa7b6'}" fill-opacity="${Number(o.tasks_claimed)?.45:.18}" stroke="${Number(o.tasks_claimed)?'#3e7ec8':'none'}" stroke-width=".8"><title>${esc(o.title)} · $${Number(o.annual_mean_wage).toLocaleString('en-US')} · ${Number(o.employment).toLocaleString('en-US')} employed · ${percent(shareOf(o))} of tasks claimed</title></circle>`;
   }
   $('#wage-plot').innerHTML=html;
+}
+
+// Titles of the 2018 Standard Occupational Classification major groups, by the first two digits of a SOC code.
+const MAJOR_GROUPS = {
+  11:'Management',13:'Business and Financial Operations',15:'Computer and Mathematical',17:'Architecture and Engineering',
+  19:'Life, Physical, and Social Science',21:'Community and Social Service',23:'Legal',25:'Educational Instruction and Library',
+  27:'Arts, Design, Entertainment, Sports, and Media',29:'Healthcare Practitioners and Technical',31:'Healthcare Support',
+  33:'Protective Service',35:'Food Preparation and Serving Related',37:'Building and Grounds Cleaning and Maintenance',
+  39:'Personal Care and Service',41:'Sales and Related',43:'Office and Administrative Support',45:'Farming, Fishing, and Forestry',
+  47:'Construction and Extraction',49:'Installation, Maintenance, and Repair',51:'Production',53:'Transportation and Material Moving'
+};
+// Occupation coverage pooled by major group: tasks claimed over tasks, summed across the group's occupations.
+function renderGroups(){
+  const groups=new Map();
+  for(const o of OCCUPATIONS){
+    const code=o.soc_code.slice(0,2);
+    if(!MAJOR_GROUPS[code])throw new Error(`occupation_coverage.csv: no major group title for SOC code ${o.soc_code}`);
+    if(!groups.has(code))groups.set(code,{title:MAJOR_GROUPS[code],tasks:0,tasks_claimed:0,employment:0});
+    const g=groups.get(code);
+    g.tasks+=Number(o.tasks);g.tasks_claimed+=Number(o.tasks_claimed);g.employment+=Number(o.employment);
+  }
+  const rows=[...groups.values()].sort((a,b)=>shareOf(b)-shareOf(a));
+  $('#group-chart').style.setProperty('--rows',Math.ceil(rows.length/2));
+  $('#group-chart').innerHTML=rows.map(g=>`<div class="occupation-row" title="${esc(g.title)}: ${g.tasks_claimed} of ${g.tasks} tasks · ${g.employment.toLocaleString('en-US')} employed in its occupations with a BLS estimate"><span class="occupation-label">${esc(g.title)}</span><span class="occupation-track"><span style="width:${shareOf(g)*100}%"></span></span><span class="occupation-number mono">${percent(shareOf(g))}</span></div>`).join('');
+}
+
+// Agent profiles, from agent_attributes.csv: among agents whose text states an attribute, the share with each value.
+const AUDIENCES = [['practitioner','#4779be'],['non_expert','#c9874a'],['organization','#239ba4']];
+// From most to least user control.
+const AUTONOMY_LEVELS = [['operator','#c9d8ec'],['collaborator','#9dbbe0'],['consultant','#6f9bd1'],['approver','#3e7ec8'],['observer','#24487a']];
+function renderMix(attribute,values,name){
+  const valueOf=d=>d.attributes.find(a=>a.attribute===attribute)?.value;
+  const sources=[['All agents',DATA],['GitHub and websites',DATA.filter(d=>!isMarketplace(d))],['AWS Marketplace',DATA.filter(isMarketplace)]];
+  const byTask=presentTasks().map(t=>[taskName(t),DATA.filter(d=>mainTask(d)===t)]);
+  const row=([label,agents],i,list)=>{
+    const counts=values.map(([value])=>agents.filter(d=>valueOf(d)===value).length);
+    const total=counts.reduce((sum,n)=>sum+n,0);
+    if(!total)return '';
+    const shares=values.map(([value],k)=>`${words(value)} ${Math.round(counts[k]/total*100)}%`).join(', ');
+    return `<div class="owner-row${list===byTask&&i===0?' mix-break':''}"><span class="owner-row-label">${esc(label)}</span><div class="owner-track" role="img" aria-label="${esc(label)}, ${agentCount(total)}: ${esc(shares)}">${values.map(([value,color],k)=>counts[k]?`<span class="owner-segment" style="flex:${counts[k]};background:${color}" title="${esc(words(value))}: ${counts[k]} of ${total}"></span>`:'').join('')}</div><span class="mix-count mono">${total}</span></div>`;
+  };
+  $(`#${name}-chart`).innerHTML=sources.map(row).join('')+byTask.map(row).join('')||'<p class="habitat-empty mono">NO AGENT STATES THIS YET</p>';
+  $(`#${name}-legend`).innerHTML=values.map(([value,color])=>`<span class="legend-item"><i class="legend-dot" style="background:${color}"></i>${esc(words(value))}</span>`).join('');
+}
+function renderProfiles(){
+  renderMix('audience',AUDIENCES,'audience');
+  renderMix('autonomy',AUTONOMY_LEVELS,'autonomy');
 }
