@@ -498,6 +498,8 @@ $('#previous-page').addEventListener('click',()=>{page=Math.max(0,page-1);render
 $('#next-page').addEventListener('click',()=>{page++;renderTable();});
 for(const [key,first] of [['name',1],['stars',-1],['created',-1]])$(`#sort-${key}`).addEventListener('click',()=>{sortDirection=sortBy===key?-sortDirection:first;sortBy=key;page=0;renderTable();});
 $('#download-csv').addEventListener('click',downloadCSV);
+$('#wage-plot').addEventListener('click',e=>{const c=e.target.closest('circle[data-soc]');if(c)showOccupation(c);});
+$('#wage-plot').addEventListener('keydown',e=>{const c=e.target.closest('circle[data-soc]');if(c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();showOccupation(c);}});
 $('#schema-button').addEventListener('click',()=>$('#schema-dialog').showModal());
 $$('dialog').forEach(dialog=>{
   dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
@@ -584,7 +586,7 @@ function renderOccupations(){
   const left=58,right=522,plotTop=18,bottom=282;
   const wages=plotted.map(o=>Math.log10(Number(o.annual_mean_wage)));
   const lo=Math.min(...wages),hi=Math.max(...wages),shareMax=Math.max(...plotted.map(shareOf));
-  const yMax=Math.ceil(shareMax*10)/10||.1;
+  const yMax=Math.ceil(shareMax*4)/4||.25;
   const x=wage=>left+(Math.log10(wage)-lo)/(hi-lo)*(right-left);
   const y=share=>bottom-share/yMax*(bottom-plotTop);
   const maxEmployment=Math.max(...plotted.map(o=>Number(o.employment)));
@@ -594,10 +596,19 @@ function renderOccupations(){
   html+=`<text x="${left}" y="${plotTop-6}" ${axis} letter-spacing="1">↑ SHARE OF TASKS CLAIMED</text><text x="${right}" y="${bottom+38}" text-anchor="end" ${axis} letter-spacing="1">MEAN ANNUAL WAGE →</text>`;
   // Largest first, so small occupations stay visible on top.
   for(const o of plotted.slice().sort((a,b)=>Number(b.employment)-Number(a.employment))){
-    const r=1.5+11*Math.sqrt(Number(o.employment)/maxEmployment);
-    html+=`<circle cx="${x(Number(o.annual_mean_wage)).toFixed(1)}" cy="${y(shareOf(o)).toFixed(1)}" r="${r.toFixed(1)}" fill="${Number(o.tasks_claimed)?'#3e7ec8':'#9aa7b6'}" fill-opacity="${Number(o.tasks_claimed)?.45:.18}" stroke="${Number(o.tasks_claimed)?'#3e7ec8':'none'}" stroke-width=".8"><title>${esc(o.title)} · $${Number(o.annual_mean_wage).toLocaleString('en-US')} · ${Number(o.employment).toLocaleString('en-US')} employed · ${percent(shareOf(o))} of tasks claimed</title></circle>`;
+    // Area proportional to employment; the smallest occupations are drawn at a minimum size so they stay visible.
+    const r=Math.max(1.5,12*Math.sqrt(Number(o.employment)/maxEmployment));
+    html+=`<circle data-soc="${esc(o.soc_code)}" tabindex="0" role="button" aria-label="${esc(o.title)}" cx="${x(Number(o.annual_mean_wage)).toFixed(1)}" cy="${y(shareOf(o)).toFixed(1)}" r="${r.toFixed(1)}" fill="${Number(o.tasks_claimed)?'#3e7ec8':'#9aa7b6'}" fill-opacity="${Number(o.tasks_claimed)?.45:.18}" stroke="${Number(o.tasks_claimed)?'#3e7ec8':'none'}" stroke-width=".8"><title>${esc(o.title)} · $${Number(o.annual_mean_wage).toLocaleString('en-US')} · ${Number(o.employment).toLocaleString('en-US')} employed · ${percent(shareOf(o))} of tasks claimed</title></circle>`;
   }
   $('#wage-plot').innerHTML=html;
+  $('#wage-detail').textContent='Select a circle to see its occupation.';
+}
+function showOccupation(circle){
+  const o=OCCUPATIONS.find(row=>row.soc_code===circle.dataset.soc);
+  $$('#wage-plot circle.selected').forEach(c=>c.classList.remove('selected'));
+  circle.classList.add('selected');
+  circle.parentNode.append(circle);
+  $('#wage-detail').innerHTML=`<strong>${esc(o.title)}</strong> (SOC ${esc(o.soc_code)}) · $${Number(o.annual_mean_wage).toLocaleString('en-US')} mean wage · ${Number(o.employment).toLocaleString('en-US')} employed · ${o.tasks_claimed} of ${o.tasks} tasks claimed (${percent(shareOf(o))}) by ${agentCount(Number(o.agents))}`;
 }
 
 // Titles of the 2018 Standard Occupational Classification major groups, by the first two digits of a SOC code.
