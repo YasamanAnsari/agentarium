@@ -14,8 +14,6 @@ ag_021c8c226a,browse_web,https://github.com/Ne0nd0g/merlin,Configure a [listener
 ag_021c8c226a,operate_computer,https://github.com/Ne0nd0g/merlin,Start Merlin
 ag_021c8c226a,write_code,https://github.com/Ne0nd0g/merlin,Merlin is a cross-platform post-exploitation HTTP/2 Command & Control  server and agent written in golang.
 ag_021c8c226a,write_document,https://github.com/Ne0nd0g/merlin,View the [Blog Posts](https://merlin-c2.readthedocs.io/en/latest/misc/blogs.html) page for additional information
-ag_045febe22f,review_code,https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It can do anything that a person could do with the GitHub API, from labeling issues to reviewing pull requests."
-ag_045febe22f,write_code,https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It can run tests or try to reproduce an issue or an error or even write code, commit it, and open a pull request."
 ag_0472c44d05,write_code,https://github.com/shyamsaktawat/OpenAlpha_Evolve,"an intelligent system that iteratively writes, tests, and improves code using Large Language Models (LLMs) via LiteLLM, guided by the principles of evolution."
 ag_04a9d30f03,research_topic,https://github.com/rotemweiss57/gpt-newspaper,Reporters search the news with [Tavily](https://tavily.com)
 ag_04a9d30f03,write_document,https://github.com/rotemweiss57/gpt-newspaper,"Writes a cited article from the sources, plus a headline, summary and pull quote, in your language."
@@ -400,8 +398,9 @@ ag_5cc1c4853b,browse_web,https://github.com/magnitudedev/browser-agent,Magnitude
 ag_5d0703a8fe,write_document,https://www.broadn.io/?utm_source=awesome-ai-agents,"It reads requests, builds quotes, replies to customers, and escalates when needed."
 ag_5d620f2c72,review_code,https://github.com/bytedance/trae-agent,"trae-cli run ""Review this code"" --provider openrouter --model ""anthropic/claude-3-5-sonnet"""
 ag_5d620f2c72,write_code,https://github.com/bytedance/trae-agent,It provides a powerful CLI interface that can understand natural language instructions and execute complex software engineering workflows using various tools and LLM providers.
+ag_5ed74168a3,analyze_data,https://github.com/wangzan101/Mika,"A Linux sandbox per conversation runs Python, Node and shell on the files you send (arm64)"
 ag_5ed74168a3,browse_web,https://github.com/wangzan101/Mika,"A built-in desktop-class browser that keeps you signed in, reads pages, downloads and uploads; paces itself and hands block pages to you"
-ag_5ed74168a3,operate_computer,https://github.com/wangzan101/Mika,"say what you need, and it works your apps and the web until it's done."
+ag_5ed74168a3,operate_computer,https://github.com/wangzan101/Mika,"An AI assistant on your phone: say what you need, and it works your apps and the web until it's done."
 ag_5ee7309911,write_code,https://github.com/continuedev/continue,Pioneering open-source coding agent
 ag_5f20b5c5db,review_code,https://github.com/phodal/routa,"Review Guard distrusts Dev's self-assessment, independently checks each acceptance criterion, requires tests and a clean git state, and either rejects to Dev or approves to Done."
 ag_5f20b5c5db,write_code,https://github.com/phodal/routa,"Dev Crafter distrusts the plan again, refuses to code unless the story is executable, implements only the scoped change, runs validation, commits the work, and appends Dev Evidence."
@@ -442,7 +441,7 @@ ag_66abc833ba,write_document,https://apidna.ai/index.html,"Agents monitor regula
 ag_670afbc34a,analyze_data,https://github.com/johnbean393/Sidekick,"when asking Sidekick to calculate Q3 2025 financial metrics for Nvidia, it makes **27** tool calls, saves the CSV file and presents the results."
 ag_670afbc34a,research_topic,https://github.com/johnbean393/Sidekick,"Specify a research topic, and let Sidekick do the rest –– reading 50-80 webpages, and synthesizing information to prepare a research report."
 ag_670afbc34a,write_document,https://github.com/johnbean393/Sidekick,synthesizing information to prepare a research report.
-ag_6839307f7c,analyze_data,https://www.getwren.ai/,Type a business question in plain English. Wren builds a dashboard on your data that you can drill into and filter.
+ag_6839307f7c,analyze_data,https://www.getwren.ai/,Writes and runs the SQL
 ag_695b43295a,write_document,https://github.com/huohua325/Memslides,"Generate slides from instructions and source materials, conditioned on presentation intent and stored user preferences."
 ag_69dbd516cb,browse_web,https://github.com/lmnr-ai/index,Index is a state-of-the-art open-source browser agent that autonomously executes complex web tasks.
 ag_6a6a0a3455,analyze_data,https://github.com/HolmesGPT/holmesgpt,to query live observability data from multiple sources and identify root causes.
@@ -460,7 +459,6 @@ ag_6b8da24589,write_code,https://github.com/ntegrals/10x,"Based on {{previous}},
 ag_6bf5f98465,analyze_data,https://github.com/666ghj/BettaFish,**Insight Agent** 私有数据库挖掘：私有舆情数据库深度分析AI代理
 ag_6bf5f98465,research_topic,https://github.com/666ghj/BettaFish,用户只需像聊天一样提出分析需求，智能体开始全自动分析 国内外30+主流社媒 与 数百万条大众评论。
 ag_6bf5f98465,write_document,https://github.com/666ghj/BettaFish,**Report Agent** 智能报告生成：内置模板的多轮报告生成AI代理
-ag_6c3e60464d,write_code,https://github.com/nexu-io/openmotion,Code video with HTML.
 ag_6cd46d43db,write_code,https://github.com/HKUDS/DeepCode,Where AI Agents Transform Ideas into Production-Ready Code
 ag_6d1bb7a396,write_code,https://github.com/google-antigravity/antigravity-cli,"Antigravity CLI understands your codebase, makes edits with your permission, and executes commands — right from your terminal."
 ag_6d4588d193,analyze_data,https://vanna.ai/,The fastest way to get accurate answers from your data using AI-powered SQL generation.
@@ -511,8 +509,6 @@ ag_755663ab05,research_topic,https://github.com/poco-ai/poco-claw,**Browser** - 
 ag_755663ab05,write_code,https://github.com/poco-ai/poco-claw,**GitHub repo integration** for code search and editing
 ag_75d9a115e3,operate_computer,https://github.com/google/artemis,Executes testing workflows and everyday tasks on Android from natural language instructions.
 ag_75dee2b145,review_code,https://github.com/codewhale-hq/Codewhale,An advisory review of a GitHub pull request
-ag_75dee2b145,write_code,https://github.com/codewhale-hq/Codewhale,"Give Codewhale a task and it reads the repository, edits files and runs
-commands until the task is done or it needs your input."
 ag_76565a7144,review_code,https://github.com/utkusen/sast-skills,A collection of agent skills that turn your LLM coding assistant into a fully functional SAST scanner to find vulnerabilities in your codebase.
 ag_76565a7144,write_document,https://github.com/utkusen/sast-skills,"The `sast-report` skill consolidates all findings into a single `sast/final-report.md`, ranked by severity with full remediation guidance and dynamic test instructions."
 ag_76da2e659c,analyze_data,https://github.com/stepanogil/autonomous-hr-chatbot,It's loaded as a pandas dataframe and manipulated by the LLM using LangChain's PythonAstREPLTool
@@ -538,7 +534,7 @@ ag_7c901dbf2b,write_code,https://github.com/anteloc/ldraw-nova,"The way it produ
 - **Collects** the required information, from experimental results, docs and planning.
 - **Builds** one or more **plans**, that fully describe the model and submodels, including its geometry, like e.g. [atlas-crane.plan.json](examples/atlas-crane/atlas-crane.plan.json)
 - And with that plan, it creates one or more **generator scripts** like e.g. [generate.py](examples/atlas-crane/generate.py)"
-ag_7cd7de9545,write_code,https://github.com/alfredfrancis/ai-chatbot-framework,"the agent reads their files, runs code, uses their apps and remembers how they like"
+ag_7cd7de9545,write_code,https://github.com/alfredfrancis/ai-chatbot-framework,"The agent can build small apps for you, like a daily **Cockpit** or a grocery list,"
 ag_7ce3ab9fd8,analyze_data,https://github.com/jihe520/MathModelAgent,分析赛题与数据，设计模型和求解策略
 ag_7ce3ab9fd8,write_code,https://github.com/jihe520/MathModelAgent,编写并运行求解代码，生成数据图表
 ag_7ce3ab9fd8,write_document,https://github.com/jihe520/MathModelAgent,从问题分析、建模、编码、绘图到论文排版和验收，一条 `/1start-mathmodel` 命令全自动完成，中间阶段自动串联，无需人工干预。
@@ -640,7 +636,10 @@ ag_8d68c292f2,write_document,https://github.com/shiwenwen/hope-agent,turn a brie
 ag_8d87c74bc0,write_document,https://github.com/s2b-dev/smart-second-brain,"that read and write your notes, draw charts and dashboards live from them as"
 ag_8dc9c8896c,research_topic,https://github.com/assafelovic/gpt-researcher,GPT Researcher the first open deep research agent designed for both web and local research on any given task.
 ag_8dc9c8896c,write_document,https://github.com/assafelovic/gpt-researcher,"The agent produces detailed, factual, and unbiased research reports with citations."
-ag_8dcc0c1b05,write_document,https://www.lindy.ai/,"Dashboards and weekly reports on every client’s data, built from a sentence and kept up to date."
+ag_8dcc0c1b05,analyze_data,https://www.lindy.ai/,Data analysis
+ag_8dcc0c1b05,handle_customer_support,https://www.lindy.ai/,Customer support
+ag_8dcc0c1b05,research_topic,https://www.lindy.ai/,"When a new lead comes in, I research them, score the fit and draft a personal reply within minutes."
+ag_8dcc0c1b05,write_document,https://www.lindy.ai/,"Every Friday I pull each client’s numbers and draft their report in your format, ready for your OK."
 ag_8e121381b8,research_topic,https://www.cykel.ai/,Sampson researches and produces professional quality analyst reports.
 ag_8e121381b8,write_document,https://www.cykel.ai/,"I research and write pro-level company reports for investment, consulting and advisory teams."
 ag_8e1d219d6e,analyze_data,https://github.com/yv1ing/Z3r0,"Operators can explore the target environment as an asset graph, assign specialists to specific assets and test surfaces, review the evidence produced by each assignment, and follow validated offensive progression through attack paths."
@@ -649,8 +648,7 @@ ag_8e1d219d6e,handle_customer_support,https://github.com/yv1ing/Z3r0,"review the
 ag_8e1d219d6e,operate_computer,https://github.com/yv1ing/Z3r0,"sandbox containers, shell/file/noVNC access, command execution, sandbox-local skills, built-in security tooling, and outbound network policy."
 ag_8e1d219d6e,research_topic,https://github.com/yv1ing/Z3r0,"AI-native red-team workbench for authorized penetration testing and vulnerability research, with specialist agents, sandboxed tooling, evidence records, and replayable timelines."
 ag_8e1d219d6e,review_code,https://github.com/yv1ing/Z3r0,"review the evidence produced by each assignment, and follow validated offensive progression through attack paths."
-ag_8e50a3c156,browse_web,https://github.com/Sylinko/Everywhere,Web Browser
-ag_8e50a3c156,research_topic,https://github.com/Sylinko/Everywhere,will quickly search and verify the reliability of the information
+ag_8e50a3c156,research_topic,https://github.com/Sylinko/Everywhere,**Everywhere** will quickly search and verify the reliability of the information.
 ag_8f75d8facb,browse_web,https://github.com/MinorJerry/WebVoyager,WebVoyager is an innovative Large Multimodal Model (LMM) powered web agent that can complete user instructions end-to-end by interacting with real-world websites.
 ag_901ab19dd4,research_topic,https://github.com/stakpak/agent,"**Documentation Research Agent** - Built-in web search for technical documentation, cloud providers, and development frameworks"
 ag_901ab19dd4,write_code,https://github.com/stakpak/agent,"Generate infrastructure code, debug Kubernetes, configure CI/CD, automate deployments, without giving an LLM the keys to production."
@@ -833,6 +831,7 @@ ag_c026bf4d83,write_document,https://github.com/Paper2Poster/Paper2Poster,"top-d
 ag_c070ff9091,research_topic,https://github.com/666ghj/DeepSearchAgent-Demo,为每个段落生成搜索查询并获取相关信息
 ag_c070ff9091,write_document,https://github.com/666ghj/DeepSearchAgent-Demo,将所有段落整合为完整的Markdown报告
 ag_c163b44018,write_code,https://github.com/vitalops/openvibe,Python implementation of [opencode](https://opencode.ai) — an open-source AI coding agent.
+ag_c1cb30af4b,research_topic,https://github.com/OpenOSINT/OpenOSINT,"OpenOSINT is an open-source OSINT agent for investigators and security researchers: 21 public-source tools behind a natural-language interface, with an MCP server."
 ag_c29a301706,review_code,https://cursor.com/,"Cursor runs in your terminal, collaborates in Slack, and reviews PRs in GitHub."
 ag_c29a301706,write_code,https://cursor.com/,"Built to make you extraordinarily productive, agents turn ideas into code."
 ag_c2bfd889de,research_topic,https://github.com/Jamailar/Beav,**运营日报**：每天 09:00 结合你的账号方向，整理今日计划和值得跟进的发现，每条都带来源链接，点「去创作」就开一个新对话。
@@ -914,7 +913,6 @@ ag_d328d0ce56,write_document,https://github.com/nikmcfly/MiroFish-Offline,"A Rep
 ag_d386fd00ee,browse_web,https://github.com/XiaomiMiMo/MiMo-Code,"**Browser control**: opens webpages, retrieves information, fills forms, and checks key interactions after generating webpages."
 ag_d386fd00ee,operate_computer,https://github.com/XiaomiMiMo/MiMo-Code,**Computer control (international version only)**: reads the screen and operates mouse and keyboard across apps
 ag_d386fd00ee,write_code,https://github.com/XiaomiMiMo/MiMo-Code,"It can read and write code, run commands, manage Git, and use a persistent memory system to keep a deep understanding of your project across sessions while continuously improving itself."
-ag_d3d4b60a78,research_topic,https://e2b.dev/resources/about-deployment-evaluation-and-testing-of-agents-with-sully-omar-the-ceo-of-cognosys-ai?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"The research agent takes an objective, conducts internet research, synthetizes it, and provides links to relevant sources."
 ag_d40d64e2bb,research_topic,https://github.com/Ricky-7-Yan/intelligent-audit-system,检索公开参考资料，默认关闭。
 ag_d434d86ea3,write_code,https://github.com/Dicklesworthstone/pi_agent_rust,Help me refactor this function to use async/await
 ag_d464a727f8,browse_web,https://github.com/gptme/gptme,"writes code, uses the terminal, browses the web"
@@ -1033,9 +1031,7 @@ ag_f37c401b07,write_code,https://github.com/OpenMinis/OpenMinis,"the agent can i
 ag_f4a450d2c3,analyze_data,https://github.com/openocta/openocta,"Intelligent data Q&A: query monitoring, logs, tickets, capacity, and cost in plain language"
 ag_f4de5fab6b,write_code,https://github.com/Kuberwastaken/claurst,"Claurst is an **open-source, multi-provider terminal coding agent** built from the ground up in Rust."
 ag_f4dfe35f2c,handle_customer_support,https://github.com/shaxiu/XianyuAutoAgent,专为闲鱼平台打造的AI值守解决方案，实现闲鱼平台7×24小时自动化值守
-ag_f77b874fca,analyze_data,https://github.com/limecloud/lime,"Organized files, calculations, or a checkable brief"
 ag_f77b874fca,research_topic,https://github.com/limecloud/lime,Research a question
-ag_f77b874fca,review_code,https://github.com/limecloud/lime,"lime exec ""review this diff"""
 ag_f77b874fca,write_code,https://github.com/limecloud/lime,Fix a bug or build a feature
 ag_f77b874fca,write_document,https://github.com/limecloud/lime,An editable report with sources and open questions
 ag_f7c4ae5133,write_code,https://github.com/leigest519/OpenGame,An open-source agentic framework for end-to-end web game creation from a prompt.

@@ -24,10 +24,6 @@ ag_0208d0609c,4.A.4.a.3.I03.D07,https://github.com/yuruotong1/autoMate,`reminder
 ag_0208d0609c,4.A.4.c.3.I01.D03,https://github.com/yuruotong1/autoMate,`reminders.*` — scheduler thread fires Web Push to your PWA
 ag_02151bc190,4.A.3.b.1.I05.D01,https://github.com/inclusionAI/UI-Venus,Chrome Side Panel extension that connects UI-Venus to the active browser tab and executes browser tasks interactively.
 ag_02151bc190,4.A.3.b.1.I05.D02,https://github.com/inclusionAI/UI-Venus,"UI-Venus is a general-purpose foundation GUI agent for mobile apps, web platforms, and desktop operating systems using only screenshots as input."
-ag_045febe22f,4.A.1.b.2.I08.D03,https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It can run tests or try to reproduce an issue or an error or even write code, commit it, and open a pull request."
-ag_045febe22f,4.A.2.a.3.I01.D04,https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It can do anything that a person could do with the GitHub API, from labeling issues to reviewing pull requests."
-ag_045febe22f,4.A.3.b.1.I01.D03,https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,It can even start to write basic code and run it in
-ag_045febe22f,4.A.3.b.1.I03.D01,https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"The repository is cloned in the sandbox, the dependencies can be installed there, and the agent can run shell commands the way a junior developer would."
 ag_0472c44d05,4.A.1.b.2.I08.D03,https://github.com/shyamsaktawat/OpenAlpha_Evolve,"The code is run in a temporary, isolated environment against the input/output examples defined in the task."
 ag_0472c44d05,4.A.2.b.2.I02.D01,https://github.com/shyamsaktawat/OpenAlpha_Evolve,"an intelligent system that iteratively writes, tests, and improves code using Large Language Models (LLMs) via LiteLLM"
 ag_0472c44d05,4.A.2.b.2.I02.D07,https://github.com/shyamsaktawat/OpenAlpha_Evolve,Mutation Prompts*: To introduce variations and improvements to existing solutions
@@ -324,9 +320,10 @@ ag_1e9607f408,4.A.3.b.1.I04.D02,https://github.com/google-gemini/gemini-cli,Debu
 ag_1f631aec79,4.A.1.b.2.I08.D03,https://github.com/RISE-X-Lab/OpenCollab,Analyst delegates to independent Coder and Tester workspaces and adopts the
 ag_1f631aec79,4.A.3.b.1.I01.D03,https://github.com/RISE-X-Lab/OpenCollab,"A research-friendly, high-performance multi-agent collaboration coding framework."
 ag_1fe283a70c,4.A.2.b.2.I18.D14,https://github.com/elie222/rakazo,"Bots build live dashboards and documents you can open full screen, share, and ask about."
-ag_1fe283a70c,4.A.2.b.5.I02.D07,https://github.com/elie222/rakazo,"Run a bot on a schedule, from an email, or from a webhook, and see every run."
 ag_1fe283a70c,4.A.3.b.1.I05.D01,https://github.com/elie222/rakazo,"A browser, terminal, files, and a full desktop. Watch it work, take control to sign in, and hand it back."
+ag_1fe283a70c,4.A.3.b.6.I08.D09,https://github.com/elie222/rakazo,"Persistent AI teammates with their own memory, routines, apps, and computer."
 ag_1fe283a70c,4.A.4.a.2.I03.D01,https://github.com/elie222/rakazo,"Put bots in a group and @mention them. They split the work, check each other, and report back."
+ag_1fe283a70c,4.A.4.b.4.I13.D03,https://github.com/elie222/rakazo,"Run a bot on a schedule, from an email, or from a webhook, and see every run."
 ag_1ff3b93b04,4.A.1.a.2.I10.D03,https://github.com/awlevin/typesafe-computer-use,"The loop also stops itself on `done`, low confidence, a stall, or the step limit,"
 ag_1ff3b93b04,4.A.3.b.1.I05.D01,https://github.com/awlevin/typesafe-computer-use,"drives a Mac toward a goal you type in plain English,"
 ag_1ff3b93b04,4.A.3.b.6.I08.D03,https://github.com/awlevin/typesafe-computer-use,"Every run writes
@@ -358,8 +355,10 @@ ag_21d0805655,4.A.3.b.1.I05.D01,https://github.com/AFK-surf/open-agent,"can perf
 ag_21d0805655,4.A.4.b.4.I12.D01,https://github.com/AFK-surf/open-agent,"Instead of chatting with a single AI, all the frontier models collaborate together to finish your task with our multi-agent framework."
 ag_22d2b68aa3,4.A.3.b.1.I01.D03,https://github.com/github/copilot-cli,"Build, edit, debug, and refactor code with an AI collaborator that can plan and execute complex tasks."
 ag_22d2b68aa3,4.A.3.b.1.I04.D02,https://github.com/github/copilot-cli,"enabling you to build, debug, and understand code through natural language conversations"
-ag_231858bda7,4.A.1.a.1.I04.D07,https://github.com/genspark-ai/genoffice,"full text of your `.docx`, `.xlsx`, `.pptx`, PDF, Markdown and"
-ag_231858bda7,4.A.3.b.1.I06.D11,https://github.com/genspark-ai/genoffice,"PDF → Word / Excel / PowerPoint, Markdown → Word and HTML → Word"
+ag_231858bda7,4.A.1.a.1.I04.D07,https://github.com/genspark-ai/genoffice,Find files by what they say.
+ag_231858bda7,4.A.2.b.1.I07.D02,https://github.com/genspark-ai/genoffice,"the AI reads the blocks it needs, rewrites the Overview and inserts a new bulleted section"
+ag_231858bda7,4.A.2.b.2.I18.D14,https://github.com/genspark-ai/genoffice,Ask for a mind map instead and the answer is an interactive diagram of the whole document
+ag_231858bda7,4.A.3.b.1.I06.D11,https://github.com/genspark-ai/genoffice,"PDF → Word / Excel / PowerPoint, Markdown → Word and HTML → Word all run"
 ag_23594b2fb0,4.A.1.b.2.I08.D03,https://github.com/bug0inc/qa-agent,Bug0 AI covers your browser regression testing end-to-end and **helps you catch regressions early. Fast.**
 ag_23594b2fb0,4.A.2.a.2.I01.D07,https://github.com/bug0inc/qa-agent,"**Multi-Model Assertion Engine** — Consensus-based validation using Claude and Gemini, with an arbiter model to resolve disagreements"
 ag_23594b2fb0,4.A.3.b.1.I05.D01,https://github.com/bug0inc/qa-agent,"It uses AI models to execute natural language browser steps via Playwright, with intelligent caching, auto-healing, and multi-model assertion verification."
@@ -402,10 +401,7 @@ ag_28226922d0,4.A.2.a.4.I02.D04,https://github.com/TauricResearch/TradingAgents,
 ag_28226922d0,4.A.2.a.4.I11.D02,https://github.com/TauricResearch/TradingAgents,"Fundamentals Analyst: Evaluates company financials and performance metrics, identifying intrinsic values and potential red flags."
 ag_287220dcae,4.A.2.a.4.I07.D02,https://github.com/aaif-goose/goose,"use it for research, writing, automation, data analysis, or anything you need to get done."
 ag_287220dcae,4.A.3.b.1.I01.D03,https://github.com/aaif-goose/goose,"an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
-ag_28a225d36a,4.A.3.b.1.I01.D03,https://github.com/JetBrains/thinkrail,ThinkRail is an agentic IDE that gets better every time you use it.
-ag_28a225d36a,4.A.3.b.6.I08.D09,https://github.com/JetBrains/thinkrail,"the agent reads, searches, and maintains it through dedicated `spec_*` tools, so project intent persists across sessions"
-ag_28a225d36a,4.A.3.b.6.I12.D01,https://github.com/JetBrains/thinkrail,has the agent write a handoff summary and starts a new workspace chat with it.
-ag_28a225d36a,4.A.4.a.2.I03.D01,https://github.com/JetBrains/thinkrail,"delegate to subagents, and work together on a shared plan: the agent updates it, and you review and edit."
+ag_28a225d36a,4.A.4.a.5.I08.D01,https://github.com/JetBrains/thinkrail,ThinkRail can create the tools it needs based on how you work
 ag_29253e7c9b,4.A.2.b.2.I18.D20,https://github.com/alfredxw/denova,**图像创作**：生成书籍封面、章节插画、游戏背景与角色素材，并在界面中预览、关联资料和管理结果。
 ag_29253e7c9b,4.A.3.b.6.I16.D02,https://github.com/alfredxw/denova,支持剧情分支、故事线切换、行动建议、角色与世界状态、规则检定、剧情规划和语音朗读
 ag_29253e7c9b,4.A.4.a.8.I02.D02,https://github.com/alfredxw/denova,**互动游戏**：通过玩家输入推进故事
@@ -877,10 +873,10 @@ ag_5d0703a8fe,4.A.4.a.8.I03.D06,https://www.broadn.io/?utm_source=awesome-ai-age
 ag_5d0703a8fe,4.A.4.c.1.I03.D09,https://www.broadn.io/?utm_source=awesome-ai-agents,"Parse POs, validate line items, and send structured orders to your ERP system."
 ag_5d620f2c72,4.A.3.b.1.I01.D03,https://github.com/bytedance/trae-agent,Trae Agent is an LLM-based agent for general purpose software engineering tasks.
 ag_5d620f2c72,4.A.3.b.6.I08.D03,https://github.com/bytedance/trae-agent,Trajectory Recording**: Detailed logging of all agent actions for debugging and analysis
-ag_5ed74168a3,4.A.1.a.1.I04.D05,https://github.com/wangzan101/Mika,Reads long lists and chat histories
-ag_5ed74168a3,4.A.3.b.1.I05.D01,https://github.com/wangzan101/Mika,"Opens apps, taps, types and scrolls on a separate background screen"
-ag_5ed74168a3,4.A.4.c.1.I05.D03,https://github.com/wangzan101/Mika,finds the contact and sends the message
-ag_5ed74168a3,4.A.4.c.3.I05.D06,https://github.com/wangzan101/Mika,Adds the pick to the cart and stops before checkout
+ag_5ed74168a3,4.A.1.a.1.I04.D05,https://github.com/wangzan101/Mika,"A built-in desktop-class browser that keeps you signed in, reads pages, downloads and uploads"
+ag_5ed74168a3,4.A.3.b.1.I05.D01,https://github.com/wangzan101/Mika,"Opens apps, taps, types and scrolls on a separate background screen while you use your phone as usual"
+ag_5ed74168a3,4.A.4.c.1.I05.D03,https://github.com/wangzan101/Mika,"Mika opens WeChat on its background screen, finds the contact and sends the message"
+ag_5ed74168a3,4.A.4.c.3.I05.D06,https://github.com/wangzan101/Mika,"Orders takeout with stacked discounts, asks before paying"
 ag_5ee7309911,4.A.3.b.1.I01.D03,https://github.com/continuedev/continue,"Continue is a coding agent available as a [CLI](#cli), [VS Code extension](#vs-code), and [JetBrains plugin](#jetbrains)."
 ag_5f20b5c5db,4.A.1.b.2.I06.D09,https://github.com/phodal/routa,"independently checks each acceptance criterion, requires tests and a clean git state"
 ag_5f20b5c5db,4.A.2.b.1.I02.D01,https://github.com/phodal/routa,"Classify the blocker, explain root cause, and route back only when there is a concrete next step"
@@ -934,10 +930,7 @@ their desks, sit down and start coding in their own git worktrees"
 ag_635b3665af,4.A.2.b.2.I02.D01,https://github.com/ammaarreshi/gemma-chat,**Build Mode** — Coding agent with a live preview canvas. Writes multi-file projects into a sandboxed workspace.
 ag_635b3665af,4.A.2.b.2.I02.D07,https://github.com/ammaarreshi/gemma-chat,"Ask for changes, it edits the files and the preview updates in real-time"
 ag_635b3665af,4.A.3.b.1.I01.D03,https://github.com/ammaarreshi/gemma-chat,"You describe what you want to build, and it writes the code — HTML, CSS, JavaScript, multi-file projects — with a live preview that updates as the model types."
-ag_63c6ebc78a,4.A.1.a.1.I04.D07,https://e2b.dev/resources/sweep-founders-share-learnings-from-building-an-ai-coding-assistant?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It uses
-embedding-based code search"
-ag_63c6ebc78a,4.A.2.b.2.I02.D01,https://e2b.dev/resources/sweep-founders-share-learnings-from-building-an-ai-coding-assistant?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"Given an issue, the Sweep agent plans how to solve it, writes code, and turns the issues directly into a pull request (without an IDE)."
-ag_63c6ebc78a,4.A.3.b.1.I01.D03,https://e2b.dev/resources/sweep-founders-share-learnings-from-building-an-ai-coding-assistant?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"Given an issue, the Sweep agent plans how to solve it, writes code, and turns the issues directly into a pull request (without an IDE)."
+ag_63c6ebc78a,4.A.2.b.6.I02.D07,https://e2b.dev/resources/sweep-founders-share-learnings-from-building-an-ai-coding-assistant?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"Given an issue, the Sweep agent plans how to solve it, writes code, and turns the issues directly into a pull request (without an IDE)."
 ag_6404711e9e,4.A.1.a.2.I11.D02,https://github.com/vijaythecoder/awesome-claude-agents,**[Code Reviewer](agents/core/code-reviewer.md)** - Rigorous security-aware reviews with severity-tagged reports
 ag_6404711e9e,4.A.2.b.4.I03.D14,https://github.com/vijaythecoder/awesome-claude-agents,**[Performance Optimizer](agents/core/performance-optimizer.md)** - Identifies bottlenecks and applies optimizations for scalable systems
 ag_6404711e9e,4.A.3.b.6.I09.D04,https://github.com/vijaythecoder/awesome-claude-agents,"**[Documentation Specialist](agents/core/documentation-specialist.md)** - Crafts comprehensive READMEs, API specs, and technical documentation"
@@ -980,12 +973,11 @@ ag_670afbc34a,4.A.3.b.1.I01.D03,https://github.com/johnbean393/Sidekick,"Sidekic
 ag_670afbc34a,4.A.3.b.6.I03.D03,https://github.com/johnbean393/Sidekick,"Specify a research topic, and let Sidekick do the rest –– reading 50-80 webpages, and synthesizing information to prepare a research report."
 ag_670afbc34a,4.A.3.b.6.I04.D01,https://github.com/johnbean393/Sidekick,"Sidekick can now remember helpful information between conversations, making its responses more relevant and personalized."
 ag_670afbc34a,4.A.4.a.5.I08.D01,https://github.com/johnbean393/Sidekick,"When telling Sidekick to draft an invitation email for a birthday celebration to my friend Jean, Sidekick finds my birthday and Jean's email address from my contacts book, and creates a draft in my default email client."
-ag_6839307f7c,4.A.1.a.1.I04.D05,https://www.getwren.ai/,"Snowflake, BigQuery, PostgreSQL and 20+ more. Your data stays where it is, with no ETL or migration."
-ag_6839307f7c,4.A.2.a.4.I07.D12,https://www.getwren.ai/,Ask your data in plain language.
-ag_6839307f7c,4.A.2.b.2.I18.D14,https://www.getwren.ai/,Type a business question in plain English. Wren builds a dashboard on your data that you can drill into and filter.
-ag_6839307f7c,4.A.3.b.1.I01.D03,https://www.getwren.ai/,"✓
-Writes and runs the SQL"
-ag_6839307f7c,4.A.4.a.3.I03.D08,https://www.getwren.ai/,"Your team asks in plain language. Claude, ChatGPT and your own agents ask over MCP. Everyone gets the same answer, built on business definitions you control."
+ag_6839307f7c,4.A.2.a.4.I11.D04,https://www.getwren.ai/,Ask your data in plain language.
+ag_6839307f7c,4.A.2.b.2.I10.D02,https://www.getwren.ai/,"The onboarding agent drafts your context layer: metrics, relationships and definitions."
+ag_6839307f7c,4.A.2.b.2.I18.D14,https://www.getwren.ai/,Wren builds a dashboard on your data that you can drill into and filter.
+ag_6839307f7c,4.A.3.b.6.I03.D05,https://www.getwren.ai/,Type a business question in plain English. Wren builds a dashboard on your data that you can drill into and filter.
+ag_6839307f7c,4.A.4.a.8.I03.D02,https://www.getwren.ai/,"Your team asks in plain language. Claude, ChatGPT and your own agents ask over MCP. Everyone gets the same answer"
 ag_695b43295a,4.A.2.b.1.I07.D02,https://github.com/huohua325/Memslides,Interpret natural-language feedback and apply edits to the affected slide or region while retaining revision context.
 ag_695b43295a,4.A.2.b.2.I18.D14,https://github.com/huohua325/Memslides,"Generate slides from instructions and source materials, conditioned on presentation intent and stored user preferences."
 ag_695b43295a,4.A.3.b.1.I06.D12,https://github.com/huohua325/Memslides,"Produce slide HTML and PPTX artifacts, with PDF export when available."
@@ -1029,10 +1021,6 @@ ag_6bf5f98465,4.A.1.a.1.I04.D03,https://github.com/666ghj/BettaFish,**Query Agen
 ag_6bf5f98465,4.A.1.a.2.I08.D01,https://github.com/666ghj/BettaFish,AI爬虫集群7x24小时不间断作业，全面覆盖微博、小红书、抖音、快手等10+国内外关键社媒。不仅实时捕获热点内容
 ag_6bf5f98465,4.A.2.a.4.I02.D04,https://github.com/666ghj/BettaFish,帮助大家破除信息茧房，还原舆情原貌，预测未来走向，辅助决策。用户只需像聊天一样提出分析需求，智能体开始全自动分析 国内外30+主流社媒 与 数百万条大众评论。
 ag_6bf5f98465,4.A.3.b.6.I03.D05,https://github.com/666ghj/BettaFish,**Report Agent** 智能报告生成：内置模板的多轮报告生成AI代理
-ag_6c3e60464d,4.A.1.a.1.I01.D05,https://github.com/nexu-io/openmotion,"Your agent breaks down the reference, rebuilds its shots and transitions, and generates missing assets."
-ag_6c3e60464d,4.A.2.b.1.I11.D01,https://github.com/nexu-io/openmotion,"Code video with HTML: recreate, edit and render."
-ag_6c3e60464d,4.A.2.b.2.I18.D17,https://github.com/nexu-io/openmotion,"Generate artwork with Nano Banana 2, add a shot with Seedance 2.0"
-ag_6c3e60464d,4.A.3.b.1.I01.D03,https://github.com/nexu-io/openmotion,Code video with HTML.
 ag_6cd46d43db,4.A.3.b.1.I01.D03,https://github.com/HKUDS/DeepCode,Where AI Agents Transform Ideas into Production-Ready Code
 ag_6d1bb7a396,4.A.3.b.1.I01.D03,https://github.com/google-antigravity/antigravity-cli,"Antigravity CLI understands your codebase, makes edits with your permission, and executes commands — right from your terminal."
 ag_6d4588d193,4.A.3.b.1.I05.D01,https://vanna.ai/,Let your users query
@@ -1056,7 +1044,7 @@ directories, writes local guidance near the code that needs it"
 ag_6f01b03962,4.A.4.b.4.I06.D02,https://github.com/code-yeongyu/lazycodex,Executes a plan until every checkbox is done. Prints **ORCHESTRATION COMPLETE**.
 ag_6f01b03962,4.A.4.b.6.I05.D11,https://github.com/code-yeongyu/lazycodex,| `review-work` | Multi-angle post-implementation review |
 ag_6f174c8873,4.A.1.a.1.I04.D03,https://github.com/bytedance/deer-flow,DeerFlow has newly integrated the intelligent search and crawling toolset independently developed by BytePlus
-ag_6f174c8873,4.A.2.b.6.I02.D08,https://github.com/bytedance/deer-flow,"the ability to plan and spawn sub-agents for complex, multi-step tasks"
+ag_6f174c8873,4.A.2.b.6.I02.D09,https://github.com/bytedance/deer-flow,"the ability to plan and spawn sub-agents for complex, multi-step tasks"
 ag_6f174c8873,4.A.3.b.1.I01.D03,https://github.com/bytedance/deer-flow,"An open-source long-horizon SuperAgent harness that researches, codes, and creates."
 ag_6f46d79b04,4.A.2.a.1.I05.D03,https://github.com/voocel/ainovel-cli,Editor 从设定一致性、角色行为、节奏、叙事连贯、伏笔、钩子、审美品质七个维度评审
 ag_6f46d79b04,4.A.2.b.6.I02.D08,https://github.com/voocel/ainovel-cli,初始只规划前 2 卷弧骨架 + 第 1 弧详细章节
@@ -1134,14 +1122,10 @@ ag_755663ab05,4.A.4.a.2.I03.D01,https://github.com/poco-ai/poco-claw,"Mention
 ag_75d9a115e3,4.A.1.b.2.I08.D03,https://github.com/google/artemis,"**IDE Diagnostics**: **Model Context Protocol (MCP)** integration lets **Antigravity, Claude Code, and Windsurf** drive test devices and collect **Logcat** output and screenshots."
 ag_75d9a115e3,4.A.3.b.1.I05.D01,https://github.com/google/artemis,"ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs"
 ag_75d9a115e3,4.A.3.b.6.I09.D06,https://github.com/google/artemis,"Delivers structured audit findings, metric tables, and raw datasets"
-ag_75dee2b145,4.A.3.b.1.I01.D03,https://github.com/codewhale-hq/Codewhale,"Codewhale is an open-source coding agent for your terminal, written in Rust."
-ag_75dee2b145,4.A.3.b.1.I04.D02,https://github.com/codewhale-hq/Codewhale,Fix the failing tests and explain what changed.
-ag_75dee2b145,4.A.3.b.4.I01.D04,https://github.com/codewhale-hq/Codewhale,"Give Codewhale a task and it reads the repository, edits files and runs
+ag_75dee2b145,4.A.1.b.2.I08.D03,https://github.com/codewhale-hq/Codewhale,all 3 local tests passed and that a delegated review found no issues
+ag_75dee2b145,4.A.3.b.1.I01.D03,https://github.com/codewhale-hq/Codewhale,"Give Codewhale a task and it reads the repository, edits files and runs
 commands until the task is done or it needs your input."
-ag_75dee2b145,4.A.3.b.6.I03.D01,https://github.com/codewhale-hq/Codewhale,"It reports that it added a --json flag to export.py, that all 3 local tests passed and that a delegated review found no issues."
-ag_75dee2b145,4.A.3.b.6.I08.D05,https://github.com/codewhale-hq/Codewhale,"`/receipts`, or `codewhale receipts --last` after you quit, lists the files a
-session changed, the commands it ran, its web and MCP calls, the agents it
-started, each approval and who gave it, and what failed."
+ag_75dee2b145,4.A.3.b.1.I04.D02,https://github.com/codewhale-hq/Codewhale,Fix the failing tests and explain what changed.
 ag_76565a7144,4.A.2.a.4.I05.D05,https://github.com/utkusen/sast-skills,"The `sast-analysis` skill maps the technology stack, architecture, entry points, data flows, and trust boundaries."
 ag_76565a7144,4.A.2.a.4.I12.D02,https://github.com/utkusen/sast-skills,A collection of agent skills that turn your LLM coding assistant into a fully functional SAST scanner to find vulnerabilities in your codebase.
 ag_76565a7144,4.A.3.b.6.I03.D05,https://github.com/utkusen/sast-skills,"The `sast-report` skill consolidates all findings into a single `sast/final-report.md`, ranked by severity with full remediation guidance and dynamic test instructions."
@@ -1158,8 +1142,8 @@ ag_793a6438b8,4.A.3.b.1.I05.D01,https://github.com/the-open-agent/openagent,"Dri
 ag_798eeb4eb6,4.A.2.b.6.I02.D02,https://github.com/Doorman11991/smallcode,TODO-file decomposed steps
 ag_798eeb4eb6,4.A.3.b.1.I01.D03,https://github.com/Doorman11991/smallcode,AI coding agent optimized for small LLMs.
 ag_79a5911ec6,4.A.3.b.1.I05.D01,https://github.com/OpenBMB/AgentCPM-GUI,it accepts smartphone screenshots as input and autonomously executes user-specified tasks.
-ag_79d45f52c0,4.A.2.b.6.I02.D08,https://e2b.dev/resources/david-zhang-from-aomni-gives-his-view-agents-reliability-debugging-and-orchestration?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It takes user's research goal, creates a research plan, completes it one by one"
-ag_79d45f52c0,4.A.3.b.6.I03.D01,https://e2b.dev/resources/david-zhang-from-aomni-gives-his-view-agents-reliability-debugging-and-orchestration?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,sends user the result over email
+ag_79d45f52c0,4.A.1.a.1.I04.D05,https://e2b.dev/resources/david-zhang-from-aomni-gives-his-view-agents-reliability-debugging-and-orchestration?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,crawls the web and ingests a vast amount of unstructured data
+ag_79d45f52c0,4.A.2.b.6.I02.D08,https://e2b.dev/resources/david-zhang-from-aomni-gives-his-view-agents-reliability-debugging-and-orchestration?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It takes user's research goal, creates a research plan, completes it one by one, and sends user the result over email."
 ag_7a2f64c990,4.A.1.b.2.I06.D09,https://maige.app,"+ maige
 review
 all incoming PRs per our"
@@ -1181,18 +1165,16 @@ ag_7bb0811dcc,4.A.2.a.2.I01.D01,https://github.com/nixopus/nixopus,Run productio
 ag_7bb0811dcc,4.A.3.b.1.I05.D02,https://github.com/nixopus/nixopus,Run production apps without thinking about infrastructure.
 ag_7beefd8ece,4.A.3.b.1.I05.D01,https://github.com/LocoreMind/locoagent,autonomously operates real accounts through **genuine browser automation**
 ag_7beefd8ece,4.A.3.b.6.I08.D05,https://github.com/LocoreMind/locoagent,"Persistent cross-session deduplication so the agent never repeats a like, follow, or reply"
-ag_7cd7de9545,4.A.2.b.2.I02.D04,https://github.com/alfredfrancis/ai-chatbot-framework,"The agent can build small apps for you, like a daily **Cockpit** or a grocery list,"
-ag_7cd7de9545,4.A.3.b.6.I08.D09,https://github.com/alfredfrancis/ai-chatbot-framework,"files
-  the agent reads every turn and edits itself."
+ag_7cd7de9545,4.A.2.b.2.I02.D04,https://github.com/alfredfrancis/ai-chatbot-framework,The agent can build small apps for you
 ag_7ce3ab9fd8,4.A.2.a.2.I01.D07,https://github.com/jihe520/MathModelAgent,核对数值、引用、图表、编译与提交要求
 ag_7ce3ab9fd8,4.A.2.a.4.I07.D02,https://github.com/jihe520/MathModelAgent,自动分析问题，数学建模，编写代码，纠正错误，撰写论文
 ag_7ce3ab9fd8,4.A.2.b.2.I18.D14,https://github.com/jihe520/MathModelAgent,绘制技术路线、求解流程与模型结构图
 ag_7ce3ab9fd8,4.A.2.b.2.I26.D03,https://github.com/jihe520/MathModelAgent,分析赛题与数据，设计模型和求解策略
 ag_7ce3ab9fd8,4.A.3.b.1.I01.D03,https://github.com/jihe520/MathModelAgent,编写并运行求解代码，生成数据图表
 ag_7ce3ab9fd8,4.A.3.b.6.I03.D04,https://github.com/jihe520/MathModelAgent,生成一份编排好格式的论文
-ag_7d28e5f0e5,4.A.2.b.2.I02.D01,https://v0.app/,"Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web."
-ag_7d28e5f0e5,4.A.2.b.2.I02.D08,https://v0.app/,Publish as live websites in seconds.
-ag_7d28e5f0e5,4.A.3.b.1.I01.D03,https://v0.app/,Generate working applications in minutes with AI.
+ag_7d28e5f0e5,4.A.2.b.2.I02.D04,https://v0.app/,Generate working applications in minutes with AI. Publish as live websites in seconds.
+ag_7d28e5f0e5,4.A.2.b.2.I02.D08,https://v0.app/,Generate working applications in minutes with AI. Publish as live websites in seconds.
+ag_7d28e5f0e5,4.A.3.b.1.I01.D03,https://v0.app/,Connect to GitHub and push code directly to your repository.
 ag_7d52b0179e,4.A.1.b.2.I08.D03,https://github.com/openai/openai-cua-sample-app,"They inspect an interface, choose an action, execute it, and check the result."
 ag_7d52b0179e,4.A.3.b.1.I05.D01,https://github.com/openai/openai-cua-sample-app,"This repository contains two computer-use agents: one runs JavaScript with **Playwright** to control a browser; the other runs Python with **PyAutoGUI** to control a desktop through screenshots, mouse input, and keystrokes."
 ag_7d52b0179e,4.A.3.b.1.I06.D06,https://github.com/openai/openai-cua-sample-app,"The model can write a loop to fill several fields, check that each change took effect, and return only the text or screenshots it needs."
@@ -1396,11 +1378,16 @@ ag_8d87c74bc0,4.A.2.b.2.I18.D14,https://github.com/s2b-dev/smart-second-brain,dr
 ag_8dc9c8896c,4.A.1.a.1.I04.D03,https://github.com/assafelovic/gpt-researcher,Use a crawler agent for gathering information for each question.
 ag_8dc9c8896c,4.A.2.b.2.I23.D01,https://github.com/assafelovic/gpt-researcher,Generate questions that collectively form an objective opinion on the task.
 ag_8dc9c8896c,4.A.3.b.6.I03.D03,https://github.com/assafelovic/gpt-researcher,"The agent produces detailed, factual, and unbiased research reports with citations."
-ag_8dcc0c1b05,4.A.2.b.5.I03.D01,https://www.lindy.ai/,Happy to! Thursday at 4 or Friday at 10?
-ag_8dcc0c1b05,4.A.3.b.6.I03.D05,https://www.lindy.ai/,"Dashboards and weekly reports on every client’s data, built from a sentence and kept up to date."
-ag_8dcc0c1b05,4.A.4.a.6.I03.D05,https://www.lindy.ai/,"Every morning, brands that look like your best clients, each with a personal note for your OK."
+ag_8dcc0c1b05,4.A.2.b.5.I03.D01,https://www.lindy.ai/,Times found and booked across calendars and time zones.
+ag_8dcc0c1b05,4.A.3.b.6.I01.D01,https://www.lindy.ai/,"Every week I follow up on open proposals and overdue invoices by email, and by phone when it drags on, until they’re signed or paid."
+ag_8dcc0c1b05,4.A.3.b.6.I03.D05,https://www.lindy.ai/,"Every Friday I pull each client’s numbers and draft their report in your format, ready for your OK."
+ag_8dcc0c1b05,4.A.3.b.6.I08.D14,https://www.lindy.ai/,Lead added to HubSpot
+ag_8dcc0c1b05,4.A.3.b.6.I12.D05,https://www.lindy.ai/,"Drafts in your voice, scheduled for approval."
+ag_8dcc0c1b05,4.A.4.a.2.I03.D10,https://www.lindy.ai/,"Every morning I send what changed across your clients overnight, what’s on today and the few things that need you."
+ag_8dcc0c1b05,4.A.4.a.3.I03.D07,https://www.lindy.ai/,Recap and next steps sent right after every call.
+ag_8dcc0c1b05,4.A.4.a.3.I03.D11,https://www.lindy.ai/,"I pick up your calls and fill your calendar, day or night."
+ag_8dcc0c1b05,4.A.4.a.6.I03.D05,https://www.lindy.ai/,Outreach built on something real about each person.
 ag_8dcc0c1b05,4.A.4.a.8.I03.D02,https://www.lindy.ai/,"Every new lead gets a fast, personal reply, even after hours, so nothing goes cold."
-ag_8dcc0c1b05,4.A.4.c.3.I04.D03,https://www.lindy.ai/,I chase what you’re owed.
 ag_8e121381b8,4.A.1.a.1.I02.D03,https://www.cykel.ai/,Lucy handles end-to-end recruitment processes like sourcing candidates and screening CVs.
 ag_8e121381b8,4.A.3.b.6.I03.D05,https://www.cykel.ai/,"I research and write pro-level company reports for investment, consulting and advisory teams."
 ag_8e121381b8,4.A.4.a.6.I03.D05,https://www.cykel.ai/,"I help sales teams accelerate their sales cycle by automating prospecting, outreach and follow-ups."
@@ -1408,7 +1395,6 @@ ag_8e121381b8,4.A.4.c.2.I01.D05,https://www.cykel.ai/,"I help talent teams reduc
 ag_8e50a3c156,4.A.2.a.2.I01.D02,https://github.com/Sylinko/Everywhere,**Everywhere** will quickly search and verify the reliability of the information.
 ag_8e50a3c156,4.A.2.b.1.I07.D02,https://github.com/Sylinko/Everywhere,"enter *""Make this email more professional""*, and your casual text is transformed into polished, business-ready communication."
 ag_8e50a3c156,4.A.4.a.1.I03.D01,https://github.com/Sylinko/Everywhere,"tell it to *""Translate to Chinese""*, and see an immediate translation without opening a secondary translation tool."
-ag_8e50a3c156,4.A.4.a.3.I03.D08,https://github.com/Sylinko/Everywhere,"Bring up <kbd>Everywhere</kbd> next to the error message, simply type *""What is this error? How to solve it?""*, and **Everywhere** will capture the message context in place and provide an accurate solution."
 ag_8f75d8facb,4.A.4.a.5.I08.D01,https://github.com/MinorJerry/WebVoyager,WebVoyager is an innovative Large Multimodal Model (LMM) powered web agent that can complete user instructions end-to-end by interacting with real-world websites.
 ag_901ab19dd4,4.A.1.a.2.I02.D02,https://github.com/stakpak/agent,"An open source agent that lives on your machines 24/7, keeps your apps running, and only pings when it needs a human."
 ag_901ab19dd4,4.A.1.a.2.I10.D03,https://github.com/stakpak/agent,schedule add health --cron '*/5 * * * *' --prompt 'Check health' --profile monitoring
@@ -1422,7 +1408,7 @@ ag_9320a06fde,4.A.3.b.1.I06.D06,https://github.com/ddupont808/GPT-4V-Act,"Typing
 ag_9341c88f40,4.A.1.a.1.I04.D05,https://github.com/semanser/codel,"Fetches latest information from the web (tutorials, docs, etc.) if needed."
 ag_9341c88f40,4.A.3.b.1.I05.D01,https://github.com/semanser/codel,"Fully autonomous AI Agent that can perform complicated tasks and projects using terminal, browser, and editor."
 ag_9341c88f40,4.A.3.b.6.I08.D14,https://github.com/semanser/codel,All the history commands and outputs are saved in the PostgreSQL database.
-ag_937c942115,4.A.2.b.1.I09.D06,https://github.com/razzant/ouroboros,"can rewrite the implementation it runs on, including its code, architecture, prompts, tools, and dependencies"
+ag_937c942115,4.A.3.b.1.I01.D03,https://github.com/razzant/ouroboros,"can rewrite the implementation it runs on, including its code, architecture, prompts, tools, and dependencies"
 ag_937c942115,4.A.4.b.4.I01.D06,https://github.com/razzant/ouroboros,coordinates a live swarm of specialist agents
 ag_9380a133eb,4.A.1.a.1.I04.D05,https://github.com/hexdocom/lemonai,Browser operations & web search
 ag_9380a133eb,4.A.2.b.1.I07.D02,https://github.com/hexdocom/lemonai,"Lemon AI Editor lets you continuously edit, modify, and refine your generated HTML pages."
@@ -1613,12 +1599,11 @@ ag_aabba36915,4.A.1.a.2.I10.D01,https://github.com/FunnyWolf/agentic-soc-platfor
 ag_aabba36915,4.A.2.a.4.I07.D14,https://github.com/FunnyWolf/agentic-soc-platform,"Compress hours of manual analysis into seconds, automatically producing severity, confidence, impact, priority, verdicts, and structured investigation reports."
 ag_aabba36915,4.A.2.b.2.I02.D01,https://github.com/FunnyWolf/agentic-soc-platform,"enabling agents to operate Cases, search logs, query threat intelligence, and write modules and playbooks directly."
 ag_aabba36915,4.A.3.b.6.I03.D05,https://github.com/FunnyWolf/agentic-soc-platform,"automatically producing severity, confidence, impact, priority, verdicts, and structured investigation reports."
-ag_ab68524f36,4.A.1.a.1.I02.D01,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"Turns it into a search: the titles, the skills and the places that fit you."
-ag_ab68524f36,4.A.1.a.1.I04.D07,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"6 million postings of the last 60 days from 37 public sources, rebuilt every five hours, searched on your computer."
-ag_ab68524f36,4.A.2.a.1.I03.D01,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"Asks of every posting, against your resume, one question: is it in line with you?"
+ag_ab68524f36,4.A.1.a.1.I02.D03,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"Turns it into a search: the titles, the skills and the places that fit you."
+ag_ab68524f36,4.A.1.a.1.I04.D03,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"6 million postings of the last 60 days from 37 public sources, rebuilt every five hours, searched on your computer."
 ag_ab68524f36,4.A.3.b.1.I06.D06,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"A real Firefox opens the company's form, fills every required field, attaches your CV and sends."
 ag_ab68524f36,4.A.3.b.6.I08.D09,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"What each page said, with a screenshot, for every application."
-ag_ab68524f36,4.A.3.b.6.I13.D04,https://github.com/feder-cr/Jobs_Applier_AI_Agent,it fills in and sends each job application on the company's own form.
+ag_ab68524f36,4.A.3.b.6.I13.D04,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"A real Firefox opens the company's form, fills every required field, attaches your CV and sends."
 ag_ac0f6b256a,4.A.1.a.1.I04.D07,https://github.com/tontinton/maki,"The subagent burns its own context on greps and dead ends, only the summary comes back to yours."
 ag_ac0f6b256a,4.A.3.b.1.I01.D03,https://github.com/tontinton/maki,"An AI coding agent optimized for minimal use of context tokens, while providing a great user experience."
 ag_ac30840d38,4.A.4.a.5.I10.D07,https://github.com/sugarforever/chat-ollama,The agent can search the selected collections and cite source passages.
@@ -1748,6 +1733,12 @@ ag_c070ff9091,4.A.1.a.1.I04.D03,https://github.com/666ghj/DeepSearchAgent-Demo,*
 ag_c070ff9091,4.A.3.b.6.I03.D02,https://github.com/666ghj/DeepSearchAgent-Demo,一个**无框架**的深度搜索AI代理实现，能够通过多轮搜索和反思生成高质量的研究报告。
 ag_c070ff9091,4.A.3.b.6.I08.D14,https://github.com/666ghj/DeepSearchAgent-Demo,**状态管理**: 完整的研究过程状态跟踪和恢复
 ag_c163b44018,4.A.3.b.1.I01.D03,https://github.com/vitalops/openvibe,"openvibe run ""fix the failing tests"""
+ag_c1cb30af4b,4.A.1.a.1.I03.D07,https://github.com/OpenOSINT/OpenOSINT,OpenOSINT is an open-source OSINT agent for investigators and security researchers
+ag_c1cb30af4b,4.A.1.a.1.I04.D02,https://github.com/OpenOSINT/OpenOSINT,search_breach
+ag_c1cb30af4b,4.A.1.a.1.I04.D03,https://github.com/OpenOSINT/OpenOSINT,"21 public-source tools behind natural-language chat, an MCP server and a Claude Code plugin."
+ag_c1cb30af4b,4.A.1.a.2.I10.D01,https://github.com/OpenOSINT/OpenOSINT,Grade: B  Score: 88/100
+ag_c1cb30af4b,4.A.2.a.3.I02.D03,https://github.com/OpenOSINT/OpenOSINT,"Or one direct check, no AI involved
+uvx openosint exposure example.com"
 ag_c29a301706,4.A.1.b.2.I08.D03,https://cursor.com/,"Agents use their own computers to build, test, and demo features end to end for you to review."
 ag_c29a301706,4.A.2.b.2.I02.D01,https://cursor.com/,"Agents use their own computers to build, test, and demo features end to end for you to review."
 ag_c29a301706,4.A.3.b.1.I01.D03,https://cursor.com/,"Built to make you extraordinarily productive, agents turn ideas into code."
@@ -1821,6 +1812,7 @@ ag_c8ede7a595,4.A.4.b.4.I01.D06,https://github.com/alvinunreal/oh-my-opencode-sl
 ag_c8ede7a595,4.A.4.b.4.I12.D39,https://github.com/alvinunreal/oh-my-opencode-slim,"The Orchestrator plans the work graph, dispatches specialists as background tasks, and reconciles their results before continuing."
 ag_c914348742,4.A.3.b.1.I05.D01,https://github.com/X-PLUG/MobileAgent,"GUI perception, grounding, and end-to-end operation capabilities"
 ag_c92c673810,4.A.2.b.1.I11.D01,https://github.com/0xsline/OpenChatCut,"Let Codex, Claude Code, and the built-in agent read, edit, and export real video projects that remain fully editable."
+ag_c92c673810,4.A.2.b.2.I18.D20,https://github.com/0xsline/OpenChatCut,"images, video, speech, music, sound effects, and online media search"
 ag_c92c673810,4.A.3.b.6.I08.D16,https://github.com/0xsline/OpenChatCut,"word-level transcription, text-based cuts, pause handling, speakers, and linked captions"
 ag_c9e7dda0e8,4.A.2.b.1.I07.D02,https://github.com/YishenTu/claudian,Select text or start at the cursor position + hotkey to edit directly in notes with word-level diff preview.
 ag_c9e7dda0e8,4.A.3.b.1.I01.D03,https://github.com/YishenTu/claudian,"talk to the agent, and it reads, writes, edits, searches and run commands in your vault"
@@ -1925,8 +1917,6 @@ ag_d328d0ce56,4.A.4.a.1.I02.D04,https://github.com/nikmcfly/MiroFish-Offline,Cha
 ag_d386fd00ee,4.A.3.b.1.I01.D03,https://github.com/XiaomiMiMo/MiMo-Code,"It can read and write code, run commands, manage Git, and use a persistent memory system to keep a deep understanding of your project across sessions while continuously improving itself."
 ag_d386fd00ee,4.A.3.b.1.I05.D01,https://github.com/XiaomiMiMo/MiMo-Code,reads the screen and operates mouse and keyboard across apps
 ag_d386fd00ee,4.A.3.b.6.I08.D09,https://github.com/XiaomiMiMo/MiMo-Code,structured state snapshots maintained automatically by the checkpoint-writer subagent
-ag_d3d4b60a78,4.A.1.a.1.I04.D03,https://e2b.dev/resources/about-deployment-evaluation-and-testing-of-agents-with-sully-omar-the-ceo-of-cognosys-ai?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"The research agent takes an objective, conducts internet research, synthetizes it, and provides links to relevant sources."
-ag_d3d4b60a78,4.A.4.a.3.I03.D07,https://e2b.dev/resources/about-deployment-evaluation-and-testing-of-agents-with-sully-omar-the-ceo-of-cognosys-ai?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It notifies the end user by saying that the instance failed, and they can run the agent again."
 ag_d40d64e2bb,4.A.1.a.2.I10.D01,https://github.com/Ricky-7-Yan/intelligent-audit-system,Bearer 身份基线、RBAC + 项目 ABAC、请求限流、HMAC 签名检查点、上传治理
 ag_d40d64e2bb,4.A.2.a.4.I12.D04,https://github.com/Ricky-7-Yan/intelligent-audit-system,对任务结果、执行轨迹、工具调用、证据依据、安全权限、上下文和鲁棒性分层评测
 ag_d40d64e2bb,4.A.2.b.1.I08.D05,https://github.com/Ricky-7-Yan/intelligent-audit-system,按范围生成证据请求，统一检索、定位来源并提示缺口
@@ -2197,10 +2187,9 @@ ag_f4dfe35f2c,4.A.4.a.8.I03.D02,https://github.com/shaxiu/XianyuAutoAgent,✅ LL
 ag_f4dfe35f2c,4.A.4.a.8.I03.D03,https://github.com/shaxiu/XianyuAutoAgent,支持议价/技术/客服多场景切换
 ag_f5f4b1f730,4.A.1.a.1.I04.D03,https://github.com/walter-grace/mac-code,| `/search <q>` | Quick web search |
 ag_f5f4b1f730,4.A.1.a.2.I10.D03,https://github.com/walter-grace/mac-code,| `dashboard.py` | Real-time monitoring dashboard for llama.cpp |
-ag_f77b874fca,4.A.3.b.1.I01.D03,https://github.com/limecloud/lime,"Fix a bug or build a feature | A focused diff, an explanation, and actual test results"
-ag_f77b874fca,4.A.3.b.4.I02.D03,https://github.com/limecloud/lime,"Read and edit files, run commands, and use connected tools."
-ag_f77b874fca,4.A.3.b.6.I03.D03,https://github.com/limecloud/lime,Research a question | An editable report with sources and open questions
-ag_f77b874fca,4.A.3.b.6.I12.D05,https://github.com/limecloud/lime,"Create content and visual assets | Copy, image drafts, and a delivery list from one brief"
+ag_f77b874fca,4.A.3.b.1.I01.D03,https://github.com/limecloud/lime,Fix a bug or build a feature
+ag_f77b874fca,4.A.3.b.1.I05.D01,https://github.com/limecloud/lime,"Read and edit files, run commands, and use connected tools."
+ag_f77b874fca,4.A.3.b.6.I03.D03,https://github.com/limecloud/lime,An editable report with sources and open questions
 ag_f7c4ae5133,4.A.2.b.2.I02.D01,https://github.com/leigest519/OpenGame,"We bridge this gap with **OpenGame**, the first open-source agentic framework explicitly designed for end-to-end web game creation."
 ag_f7c4ae5133,4.A.2.b.2.I02.D10,https://github.com/leigest519/OpenGame,A curated gallery of web games generated end-to-end by OpenGame from a single prompt.
 ag_f7c4ae5133,4.A.3.b.1.I01.D03,https://github.com/leigest519/OpenGame,"a code LLM specialized for game engine mastery through a three-stage pipeline of continual pre-training, supervised fine-tuning, and execution-grounded reinforcement learning"
