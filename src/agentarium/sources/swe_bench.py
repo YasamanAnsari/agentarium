@@ -32,6 +32,15 @@ def checkout(folder: Path) -> Path:
     return folder / "evaluation"
 
 
+def resolved_count(resolved: object, where: str) -> int:
+    """How many instances a results.json resolved: most list the instance ids, a few give the count itself."""
+    if isinstance(resolved, list):
+        return len(resolved)
+    if isinstance(resolved, int) and not isinstance(resolved, bool):
+        return resolved
+    raise ValueError(f"{where}: 'resolved' is neither a list of instances nor a count")
+
+
 def results(agents: list[dict[str, str]]) -> tuple[list[dict[str, str]], Counter[str]]:
     """agent_results rows for submissions whose site equals an agent's url or source_url, and counts of the rest."""
     import yaml  # the optional `pulls` extra
@@ -61,7 +70,8 @@ def results(agents: list[dict[str, str]]) -> tuple[list[dict[str, str]], Counter
             if not results_path.exists():
                 counts["matched, but no results.json"] += 1
                 continue
-            resolved = json.loads(results_path.read_text(encoding="utf-8"))["resolved"]
+            resolved = json.loads(results_path.read_text(encoding="utf-8")).get("resolved")
+            count = resolved_count(resolved, f"{split}/{submission}/results/results.json")
             source_url = TREE_URL.format(split=split, submission=submission)
             save_raw("swe-bench", f"{split}-{submission}", {"source_url": source_url, "record": info,
                                                             "resolved": resolved})
@@ -69,7 +79,7 @@ def results(agents: list[dict[str, str]]) -> tuple[list[dict[str, str]], Counter
                 rows.append({
                     "agent_id": agent_id,
                     "benchmark": f"swe-bench-{split}",
-                    "resolved_instances": str(len(resolved)),
+                    "resolved_instances": str(count),
                     "date": f"{submission[:4]}-{submission[4:6]}-{submission[6:8]}",
                     "source_url": source_url,
                 })

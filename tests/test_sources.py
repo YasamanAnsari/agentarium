@@ -8,7 +8,15 @@ from agentarium.sources import candidate, github_repo, is_product_link, web_key,
 from agentarium.sources.awesome_lists import extract_links
 from agentarium.sources.aws_marketplace import listing_text
 from agentarium.sources.github import SEARCH_CAP, star_ranges
-from agentarium.sources.swe_bench import address
+from agentarium.sources.swe_bench import address, resolved_count
+
+
+def test_resolved_is_a_list_of_instances_or_a_count() -> None:
+    assert resolved_count(["django__django-1", "astropy__astropy-2"], "x") == 2
+    assert resolved_count(48, "x") == 48  # the October 2024 multimodal submissions
+    for malformed in (None, True, "48"):
+        with pytest.raises(ValueError, match="neither"):
+            resolved_count(malformed, "x")
 
 
 def test_submission_sites_compare_as_addresses() -> None:

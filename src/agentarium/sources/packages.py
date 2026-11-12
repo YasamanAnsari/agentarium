@@ -22,18 +22,23 @@ def lookup(agent_id: str, repository_url: str) -> list[dict[str, str]]:
         url = f"{LOOKUP_URL}?{urlencode({'repository_url': repository_url, 'page': page, 'per_page': PAGE_SIZE})}"
         found = get_json(url)
         save_raw("packages", f"{agent_id}-p{page}", {"source_url": url, "record": found})
-        rows += [
-            {
-                "agent_id": agent_id,
-                "ecosystem": package["ecosystem"],
-                "package": package["name"],
-                "downloads_last_month": str(package["downloads"])
-                if package.get("downloads_period") == "last-month" and package.get("downloads") is not None
-                else "",
-                "source_url": url,
-            }
-            for package in found
-        ]
+        if not isinstance(found, list):
+            raise ValueError(f"{url}: expected a list of packages")
+        try:
+            rows += [
+                {
+                    "agent_id": agent_id,
+                    "ecosystem": package["ecosystem"],
+                    "package": package["name"],
+                    "downloads_last_month": str(package["downloads"])
+                    if package.get("downloads_period") == "last-month" and package.get("downloads") is not None
+                    else "",
+                    "source_url": url,
+                }
+                for package in found
+            ]
+        except (KeyError, TypeError, AttributeError) as err:
+            raise ValueError(f"{url}: a package entry lacks {err}") from err
         if len(found) < PAGE_SIZE:
             return rows
     raise RuntimeError(f"more than 999 pages of packages for {repository_url}")
