@@ -1,4 +1,4 @@
-"""Schema rules for the three core CSVs, checked on small hand-written rows and on the real files."""
+"""Schema rules for the core CSVs, checked on small hand-written rows and on the real files."""
 
 import csv
 from pathlib import Path
@@ -24,6 +24,8 @@ def small_catalog() -> schema.Catalog:
                 "created_on": "2024-03-01",
                 "stars": "1200",
                 "main_task": "write_code",
+                "license": "MIT",
+                "pricing_model": "",
             }
         ],
         "tasks": [
@@ -36,6 +38,46 @@ def small_catalog() -> schema.Catalog:
                 "task_id": "write_code",
                 "source_url": "https://github.com/example/example",
                 "evidence_quote": "It writes code.",
+            }
+        ],
+        "attributes": [
+            {"attribute": "autonomy", "value": "approver", "definition": "Asks before risky actions."},
+            {"attribute": "autonomy", "value": "observer", "definition": "Acts alone."},
+            {"attribute": "tool_class", "value": "browser", "definition": "Opens web pages."},
+        ],
+        "agent_attributes": [
+            {
+                "agent_id": AGENT_ID,
+                "attribute": "autonomy",
+                "value": "approver",
+                "source_url": "https://github.com/example/example",
+                "evidence_quote": "It asks before it pushes.",
+            }
+        ],
+        "agent_activities": [
+            {
+                "agent_id": AGENT_ID,
+                "dwa_id": "4.A.3.b.1.I01.D03",
+                "source_url": "https://github.com/example/example",
+                "evidence_quote": "It writes code.",
+            }
+        ],
+        "agent_packages": [
+            {
+                "agent_id": AGENT_ID,
+                "ecosystem": "pypi",
+                "package": "example",
+                "downloads_last_month": "",
+                "source_url": "https://packages.ecosyste.ms/api/v1/packages/lookup?repository_url=x",
+            }
+        ],
+        "agent_results": [
+            {
+                "agent_id": AGENT_ID,
+                "benchmark": "swe-bench-verified",
+                "resolved_instances": "352",
+                "date": "2025-05-15",
+                "source_url": "https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/x",
             }
         ],
     }
@@ -56,10 +98,11 @@ def test_write_uses_csv_conventions(tmp_path: Path) -> None:
         "write_code,Write code,Write code.",
     ]
     agents = (tmp_path / "agents.csv").read_text(encoding="utf-8").splitlines()
-    assert agents[1].endswith(',"Says ""hello"", then waits",,https://github.com/example/example,2026-11-10,2024-03-01,1200,write_code')
+    assert agents[1].endswith(',"Says ""hello"", then waits",,https://github.com/example/example,2026-11-10,2024-03-01,1200,write_code,MIT,')
     assert schema.load(tmp_path) == small_catalog() | {
         "tasks": sorted(small_catalog()["tasks"], key=lambda r: r["task_id"])
     }
+    assert sorted(p.name for p in tmp_path.iterdir()) == sorted(t.filename for t in schema.TABLES)
 
 
 def test_load_rejects_a_changed_header(tmp_path: Path) -> None:
@@ -93,6 +136,27 @@ def test_main_task_must_be_one_of_the_agents_tasks() -> None:
     catalog["agent_tasks"] = []
     assert "has main_task 'browse_web' but no tasks" in problems(catalog)
     catalog["agents"][0]["main_task"] = ""
+    schema.validate(catalog)
+
+
+def test_attributes_and_activities_must_be_known() -> None:
+    catalog = small_catalog()
+    catalog["agent_attributes"][0]["value"] = "dictator"
+    catalog["agent_activities"][0]["dwa_id"] = "4.A.3.b.1.I01.D99"
+    found = problems(catalog)
+    assert "unknown attribute value ('autonomy', 'dictator')" in found
+    assert "dwa_id '4.A.3.b.1.I01.D99' is not in O*NET 29.2" in found
+
+
+def test_an_agent_has_one_autonomy_level_but_many_tools() -> None:
+    catalog = small_catalog()
+    first = catalog["agent_attributes"][0]
+    catalog["agent_attributes"] += [
+        first | {"attribute": "tool_class", "value": "browser"},
+        first | {"value": "observer"},
+    ]
+    assert "has more than one autonomy" in problems(catalog)
+    catalog["agent_attributes"].pop()
     schema.validate(catalog)
 
 

@@ -149,11 +149,13 @@ class Candidate:
     retrieved_on: str
     created_on: str  # repository creation date; empty for web pages
     stars: str  # stargazer count at retrieval; empty for web pages
+    license: str  # GitHub's SPDX id for the repository; empty elsewhere
+    pricing_model: str  # AWS Marketplace pricing model types, lowercased and joined by ";"; empty elsewhere
     text: str
 
 
 def candidate(source: str, raw: dict[str, Any]) -> Candidate:
-    """Read a saved GitHub or web record into the catalog's fields; nothing is written by a model."""
+    """Read a saved GitHub, AWS Marketplace or web record into the catalog's fields; nothing is written by a model."""
     retrieved_on = datetime.fromisoformat(raw["retrieved_at"]).date().isoformat()
     if source == "github":
         record = raw["record"]
@@ -169,6 +171,24 @@ def candidate(source: str, raw: dict[str, Any]) -> Candidate:
             retrieved_on=retrieved_on,
             created_on=record["created_at"][:10],
             stars=str(record["stargazers_count"]),
+            license=(record.get("license") or {}).get("spdx_id") or "",
+            pricing_model="",
+            text=raw["text"],
+        )
+    if source == "aws":
+        record = raw["record"]
+        return Candidate(
+            key=f"aws:{record['listingId']}",
+            name=record["listingName"],
+            url=raw["source_url"],
+            description=record.get("shortDescription", "").strip(),
+            organization=record["publisher"]["displayName"],
+            source_url=raw["source_url"],
+            retrieved_on=retrieved_on,
+            created_on="",
+            stars="",
+            license="",
+            pricing_model=";".join(sorted({p["pricingModelType"].lower() for p in record.get("pricingModels", [])})),
             text=raw["text"],
         )
     return Candidate(
@@ -181,14 +201,16 @@ def candidate(source: str, raw: dict[str, Any]) -> Candidate:
         retrieved_on=retrieved_on,
         created_on="",
         stars="",
+        license="",
+        pricing_model="",
         text=raw["text"],
     )
 
 
 def latest_candidates(day: date, raw_dir: Path = RAW_DIR) -> list[Candidate]:
-    """The newest saved fetch of each record on that day, across the GitHub and web raw folders."""
+    """The newest saved fetch of each record on that day, across the GitHub, AWS and web raw folders."""
     by_key: dict[str, Candidate] = {}
-    for source in ("github", "web"):
+    for source in ("github", "aws", "web"):
         # Filenames are <record id>-<timestamp>.json, so sorting puts each record's newest fetch last.
         for path in sorted((raw_dir / source / day.isoformat()).glob("*.json")):
             if path.name == MANIFEST:

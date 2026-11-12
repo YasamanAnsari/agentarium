@@ -13,7 +13,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from agentarium import ROOT
+from agentarium import ROOT, onet
 
 CORE_DIR = ROOT / "data" / "core"
 
@@ -39,10 +39,10 @@ AGENTS = Table(
     "agents",
     (
         "agent_id", "name", "url", "description", "organization", "source_url",
-        "first_seen", "created_on", "stars", "main_task",
+        "first_seen", "created_on", "stars", "main_task", "license", "pricing_model",
     ),
     ("agent_id",),
-    optional=frozenset({"organization", "created_on", "stars", "main_task"}),
+    optional=frozenset({"organization", "created_on", "stars", "main_task", "license", "pricing_model"}),
 )
 TASKS = Table("tasks", ("task_id", "name", "definition"), ("task_id",))
 AGENT_TASKS = Table(
@@ -50,7 +50,32 @@ AGENT_TASKS = Table(
     ("agent_id", "task_id", "source_url", "evidence_quote"),
     ("agent_id", "task_id"),
 )
-TABLES = (AGENTS, TASKS, AGENT_TASKS)
+ATTRIBUTES = Table("attributes", ("attribute", "value", "definition"), ("attribute", "value"))
+AGENT_ATTRIBUTES = Table(
+    "agent_attributes",
+    ("agent_id", "attribute", "value", "source_url", "evidence_quote"),
+    ("agent_id", "attribute", "value"),
+)
+AGENT_ACTIVITIES = Table(
+    "agent_activities",
+    ("agent_id", "dwa_id", "source_url", "evidence_quote"),
+    ("agent_id", "dwa_id"),
+)
+AGENT_PACKAGES = Table(
+    "agent_packages",
+    ("agent_id", "ecosystem", "package", "downloads_last_month", "source_url"),
+    ("agent_id", "ecosystem", "package"),
+    optional=frozenset({"downloads_last_month"}),
+)
+AGENT_RESULTS = Table(
+    "agent_results",
+    ("agent_id", "benchmark", "resolved_instances", "date", "source_url"),
+    ("agent_id", "source_url"),
+)
+TABLES = (
+    AGENTS, TASKS, AGENT_TASKS, ATTRIBUTES, AGENT_ATTRIBUTES, AGENT_ACTIVITIES, AGENT_PACKAGES, AGENT_RESULTS,
+)
+SINGLE_VALUED = frozenset({"autonomy", "audience"})  # attributes an agent has at most one value of
 
 
 def _is_http_url(value: str) -> bool:
@@ -70,11 +95,20 @@ FORMATS = {
     "agent_id": re.compile(r"ag_[0-9a-f]{10}").fullmatch,
     "task_id": re.compile(r"[a-z][a-z0-9]*(_[a-z0-9]+)*").fullmatch,
     "main_task": re.compile(r"[a-z][a-z0-9]*(_[a-z0-9]+)*").fullmatch,
+    "attribute": re.compile(r"[a-z][a-z0-9]*(_[a-z0-9]+)*").fullmatch,
+    "value": re.compile(r"[a-z][a-z0-9]*(_[a-z0-9]+)*").fullmatch,
     "url": _is_http_url,
     "source_url": _is_http_url,
     "first_seen": _is_iso_date,
     "created_on": _is_iso_date,
     "stars": re.compile(r"0|[1-9][0-9]*").fullmatch,
+    "downloads_last_month": re.compile(r"0|[1-9][0-9]*").fullmatch,
+    "resolved_instances": re.compile(r"0|[1-9][0-9]*").fullmatch,
+    "date": _is_iso_date,
+    "ecosystem": re.compile(r"[a-z0-9][a-z0-9.-]*").fullmatch,
+    "benchmark": re.compile(r"[a-z0-9]+(-[a-z0-9]+)*").fullmatch,
+    "license": re.compile(r"[A-Za-z0-9.+-]+").fullmatch,  # GitHub's SPDX id, or its NOASSERTION
+    "pricing_model": re.compile(r"(byol|contract|free|usage)(;(byol|contract|free|usage))*").fullmatch,
 }
 
 
@@ -92,7 +126,7 @@ def new_agent_id(identity_key: str) -> str:
 
 
 def load(core_dir: Path = CORE_DIR) -> Catalog:
-    """Read the three tables. Raises SchemaError if a header is not exactly as defined."""
+    """Read every table. Raises SchemaError if a header is not exactly as defined."""
     catalog: Catalog = {}
     for table in TABLES:
         with (core_dir / table.filename).open(encoding="utf-8", newline="") as f:
@@ -116,10 +150,14 @@ def validate(catalog: Catalog) -> None:
         problems += _row_problems(table, rows)
 
     agent_ids = {row.get("agent_id") for row in catalog.get("agents", [])}
+    for table in TABLES:
+        if table is not AGENTS and "agent_id" in table.columns:
+            for row in catalog.get(table.name, []):
+                if row.get("agent_id") not in agent_ids:
+                    problems.append(f"{table.filename}: unknown agent_id {row.get('agent_id')!r}")
+
     task_ids = {row.get("task_id") for row in catalog.get("tasks", [])}
     for row in catalog.get("agent_tasks", []):
-        if row.get("agent_id") not in agent_ids:
-            problems.append(f"agent_tasks.csv: unknown agent_id {row.get('agent_id')!r}")
         if row.get("task_id") not in task_ids:
             problems.append(f"agent_tasks.csv: unknown task_id {row.get('task_id')!r}")
 
@@ -132,6 +170,23 @@ def validate(catalog: Catalog) -> None:
             problems.append(f"agents.csv: {row.get('agent_id')} main_task {main!r} is not one of its tasks")
         elif not tasks and main:
             problems.append(f"agents.csv: {row.get('agent_id')} has main_task {main!r} but no tasks")
+
+    vocabulary = {(row.get("attribute"), row.get("value")) for row in catalog.get("attributes", [])}
+    single: set[tuple[str, str]] = set()
+    for row in catalog.get("agent_attributes", []):
+        pair = (row.get("attribute"), row.get("value"))
+        if pair not in vocabulary:
+            problems.append(f"agent_attributes.csv: unknown attribute value {pair}")
+        if pair[0] in SINGLE_VALUED:
+            once = (row.get("agent_id", ""), pair[0] or "")
+            if once in single:
+                problems.append(f"agent_attributes.csv: {once[0]} has more than one {once[1]}")
+            single.add(once)
+
+    dwa_ids = onet.activities()
+    for row in catalog.get("agent_activities", []):
+        if row.get("dwa_id") not in dwa_ids:
+            problems.append(f"agent_activities.csv: dwa_id {row.get('dwa_id')!r} is not in O*NET {onet.ONET_VERSION}")
 
     if problems:
         raise SchemaError(problems)
@@ -172,7 +227,7 @@ def render(table: Table, rows: list[Row]) -> str:
 
 
 def write(catalog: Catalog, core_dir: Path = CORE_DIR) -> None:
-    """Validate, then replace the three CSVs through temporary files in the same folder."""
+    """Validate, then replace every CSV through temporary files in the same folder."""
     validate(catalog)
     staged: list[tuple[Path, Path]] = []
     try:
@@ -183,7 +238,7 @@ def write(catalog: Catalog, core_dir: Path = CORE_DIR) -> None:
                 f.write(render(table, catalog[table.name]))
                 f.flush()
                 os.fsync(f.fileno())
-        # ponytail: three renames are not one atomic step; a crash between them can pair
+        # ponytail: several renames are not one atomic step; a crash between them can pair
         # tables from two writes. validate() on the next load reports any broken reference.
         for tmp, target in staged:
             os.replace(tmp, target)

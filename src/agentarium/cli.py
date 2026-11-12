@@ -12,6 +12,7 @@ from datetime import date
 from agentarium.sources import (
     SkipRecord,
     awesome_lists,
+    aws_marketplace,
     ecosystems,
     github,
     github_repo,
@@ -86,6 +87,8 @@ def collect(args: argparse.Namespace) -> Counter[str]:
         return route(ecosystems.find(args.ecosystem, args.package, args.min_stars), args.min_stars)
     if args.source == "hackernews":
         return route(hackernews.find(args.query, args.since, args.min_points))
+    if args.source == "aws-marketplace":
+        return aws_marketplace.collect(args.category)
     return route([args.url])
 
 
@@ -114,6 +117,9 @@ def _parser() -> argparse.ArgumentParser:
     hn.add_argument("--query", required=True)
     hn.add_argument("--since", type=date.fromisoformat, required=True, help="YYYY-MM-DD")
     hn.add_argument("--min-points", type=int, required=True)
+
+    aws = sources.add_parser("aws-marketplace", help="every listing in one AWS Marketplace category")
+    aws.add_argument("--category", required=True, help="the category's display name, e.g. 'AI Agents & Tools'")
 
     page = sources.add_parser("web", help="one web page")
     page.add_argument("--url", required=True)

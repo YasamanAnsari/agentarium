@@ -6,6 +6,9 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 
+[project.optional-dependencies]
+pulls = ["boto3>=1.44", "pyyaml>=6"]
+
 [project.scripts]
 agentarium = "agentarium.cli:main"
 

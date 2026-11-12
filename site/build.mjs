@@ -4,13 +4,19 @@ import {dirname, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 const SITE = dirname(fileURLToPath(import.meta.url));
-const CORE = join(SITE, '..', 'data', 'core');
+const DATA = join(SITE, '..', 'data');
 const DIST = join(SITE, 'dist');
 const STATIC = ['index.html', 'style.css', 'observatory.css', 'app.js', 'favicon.svg'];
-const TABLES = ['agents.csv', 'tasks.csv', 'agent_tasks.csv'];
+// [source under data/, name under dist/data/]
+const TABLES = [
+  ...['agents', 'tasks', 'agent_tasks', 'attributes', 'agent_attributes', 'agent_activities', 'agent_packages', 'agent_results']
+    .map(name => [`core/${name}.csv`, `${name}.csv`]),
+  ['derived/occupation_coverage.csv', 'occupation_coverage.csv'],
+  ['reference/onet/29.2/DWA Reference.txt', 'onet_dwa_reference.txt'],
+];
 
 rmSync(DIST, {recursive: true, force: true});
 mkdirSync(join(DIST, 'data'), {recursive: true});
 for (const file of STATIC) copyFileSync(join(SITE, file), join(DIST, file));
-for (const file of TABLES) copyFileSync(join(CORE, file), join(DIST, 'data', file));
+for (const [source, name] of TABLES) copyFileSync(join(DATA, source), join(DIST, 'data', name));
 console.log(`site built: ${STATIC.length} files, ${TABLES.length} tables`);

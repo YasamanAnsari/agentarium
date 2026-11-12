@@ -1,20 +1,27 @@
 # Agentarium
 
-A CSV catalog of AI agents and the tasks their own documentation says they perform. Every factual claim carries a source URL, and every task link carries a quote copied verbatim from that source.
+A CSV catalog of AI agents, the tasks and O*NET work activities their own documentation says they perform, and how they work. Every factual claim carries a source URL, and every task, activity and profile link carries a quote copied verbatim from that source.
 
-Explore the catalog online: [agentarium.yasamanansari.com](https://agentarium.yasamanansari.com). The site in `site/` reads the three tables in `data/core/` and rebuilds on every daily update.
+Explore the catalog online: [agentarium.yasamanansari.com](https://agentarium.yasamanansari.com). The site in `site/` reads the tables in `data/core/` and `data/derived/` and rebuilds on every daily update.
 
 ## What is in it
 
-Three tables in `data/core/`, described field by field in [docs/schema.md](docs/schema.md):
+Eight tables in `data/core/`, described field by field in [docs/schema.md](docs/schema.md):
 
 | Table | One row per |
 |---|---|
 | `agents.csv` | agent |
 | `tasks.csv` | task in the controlled vocabulary |
 | `agent_tasks.csv` | documented claim that an agent performs a task |
+| `agent_activities.csv` | documented claim that an agent performs an O*NET 29.2 Detailed Work Activity |
+| `attributes.csv` | value in the profile vocabulary: autonomy level, tool class, audience |
+| `agent_attributes.csv` | documented claim about how an agent works |
+| `agent_packages.csv` | registry package that names an agent's repository, with its monthly downloads |
+| `agent_results.csv` | SWE-bench submission matched to an agent by its listed site |
 
-`data/agent_declined.csv` counts, for each day, what the inclusion rules refused and why. `data/raw/` holds a manifest of the URL, time and SHA-256 of every page the catalog was built from.
+`data/derived/occupation_coverage.csv` joins the activity links, through O*NET's own crosswalk, to the tasks of 798 occupations, with BLS wages and employment. `data/reference/` holds the O*NET 29.2 and BLS May 2025 files it is computed from. `data/agent_declined.csv` counts, for each day, what the inclusion rules refused and why. `data/raw/` holds a manifest of the URL, time and SHA-256 of every page the catalog was built from.
+
+This catalog includes information from the O*NET 29.2 Database by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA), used under the CC BY 4.0 license. O*NET® is a trademark of USDOL/ETA. `agent_packages.csv` is derived from ecosyste.ms data and shared under CC BY-SA 4.0.
 
 ## What counts as an agent
 
@@ -28,20 +35,23 @@ Frameworks for building agents, tools that agents use (such as MCP servers), cha
 
 ## How rows are added
 
-A maintenance agent runs daily from a separate repository, which holds the model credentials and the drafts it does not publish. It collects candidates with the commands below, asks a language model whether each new or changed record is an agent and which listed tasks its text claims, and merges only rows that pass the rules. No person reviews its rows before they are published. Code enforces the rules:
+A maintenance agent runs daily from a separate repository, which holds the model credentials and the drafts it does not publish. It collects candidates with the commands below, asks a language model whether each new or changed record is an agent, which listed tasks and profile values its text claims, and, in a second call, which O*NET work activities it claims. It merges only rows that pass the rules. No person reviews its rows before they are published. Code enforces the rules:
 
 - Every quote must appear verbatim in the saved source text.
-- Every task must already exist in `tasks.csv`, which is maintained by hand.
+- Every task, profile value and activity must already exist in `tasks.csv`, `attributes.csv` or O*NET 29.2.
+- An agent has at most one autonomy level and one audience.
 - Every row must pass the schema checks in `src/agentarium/schema.py`.
 
-Every row in `agents.csv` and `agent_tasks.csv` was written this way.
+Every row in `agents.csv`, `agent_tasks.csv`, `agent_activities.csv` and `agent_attributes.csv` was written this way. Downloads and SWE-bench results are copied from their sources by code, with no model involved.
 
 ## Limits
 
 - **Claims, not performance.** A task link records that a source *says* the agent can do the task. It does not show that the agent does it well, or at all. The quote shows exactly what was claimed.
-- **Automated judgment.** Beyond the rules above, the model's decisions are not checked.
-- **Coverage.** Agents are found through GitHub search, curated awesome lists, the repositories that depend on agent frameworks (via ecosyste.ms), Show HN stories on Hacker News, and product websites linked from those. Agents that appear in none of them are missing.
-- **Identity.** A GitHub agent keeps its ID through renames and transfers. An agent known only from its website keeps its ID only while its URL stays the same. An agent with both a repository and a product site may appear as two rows.
+- **Automated judgment.** Beyond the rules above, the model's decisions are not checked. The share of activity links a person judges correct will be published in [docs/schema.md](docs/schema.md) once a random sample of 100 is reviewed.
+- **Occupations.** A claimed O*NET task means an agent's text says it performs one of the task's work activities, not that it does the task, or that anyone uses it to. 301 of O*NET's 18,796 tasks have no activity link and can never be claimed.
+- **Coverage.** Agents are found through GitHub search (including ten searches for finance, trading, accounting, legal, medical, healthcare, sales, marketing, customer support and recruiting agents, at the same 1,000-star bar), curated awesome lists, the repositories that depend on agent frameworks (via ecosyste.ms), Show HN stories on Hacker News, the AWS Marketplace "AI Agents & Tools" category when AWS credentials are configured, and product websites linked from those. Agents that appear in none of them are missing; most agents in the catalog are still developer tools.
+- **Identity.** A GitHub agent keeps its ID through renames and transfers. An agent known only from its website keeps its ID only while its URL stays the same. An agent with both a repository and a product site, or a repository and a marketplace listing, may appear as two rows.
+- **Adoption.** Stars measure attention, and downloads count installs of packages that name the repository, including third-party copies. Neither counts users.
 
 ## Collecting
 
@@ -54,8 +64,12 @@ uv run --env-file .env agentarium collect awesome-list --repo e2b-dev/awesome-ai
 uv run --env-file .env agentarium collect dependents --ecosystem pypi --package crewai --min-stars 1000
 uv run --env-file .env agentarium collect hackernews --query agent --since 2026-10-01 --min-points 100
 uv run --env-file .env agentarium collect web --url https://example.com
+uv run --extra pulls --env-file .env agentarium collect aws-marketplace --category "AI Agents & Tools"
+uv run python -m agentarium.derived
 uv run pytest
 ```
+
+The AWS Marketplace source needs the optional `pulls` extra and AWS credentials for a user with the `AWSMarketplaceRead-only` policy (`AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`). It uses the official Marketplace Discovery API, because the marketplace's search pages are closed to crawlers.
 
 `collect` saves each fetched record under `data/raw/<source>/<date>/` and updates that folder's manifest; it never touches the catalog. Git tracks only the manifests, because the pages themselves belong to their owners.
 

@@ -1,0 +1,18 @@
+attribute,value,definition
+audience,non_expert,"People without training in this work, so they can do it themselves."
+audience,organization,Organizations that deploy it to carry out a business function.
+audience,practitioner,"People who already do this work, to do it faster or better."
+autonomy,approver,The agent acts on its own and asks the user to approve risky or specified actions.
+autonomy,collaborator,"The user and the agent plan and act together, and either can take over."
+autonomy,consultant,"The agent plans and acts, and asks the user for preferences or expertise along the way."
+autonomy,observer,The agent acts on its own; the user can only watch it or stop it.
+autonomy,operator,The user directs the work step by step; the agent acts when asked.
+tool_class,browser,Opens and operates web pages.
+tool_class,business_systems,"Reads or changes records in business software such as CRM, ERP or ticketing systems."
+tool_class,code_execution,Runs code it writes or is given.
+tool_class,custom_apis,Calls other services through their APIs.
+tool_class,email_calendar,"Reads or sends email, or reads or changes calendars."
+tool_class,file_system,Reads and writes files on a computer.
+tool_class,payments,Makes or manages payments or trades.
+tool_class,search_retrieval,Searches the web or a document collection and reads the results.
+tool_class,voice,"Speaks or listens, for example on phone calls."

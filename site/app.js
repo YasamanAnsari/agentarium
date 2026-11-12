@@ -24,12 +24,15 @@ const SHAPES = {
   jelly:'M40 58C40 22 120 22 120 58C110 64 50 64 40 58ZM52 62C48 76 58 86 52 102M68 63C70 80 62 90 68 106M84 63C82 80 90 90 84 106M100 62C104 76 94 86 100 102M62 42H98V56H62Z',
   minnow:'M30 55C50 32 104 32 124 55C104 78 50 78 30 55ZM124 55L146 40V70ZM70 34L80 22L92 34M60 46H92V62H60Z'
 };
-const AGENT_COLUMNS = ['agent_id','name','url','description','organization','source_url','first_seen','created_on','stars','main_task'];
-const PUBLISHERS = [['Organization','#4779be'],['Personal account','#8b67cc'],['Product website','#239ba4']];
+const AGENT_COLUMNS = ['agent_id','name','url','description','organization','source_url','first_seen','created_on','stars','main_task','license','pricing_model'];
+const PUBLISHERS = [['Organization','#4779be'],['Personal account','#8b67cc'],['Product website','#239ba4'],['Marketplace listing','#c9874a']];
+const MARKETPLACE = 'https://aws.amazon.com/marketplace/';
 const HABITAT_SIZE = 36;
 let TASKS = [];
 let DATA = [];
 let CLAIMS = 0;
+let ACTIVITY_TITLES = new Map();
+let OCCUPATIONS = [];
 const $ = s=>document.querySelector(s);
 const $$ = s=>Array.from(document.querySelectorAll(s));
 const esc = value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -69,22 +72,35 @@ async function fetchTable(path){
 }
 function publisherOf(agent){
   const source=new URL(agent.source_url);
+  if(agent.source_url.startsWith(MARKETPLACE))return {kind:'Marketplace listing',name:agent.organization};
   if(source.hostname!=='github.com')return {kind:'Product website',name:agent.organization||source.hostname.replace(/^www\./,'')};
   return {kind:agent.organization?'Organization':'Personal account',name:agent.organization||source.pathname.split('/')[1]};
 }
+const groupBy=(rows,key)=>{const map=new Map();for(const row of rows){if(!map.has(row[key]))map.set(row[key],[]);map.get(row[key]).push(row);}return map;};
 async function loadCatalog(){
-  const [agents,tasks,links]=await Promise.all(['data/agents.csv','data/tasks.csv','data/agent_tasks.csv'].map(fetchTable));
+  const tables=['agents','tasks','agent_tasks','agent_attributes','agent_activities','agent_packages','agent_results','occupation_coverage'];
+  const [[agents,tasks,links,attributes,activities,packages,results,occupations],dwaText]=await Promise.all([
+    Promise.all(tables.map(t=>fetchTable(`data/${t}.csv`))),
+    fetch('data/onet_dwa_reference.txt',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(`O*NET activities: HTTP ${r.status}`);return r.text();})
+  ]);
   TASKS=tasks;
   CLAIMS=links.length;
+  OCCUPATIONS=occupations;
+  // O*NET's tab-separated file: Element ID, IWA ID, DWA ID, DWA Title.
+  ACTIVITY_TITLES=new Map(dwaText.split(/\r?\n/).slice(1).filter(Boolean).map(line=>line.split('\t')).map(f=>[f[2],f[3]]));
   const order=new Map(tasks.map((t,i)=>[t.task_id,i]));
-  const byAgent=new Map();
-  for(const link of links){if(!byAgent.has(link.agent_id))byAgent.set(link.agent_id,[]);byAgent.get(link.agent_id).push(link);}
+  const byAgent=groupBy(links,'agent_id'),attributesOf=groupBy(attributes,'agent_id'),activitiesOf=groupBy(activities,'agent_id');
+  const packagesOf=groupBy(packages,'agent_id'),resultsOf=groupBy(results,'agent_id');
   DATA=agents.map(agent=>{
     const claims=(byAgent.get(agent.agent_id)||[]).sort((a,b)=>order.get(a.task_id)-order.get(b.task_id));
     const publisher=publisherOf(agent);
-    return {...agent,id:agent.agent_id,claims,taskIds:claims.map(c=>c.task_id),kind:publisher.kind,publisher:publisher.name};
+    return {...agent,id:agent.agent_id,claims,taskIds:claims.map(c=>c.task_id),kind:publisher.kind,publisher:publisher.name,
+      attributes:attributesOf.get(agent.agent_id)||[],activities:activitiesOf.get(agent.agent_id)||[],
+      packages:(packagesOf.get(agent.agent_id)||[]).sort((a,b)=>(Number(b.downloads_last_month)||0)-(Number(a.downloads_last_month)||0)),
+      results:(resultsOf.get(agent.agent_id)||[]).sort((a,b)=>b.date.localeCompare(a.date))};
   });
 }
+const isMarketplace = d=>d.kind==='Marketplace listing';
 // Tasks that at least one agent claims, in vocabulary order, then agents with no task.
 function presentTasks(){
   const ids=TASKS.map(t=>t.task_id).filter(id=>DATA.some(d=>d.taskIds.includes(id)));
@@ -218,10 +234,11 @@ function renderCreatures(){
     const progress=reverse?(x+24)/130:(106-x)/130;
     // A steeper curve than plain log, so the few very popular agents stand out from the many with a few thousand stars.
     const grow=starShare(d)**1.4;
-    const size=narrow?36+124*grow:48+232*grow;
+    // Marketplace listings have no stars, so they swim at one fixed size with a dashed outline.
+    const size=isMarketplace(d)?(narrow?64:96):narrow?36+124*grow:48+232*grow;
     const task=shownTask(d),style=styleFor(task);
-    const stars=starsOf(d)?` · ★ ${starLabel(starsOf(d))}`:'';
-    return `<div class="creature-lane ${reverse?'reverse':''}" data-function="${esc(task)}" style="--y:${2+(i*23)%72}%;--duration:${duration}s;--delay:${-progress*duration}s;--static-x:${x}%;--size:${size.toFixed(1)}px;--bob-duration:${3.1+i%5*.5}s;--bob-delay:${-i*.7}s;--creature-color:${style.color}"><button class="creature" data-agent="${esc(d.id)}" aria-label="Inspect ${esc(d.name)}, ${esc(taskName(task))}, ${esc(style.species)}${stars?`, ${starsOf(d)} GitHub stars`:''}">${fishSVG(task)}<span class="creature-label">${esc(d.name)}${stars}</span></button></div>`;
+    const stars=starsOf(d)?` · ★ ${starLabel(starsOf(d))}`:isMarketplace(d)?' · marketplace listing':'';
+    return `<div class="creature-lane ${reverse?'reverse':''}" data-function="${esc(task)}" style="--y:${2+(i*23)%72}%;--duration:${duration}s;--delay:${-progress*duration}s;--static-x:${x}%;--size:${size.toFixed(1)}px;--bob-duration:${3.1+i%5*.5}s;--bob-delay:${-i*.7}s;--creature-color:${style.color}"><button class="creature${isMarketplace(d)?' marketplace':''}" data-agent="${esc(d.id)}" aria-label="Inspect ${esc(d.name)}, ${esc(taskName(task))}, ${esc(style.species)}${starsOf(d)?`, ${starsOf(d)} GitHub stars`:isMarketplace(d)?', AWS Marketplace listing':''}">${fishSVG(task)}<span class="creature-label">${esc(d.name)}${stars}</span></button></div>`;
   }).join(''):`<p class="habitat-empty mono">${DATA.length?'NO AGENTS CLAIM THIS TASK':'THE DAILY COLLECTION HAS NOT PUBLISHED ANY AGENTS YET'}</p>`;
   $$('.creature').forEach(b=>b.addEventListener('click',()=>showSpecimen(b.dataset.agent)));
   $('#habitat-count').textContent=shown.length;
@@ -299,7 +316,7 @@ function renderTable(){
   const totalPages=Math.max(1,Math.ceil(filtered.length/pageSize));
   page=Math.min(page,totalPages-1);
   const rows=filtered.slice(page*pageSize,(page+1)*pageSize);
-  $('#catalog-body').innerHTML=rows.map(d=>{const color=styleFor(mainTask(d)).color;return `<tr style="--row-color:${color}"><td><button class="agent-link" data-agent="${esc(d.id)}">${fishSVG(mainTask(d))}${esc(d.name)}</button></td><td><span class="function-badge" style="--badge-color:${color}">${d.kind==='Product website'?'Website':'GitHub'}</span></td><td>${d.taskIds.map(t=>`<span class="task-tag">${esc(t)}</span>`).join('')||'<span class="task-tag">none</span>'}</td><td>${esc(d.publisher)}</td><td>${starsOf(d)?esc(starLabel(starsOf(d))):'—'}</td><td>${esc(d.created_on||'—')}</td></tr>`;}).join('');
+  $('#catalog-body').innerHTML=rows.map(d=>{const color=styleFor(mainTask(d)).color;return `<tr style="--row-color:${color}"><td><button class="agent-link" data-agent="${esc(d.id)}">${fishSVG(mainTask(d))}${esc(d.name)}</button></td><td><span class="function-badge" style="--badge-color:${color}">${{'Product website':'Website','Marketplace listing':'AWS'}[d.kind]||'GitHub'}</span></td><td>${d.taskIds.map(t=>`<span class="task-tag">${esc(t)}</span>`).join('')||'<span class="task-tag">none</span>'}</td><td>${esc(d.publisher)}</td><td>${starsOf(d)?esc(starLabel(starsOf(d))):'—'}</td><td>${esc(d.created_on||'—')}</td></tr>`;}).join('');
   $('#empty-state').textContent=DATA.length?'No agents match this search. Try another name or task.':'The daily collection has not published any agents yet.';
   $('#empty-state').hidden=filtered.length>0;
   $('#catalog-count').textContent=filtered.length?`${page*pageSize+1}–${Math.min((page+1)*pageSize,filtered.length)} OF ${filtered.length} AGENTS`:'0 AGENTS';
@@ -313,11 +330,30 @@ function renderTable(){
   $$('.agent-link').forEach(b=>b.addEventListener('click',()=>showSpecimen(b.dataset.agent)));
 }
 
+const quoted=(head,c,color)=>`<li style="--evidence-color:${color}">${head}<blockquote>“${esc(c.evidence_quote)}”</blockquote>${sourceLink(c.source_url,'Quoted from '+shortUrl(c.source_url)+' →')}</li>`;
+const words=value=>value.replaceAll('_',' ');
+function profileRows(d){
+  const one=name=>d.attributes.find(a=>a.attribute===name)?.value;
+  const tools=d.attributes.filter(a=>a.attribute==='tool_class').map(a=>words(a.value));
+  const top=d.packages.find(p=>p.downloads_last_month);
+  const rows=[
+    ['Autonomy',one('autonomy')&&esc(words(one('autonomy')))],
+    ['Audience',one('audience')&&esc(words(one('audience')))],
+    ['Tools',tools.length&&esc(tools.join(', '))],
+    ['Pricing model',d.pricing_model&&esc(d.pricing_model.split(';').join(', '))],
+    ['License',d.license&&esc(d.license)],
+    ['Downloads',top&&`${Number(top.downloads_last_month).toLocaleString('en-US')} last month · ${esc(top.ecosystem)} ${sourceLink(top.source_url,top.package)}${d.packages.length>1?` · ${d.packages.length-1} more package${d.packages.length>2?'s':''} name this repository`:''}`],
+    ['SWE-bench',d.results.length&&d.results.map(r=>sourceLink(r.source_url,`${r.benchmark.replace('swe-bench-','')}: ${r.resolved_instances} resolved · ${r.date}`)).join('<br>')]
+  ];
+  return rows.filter(([,value])=>value).map(([label,value])=>`<div><dt>${label}</dt><dd>${value}</dd></div>`).join('');
+}
 function showSpecimen(id){
   const d=DATA.find(d=>d.id===id);if(!d)return;
   const task=shownTask(d);
-  const claims=d.claims.length?`<ol class="evidence-list">${d.claims.map(c=>`<li style="--evidence-color:${styleFor(c.task_id).color}"><span class="task-tag">${esc(c.task_id)}</span> <strong>${esc(taskName(c.task_id))}</strong>${c.task_id===d.main_task?' <span class="task-tag main-tag">MAIN TASK</span>':''}<blockquote>“${esc(c.evidence_quote)}”</blockquote>${sourceLink(c.source_url,'Quoted from '+shortUrl(c.source_url)+' →')}</li>`).join('')}</ol>`:'<p class="specimen-summary">The text the collection saved supported none of the tasks in the vocabulary.</p>';
-  $('#specimen-details').innerHTML=`<div class="specimen-hero">${fishSVG(task)}<div><p class="eyebrow">${esc(d.id)} / ${esc(styleFor(task).species)}</p><h2 id="specimen-title">${esc(d.name)}</h2></div></div><p class="specimen-summary">${esc(d.description)}</p><dl class="specimen-data"><div><dt>Homepage</dt><dd>${sourceLink(d.url,shortUrl(d.url))}</dd></div><div><dt>Source</dt><dd>${sourceLink(d.source_url,shortUrl(d.source_url))}</dd></div><div><dt>Publisher</dt><dd>${esc(d.publisher)} · ${esc(d.kind)}</dd></div>${d.created_on?`<div><dt>Repository created</dt><dd>${esc(d.created_on)}</dd></div>`:''}${starsOf(d)?`<div><dt>GitHub stars</dt><dd>${starsOf(d).toLocaleString('en-US')}</dd></div>`:''}</dl><div class="specimen-tasks"><h3>DOCUMENTED TASKS · ${d.claims.length}</h3>${claims}</div><p class="specimen-disclaimer">Each quote is copied word for word from the source text the daily collection saved. It records what the project says it does, not a measured capability.</p>`;
+  const claims=d.claims.length?`<ol class="evidence-list">${d.claims.map(c=>quoted(`<span class="task-tag">${esc(c.task_id)}</span> <strong>${esc(taskName(c.task_id))}</strong>${c.task_id===d.main_task?' <span class="task-tag main-tag">MAIN TASK</span>':''}`,c,styleFor(c.task_id).color)).join('')}</ol>`:'<p class="specimen-summary">The text the collection saved supported none of the tasks in the vocabulary.</p>';
+  const profile=d.attributes.length?`<div class="specimen-tasks"><h3>HOW IT WORKS · ${d.attributes.length}</h3><ol class="evidence-list">${d.attributes.map(a=>quoted(`<span class="task-tag">${esc(a.attribute)}</span> <strong>${esc(words(a.value))}</strong>`,a,'#7f8ea3')).join('')}</ol></div>`:'';
+  const activities=d.activities.length?`<div class="specimen-tasks"><h3>WORK ACTIVITIES · O*NET 29.2 · ${d.activities.length}</h3><ol class="evidence-list">${d.activities.map(a=>quoted(`<span class="task-tag">${esc(a.dwa_id)}</span> <strong>${esc(ACTIVITY_TITLES.get(a.dwa_id)||a.dwa_id)}</strong>`,a,'#3fa6c9')).join('')}</ol></div>`:'';
+  $('#specimen-details').innerHTML=`<div class="specimen-hero">${fishSVG(task)}<div><p class="eyebrow">${esc(d.id)} / ${esc(styleFor(task).species)}</p><h2 id="specimen-title">${esc(d.name)}</h2></div></div><p class="specimen-summary">${esc(d.description)}</p><dl class="specimen-data"><div><dt>Homepage</dt><dd>${sourceLink(d.url,shortUrl(d.url))}</dd></div><div><dt>Source</dt><dd>${sourceLink(d.source_url,shortUrl(d.source_url))}</dd></div><div><dt>Publisher</dt><dd>${esc(d.publisher)} · ${esc(d.kind)}</dd></div>${d.created_on?`<div><dt>Repository created</dt><dd>${esc(d.created_on)}</dd></div>`:''}${starsOf(d)?`<div><dt>GitHub stars</dt><dd>${starsOf(d).toLocaleString('en-US')}</dd></div>`:''}${profileRows(d)}</dl><div class="specimen-tasks"><h3>DOCUMENTED TASKS · ${d.claims.length}</h3>${claims}</div>${profile}${activities}<p class="specimen-disclaimer">Each quote is copied word for word from the source text the daily collection saved. It records what the project says it does, not a measured capability. Downloads and SWE-bench results are measured by their sources.</p>`;
   $('#specimen-dialog').showModal();
 }
 
@@ -347,10 +383,10 @@ function updateScroll(){
   }
   $('#depth-value').textContent=String(closest+1).padStart(2,'0');
   $('#depth-label').textContent=sections[closest].dataset.label;
-  $('#level-number').textContent=`${String(closest+1).padStart(2,'0')} / 06`;
+  $('#level-number').textContent=`${String(closest+1).padStart(2,'0')} / ${pad(sections.length)}`;
   $('#next-label').textContent=closest===sections.length-1?'OVERVIEW ↑':'CONTINUE ↓';
   $('#next-depth').setAttribute('aria-label',closest===sections.length-1?'Return to overview':'Continue to '+sections[closest+1].dataset.label);
-  const ids=['surface','habitat','functions','functions','catalog','method'];
+  const ids=['surface','habitat','functions','functions','functions','catalog','method'];
   $$('.site-header nav a').forEach(a=>{if(a.hash==='#'+ids[closest])a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
 }
 
@@ -442,7 +478,7 @@ function renderCatalog(){
   $('#overview-tasks').textContent=pad(TASKS.length);
   $('#overview-claims').textContent=pad(CLAIMS);
   presentTasks().forEach(t=>{const option=document.createElement('option');option.value=t;option.textContent=taskName(t);$('#catalog-function').append(option);});
-  renderHabitat();renderFigures();renderObservationField();renderTable();
+  renderHabitat();renderFigures();renderObservationField();renderOccupations();renderTable();
 }
 function showLoadError(error){
   $('#creatures').innerHTML='<p class="habitat-empty mono">THE CATALOG COULD NOT BE LOADED. PLEASE RELOAD THE PAGE.</p>';
@@ -526,4 +562,41 @@ function renderObservationField(){
   }
   svg.innerHTML=html;
   svg.querySelectorAll('a').forEach(a=>a.addEventListener('click',event=>{event.preventDefault();showSpecimen(a.dataset.agent);}));
+}
+
+// Occupation coverage, from data/occupation_coverage.csv: the share of each occupation's O*NET tasks that agents claim.
+const OCCUPATION_ROWS = 12;
+const shareOf = o=>Number(o.tasks_claimed)/Number(o.tasks);
+const percent = share=>`${(share*100).toFixed(share&&share<.1?1:0)}%`;
+function renderOccupations(){
+  const claimed=OCCUPATIONS.filter(o=>Number(o.tasks_claimed));
+  $('#occupation-tag').textContent=`${claimed.length} of ${OCCUPATIONS.length} occupations have a claimed task.`;
+  const axis='fill="#7f94ad" font-size="12" font-family="monospace"';
+  if(!claimed.length){
+    $('#occupation-chart').innerHTML='<p class="habitat-empty mono">NO WORK ACTIVITIES ARE LINKED YET</p>';
+    $('#wage-plot').innerHTML=`<text x="270" y="165" text-anchor="middle" ${axis}>NO WORK ACTIVITIES ARE LINKED YET</text>`;
+    return;
+  }
+  const top=claimed.slice().sort((a,b)=>shareOf(b)-shareOf(a)||Number(b.tasks_claimed)-Number(a.tasks_claimed)).slice(0,OCCUPATION_ROWS);
+  const max=shareOf(top[0]);
+  $('#occupation-chart').innerHTML=top.map(o=>`<div class="occupation-row" title="${esc(o.title)}: ${o.tasks_claimed} of ${o.tasks} tasks, claimed by ${agentCount(Number(o.agents))}"><span class="occupation-label">${esc(o.title)}</span><span class="occupation-track"><span style="width:${shareOf(o)/max*100}%"></span></span><span class="occupation-number mono">${percent(shareOf(o))}</span></div>`).join('');
+
+  const plotted=OCCUPATIONS.filter(o=>Number(o.annual_mean_wage)&&Number(o.employment));
+  const left=58,right=522,plotTop=18,bottom=282;
+  const wages=plotted.map(o=>Math.log10(Number(o.annual_mean_wage)));
+  const lo=Math.min(...wages),hi=Math.max(...wages),shareMax=Math.max(...plotted.map(shareOf));
+  const yMax=Math.ceil(shareMax*10)/10||.1;
+  const x=wage=>left+(Math.log10(wage)-lo)/(hi-lo)*(right-left);
+  const y=share=>bottom-share/yMax*(bottom-plotTop);
+  const maxEmployment=Math.max(...plotted.map(o=>Number(o.employment)));
+  let html='<title>Occupations by mean annual wage and share of tasks claimed by agents</title><desc>One circle per occupation. Horizontal position is its mean annual wage on a log scale; vertical position is the share of its O*NET tasks that at least one agent claims; circle area is its employment.</desc>';
+  for(let s=0;s<=yMax+1e-9;s+=yMax/4)html+=`<line x1="${left}" y1="${y(s)}" x2="${right}" y2="${y(s)}" stroke="#20324826"/><text x="${left-8}" y="${y(s)+4}" text-anchor="end" ${axis}>${percent(s)}</text>`;
+  for(const wage of [25000,50000,100000,200000])if(Math.log10(wage)>=lo&&Math.log10(wage)<=hi)html+=`<text x="${x(wage)}" y="${bottom+18}" text-anchor="middle" ${axis}>$${wage/1000}k</text>`;
+  html+=`<text x="${left}" y="${plotTop-6}" ${axis} letter-spacing="1">↑ SHARE OF TASKS CLAIMED</text><text x="${right}" y="${bottom+38}" text-anchor="end" ${axis} letter-spacing="1">MEAN ANNUAL WAGE →</text>`;
+  // Largest first, so small occupations stay visible on top.
+  for(const o of plotted.slice().sort((a,b)=>Number(b.employment)-Number(a.employment))){
+    const r=1.5+11*Math.sqrt(Number(o.employment)/maxEmployment);
+    html+=`<circle cx="${x(Number(o.annual_mean_wage)).toFixed(1)}" cy="${y(shareOf(o)).toFixed(1)}" r="${r.toFixed(1)}" fill="${Number(o.tasks_claimed)?'#3e7ec8':'#9aa7b6'}" fill-opacity="${Number(o.tasks_claimed)?.45:.18}" stroke="${Number(o.tasks_claimed)?'#3e7ec8':'none'}" stroke-width=".8"><title>${esc(o.title)} · $${Number(o.annual_mean_wage).toLocaleString('en-US')} · ${Number(o.employment).toLocaleString('en-US')} employed · ${percent(shareOf(o))} of tasks claimed</title></circle>`;
+  }
+  $('#wage-plot').innerHTML=html;
 }

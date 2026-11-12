@@ -4,9 +4,37 @@ import json
 from pathlib import Path
 
 import pytest
-from agentarium.sources import github_repo, is_product_link, web_key, write_manifests
+from agentarium.sources import candidate, github_repo, is_product_link, web_key, write_manifests
 from agentarium.sources.awesome_lists import extract_links
+from agentarium.sources.aws_marketplace import listing_text
 from agentarium.sources.github import SEARCH_CAP, star_ranges
+from agentarium.sources.swe_bench import address
+
+
+def test_submission_sites_compare_as_addresses() -> None:
+    assert address("http://www.Kodu.ai/") == address("https://kodu.ai") == "https://kodu.ai"
+    assert address("https://github.com/bytedance/trae-agent.git") == "https://github.com/bytedance/trae-agent"
+    assert address("https://refact.ai/blog") != address("https://refact.ai")
+
+
+def test_aws_listing_becomes_a_candidate() -> None:
+    listing = {
+        "listingId": "prodview-qizrc6sk6fb7a",
+        "listingName": "AI Agent Starter Pack",
+        "publisher": {"displayName": "Tech 42", "sellerProfileId": "seller-1"},
+        "shortDescription": " Deploy agents. ",
+        "longDescription": "It files tickets.",
+        "highlights": ["Pre-built agent templates", " "],
+        "useCases": [{"useCase": {"displayName": "Support", "description": "Answers customers.", "value": "x"}}],
+        "pricingModels": [{"pricingModelType": "USAGE"}, {"pricingModelType": "CONTRACT"}],
+    }
+    url = "https://aws.amazon.com/marketplace/pp/prodview-qizrc6sk6fb7a"
+    text = listing_text(listing)
+    assert text == "Deploy agents.\n\nIt files tickets.\n\nPre-built agent templates\n\nSupport: Answers customers."
+    found = candidate("aws", {"retrieved_at": "2026-11-12T06:20:00+00:00", "source_url": url,
+                              "record": listing, "text": text})
+    assert (found.key, found.organization, found.description) == ("aws:prodview-qizrc6sk6fb7a", "Tech 42", "Deploy agents.")
+    assert (found.url, found.pricing_model, found.stars, found.license) == (url, "contract;usage", "", "")
 
 
 def test_github_repo_urls() -> None:
