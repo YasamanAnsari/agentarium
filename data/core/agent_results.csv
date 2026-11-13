@@ -1,4 +1,6 @@
 agent_id,benchmark,resolved_instances,date,source_url
+ag_103f994632,swe-bench-verified,327,2025-03-16,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250316_augment_agent_v0
+ag_103f994632,swe-bench-verified,352,2025-06-10,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250610_augment_agent_v1
 ag_2dd1272269,swe-bench-lite,180,2025-04-25,https://github.com/SWE-bench/experiments/tree/main/evaluation/lite/20250425_Refact_Agent
 ag_2dd1272269,swe-bench-multimodal,184,2025-06-11,https://github.com/SWE-bench/experiments/tree/main/evaluation/multimodal/20250611_Refact_Agent_claude-4-sonnet
 ag_2dd1272269,swe-bench-verified,352,2025-05-15,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250515_Refact_Agent
@@ -29,6 +31,8 @@ ag_7db1d49a0a,swe-bench-verified,116,2024-07-28,https://github.com/SWE-bench/exp
 ag_7db1d49a0a,swe-bench-verified,312,2025-02-25,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250225_sweagent_claude-3-7-sonnet
 ag_7db1d49a0a,swe-bench-verified,333,2025-05-22,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250522_sweagent_claude-4-sonnet-20250514
 ag_7db1d49a0a,swe-bench-verified,190,2025-07-25,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250725_sweagent_devstral_small_2507
+ag_84e3dd6197,swe-bench-lite,147,2024-12-20,https://github.com/SWE-bench/experiments/tree/main/evaluation/lite/20241220_blackboxai_agent_v1
+ag_84e3dd6197,swe-bench-verified,314,2025-01-10,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250110_blackboxai_agent_v1.1
 ag_a00e3fea08,swe-bench-verified,355,2025-06-23,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250623_warp
 ag_a00e3fea08,swe-bench-verified,378,2025-09-01,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250901_warp
 ag_a0c23962fa,swe-bench-lite,134,2024-12-07,https://github.com/SWE-bench/experiments/tree/main/evaluation/lite/20241207_kodu_sonnet_v1

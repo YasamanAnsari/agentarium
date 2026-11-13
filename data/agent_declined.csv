@@ -11,3 +11,10 @@ date,reason,count
 2026-11-12,not_an_agent,5070
 2026-11-12,quote_not_in_text,25
 2026-11-12,unknown_activity,5
+2026-11-13,duplicate_activity,2
+2026-11-13,model_refused,31
+2026-11-13,no_description,64
+2026-11-13,not_an_agent,1916
+2026-11-13,quote_not_in_text,31
+2026-11-13,recheck_not_an_agent,1
+2026-11-13,unknown_activity,1
