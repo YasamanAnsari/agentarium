@@ -18,3 +18,8 @@ date,reason,count
 2026-11-13,quote_not_in_text,31
 2026-11-13,recheck_not_an_agent,1
 2026-11-13,unknown_activity,1
+2026-11-14,model_refused,4
+2026-11-14,no_description,1
+2026-11-14,not_an_agent,258
+2026-11-14,quote_not_in_text,6
+2026-11-14,recheck_not_an_agent,7
