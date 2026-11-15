@@ -23,3 +23,8 @@ date,reason,count
 2026-11-14,not_an_agent,258
 2026-11-14,quote_not_in_text,6
 2026-11-14,recheck_not_an_agent,7
+2026-11-15,model_refused,2
+2026-11-15,no_description,5
+2026-11-15,not_an_agent,248
+2026-11-15,quote_not_in_text,3
+2026-11-15,recheck_not_an_agent,7
