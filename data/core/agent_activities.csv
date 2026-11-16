@@ -330,10 +330,6 @@ ag_08c9191110,4.A.2.b.5.I02.D07,https://aws.amazon.com/marketplace/pp/prodview-7
 ag_08c9191110,4.A.3.b.6.I08.D05,https://aws.amazon.com/marketplace/pp/prodview-7g7o43wwkzcxi,"Every trigger, delivery attempt, acknowledgment, and escalation is logged in an immutable audit trail through the Unified Communication Framework."
 ag_08c9191110,4.A.4.a.2.I08.D01,https://aws.amazon.com/marketplace/pp/prodview-7g7o43wwkzcxi,route every alert to the right person automatically
 ag_08c9191110,4.A.4.a.2.I08.D07,https://aws.amazon.com/marketplace/pp/prodview-7g7o43wwkzcxi,escalates to the next contact without waiting for a human to notice the silence
-ag_08dfa101a4,4.A.1.b.2.I08.D03,https://github.com/Core-Mate/OpenGUI,"check features and workflows, record issues with reproduction steps and screenshots, and summarize results."
-ag_08dfa101a4,4.A.3.b.1.I05.D01,https://github.com/Core-Mate/OpenGUI,"open apps, tap, swipe, type, navigate back, and move between screens to complete multi-step workflows."
-ag_08dfa101a4,4.A.3.b.1.I06.D06,https://github.com/Core-Mate/OpenGUI,"read screen content, organize information, fill forms, and prepare social media drafts."
-ag_08dfa101a4,4.A.3.b.6.I09.D06,https://github.com/Core-Mate/OpenGUI,"record issues with reproduction steps and screenshots, and summarize results."
 ag_08ebbf97b9,4.A.1.a.1.I04.D05,https://github.com/hsliuping/TradingAgents-CN,**智能助手**：联网搜索 + 工具调用 + 事实记忆
 ag_08ebbf97b9,4.A.1.a.1.I04.D07,https://github.com/hsliuping/TradingAgents-CN,**股票筛选**：自然语言 + 条件筛选，从 6000+ 只股票中发现标的
 ag_08ebbf97b9,4.A.1.a.1.I14.D01,https://github.com/hsliuping/TradingAgents-CN,**通用研究**：自然语言提问，研究任意市场主题
@@ -361,6 +357,7 @@ ag_0953012997,4.A.2.b.2.I02.D01,https://github.com/nearai/ironclaw,"**Dynamic To
 ag_0953012997,4.A.3.b.1.I02.D01,https://github.com/nearai/ironclaw,"**Prompt Injection Defense** - Pattern detection, content sanitization, and policy enforcement"
 ag_0961684724,4.A.1.a.2.I10.D01,https://github.com/beenuar/AiSOC,detects and correlates threats
 ag_0961684724,4.A.2.a.4.I12.D02,https://github.com/beenuar/AiSOC,investigates them with AI agents whose reasoning is fully auditable
+ag_0961684724,4.A.3.b.1.I06.D11,https://github.com/beenuar/AiSOC,AiSOC normalizes it
 ag_0961684724,4.A.4.b.6.I05.D12,https://github.com/beenuar/AiSOC,proposes responses a human approves
 ag_09b27820fe,4.A.1.a.1.I04.D05,https://aws.amazon.com/marketplace/pp/prodview-7hq5trt2tgjrm,"Using contextual reasoning and web-based validation, Crayon refiNER delivers accurate, explainable, and scalable results."
 ag_09b27820fe,4.A.2.a.2.I01.D07,https://aws.amazon.com/marketplace/pp/prodview-7hq5trt2tgjrm,"Enhances reliability by validating uncertain entities through live web and knowledge sources, combining LLM reasoning with tool-driven verification for trustworthy extraction."
@@ -382,12 +379,9 @@ ag_0a7f7cbe12,4.A.2.a.2.I01.D01,https://aws.amazon.com/marketplace/pp/prodview-2
 ag_0a7f7cbe12,4.A.2.a.2.I01.D07,https://aws.amazon.com/marketplace/pp/prodview-24izgzgjzjsdw,Minimize manual errors thru AI-extracted data and policy-grounded coverage assessment
 ag_0a7f7cbe12,4.A.2.a.4.I07.D03,https://aws.amazon.com/marketplace/pp/prodview-24izgzgjzjsdw,"Claims-AI deploys collaborative, autonomous AI agents to automate coverage assessment, triage, document analysis, and legal review"
 ag_0a7f7cbe12,4.A.3.b.6.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-24izgzgjzjsdw,generates intelligent summaries to guide underwriter decisions
-ag_0a89c5d649,4.A.1.a.1.I04.D07,https://github.com/rociiu/talorys,Web search (optional)** — let Talorys look things up on the web in chat with [Tavily](https://tavily.com) or [Exa](https://exa.ai)
-ag_0a89c5d649,4.A.2.b.5.I03.D01,https://github.com/rociiu/talorys,"Tasks, notes and projects** — full CRUD in the UI, and from chat (""Add a task to review my project tomorrow"")."
-ag_0a89c5d649,4.A.2.b.6.I02.D07,https://github.com/rociiu/talorys,"describe a goal (""Plan the tasks to launch my iOS app next month"") and Talorys proposes a plan as an interactive card in chat."
-ag_0a89c5d649,4.A.3.b.6.I08.D09,https://github.com/rociiu/talorys,"Memory** — durable personal facts and preferences you can view, edit and delete."
-ag_0a89c5d649,4.A.4.a.1.I02.D02,https://github.com/rociiu/talorys,"Automations** — one-time and recurring reminders, daily task digests and optional AI routines, delivered to an in-app notification center."
-ag_0a89c5d649,4.A.4.a.2.I08.D07,https://github.com/rociiu/talorys,"Push notifications** — reminders, digests and routines also arrive as system notifications on the phones and computers you turn them on for"
+ag_0a89c5d649,4.A.1.a.1.I04.D03,https://github.com/rociiu/talorys,let Talorys look things up on the web in chat
+ag_0a89c5d649,4.A.2.b.6.I02.D07,https://github.com/rociiu/talorys,Talorys proposes a plan as an interactive card in chat
+ag_0a89c5d649,4.A.4.a.3.I03.D07,https://github.com/rociiu/talorys,"reminders, digests and routines also arrive as system notifications on the phones and computers you turn them on for"
 ag_0a9b99bc77,4.A.1.b.2.I08.D03,https://aws.amazon.com/marketplace/pp/prodview-pnlqwdsbl7oou,"Test generation, test execution, and regression analysis"
 ag_0a9b99bc77,4.A.2.a.1.I10.D01,https://aws.amazon.com/marketplace/pp/prodview-pnlqwdsbl7oou,Architecture assessment and modernization planning
 ag_0a9b99bc77,4.A.2.a.4.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-pnlqwdsbl7oou,"Security, quality, and compliance analysis"
@@ -398,6 +392,11 @@ ag_0aac50f52a,4.A.2.a.2.I01.D07,https://aws.amazon.com/marketplace/pp/prodview-t
 ag_0aac50f52a,4.A.2.a.4.I12.D01,https://aws.amazon.com/marketplace/pp/prodview-tzo4gy6o6pmoi,"Detects exceptions across positions, prices, and corporate actions with transparent reasoning, audit trails, and analyst escalation workflows"
 ag_0aac50f52a,4.A.3.b.6.I01.D02,https://aws.amazon.com/marketplace/pp/prodview-tzo4gy6o6pmoi,"Generates NAV packs, investor letters, capital call notices, and board decks directly from validated operational data"
 ag_0aac50f52a,4.A.4.a.2.I08.D07,https://aws.amazon.com/marketplace/pp/prodview-tzo4gy6o6pmoi,providing explainable analyst review and escalation paths for exceptions and judgment-based decisions
+ag_0acef733e2,4.A.2.a.2.I01.D02,https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio,Python tool validation rejects disallowed operations before they run
+ag_0acef733e2,4.A.2.b.2.I11.D04,https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio,"Build and edit** through conversation — primitives, lights, cameras, parenting, duplication and materials arrive as approved steps."
+ag_0acef733e2,4.A.3.b.1.I01.D03,https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio,validated Python execution and scene export
+ag_0acef733e2,4.A.4.a.5.I10.D10,https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio,"Poly Haven, Sketchfab and Poly Pizza searched from one chat"
+ag_0acef733e2,4.A.4.b.4.I06.D10,https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio,"the manager splits it into assignments with acceptance criteria, workers execute the scene operations, reviewers approve or return findings"
 ag_0afddeed9c,4.A.2.a.2.I01.D02,https://aws.amazon.com/marketplace/pp/prodview-wy6bn2czxg6z4,"verified logic applies customer-approved rules for checks such as PO match, vendor validation, duplicate detection, tolerance thresholds, tax treatment, GL coding, and approval routing"
 ag_0afddeed9c,4.A.2.a.2.I01.D09,https://aws.amazon.com/marketplace/pp/prodview-wy6bn2czxg6z4,"Finance Skills perform extraction, normalization, matching, reconciliation, exception detection, prioritization, and audit-trail generation"
 ag_0afddeed9c,4.A.2.a.3.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-wy6bn2czxg6z4,"The solution identifies a wide range of exception types including new/stale vendor, vendor matching conflicts, duplicate invoices, low-confidence GL/CC coding, tax discrepancies"
@@ -684,6 +683,10 @@ ag_137f55f8fc,4.A.4.a.3.I03.D11,https://aws.amazon.com/marketplace/pp/prodview-6
 ag_137f55f8fc,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-63vbxf6k5utye,"immediate answer 24/7, no IVRs, no waiting on queue, enhanced language support, politeness and patience"
 ag_138d65cde7,4.A.3.b.1.I01.D03,https://github.com/ComputerUseAgent/AutoCua,writes the code too
 ag_138d65cde7,4.A.3.b.1.I05.D01,https://github.com/ComputerUseAgent/AutoCua,"It sees the screen, clicks, types, browses and writes the code too."
+ag_13981a0d47,4.A.3.b.1.I05.D02,https://github.com/razzant/claudexor,"It runs Codex CLI, Claude Code, Cursor CLI, OpenCode, Antigravity
+CLI, Grok Build, and raw API
+adapters behind one typed interface"
+ag_13981a0d47,4.A.4.c.3.I07.D05,https://github.com/razzant/claudexor,Live subscription-quota tracking
 ag_13c1b443e2,4.A.1.b.3.I03.D03,https://aws.amazon.com/marketplace/pp/prodview-adu2pyqgqtmue,applying correct tax logic
 ag_13c1b443e2,4.A.2.a.2.I04.D01,https://aws.amazon.com/marketplace/pp/prodview-adu2pyqgqtmue,"performing GST reconciliation, and highlighting exceptions for review"
 ag_13c1b443e2,4.A.3.b.1.I06.D06,https://aws.amazon.com/marketplace/pp/prodview-adu2pyqgqtmue,"data ingestion across mixed formats, mapping client accounts"
@@ -739,11 +742,10 @@ ag_15573bb4dc,4.A.3.b.6.I16.D02,https://github.com/flizzywine/dsh-tavern,前台�
 ag_1590361431,4.A.1.a.1.I04.D07,https://github.com/MoonshotAI/kimi-code,"it can read and edit code, run shell commands, search files, fetch web pages"
 ag_1590361431,4.A.3.b.1.I01.D03,https://github.com/MoonshotAI/kimi-code,"it can read and edit code, run shell commands, search files, fetch web pages, and choose the next step based on the feedback it receives"
 ag_1597521031,4.A.1.a.1.I04.D03,https://github.com/Mangi-11/Eta,提供轻量的公开网页搜索与静态正文分页读取
-ag_1597521031,4.A.1.a.1.I04.D05,https://github.com/Mangi-11/Eta,按需检索位置、通知历史、应用使用统计、日历、相册
-ag_1597521031,4.A.2.b.5.I03.D01,https://github.com/Mangi-11/Eta,管理闹钟（创建、改时、启停、删除）与计时器
-ag_1597521031,4.A.3.b.1.I01.D03,https://github.com/Mangi-11/Eta,Eta 本体可以读取项目、修改代码、运行命令并验证结果
-ag_1597521031,4.A.3.b.1.I05.D02,https://github.com/Mangi-11/Eta,执行点击、长按、滑动、滚动和文本输入
-ag_1597521031,4.A.3.b.6.I08.D09,https://github.com/Mangi-11/Eta,使用本机 `MEMORY.md` 保存跨对话背景
+ag_1597521031,4.A.1.a.1.I04.D07,https://github.com/Mangi-11/Eta,按需检索位置、通知历史、应用使用统计、日历、相册
+ag_1597521031,4.A.2.b.5.I03.D01,https://github.com/Mangi-11/Eta,直接读写日历日程（单条或批量创建、修改、删除）
+ag_1597521031,4.A.3.b.1.I01.D03,https://github.com/Mangi-11/Eta,它可以处理文件、执行命令、编写代码
+ag_1597521031,4.A.3.b.1.I05.D01,https://github.com/Mangi-11/Eta,执行点击、长按、滑动、滚动和文本输入
 ag_15a7cadc0f,4.A.2.a.4.I04.D02,https://github.com/K-Dense-AI/agentic-data-scientist,"agentic-data-scientist ""Perform differential expression analysis"" --mode orchestrated --files data.csv"
 ag_15a7cadc0f,4.A.2.b.6.I02.D08,https://github.com/K-Dense-AI/agentic-data-scientist,Creates comprehensive analysis plans before starting work
 ag_15a7cadc0f,4.A.3.b.1.I01.D03,https://github.com/K-Dense-AI/agentic-data-scientist,"agentic-data-scientist ""Write a Python script to parse CSV files"" --mode simple"
@@ -909,6 +911,11 @@ ag_1a7d2a2e75,4.A.1.a.2.I11.D02,https://github.com/vercel-labs/deepsec,Re-check 
 ag_1a7d2a2e75,4.A.2.a.4.I12.D02,https://github.com/vercel-labs/deepsec,Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents
 ag_1a7d2a2e75,4.A.2.a.4.I12.D03,https://github.com/vercel-labs/deepsec,AI investigation; emits findings + recommendation
 ag_1a7d2a2e75,4.A.3.b.6.I03.D05,https://github.com/vercel-labs/deepsec,Markdown + JSON summary for one project
+ag_1adf989a7a,4.A.2.a.4.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-lis2zvfu2tg7g,flags risks to SLA-bound processes like order-to-activate timelines
+ag_1adf989a7a,4.A.2.a.4.I05.D05,https://aws.amazon.com/marketplace/pp/prodview-lis2zvfu2tg7g,ImpactLens produces a structured analysis covering all affected components
+ag_1adf989a7a,4.A.2.a.4.I07.D14,https://aws.amazon.com/marketplace/pp/prodview-lis2zvfu2tg7g,"Finds breaking changes, schema conflicts and deployment risks in minutes"
+ag_1adf989a7a,4.A.2.b.6.I02.D09,https://aws.amazon.com/marketplace/pp/prodview-lis2zvfu2tg7g,The output includes a prioritized deployment order with rollback strategies
+ag_1adf989a7a,4.A.3.b.6.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-lis2zvfu2tg7g,"Turns plain-language requirements into a full report on affected components, broken API contracts & schema diffs."
 ag_1ae7afa5e8,4.A.2.b.1.I02.D01,https://github.com/WhiteNightShadow/firefox-reverse,自己跑完「抓包→定位→验证→补环境→实打」全流程的逆向智能体
 ag_1ae7afa5e8,4.A.3.b.1.I01.D03,https://github.com/WhiteNightShadow/firefox-reverse,能像一名专业逆向工程师那样**自己**抓包、读代码、在**引擎 C++ 内核层**观测、补环境、写脚本、实打接口验证
 ag_1b1dbe224a,4.A.2.a.4.I04.D02,https://github.com/memex-lab/memex,Insight cards that surface connections across records
@@ -1059,10 +1066,9 @@ ag_1fe273bc2d,4.A.1.a.1.I02.D01,https://github.com/browser-use/open-duet,"The ag
 ag_1fe273bc2d,4.A.3.b.1.I01.D03,https://github.com/browser-use/open-duet,"The agent investigates, writes small fixes, builds private briefs and prepares demos before asking."
 ag_1fe273bc2d,4.A.4.a.2.I03.D10,https://github.com/browser-use/open-duet,"It reports a meaningful result or blocker, not empty periodic updates."
 ag_1fe273bc2d,4.A.4.c.1.I01.D04,https://github.com/browser-use/open-duet,"It follows fresh and older leads to prepare replies, posts,"
-ag_1fe283a70c,4.A.2.b.5.I02.D07,https://github.com/elie222/rakazo,"Run a bot on a schedule, from an email, or from a webhook, and see every run."
-ag_1fe283a70c,4.A.3.b.1.I05.D01,https://github.com/elie222/rakazo,"A browser, terminal, files, and a full desktop. Watch it work, take control to sign in, and hand it back."
-ag_1fe283a70c,4.A.3.b.6.I03.D05,https://github.com/elie222/rakazo,"Bots build live dashboards and documents you can open full screen, share, and ask about."
-ag_1fe283a70c,4.A.4.b.4.I12.D01,https://github.com/elie222/rakazo,"Put bots in a group and @mention them. They split the work, check each other, and report back."
+ag_1fe283a70c,4.A.2.b.2.I18.D04,https://github.com/elie222/rakazo,"Bots build live dashboards and documents you can open full screen, share, and ask about."
+ag_1fe283a70c,4.A.3.b.1.I05.D02,https://github.com/elie222/rakazo,"A browser, terminal, files, and a full desktop."
+ag_1fe283a70c,4.A.4.a.2.I03.D01,https://github.com/elie222/rakazo,"Put bots in a group and @mention them. They split the work, check each other, and report back."
 ag_1ff3b93b04,4.A.1.a.2.I10.D03,https://github.com/awlevin/typesafe-computer-use,"The loop also stops itself on `done`, low confidence, a stall, or the step limit,"
 ag_1ff3b93b04,4.A.3.b.1.I05.D01,https://github.com/awlevin/typesafe-computer-use,"drives a Mac toward a goal you type in plain English,"
 ag_1ff3b93b04,4.A.3.b.6.I08.D03,https://github.com/awlevin/typesafe-computer-use,"Every run writes
@@ -1204,10 +1210,14 @@ ag_22db20c218,4.A.3.b.6.I03.D08,https://aws.amazon.com/marketplace/pp/prodview-4
 ag_22db20c218,4.A.4.a.8.I03.D03,https://aws.amazon.com/marketplace/pp/prodview-4pa7uxrsaslhy,"ask a question in plain English, such as ""What is blocking go-live for company 4?"""
 ag_22f70222e0,4.A.1.a.2.I10.D03,https://aws.amazon.com/marketplace/pp/prodview-2vupt7zfbdvje,Cloud Log analytics
 ag_22f70222e0,4.A.1.a.2.I11.D04,https://aws.amazon.com/marketplace/pp/prodview-2vupt7zfbdvje,Intelligent compliance management
-ag_231858bda7,4.A.1.a.1.I04.D07,https://github.com/genspark-ai/genoffice,Find files by what they say.
-ag_231858bda7,4.A.2.b.1.I07.D02,https://github.com/genspark-ai/genoffice,"the AI reads the blocks it needs, rewrites the Overview and inserts a new bulleted section"
-ag_231858bda7,4.A.2.b.2.I18.D14,https://github.com/genspark-ai/genoffice,Ask for a mind map instead and the answer is an interactive diagram of the whole document
-ag_231858bda7,4.A.3.b.1.I06.D11,https://github.com/genspark-ai/genoffice,"PDF → Word / Excel / PowerPoint, Markdown → Word and HTML → Word all run"
+ag_231858bda7,4.A.1.a.1.I04.D03,https://github.com/genspark-ai/genoffice,"**Ask AI** on
+  the home screen answers questions across them, citing the file behind every
+  claim so you can open it and check."
+ag_231858bda7,4.A.1.a.1.I04.D07,https://github.com/genspark-ai/genoffice,"The home screen searches the names,
+  folders and full text of your `.docx`, `.xlsx`, `.pptx`, PDF, Markdown and
+  HTML files from a local SQLite index"
+ag_231858bda7,4.A.3.b.1.I06.D11,https://github.com/genspark-ai/genoffice,"PDF → Word / Excel / PowerPoint, Markdown → Word and HTML → Word all run
+  on-device."
 ag_23195ba1c7,4.A.3.b.1.I04.D02,https://aws.amazon.com/marketplace/pp/prodview-hf3csm3if42ug,"Common requests such as user access approvals, onboarding tasks, and ticket routing are handled autonomously."
 ag_23195ba1c7,4.A.3.b.6.I08.D11,https://aws.amazon.com/marketplace/pp/prodview-hf3csm3if42ug,"Every agent action is logged, providing auditability and compliance alignment across IT and HR operations."
 ag_23195ba1c7,4.A.4.a.2.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-hf3csm3if42ug,Orchestrate IT and HR workflows using AWS Step Functions and Lambda
@@ -1259,6 +1269,10 @@ ag_2488d91566,4.A.3.b.1.I06.D06,https://aws.amazon.com/marketplace/pp/prodview-u
 ag_24ce5a8813,4.A.2.a.4.I02.D04,https://github.com/YoungCan-Wang/WyckoffTradingAgent,A 股 / 港股 / 美股威科夫量价分析智能体 — 你说人话，他读盘面。
 ag_24ce5a8813,4.A.2.a.4.I11.D04,https://github.com/YoungCan-Wang/WyckoffTradingAgent,系统把 A 股日线行情、威科夫结构识别、AI 研报、持仓风控、形态复盘和通知推送串成一条自动化链路
 ag_24ce5a8813,4.A.3.b.1.I06.D09,https://github.com/YoungCan-Wang/WyckoffTradingAgent,日线行情通过 TickFlow 实时拉取（无 Supabase 行情缓存）
+ag_24e93ef7a0,4.A.3.b.6.I08.D06,https://aws.amazon.com/marketplace/pp/prodview-gea37xhzurtva,keeping the CRM up to date
+ag_24e93ef7a0,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-gea37xhzurtva,handling routine client enquiries
+ag_24e93ef7a0,4.A.4.b.4.I14.D02,https://aws.amazon.com/marketplace/pp/prodview-gea37xhzurtva,coordinating approvals and deadlines
+ag_24e93ef7a0,4.A.4.c.1.I03.D06,https://aws.amazon.com/marketplace/pp/prodview-gea37xhzurtva,"processing invoices and client documents, chasing payments"
 ag_24ecdd01ee,4.A.1.a.1.I04.D07,https://aws.amazon.com/marketplace/pp/prodview-2fc6e3wgfwjgm,"Retrieve accurate, policy-aligned answers from documents using semantic AI"
 ag_24ecdd01ee,4.A.1.a.2.I07.D08,https://aws.amazon.com/marketplace/pp/prodview-2fc6e3wgfwjgm,"Detect, flag, and report suspicious activity using behavior and rule-based agents"
 ag_24ecdd01ee,4.A.1.a.2.I11.D04,https://aws.amazon.com/marketplace/pp/prodview-2fc6e3wgfwjgm,Monitor rule changes in real time and trigger alerts for relevant departments
@@ -1304,10 +1318,9 @@ ag_25d1d29743,4.A.2.b.2.I18.D17,https://github.com/phodal/auto-dev,Generate stat
 ag_25d1d29743,4.A.3.b.1.I01.D03,https://github.com/phodal/auto-dev,**Coding** | Development | `CodingAgent` with workspace tools and orchestration
 ag_25dc02015e,4.A.2.b.2.I02.D04,https://github.com/runvendo/vendo,The agent composes views and user-owned apps from a format-tagged UI document
 ag_25dc02015e,4.A.3.b.1.I03.D01,https://github.com/runvendo/vendo,Vendo reads your API and turns it into tools the agent executes as the signed-in user.
-ag_260642c451,4.A.2.b.2.I02.D04,https://github.com/KevRojo/Dulus,Documents and mini apps the agent builds land in a versioned **Artifacts** library.
+ag_260642c451,4.A.2.b.2.I02.D01,https://github.com/KevRojo/Dulus,Documents and mini apps the agent builds land in a versioned
 ag_260642c451,4.A.2.b.2.I18.D20,https://github.com/KevRojo/Dulus,"Images and video with your own keys: FLUX.2, GPT Image, Gemini and Imagen, Meta Muse, Veo, Sora 2 and more."
-ag_260642c451,4.A.3.b.1.I01.D03,https://github.com/KevRojo/Dulus,The agents write code and open pull requests.
-ag_260642c451,4.A.3.b.1.I05.D01,https://github.com/KevRojo/Dulus,"Dulus sees the screen, clicks and types in any app, in any language"
+ag_260642c451,4.A.3.b.1.I05.D01,https://github.com/KevRojo/Dulus,"Dulus sees the screen, clicks and types in any app"
 ag_26065ae933,4.A.2.a.4.I07.D06,https://github.com/ZhuLinsen/alphaevo,"backtest, diagnose failure, propose a controlled mutation or new factor, stress-test against overfitting, and keep the full evidence trail"
 ag_26065ae933,4.A.2.a.4.I11.D03,https://github.com/ZhuLinsen/alphaevo,"run strategies on real data with regime sampling, multi-metric scoring, and walk-forward anti-overfitting checks"
 ag_26065ae933,4.A.2.b.2.I02.D07,https://github.com/ZhuLinsen/alphaevo,"drive `program.md`-steered L1 strategy mutations, L2 Co-STEER factor synthesis"
@@ -1375,8 +1388,8 @@ ag_285458975b,4.A.3.b.6.I07.D03,https://aws.amazon.com/marketplace/pp/prodview-v
 ag_285458975b,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-vzhctzezs2n42,answers queries
 ag_287220dcae,4.A.2.a.4.I07.D02,https://github.com/aaif-goose/goose,"use it for research, writing, automation, data analysis, or anything you need to get done."
 ag_287220dcae,4.A.3.b.1.I01.D03,https://github.com/aaif-goose/goose,"an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
-ag_28a225d36a,4.A.3.b.1.I01.D03,https://github.com/JetBrains/thinkrail,the code change made by the agent
-ag_28a225d36a,4.A.3.b.6.I08.D09,https://github.com/JetBrains/thinkrail,"the agent reads, searches, and maintains it through dedicated `spec_*` tools"
+ag_28a225d36a,4.A.3.b.6.I03.D01,https://github.com/JetBrains/thinkrail,"Everything the agent makes for you, such as design notes, mockups, diagrams, screenshots, and reports, lands in the workspace's git-ignored `.thinkrail/context/` folder."
+ag_28a225d36a,4.A.4.b.4.I10.D04,https://github.com/JetBrains/thinkrail,"Ask a chat to do something ""in a side workspace"" and the agent starts that workspace and its chat itself, then checks how its chats and pull requests are doing."
 ag_28aff56335,4.A.1.a.1.I04.D07,https://aws.amazon.com/marketplace/pp/prodview-vma3xjja4qrmi,identify similar issues in logs
 ag_28aff56335,4.A.1.a.2.I10.D03,https://aws.amazon.com/marketplace/pp/prodview-vma3xjja4qrmi,"Vibe acts as a 24/7 teammate that helps proactively detect, triage, and resolve incidents faster."
 ag_28aff56335,4.A.2.b.1.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-vma3xjja4qrmi,"streamlining coordination, documentation, and root cause analysis"
@@ -1533,10 +1546,10 @@ ag_2d405cfd4b,4.A.2.a.4.I02.D02,https://github.com/EthanXiang777/circuit-framewo
 ag_2d405cfd4b,4.A.2.a.4.I02.D04,https://github.com/EthanXiang777/circuit-framework,"specialized agents analyze market structure, derivatives, sentiment, catalysts and market regime before a **deterministic risk engine** approves or rejects each trade."
 ag_2d405cfd4b,4.A.2.a.4.I03.D01,https://github.com/EthanXiang777/circuit-framework,"Risk rules include stale-data rejection, stop / R:R checks, spread limits, leverage and position clamps, volatility and confidence scalars."
 ag_2d405cfd4b,4.A.3.b.6.I03.D05,https://github.com/EthanXiang777/circuit-framework,Gate --> Reports[Crypto Report Bundle]
-ag_2dbe3dbfc0,4.A.1.a.1.I04.D07,https://github.com/OpenMontageInc/OpenMontage,"the agent builds a corpus from free stock footage and open archives, retrieves actual motion clips, edits them into a timeline, and renders a finished piece."
-ag_2dbe3dbfc0,4.A.2.b.1.I11.D01,https://github.com/OpenMontageInc/OpenMontage,"your agent handles research, scripting, asset generation, editing, and final composition."
-ag_2dbe3dbfc0,4.A.2.b.2.I18.D17,https://github.com/OpenMontageInc/OpenMontage,"OpenMontage animates the stills, edits the motion, unifies the soundtrack, and closes with Monty the Clapper."
-ag_2dbe3dbfc0,4.A.3.b.6.I16.D02,https://github.com/OpenMontageInc/OpenMontage,"your agent handles research, scripting, asset generation, editing, and final composition."
+ag_2dbe3dbfc0,4.A.1.a.1.I04.D05,https://github.com/OpenMontageInc/OpenMontage,"the agent builds a corpus from free stock footage and open archives, retrieves actual motion clips"
+ag_2dbe3dbfc0,4.A.2.b.1.I11.D01,https://github.com/OpenMontageInc/OpenMontage,"edits them into a timeline, and renders a finished piece"
+ag_2dbe3dbfc0,4.A.2.b.2.I18.D17,https://github.com/OpenMontageInc/OpenMontage,"OpenMontage animates the stills, edits the motion, unifies the soundtrack"
+ag_2dbe3dbfc0,4.A.3.b.6.I16.D02,https://github.com/OpenMontageInc/OpenMontage,"your agent handles research, scripting, asset generation, editing, and final composition"
 ag_2dfdae15d8,4.A.2.b.6.I02.D09,https://github.com/microsoft/UFO,Requests decomposed into structured DAG with TaskStars and dependencies for automated scheduling and runtime rewriting
 ag_2dfdae15d8,4.A.4.b.4.I12.D37,https://github.com/microsoft/UFO,parallel task coordination
 ag_2dfdae15d8,4.A.4.c.3.I07.D05,https://github.com/microsoft/UFO,Real-time resource monitoring
@@ -1963,9 +1976,8 @@ ag_3d5e9923d8,4.A.2.b.2.I02.D01,https://github.com/Fullive-AI/Anima,Generate cus
 ag_3d5e9923d8,4.A.3.b.1.I01.D01,https://github.com/Fullive-AI/Anima,"It discovers devices, maintains device state, and controls real hardware through adapters."
 ag_3d5e9923d8,4.A.3.b.6.I08.D14,https://github.com/Fullive-AI/Anima,It maintains long-term Memory and learns from explicit preferences and repeated behavior.
 ag_3d87f80686,4.A.2.a.4.I07.D02,https://github.com/SakanaAI/AI-Scientist-v3,"baselines and ablations, a sealed final evaluation, post-hoc analyses, and"
-ag_3d87f80686,4.A.2.b.2.I23.D04,https://github.com/SakanaAI/AI-Scientist-v3,"the agents propose ideas, run experiments, evaluate outcomes against"
-ag_3d87f80686,4.A.3.b.1.I01.D03,https://github.com/SakanaAI/AI-Scientist-v3,"the task rubric, and iterate toward stronger programs."
-ag_3d87f80686,4.A.3.b.6.I03.D04,https://github.com/SakanaAI/AI-Scientist-v3,"writes the paper, with every stage kept under one run directory."
+ag_3d87f80686,4.A.2.a.4.I12.D04,https://github.com/SakanaAI/AI-Scientist-v3,"the agents propose ideas, run experiments, evaluate outcomes against"
+ag_3d87f80686,4.A.3.b.6.I03.D02,https://github.com/SakanaAI/AI-Scientist-v3,"writes the paper, with every stage kept under one run directory."
 ag_3d8b465347,4.A.1.a.1.I01.D01,https://github.com/evilsocket/audit,"| 1 | Recon    | Opus 4.7  | Map the repo, emit narrowly-scoped Hunt tasks |"
 ag_3d8b465347,4.A.2.a.2.I01.D02,https://github.com/evilsocket/audit,| 3 | Validate | Opus 4.7  | Adversarial re-read; tries to **disprove** (different model from Hunt) |
 ag_3d8b465347,4.A.2.a.4.I07.D14,https://github.com/evilsocket/audit,| 6 | Trace    | Opus 4.7  | Prove attacker-controlled input reaches the sink |
@@ -2024,9 +2036,12 @@ ag_3eecfc5aaf,4.A.2.a.3.I01.D01,https://aws.amazon.com/marketplace/pp/prodview-t
 ag_3eecfc5aaf,4.A.2.a.4.I02.D06,https://aws.amazon.com/marketplace/pp/prodview-tcievlax5jveo,analyze customer feedback
 ag_3eecfc5aaf,4.A.2.b.1.I07.D01,https://aws.amazon.com/marketplace/pp/prodview-tcievlax5jveo,"create, edit and localize content"
 ag_3eecfc5aaf,4.A.2.b.2.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-tcievlax5jveo,"Automates content creation, editing, and localization"
-ag_3f122e7ec4,4.A.1.b.1.I02.D08,https://github.com/career-ops-hq/career-ops,scan job boards
-ag_3f122e7ec4,4.A.2.a.1.I01.D03,https://github.com/career-ops-hq/career-ops,score each job 1-5 against your CV before you apply
-ag_3f122e7ec4,4.A.3.b.6.I13.D04,https://github.com/career-ops-hq/career-ops,It helps you fill in each application
+ag_3f122e7ec4,4.A.1.a.1.I04.D05,https://github.com/career-ops-hq/career-ops,scan job boards
+ag_3f122e7ec4,4.A.1.b.1.I02.D08,https://github.com/career-ops-hq/career-ops,"Paste a job. On your machine, it tells you if it's still&nbsp;open and if it&nbsp;fits."
+ag_3f122e7ec4,4.A.2.a.1.I04.D06,https://github.com/career-ops-hq/career-ops,score each job 1-5 against your CV before you apply
+ag_3f122e7ec4,4.A.3.b.6.I08.D11,https://github.com/career-ops-hq/career-ops,get interview prep and an application tracker
+ag_3f122e7ec4,4.A.3.b.6.I13.D04,https://github.com/career-ops-hq/career-ops,It helps you fill in each application; you press Submit.
+ag_3f122e7ec4,4.A.3.b.6.I13.D06,https://github.com/career-ops-hq/career-ops,tailor an ATS-friendly resume and cover letter
 ag_3f185173ef,4.A.1.a.1.I02.D03,https://aws.amazon.com/marketplace/pp/prodview-vipcjrm5qapdk,Retrieves customer profiles
 ag_3f185173ef,4.A.3.b.6.I08.D14,https://aws.amazon.com/marketplace/pp/prodview-vipcjrm5qapdk,The agent processes these responses and updates your fraud management system accordingly
 ag_3f185173ef,4.A.4.a.1.I02.D05,https://aws.amazon.com/marketplace/pp/prodview-vipcjrm5qapdk,"drafts a clear notification that explains what happened, why the transaction was flagged, and what actions the customer should take next"
@@ -2221,7 +2236,6 @@ ag_45c2eb14bd,4.A.3.b.6.I09.D04,https://aws.amazon.com/marketplace/pp/prodview-j
 ag_45e504d40b,4.A.2.b.2.I02.D07,https://aws.amazon.com/marketplace/pp/prodview-dwrvorg374e3u,Modify unit test cases with contextual understanding for one file at a time.
 ag_45e504d40b,4.A.2.b.4.I03.D15,https://aws.amazon.com/marketplace/pp/prodview-dwrvorg374e3u,"The platform offers autonomous unit test generation with predictive coverage, achieving 80-90% statement coverage and 90% function coverage through intelligent scenario mapping."
 ag_45e504d40b,4.A.3.b.1.I01.D03,https://aws.amazon.com/marketplace/pp/prodview-dwrvorg374e3u,Agentic Unit Test Case Generation offer autonomous unit test generation with intelligent test case creation and predictive coverage.
-ag_45ea9f1d00,4.A.3.b.1.I03.D01,https://github.com/JosssphZhou/poki,"The agent follows the [install-poki skill](skills/install-poki/SKILL.md) and runs `bin/install-iphone.mjs`, which does every step it can by itself."
 ag_45ea9f1d00,4.A.3.b.1.I05.D01,https://github.com/JosssphZhou/poki,"Poki is an app that operates your iPhone. It reads the screen, taps, types and scrolls in real apps."
 ag_45eb8ec51c,4.A.2.b.5.I02.D07,https://github.com/raroque/boop-agent,"the agent can schedule recurring work from a text (""every morning at 8 summarize my calendar"") and push results back to iMessage."
 ag_45eb8ec51c,4.A.3.b.6.I08.D14,https://github.com/raroque/boop-agent,"**Tiered memory** (short / long / permanent) with post-turn extraction, decay, and cleaning."
@@ -2248,6 +2262,11 @@ ag_4768e2d39e,4.A.3.b.1.I01.D03,https://github.com/Nano-Collective/nanocoder,"na
 ag_478eb063f9,4.A.1.a.1.I04.D05,https://github.com/gbessoni/seobuild-onpage,finds pages earning impressions that return 404
 ag_478eb063f9,4.A.2.a.4.I02.D05,https://github.com/gbessoni/seobuild-onpage,"pulls the current SERP, analyzes what's ranking, finds the gaps in their content"
 ag_478eb063f9,4.A.3.b.6.I16.D03,https://github.com/gbessoni/seobuild-onpage,writes you a complete page
+ag_47af61ee43,4.A.1.a.1.I02.D07,https://aws.amazon.com/marketplace/pp/prodview-sn4noicgwvvh2,"Indexes the source document using Amazon Bedrock Titan embeddings and a FAISS vector store, then extracts business rules, scope, and out-of-scope items with page-level source citations for full traceability."
+ag_47af61ee43,4.A.1.a.1.I02.D12,https://aws.amazon.com/marketplace/pp/prodview-sn4noicgwvvh2,"It ingests requirement specifications, RFPs, and solution design documents, then runs a multi-agent pipeline on Amazon Bedrock AgentCore to extract business rules"
+ag_47af61ee43,4.A.2.a.2.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-sn4noicgwvvh2,"Consolidates business rules, capabilities, features, user stories, and acceptance criteria into a single formatted Excel workbook"
+ag_47af61ee43,4.A.3.b.6.I09.D01,https://aws.amazon.com/marketplace/pp/prodview-sn4noicgwvvh2,"Consolidates business rules, capabilities, features, user stories, and acceptance criteria into a single formatted Excel workbook, organized as Capability → Feature → User Story → Acceptance Criteria."
+ag_47af61ee43,4.A.3.b.6.I09.D04,https://aws.amazon.com/marketplace/pp/prodview-sn4noicgwvvh2,"Writes “As a / I want / So that” user stories for every in-scope feature, each linked back to its source business rules."
 ag_47b7ea24b5,4.A.1.a.1.I04.D03,https://github.com/agentscope-ai/QwenPaw,"Search the web, follow subscriptions, summarize videos, and find what you need in your personal knowledge base."
 ag_47b7ea24b5,4.A.1.b.2.I08.D03,https://github.com/agentscope-ai/QwenPaw,"Read, edit, review, and test code in your projects with the unified file workspace."
 ag_47b7ea24b5,4.A.3.b.1.I06.D11,https://github.com/agentscope-ai/QwenPaw,"Read, write, and convert PDF, Word, Excel, and PowerPoint files."
@@ -2628,10 +2647,11 @@ ag_52833e430b,4.A.2.a.4.I01.D01,https://aws.amazon.com/marketplace/pp/prodview-4
 ag_52833e430b,4.A.2.a.4.I07.D05,https://aws.amazon.com/marketplace/pp/prodview-4yjt7kdl5uxnq,Translates molecular data into higher-order biological meaning.
 ag_52833e430b,4.A.2.a.4.I10.D05,https://aws.amazon.com/marketplace/pp/prodview-4yjt7kdl5uxnq,Uncover clinically meaningful biomarkers with transparency and reproducibility.
 ag_52833e430b,4.A.3.b.1.I06.D07,https://aws.amazon.com/marketplace/pp/prodview-4yjt7kdl5uxnq,multi-modal data integration that normalizes and harmonizes raw inputs
+ag_529cc3f94d,4.A.1.a.1.I04.D05,https://github.com/pardnchiu/Agenvoy,"The agent finds current data, calls tools, and gives you the answer."
+ag_529cc3f94d,4.A.1.a.1.I04.D07,https://github.com/pardnchiu/Agenvoy,The agent searches your local files and answers directly.
+ag_529cc3f94d,4.A.1.b.2.I08.D03,https://github.com/pardnchiu/Agenvoy,"creates, tests, and keeps a new tool, ready to reuse next time."
+ag_529cc3f94d,4.A.2.b.2.I02.D01,https://github.com/pardnchiu/Agenvoy,"it builds the tool, sandbox-tests it, and shares it with Claude Code, Codex and any MCP agent"
 ag_529cc3f94d,4.A.2.b.5.I02.D07,https://github.com/pardnchiu/Agenvoy,Create schedules in one sentence; recurring work runs in your environment and pushes the result.
-ag_529cc3f94d,4.A.3.b.1.I01.D03,https://github.com/pardnchiu/Agenvoy,"Say what you need in one sentence; it builds the tool, sandbox-tests it, and shares it with Claude Code, Codex and any MCP agent"
-ag_529cc3f94d,4.A.4.a.2.I03.D10,https://github.com/pardnchiu/Agenvoy,Then creates the schedule automatically.
-ag_529cc3f94d,4.A.4.a.3.I03.D06,https://github.com/pardnchiu/Agenvoy,Report TSMC stock price every morning at 8am on Telegram
 ag_529f32faea,4.A.1.a.1.I02.D01,https://github.com/code-yeongyu/oh-my-openagent,"The agent reads the codebase before touching a line, plans, proves each step before moving on, checks the result on the real surface, and stops when it's done."
 ag_529f32faea,4.A.2.b.5.I02.D07,https://github.com/code-yeongyu/oh-my-openagent,"Each part runs on the model that fits it, in parallel, and gets checked before anything is called done."
 ag_529f32faea,4.A.2.b.6.I02.D08,https://github.com/code-yeongyu/oh-my-openagent,"the whole job becomes a graph of agents: deep research over thousands of sources, a full machine-learning pipeline, a migration nobody wants to do"
@@ -2658,8 +2678,9 @@ ag_52f503113b,4.A.2.b.2.I02.D01,https://github.com/corca-ai/EVAL,"they'll search
 ag_52f503113b,4.A.2.b.2.I18.D17,https://github.com/corca-ai/EVAL,Image Generation: Stable Diffusion 1.5
 ag_52f503113b,4.A.3.b.1.I01.D03,https://github.com/corca-ai/EVAL,"It can **create it's own tools** by writing, modifying, executing and testing code."
 ag_52f503113b,4.A.3.b.1.I04.D02,https://github.com/corca-ai/EVAL,PATCH: Correct the error throught the code patch if an error occurs.
-ag_53178fab16,4.A.2.b.2.I18.D17,https://github.com/Stonewuu/ai-fusion-video,根据文本或参考素材生成图片与视频
-ag_53178fab16,4.A.3.b.6.I12.D02,https://github.com/Stonewuu/ai-fusion-video,请助手改写内容、整理分镜或生成素材
+ag_53178fab16,4.A.2.b.1.I07.D01,https://github.com/Stonewuu/ai-fusion-video,改写内容
+ag_53178fab16,4.A.2.b.2.I18.D02,https://github.com/Stonewuu/ai-fusion-video,整理分镜
+ag_53178fab16,4.A.2.b.2.I18.D20,https://github.com/Stonewuu/ai-fusion-video,生成素材
 ag_532b4922ab,4.A.1.a.1.I04.D05,https://github.com/guangxiangdebizi/TradingAgents-MCPmode,集成了 Model Context Protocol (MCP) 工具，实现了智能化的股票分析和交易决策流程
 ag_532b4922ab,4.A.2.a.4.I02.D04,https://github.com/guangxiangdebizi/TradingAgents-MCPmode,提供全面的市场分析、投资建议和风险管理
 ag_532b4922ab,4.A.2.a.4.I03.D01,https://github.com/guangxiangdebizi/TradingAgents-MCPmode,三层风险分析和管理决策，支持动态风险辩论
@@ -2793,10 +2814,8 @@ ag_575e0d4e02,4.A.1.a.1.I04.D03,https://aws.amazon.com/marketplace/pp/prodview-w
 ag_575e0d4e02,4.A.1.a.1.I23.D01,https://aws.amazon.com/marketplace/pp/prodview-wpfntbqctyu7e,Schedule Ethos to conduct an expert call on your behalf
 ag_575e0d4e02,4.A.2.b.1.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-wpfntbqctyu7e,"Generate industry standard research reports with charts, visualizations and more in minutes"
 ag_575e0d4e02,4.A.3.b.6.I03.D03,https://aws.amazon.com/marketplace/pp/prodview-wpfntbqctyu7e,"Our first agent, the Investment Researcher, generates industry-standard research reports in minutes."
-ag_5789018887,4.A.1.b.1.I02.D03,https://github.com/BlockRunAI/Franklin,proposes trade plans you approve before a cent moves
-ag_5789018887,4.A.2.b.1.I10.D01,https://github.com/BlockRunAI/Franklin,picks the best model per task
-ag_5789018887,4.A.3.b.6.I10.D01,https://github.com/BlockRunAI/Franklin,keeps a wallet-bound trading journal
-ag_5789018887,4.A.4.c.3.I05.D06,https://github.com/BlockRunAI/Franklin,It buys live market data
+ag_5789018887,4.A.1.a.1.I04.D05,https://github.com/BlockRunAI/Franklin,"It buys live market data, proposes trade plans you approve before a cent moves"
+ag_5789018887,4.A.3.b.6.I08.D05,https://github.com/BlockRunAI/Franklin,keeps a wallet-bound trading journal
 ag_57911e7b71,4.A.4.a.1.I01.D03,https://aws.amazon.com/marketplace/pp/prodview-vwphowqvbqtb2,Shoppers often receive generic product guidance
 ag_57911e7b71,4.A.4.a.5.I10.D10,https://aws.amazon.com/marketplace/pp/prodview-vwphowqvbqtb2,Guided selling: Help shoppers discover relevant products from the live catalogue.
 ag_57911e7b71,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-vwphowqvbqtb2,"answers order, return and exchange questions using live catalogue, promotion and order data from connected systems"
@@ -2829,6 +2848,9 @@ ag_58267892a1,4.A.2.a.3.I01.D01,https://aws.amazon.com/marketplace/pp/prodview-3
 ag_58267892a1,4.A.2.a.4.I02.D06,https://aws.amazon.com/marketplace/pp/prodview-3fl7nnslmyvpc,Analyzes customer feedback and optimizes campaigns
 ag_58267892a1,4.A.2.b.1.I07.D02,https://aws.amazon.com/marketplace/pp/prodview-3fl7nnslmyvpc,create and edit content
 ag_58267892a1,4.A.2.b.2.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-3fl7nnslmyvpc,"Automates content creation, editing, and branding compliance"
+ag_5834a12962,4.A.1.b.2.I08.D03,https://github.com/bastani-inc/atomic,Executable checks and fresh reviewers produce evidence; failures route into bounded repair until the gate passes.
+ag_5834a12962,4.A.2.b.2.I02.D01,https://github.com/bastani-inc/atomic,"Atomic researches, implements, and verifies the work that quick coding-agent passes tend to leave to you."
+ag_5834a12962,4.A.3.b.1.I01.D03,https://github.com/bastani-inc/atomic,Atomic writes and reloads the runnable TypeScript graph
 ag_5855c0e1b9,4.A.2.a.4.I07.D03,https://github.com/spring-ai-alibaba/DataAgent,它超越了传统的 Text-to-SQL 工具，进化为一个能够执行 **Python 深度分析**、生成 **多维度图表报告** 的 AI 智能数据分析师。
 ag_5855c0e1b9,4.A.3.b.1.I01.D03,https://github.com/spring-ai-alibaba/DataAgent,基于 Spring AI Alibaba Sandbox 在任务级容器中执行生成代码
 ag_5855c0e1b9,4.A.3.b.6.I03.D05,https://github.com/spring-ai-alibaba/DataAgent,分析结果自动汇总为包含 ECharts 图表的 HTML/Markdown 报告，所见即所得。
@@ -2913,9 +2935,9 @@ ag_59ec2ff996,4.A.4.a.2.I03.D01,https://github.com/openJiuwen-ai/jiuwenswarm,"Th
 ag_5a378efd2a,4.A.1.a.2.I10.D01,https://aws.amazon.com/marketplace/pp/prodview-7nqrz63y2s5q6,"Ongoing exposure discovery, testing, and validation to offer near real-time security."
 ag_5a378efd2a,4.A.2.a.4.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-7nqrz63y2s5q6,"Use Mythos, GPT-Cyber and Frontier AI models to surface hidden risks and exposures automatically in dynamic enterprise environments."
 ag_5a378efd2a,4.A.4.b.6.I09.D02,https://aws.amazon.com/marketplace/pp/prodview-7nqrz63y2s5q6,"Recommend prioritized fixes, code-level changes, and virtual patches before AI-enabled adversaries can act."
-ag_5acfef6e27,4.A.1.b.2.I08.D03,https://github.com/alexsergivan/kwant,a teammate on another model runs its checks again in a clean copy of the files and never writes to the task's folder
-ag_5acfef6e27,4.A.2.a.2.I01.D02,https://github.com/alexsergivan/kwant,a task turns **Verified** only when kwant runs the check itself
-ag_5acfef6e27,4.A.4.a.2.I03.D01,https://github.com/alexsergivan/kwant,hand work to each other with an @mention
+ag_5acfef6e27,4.A.1.b.2.I06.D15,https://github.com/alexsergivan/kwant,"a task turns **Verified** only when kwant runs the check itself, never on a bot's word"
+ag_5acfef6e27,4.A.1.b.2.I08.D03,https://github.com/alexsergivan/kwant,For high-risk work it also changes the code in small ways to see if the tests notice.
+ag_5acfef6e27,4.A.4.a.2.I03.D01,https://github.com/alexsergivan/kwant,"kwant gives you a team of bots that share chats, hand work to each other with an @mention and get it done on their own"
 ag_5b6f78ab1a,4.A.1.a.2.I10.D01,https://github.com/Harvil1/codeAgent,秘钥扫描（防 API key 写入文件/记忆）、SSRF 防护、Web 内容注入隔离
 ag_5b6f78ab1a,4.A.2.b.6.I02.D08,https://github.com/Harvil1/codeAgent,plans multi-step changes
 ag_5b6f78ab1a,4.A.3.b.1.I01.D03,https://github.com/Harvil1/codeAgent,"writes and edits files, runs commands and tests, and iterates until the task is done"
@@ -3022,9 +3044,10 @@ ag_5eab008e70,4.A.2.b.2.I02.D01,https://github.com/PhiloLabs/fable51-worlds,"a p
 ag_5eab008e70,4.A.3.b.1.I01.D03,https://github.com/PhiloLabs/fable51-worlds,"Every building, storefront, sign, tree and traffic light is generated by code that lives in this repo."
 ag_5eab008e70,4.A.3.b.6.I03.D01,https://github.com/PhiloLabs/fable51-worlds,"every world ships its own QA report, defects included."
 ag_5ed74168a3,4.A.1.a.1.I04.D05,https://github.com/wangzan101/Mika,"A built-in desktop-class browser that keeps you signed in, reads pages, downloads and uploads"
+ag_5ed74168a3,4.A.2.b.5.I03.D01,https://github.com/wangzan101/Mika,"""Remind me at 9 tomorrow"", ""do this every Friday""; runs on time in the original conversation"
 ag_5ed74168a3,4.A.3.b.1.I05.D01,https://github.com/wangzan101/Mika,"Opens apps, taps, types and scrolls on a separate background screen while you use your phone as usual"
-ag_5ed74168a3,4.A.4.c.1.I05.D03,https://github.com/wangzan101/Mika,"Mika opens WeChat on its background screen, finds the contact and sends the message"
-ag_5ed74168a3,4.A.4.c.3.I05.D06,https://github.com/wangzan101/Mika,"Orders takeout with stacked discounts, asks before paying"
+ag_5ed74168a3,4.A.3.b.6.I08.D16,https://github.com/wangzan101/Mika,Hold the chat input to speak and edit the words before sending
+ag_5ed74168a3,4.A.4.a.5.I10.D10,https://github.com/wangzan101/Mika,"A charger under $30, rated 4.5 stars or more"
 ag_5ee7309911,4.A.3.b.1.I01.D03,https://github.com/continuedev/continue,"Continue is a coding agent available as a [CLI](#cli), [VS Code extension](#vs-code), and [JetBrains plugin](#jetbrains)."
 ag_5f02f7d7d7,4.A.1.a.2.I10.D03,https://github.com/Dicklesworthstone/claude_code_agent_farm,"Smart Monitoring**: Real-time dashboard with context warnings, heartbeat tracking, and tmux pane titles"
 ag_5f02f7d7d7,4.A.3.b.1.I04.D02,https://github.com/Dicklesworthstone/claude_code_agent_farm,Auto-Recovery**: Automatically restarts agents when needed with adaptive idle timeout based on work patterns
@@ -3046,8 +3069,8 @@ ag_5f567a5370,4.A.1.a.1.I04.D07,https://github.com/bytebot-ai/bytebot,Data gathe
 ag_5f567a5370,4.A.3.b.1.I03.D01,https://github.com/bytebot-ai/bytebot,Install new software as needed
 ag_5f567a5370,4.A.3.b.1.I05.D01,https://github.com/bytebot-ai/bytebot,"Use any application (browsers, email clients, office tools, IDEs)"
 ag_5f567a5370,4.A.3.b.6.I03.D05,https://github.com/bytebot-ai/bytebot,"""Process these 5 invoice PDFs and create a summary report"""
-ag_5f6311d2cb,4.A.1.a.1.I04.D07,https://github.com/beluga-labs/beluga,"Ask about your data and your agent finds the database, connects and runs the query"
-ag_5f6311d2cb,4.A.2.b.2.I18.D04,https://github.com/beluga-labs/beluga,"your agent answers with stat tiles (revenue, payments, failed rate, p95), an area chart of payments per day"
+ag_5f6311d2cb,4.A.1.a.1.I04.D07,https://github.com/beluga-labs/beluga,"your agent finds the database, connects and runs the query"
+ag_5f6311d2cb,4.A.2.b.2.I18.D04,https://github.com/beluga-labs/beluga,"the answer is a live table you can sort, search and turn into a chart"
 ag_5f6311d2cb,4.A.2.b.2.I18.D13,https://github.com/beluga-labs/beluga,Ask how something works and it draws a diagram.
 ag_5f6a63f45a,4.A.2.a.4.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-47iz6ivkaryxk,"Similar to security risk ledgers, but tailored specifically towards Operational Risks."
 ag_5f6a63f45a,4.A.2.b.2.I07.D04,https://aws.amazon.com/marketplace/pp/prodview-47iz6ivkaryxk,Provides Upgrade Plans containing a detailed sequence of upgrade steps.
@@ -3066,12 +3089,6 @@ ag_5fda672d97,4.A.3.b.6.I03.D02,https://github.com/MiroMindAI/MiroThinker,"Core 
 ag_6019975f31,4.A.2.b.3.I01.D11,https://github.com/letta-ai/letta-code,"They learn and evolve over long horizons through rewriting their own memory, skills, prompts, and even the harness itself"
 ag_6019975f31,4.A.2.b.5.I02.D07,https://github.com/letta-ai/letta-code,"Configure heartbeats and crons, and let agents work across time with self-managed schedules"
 ag_6019975f31,4.A.4.a.2.I03.D01,https://github.com/letta-ai/letta-code,Agents can call any other agent (including themselves) as subagents
-ag_60279d40fd,4.A.2.a.2.I01.D05,https://github.com/xbtlin/ai-berkshire,# 市值手算校验：股价 × 总股本，与报告数据对比
-ag_60279d40fd,4.A.2.a.2.I01.D07,https://github.com/xbtlin/ai-berkshire,关键数据至少2个独立来源交叉验证
-ag_60279d40fd,4.A.2.a.4.I02.D02,https://github.com/xbtlin/ai-berkshire,研究一个行业的全部投资机会（按产业链环节切片）
-ag_60279d40fd,4.A.2.a.4.I11.D04,https://github.com/xbtlin/ai-berkshire,`/investment-team` 启动4个独立Agent**同时**研究一家公司
-ag_60279d40fd,4.A.2.a.4.I11.D06,https://github.com/xbtlin/ai-berkshire,只读原始财报，不依赖二手研报，像巴菲特一样读年报
-ag_60279d40fd,4.A.3.b.6.I03.D05,https://github.com/xbtlin/ai-berkshire,"用 AI Berkshire 得到的是""可以拿来做决策的投研报告"""
 ag_604dff7384,4.A.1.a.1.I12.D04,https://github.com/KeyValueSoftwareSystems/agent-opfor,"**Fetches target info** — connects to your agent, detects available tools, MCP endpoints, capabilities"
 ag_604dff7384,4.A.1.b.2.I03.D02,https://github.com/KeyValueSoftwareSystems/agent-opfor,"Opfor red-teams the full AI agent surface — prompts, tools, MCP servers, memory, and multi-turn reasoning."
 ag_604dff7384,4.A.2.a.2.I01.D06,https://github.com/KeyValueSoftwareSystems/agent-opfor,**Evaluates with a judge** — an LLM judge classifies each response with pass/fail + reasoning
@@ -3164,10 +3181,6 @@ ag_61fe9f3f32,4.A.1.a.2.I03.D02,https://github.com/Yaolinwang/AITD,`交易` 显�
 ag_61fe9f3f32,4.A.2.a.4.I11.D04,https://github.com/Yaolinwang/AITD,从成功/失败中提取经验并实时调整决策
 ag_61fe9f3f32,4.A.2.b.1.I09.D05,https://github.com/Yaolinwang/AITD,可以在浏览器里完成配置、模拟盘验证和实盘运行
 ag_61fe9f3f32,4.A.3.b.6.I08.D05,https://github.com/Yaolinwang/AITD,记住历史所有交易决策对错。所有历史交易留痕，存档
-ag_622bdf20a3,4.A.3.b.1.I03.D04,https://github.com/nuphos/nuphos,"One step drops the same agent into a
-  channel the team already uses."
-ag_622bdf20a3,4.A.4.a.2.I03.D01,https://github.com/nuphos/nuphos,"Your teammates work with a Bot in the same
-live session, see the same tool calls, and steer it together."
 ag_625c264dfe,4.A.1.a.1.I04.D05,https://github.com/Memento-Teams/Memento,Live search and controlled crawling via SearxNG
 ag_625c264dfe,4.A.2.b.6.I02.D08,https://github.com/Memento-Teams/Memento,A CBR-driven **Planner** decomposes tasks and retrieves relevant cases
 ag_625c264dfe,4.A.3.b.6.I08.D09,https://github.com/Memento-Teams/Memento,Memento logs successful & failed trajectories into a **Case Bank**
@@ -3321,10 +3334,10 @@ ag_66239c21a0,4.A.3.b.6.I08.D14,https://github.com/snarktank/ralph,6. Update `pr
 ag_663161ce1a,4.A.3.b.1.I06.D06,https://aws.amazon.com/marketplace/pp/prodview-l5jgkbs7juix2,extracting the necessary data points and entering them into a file for processing in the private equity fund accounting system
 ag_663161ce1a,4.A.3.b.1.I06.D12,https://aws.amazon.com/marketplace/pp/prodview-l5jgkbs7juix2,automatically ingesting new invoices in multiple formats
 ag_663161ce1a,4.A.4.c.1.I05.D04,https://aws.amazon.com/marketplace/pp/prodview-l5jgkbs7juix2,allocating them to the correct client
-ag_6647d2f559,4.A.2.a.4.I02.D05,https://github.com/markfulton/ai-employees,rank review and your visibility in AI answers
-ag_6647d2f559,4.A.3.b.1.I04.D02,https://github.com/markfulton/ai-employees,"Site health, error triage, small changes on a branch, dependency review"
+ag_6647d2f559,4.A.1.a.2.I10.D03,https://github.com/markfulton/ai-employees,"Site health, error triage"
+ag_6647d2f559,4.A.3.b.6.I16.D01,https://github.com/markfulton/ai-employees,one article a weekday
 ag_6647d2f559,4.A.3.b.6.I16.D03,https://github.com/markfulton/ai-employees,Posts drafted in your voice for each platform
-ag_6647d2f559,4.A.4.a.3.I03.D06,https://github.com/markfulton/ai-employees,briefs you every morning
+ag_6647d2f559,4.A.4.a.2.I03.D10,https://github.com/markfulton/ai-employees,briefs you every morning
 ag_664a72ea3a,4.A.1.a.2.I05.D01,https://aws.amazon.com/marketplace/pp/prodview-dqq4c65alvvli,Predictive models monitor every interaction to identify SLA risks early and trigger proactive escalations to prevent service delays.
 ag_664a72ea3a,4.A.2.a.4.I02.D06,https://aws.amazon.com/marketplace/pp/prodview-dqq4c65alvvli,Automated feedback capture and analytics for CSAT/NPS improvement.
 ag_664a72ea3a,4.A.4.a.5.I01.D01,https://aws.amazon.com/marketplace/pp/prodview-dqq4c65alvvli,"AI-powered micro-agents classify issues, detect sentiment, assess priority, and route cases intelligently using Amazon Bedrock and EKS."
@@ -3401,10 +3414,11 @@ ag_68389ec226,4.A.4.a.5.I10.D09,https://github.com/ro-anderson/multi-agent-rag-c
 ag_68389ec226,4.A.4.a.8.I03.D02,https://github.com/ro-anderson/multi-agent-rag-customer-support,"It uses Python, LangChain, and LangGraph to create a conversational AI that can assist with various travel-related queries, including flight bookings, car rentals, hotel reservations, and excursions."
 ag_68389ec226,4.A.4.b.6.I02.D04,https://github.com/ro-anderson/multi-agent-rag-customer-support,**Excursion Assistant**: Handles trip and excursion recommendations.
 ag_68389ec226,4.A.4.c.1.I03.D04,https://github.com/ro-anderson/multi-agent-rag-customer-support,**Flight Booking Assistant**: Handles flight-related queries and bookings.
-ag_6839307f7c,4.A.2.a.4.I07.D03,https://www.getwren.ai/,Type a business question in plain English. Wren builds a dashboard on your data that you can drill into and filter.
-ag_6839307f7c,4.A.2.b.2.I18.D14,https://www.getwren.ai/,Type a business question in plain English. Wren builds a dashboard on your data that you can drill into and filter.
-ag_6839307f7c,4.A.4.a.3.I03.D08,https://www.getwren.ai/,"Everyone gets the same answer, built on business definitions you control."
-ag_6839307f7c,4.A.4.a.8.I03.D03,https://www.getwren.ai/,What was EMEA net revenue in Q3?
+ag_6839307f7c,4.A.2.a.4.I11.D04,https://www.getwren.ai/,"Both get governed answers from your existing databases: validated SQL, charts, dashboards and GenBI Apps, grounded in business definitions you control"
+ag_6839307f7c,4.A.2.b.2.I18.D04,https://www.getwren.ai/,Type a business question in plain English. Wren builds a dashboard on your data that you can drill into and filter.
+ag_6839307f7c,4.A.4.a.1.I04.D02,https://www.getwren.ai/,Shows its work
+ag_6839307f7c,4.A.4.a.8.I03.D02,https://www.getwren.ai/,"Your team asks in plain language. Claude, ChatGPT and your own agents ask over MCP. Everyone gets the same answer, built on business definitions you control."
+ag_6839307f7c,4.A.4.b.6.I05.D10,https://www.getwren.ai/,Shift $2.4M from paid social into search and partner to lift pipeline 18%.
 ag_683a61600e,4.A.1.a.2.I10.D01,https://github.com/sunmughan/meta-automation,"Analyzes the page for security checkpoints, Cloudflare turnstiles, 2FA prompts, or platform warning dialogs."
 ag_683a61600e,4.A.2.b.1.I09.D04,https://github.com/sunmughan/meta-automation,"It determines the next best action (e.g. qualify genuine software buyer, bypass recruitment spam, draft consultative reply)."
 ag_683a61600e,4.A.3.b.1.I05.D01,https://github.com/sunmughan/meta-automation,Captures a semantic snapshot of the active page through Chrome DevTools Protocol
@@ -3518,7 +3532,7 @@ ag_6cc379544b,4.A.1.b.2.I08.D03,https://aws.amazon.com/marketplace/pp/prodview-v
 ag_6cc379544b,4.A.2.a.4.I07.D05,https://aws.amazon.com/marketplace/pp/prodview-vrlzbjx27ygue,"The platform provides analytics and reporting tools, giving customer support teams insights into OTA update success rates, and other critical metrics."
 ag_6cc379544b,4.A.3.b.1.I01.D03,https://aws.amazon.com/marketplace/pp/prodview-vrlzbjx27ygue,eSync Agents can be coded directly or generated by an AI agent.
 ag_6cc379544b,4.A.3.b.1.I03.D03,https://aws.amazon.com/marketplace/pp/prodview-vrlzbjx27ygue,Use it to manage software and firmware updates for connected vehicles and other complex systems constructed with multiple computing devices.
-ag_6cd46d43db,4.A.3.b.1.I01.D03,https://github.com/HKUDS/DeepCode,Where AI Agents Transform Ideas into Production-Ready Code
+ag_6cd46d43db,4.A.2.b.2.I02.D01,https://github.com/HKUDS/DeepCode,DeepCode: Open Agentic Coding (Agent Harness & Loop Engineering & Multi-Agent Orchestration)
 ag_6d0f40c7ce,4.A.3.b.6.I08.D09,https://aws.amazon.com/marketplace/pp/prodview-lqmskugzku4wk,Maintains detailed interaction logs through Agent Factory's standardized logging protocols
 ag_6d0f40c7ce,4.A.4.a.1.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-lqmskugzku4wk,Implements real-time translation capabilities with regional context preservation to serve diverse travelers worldwide
 ag_6d0f40c7ce,4.A.4.a.3.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-lqmskugzku4wk,"The companion provides seamless real-time support across multiple touchpoints including mobile applications, web platforms, and messaging services"
@@ -3589,8 +3603,8 @@ ag_6e748927df,4.A.1.a.2.I02.D20,https://aws.amazon.com/marketplace/pp/prodview-g
 ag_6e748927df,4.A.1.a.2.I11.D04,https://aws.amazon.com/marketplace/pp/prodview-gggd4o7wn2etm,Drift is an agentic AI operating layer that cuts the cost and complexity of compliance and risk management.
 ag_6e748927df,4.A.2.a.4.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-gggd4o7wn2etm,gain proactive visibility into gaps and emerging risks
 ag_6e748927df,4.A.3.b.6.I08.D05,https://aws.amazon.com/marketplace/pp/prodview-gggd4o7wn2etm,"All agent activity is fully auditable and traceable, with detailed execution records that support governance, audits, and internal review."
-ag_6eed090d92,4.A.3.b.1.I01.D03,https://github.com/browser-use/browser-use,Give it a task and the model does it in a real browser by writing Python
 ag_6eed090d92,4.A.3.b.1.I05.D01,https://github.com/browser-use/browser-use,"Give it a task and the model does it in a real browser by writing Python: one persistent REPL, the [browser-harness](https://github.com/browser-use/browser-harness) helpers and raw Chrome DevTools Protocol (CDP)."
+ag_6eed090d92,4.A.4.a.8.I03.D05,https://github.com/browser-use/browser-use,"Find an available slot, pick a date and time, handle the CAPTCHA, and book a driving test."
 ag_6efe5fb4d0,4.A.1.a.1.I02.D03,https://github.com/Hesper-Labs/owly,**Look up customer history** for context-aware support
 ag_6efe5fb4d0,4.A.3.b.6.I08.D06,https://github.com/Hesper-Labs/owly,"Every customer gets a unified profile across all channels -- conversations, notes, tags, and contact history in one place."
 ag_6efe5fb4d0,4.A.4.a.2.I03.D10,https://github.com/Hesper-Labs/owly,**Route issues** to the right department based on expertise matching
@@ -3607,8 +3621,9 @@ directories, writes local guidance near the code that needs it"
 ag_6f01b03962,4.A.4.b.4.I06.D02,https://github.com/code-yeongyu/lazycodex,Executes a plan until every checkbox is done. Prints **ORCHESTRATION COMPLETE**.
 ag_6f01b03962,4.A.4.b.6.I05.D11,https://github.com/code-yeongyu/lazycodex,| `review-work` | Multi-angle post-implementation review |
 ag_6f10122b94,4.A.2.b.5.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-5kjparx2ctev6,"agentic workflow solution focused on improving scheduling, screening of patients, and patient engagement"
+ag_6f174c8873,4.A.2.b.1.I11.D01,https://github.com/bytedance/deer-flow,"generating slide decks, spinning up dashboards, automating content workflows"
 ag_6f174c8873,4.A.3.b.1.I01.D03,https://github.com/bytedance/deer-flow,"An open-source long-horizon SuperAgent harness that researches, codes, and creates."
-ag_6f174c8873,4.A.4.b.4.I01.D06,https://github.com/bytedance/deer-flow,"orchestrates **sub-agents**, **memory**, and **sandboxes** to do almost anything"
+ag_6f174c8873,4.A.4.a.2.I02.D01,https://github.com/bytedance/deer-flow,"An open-source long-horizon SuperAgent harness that researches, codes, and creates."
 ag_6f3aada5fc,4.A.1.a.2.I10.D01,https://aws.amazon.com/marketplace/pp/prodview-5jmnmwnkhvonc,"Permissions Agent analyzes permissions and access across your org to surface security risk, support compliance audits, and enforce governance guardrails."
 ag_6f3aada5fc,4.A.1.a.2.I10.D03,https://aws.amazon.com/marketplace/pp/prodview-5jmnmwnkhvonc,"Monitoring Agent detects drift, tech debt, and configuration risk early to prevent incidents and enable safer AI and automation deployment."
 ag_6f3aada5fc,4.A.2.a.4.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-5jmnmwnkhvonc,Permissions Agent analyzes permissions and access across your org to surface security risk
@@ -3774,8 +3789,11 @@ ag_74897c8446,4.A.1.a.1.I04.D03,https://aws.amazon.com/marketplace/pp/prodview-6
 ag_74897c8446,4.A.1.a.1.I04.D05,https://aws.amazon.com/marketplace/pp/prodview-6hrfsa5ec2cqw,"Searches academic sources including Semantic Scholar, arXiv, and DBLP to surface relevant papers and citations."
 ag_74897c8446,4.A.1.a.1.I04.D07,https://aws.amazon.com/marketplace/pp/prodview-6hrfsa5ec2cqw,Queries your SQL and MongoDB data stores to retrieve structured information.
 ag_748d2808ef,4.A.1.a.1.I04.D05,https://github.com/webbrain-one/webbrain,"Reads the page, answers questions, fetches URLs."
-ag_748d2808ef,4.A.3.b.1.I05.D01,https://github.com/webbrain-one/webbrain,"Clicks, types, navigates, uploads, downloads, fills forms."
-ag_748d2808ef,4.A.3.b.1.I06.D09,https://github.com/webbrain-one/webbrain,"Clicks, types, navigates, uploads, downloads, fills forms."
+ag_748d2808ef,4.A.3.b.1.I05.D01,https://github.com/webbrain-one/webbrain,"hand it a task and let it click,
+type, and navigate its way through"
+ag_748d2808ef,4.A.3.b.1.I06.D06,https://github.com/webbrain-one/webbrain,Fill in the search box with 'AI agents' and click Search
+ag_748d2808ef,4.A.4.a.3.I02.D03,https://github.com/webbrain-one/webbrain,Ask it about the page you're on
+ag_748d2808ef,4.A.4.a.8.I03.D03,https://github.com/webbrain-one/webbrain,"Reads the page, answers questions, fetches URLs."
 ag_74a7283b47,4.A.4.a.5.I11.D01,https://github.com/xxPcy/PharmaLLM-Agent,用户可以上传影像，通过自然语言发起股骨头与髋臼分割，在四视图工作区查看结果，并继续询问任务状态和分割体积。
 ag_74b0d623cd,4.A.1.a.1.I04.D07,https://github.com/NirDiamant/Controllable-RAG-Agent,"If retrieving, fetch relevant information from vector stores and distill it."
 ag_74b0d623cd,4.A.2.a.2.I01.D02,https://github.com/NirDiamant/Controllable-RAG-Agent,Verify that generated content is grounded in the original context.
@@ -3801,11 +3819,9 @@ ag_7549ba5949,4.A.2.a.2.I01.D07,https://aws.amazon.com/marketplace/pp/prodview-p
 ag_7549ba5949,4.A.2.a.3.I01.D02,https://aws.amazon.com/marketplace/pp/prodview-pqtjly22inriu,Supports specialist agents ( with fine tuned models ) that supports compliance evaluation based on state specific and NAIC rules and legal precedents.
 ag_7549ba5949,4.A.3.b.6.I08.D16,https://aws.amazon.com/marketplace/pp/prodview-pqtjly22inriu,Live audio transcript generation with real time agent support.
 ag_7549ba5949,4.A.3.b.6.I13.D04,https://aws.amazon.com/marketplace/pp/prodview-pqtjly22inriu,Agents dynamically fill FNOL forms during call.
-ag_754de49544,4.A.2.b.1.I11.D01,https://github.com/krillinai/OpenCreator,"create videos, images, audios, and edits with Agents in one place"
-ag_754de49544,4.A.2.b.2.I18.D20,https://github.com/krillinai/OpenCreator,"generate thumbnails, images, or videos"
-ag_754de49544,4.A.3.b.1.I06.D09,https://github.com/krillinai/OpenCreator,translate or download videos
-ag_754de49544,4.A.3.b.6.I08.D16,https://github.com/krillinai/OpenCreator,transcribe with cloud or local Whisper services
-ag_754de49544,4.A.3.b.6.I16.D01,https://github.com/krillinai/OpenCreator,"Open the Dashboard to write articles, Xiaohongshu posts, or short-video scripts"
+ag_754de49544,4.A.2.b.1.I11.D01,https://github.com/krillinai/OpenCreator,"Open an immersive editor with a playback-linked waveform and timeline, adjust subtitle timing, split or merge cues, and find and replace text."
+ag_754de49544,4.A.2.b.2.I18.D17,https://github.com/krillinai/OpenCreator,"create videos, images, audios, and edits with Agents in one place"
+ag_754de49544,4.A.3.b.1.I06.D09,https://github.com/krillinai/OpenCreator,"Video downloader, video translation"
 ag_754de49544,4.A.4.a.1.I03.D01,https://github.com/krillinai/OpenCreator,"Video Translation offers 123 source languages and 124 target options, including Pinyin output."
 ag_755663ab05,4.A.3.b.1.I01.D03,https://github.com/poco-ai/poco-claw,**GitHub repo integration** for code search and editing
 ag_755663ab05,4.A.3.b.1.I06.D12,https://github.com/poco-ai/poco-claw,"**Artifacts view**: render and preview many formats (HTML, PDF, Markdown, images, videos, Xmind, Excalidraw, Drawio, and more)"
@@ -3949,8 +3965,11 @@ ag_79f73ed176,4.A.3.b.4.I04.D06,https://aws.amazon.com/marketplace/pp/prodview-g
 ag_7a2a099fea,4.A.2.b.6.I02.D07,https://github.com/principia-ai/WriteHERE,Breaks down complex writing tasks into manageable subtasks
 ag_7a2a099fea,4.A.3.b.6.I03.D02,https://github.com/principia-ai/WriteHERE,Supports both creative fiction and technical report generation
 ag_7a2a099fea,4.A.3.b.6.I16.D02,https://github.com/principia-ai/WriteHERE,Supports both creative fiction and technical report generation
-ag_7a2f64c990,4.A.3.b.1.I01.D03,https://maige.app,"Maige can label, assign, comment, review code, and even run simple code snippets."
-ag_7a2f64c990,4.A.4.a.2.I03.D01,https://maige.app,"Maige can label, assign, comment, review code, and even run simple code snippets."
+ag_7a2f64c990,4.A.2.a.3.I01.D04,https://maige.app,"+ maige
+review
+all incoming PRs per our"
+ag_7a2f64c990,4.A.3.b.1.I01.D03,https://maige.app,+ Code generation
+ag_7a2f64c990,4.A.4.c.1.I01.D10,https://maige.app,"Maige can label, assign, comment, review code, and even run simple code snippets."
 ag_7a38a1b49b,4.A.2.a.3.I01.D02,https://aws.amazon.com/marketplace/pp/prodview-7ihkhko4wbhqe,IBC code compliance checks
 ag_7a38a1b49b,4.A.2.a.3.I02.D04,https://aws.amazon.com/marketplace/pp/prodview-7ihkhko4wbhqe,"The platform handles sheets, dimensions, details, schedules, IBC code checks, and drawing audits"
 ag_7a38a1b49b,4.A.2.b.2.I18.D07,https://aws.amazon.com/marketplace/pp/prodview-7ihkhko4wbhqe,the AI produces construction documents that follow your actual conventions - not generic templates.
@@ -4035,13 +4054,6 @@ ag_7c171fd050,4.A.2.a.4.I02.D06,https://aws.amazon.com/marketplace/pp/prodview-2
 ag_7c171fd050,4.A.2.b.1.I09.D04,https://aws.amazon.com/marketplace/pp/prodview-2okdekfzpigfo,"orchestrate cross-channel campaigns, and optimize continuously"
 ag_7c171fd050,4.A.2.b.2.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-2okdekfzpigfo,Creative for on-brand content generation
 ag_7c171fd050,4.A.4.a.6.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-2okdekfzpigfo,"AI agents autonomously discover high-value segments, generate on-brand creative, orchestrate cross-channel campaigns, and optimize continuously all within human-defined guardrails."
-ag_7c901dbf2b,4.A.1.a.1.I04.D07,https://github.com/anteloc/ldraw-nova,"For specific
-part questions, the [part-information guide](docs/agent/guides/part-information.md)
-explains SQL, regex, FTS, Jev, category and cached-dimension searches."
-ag_7c901dbf2b,4.A.1.b.2.I06.D09,https://github.com/anteloc/ldraw-nova,**Collision** and **gaps detection** for placing parts correctly.
-ag_7c901dbf2b,4.A.2.b.2.I11.D01,https://github.com/anteloc/ldraw-nova,"**Retrieves construction guidance and examples**, adapts their principles, and plans the structure, submodels and appearance."
-ag_7c901dbf2b,4.A.2.b.2.I11.D04,https://github.com/anteloc/ldraw-nova,"**ldraw-nova** provides the tools, examples and instructions an agent needs to design models with real LDraw parts."
-ag_7c901dbf2b,4.A.2.b.2.I18.D10,https://github.com/anteloc/ldraw-nova,"**Give an AI agent a model idea. Guide it, let it build it, and get an LDraw LEGO© model.**"
 ag_7c927fa4ce,4.A.1.a.2.I06.D01,https://github.com/nicobailon/pi-messenger,Agents idle too long with an open task or reservation are flagged as stuck.
 ag_7c927fa4ce,4.A.1.b.2.I06.D06,https://github.com/nicobailon/pi-messenger,Manual review of a specific task or the plan
 ag_7c927fa4ce,4.A.2.b.6.I02.D08,https://github.com/nicobailon/pi-messenger,"Planner explores the codebase and PRD, drafts tasks with dependencies."
@@ -4054,7 +4066,7 @@ ag_7c96633039,4.A.4.b.6.I04.D01,https://aws.amazon.com/marketplace/pp/prodview-h
 ag_7ca696cb2c,4.A.1.a.2.I03.D06,https://github.com/OpenTradeOSS/OpenTrade,"Also supported is the full research toolkit: quotes, historicals, fundamentals, news, SEC filings, earnings, technical indicators, scanners, watchlists, and price alerts."
 ag_7ca696cb2c,4.A.2.a.4.I02.D04,https://github.com/OpenTradeOSS/OpenTrade,"Also supported is the full research toolkit: quotes, historicals, fundamentals, news, SEC filings, earnings, technical indicators, scanners, watchlists, and price alerts."
 ag_7ca696cb2c,4.A.4.c.1.I03.D04,https://github.com/OpenTradeOSS/OpenTrade,Agents execute trades in your [Robinhood Agentic Trading](https://robinhood.com/us/en/agentic-trading/) account through the official MCP.
-ag_7cd7de9545,4.A.2.b.2.I02.D01,https://github.com/alfredfrancis/ai-chatbot-framework,"The agent can build small apps for you, like a daily **Cockpit** or a grocery list,"
+ag_7cd7de9545,4.A.2.b.2.I02.D04,https://github.com/alfredfrancis/ai-chatbot-framework,"The agent can build small apps for you, like a daily **Cockpit** or a grocery list,"
 ag_7cd7de9545,4.A.3.b.6.I08.D09,https://github.com/alfredfrancis/ai-chatbot-framework,"`context.md` (about you) and `memory.md` (what the agent remembers) are files
   the agent reads every turn and edits itself."
 ag_7ce3ab9fd8,4.A.2.a.2.I01.D07,https://github.com/jihe520/MathModelAgent,核对数值、引用、图表、编译与提交要求
@@ -4078,9 +4090,8 @@ ag_7d03542ef8,4.A.4.b.6.I07.D06,https://aws.amazon.com/marketplace/pp/prodview-d
 ag_7d03542ef8,4.A.4.c.2.I01.D05,https://aws.amazon.com/marketplace/pp/prodview-ds2pb7hyljcgm,Surface top candidates instantly across internal and external databases
 ag_7d03542ef8,4.A.4.c.2.I02.D02,https://aws.amazon.com/marketplace/pp/prodview-ds2pb7hyljcgm,Automate leave request processing and policy-based approvals
 ag_7d28e5f0e5,4.A.2.b.2.I02.D01,https://v0.app/,Generate working applications in minutes with AI.
-ag_7d28e5f0e5,4.A.2.b.2.I02.D08,https://v0.app/,"Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web."
-ag_7d28e5f0e5,4.A.2.b.6.I02.D07,https://v0.app/,"plans, creates tasks, and connects to databases as it builds."
-ag_7d28e5f0e5,4.A.3.b.1.I01.D03,https://v0.app/,Connect to GitHub and push code directly to your repository.
+ag_7d28e5f0e5,4.A.2.b.2.I02.D02,https://v0.app/,"Your collaborative AI assistant to design, iterate, and scale full-stack applications for the web."
+ag_7d28e5f0e5,4.A.2.b.2.I02.D08,https://v0.app/,Publish as live websites in seconds.
 ag_7d4403b922,4.A.1.a.1.I04.D05,https://aws.amazon.com/marketplace/pp/prodview-hhcmwpxckg2qc,retrieve the rest on demand during investigations
 ag_7d4403b922,4.A.1.a.2.I10.D01,https://aws.amazon.com/marketplace/pp/prodview-hhcmwpxckg2qc,automatically detects and investigates threats
 ag_7d4403b922,4.A.2.a.4.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-hhcmwpxckg2qc,applies AI-powered detection and investigation across all of them simultaneously
@@ -4122,9 +4133,8 @@ ag_7db11c7141,4.A.3.b.1.I04.D02,https://github.com/TrafficGuard/typedai,"Compile
 ag_7db1d49a0a,4.A.2.b.1.I02.D01,https://github.com/SWE-agent/SWE-agent,[find cybersecurity vulnerabilities](https://enigma-agent.com/)
 ag_7db1d49a0a,4.A.3.b.4.I01.D04,https://github.com/SWE-agent/SWE-agent,"SWE-agent takes a GitHub issue and tries to automatically fix it, using your LM of choice."
 ag_7dcddf7d76,4.A.2.a.4.I07.D02,https://github.com/disler/multi-agent-postgres-data-analytics,This is a multi-agent system that allows you to ask questions about your postgres database in natural language.
-ag_7dd60f7b34,4.A.2.b.6.I02.D02,https://github.com/Gentleman-Programming/gentle-shell,"the agent explores before changing anything, clarifies only real decisions, and keeps small understood work small"
-ag_7dd60f7b34,4.A.3.b.1.I01.D03,https://github.com/Gentleman-Programming/gentle-shell,behavior changes are test-first by default when a runnable test applies
-ag_7dd60f7b34,4.A.3.b.6.I08.D05,https://github.com/Gentleman-Programming/gentle-shell,"Substantial, authorized work gets one recoverable feature document — mirrored in memory when available — so progress, evidence, and the next step survive an interruption"
+ag_7dd60f7b34,4.A.3.b.1.I01.D03,https://github.com/Gentleman-Programming/gentle-shell,Your coding agent for controlled development in the workspace you lead.
+ag_7dd60f7b34,4.A.3.b.6.I08.D11,https://github.com/Gentleman-Programming/gentle-shell,"Substantial, authorized work gets one recoverable feature document — mirrored in memory when available — so progress, evidence, and the next step survive an interruption"
 ag_7ddde252a5,4.A.1.a.2.I08.D01,https://aws.amazon.com/marketplace/pp/prodview-rfrk3zedgeifk,"Kickstart the use AI Agents to detect early market signals, make informed decisions, and improve strategic planning and risk management."
 ag_7ddde252a5,4.A.2.a.4.I02.D04,https://aws.amazon.com/marketplace/pp/prodview-rfrk3zedgeifk,"Colibri Digital Market Analysis Agent delivers real-time sentiment analysis for commodities by ingesting and synthesising insights from global news, financial reports, and social media."
 ag_7de3c66b2c,4.A.1.a.2.I10.D03,https://aws.amazon.com/marketplace/pp/prodview-gswcaft2ylr7y,"It continuously monitors your code running in AWS, detects issues, identifies root causes using Dynatrace Intelligence"
@@ -4177,6 +4187,9 @@ ag_7ecb1d7283,4.A.4.a.2.I03.D01,https://github.com/mims-harvard/AutoScientists,A
 ag_7ecb1d7283,4.A.4.a.2.I03.D20,https://github.com/mims-harvard/AutoScientists,**share successes and failures** so the system avoids redundant exploration
 ag_7ecb1d7283,4.A.4.b.4.I12.D19,https://github.com/mims-harvard/AutoScientists,"The orchestrator is a pure coordinator — it launches agents and harvests their results, never trains anything itself."
 ag_7ef68e8208,4.A.3.b.1.I05.D01,https://github.com/THUDM/AutoWebGLM,AutoWebGLM is a project aimed at building a more efficient language model-driven automated web navigation agent.
+ag_7ef84f4ab4,4.A.1.a.2.I10.D03,https://github.com/ccfos/nightingale,"Nightingale queries your data sources, evaluates alert conditions, processes events, and routes notifications."
+ag_7ef84f4ab4,4.A.2.a.4.I07.D14,https://github.com/ccfos/nightingale,"Query related metrics and logs, inspect affected hosts, and explain findings using the data it retrieves."
+ag_7ef84f4ab4,4.A.2.b.1.I02.D01,https://github.com/ccfos/nightingale,"Inspect rules, evaluation logs, mute settings, event processing, and notification results to find why an alert did not fire or reach its destination."
 ag_7f26ccac26,4.A.1.a.1.I04.D07,https://github.com/bcefghj/smart-cs-multi-agent,先从知识库检索相关内容，再让AI生成回答
 ag_7f26ccac26,4.A.2.a.3.I01.D04,https://github.com/bcefghj/smart-cs-multi-agent,合规审查 Agent → 检查回复内容合规性
 ag_7f26ccac26,4.A.4.a.8.I03.D02,https://github.com/bcefghj/smart-cs-multi-agent,自动处理用户咨询、工单创建、知识检索等任务
@@ -4213,9 +4226,8 @@ ag_80057f7b73,4.A.3.b.1.I01.D03,https://aws.amazon.com/marketplace/pp/prodview-n
 ag_80154719b4,4.A.1.a.1.I04.D07,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,知识库与 RAG 检索召回相关资料
 ag_80154719b4,4.A.2.b.1.I07.D01,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,写法资产与反 AI 规则参与正文生成、检查和局部修文
 ag_80154719b4,4.A.2.b.2.I18.D02,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,从已有章节、人物与场景整理漫画分镜、角色视觉资产和短剧素材
-ag_80154719b4,4.A.2.b.2.I25.D05,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,自动导演整理题材、卖点、人物目标和候选方向
 ag_80154719b4,4.A.3.b.6.I08.D09,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,保存本书世界、角色、关系和章节状态
-ag_80154719b4,4.A.3.b.6.I16.D02,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,逐章写作
+ag_80154719b4,4.A.3.b.6.I16.D02,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,在本次授权范围内补齐所需规划，写正文、检查和保存，普通阶段结果自动继续
 ag_80543e5310,4.A.1.a.2.I02.D10,https://aws.amazon.com/marketplace/pp/prodview-spuwfzrt2fkga,Real-time visibility across entire supply chain
 ag_80543e5310,4.A.1.a.2.I08.D01,https://aws.amazon.com/marketplace/pp/prodview-spuwfzrt2fkga,"Assesses external trends, competitor pricing, economic indicators, and supply chain disruptions to refine demand forecasts and identify market opportunities."
 ag_80543e5310,4.A.2.a.4.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-spuwfzrt2fkga,Leverages AWS Forecast to predict demand across SKUs and store locations for 2-3 months
@@ -4243,7 +4255,7 @@ ag_80ab385966,4.A.2.b.2.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-3
 ag_80ab385966,4.A.2.b.2.I18.D17,https://aws.amazon.com/marketplace/pp/prodview-3vuhpvnyladaq,"design documents, concept art and mockups, 3D assets, runnable playable games, and promotional trailers"
 ag_80accb485b,4.A.1.a.2.I10.D01,https://github.com/vigolium/vigolium,"High-fidelity vulnerability scanner fusing agentic AI with native speed, modularity, and precision"
 ag_80accb485b,4.A.2.a.4.I12.D02,https://github.com/vigolium/vigolium,"AI-driven scanning that autonomously plans attacks, selects modules, generates custom extensions, and triages results"
-ag_80accb485b,4.A.3.b.6.I03.D05,https://github.com/vigolium/vigolium,self-contained HTML reports
+ag_80accb485b,4.A.3.b.6.I03.D01,https://github.com/vigolium/vigolium,self-contained HTML reports
 ag_80c92208a7,4.A.2.a.2.I01.D06,https://aws.amazon.com/marketplace/pp/prodview-deko62qeonm6c,"Grade every extracted field by confidence, blocking low-confidence or conflicting values for human decision"
 ag_80c92208a7,4.A.2.a.4.I07.D14,https://aws.amazon.com/marketplace/pp/prodview-deko62qeonm6c,"Detect post-pay-date breaks and diagnose ranked, evidence-backed root causes"
 ag_80c92208a7,4.A.2.a.4.I11.D02,https://aws.amazon.com/marketplace/pp/prodview-deko62qeonm6c,"diagnoses reconciliation breaks with ranked, evidence-backed causes"
@@ -4258,12 +4270,9 @@ ag_81028b3bf1,4.A.3.b.1.I04.D02,https://aws.amazon.com/marketplace/pp/prodview-l
 ag_81028b3bf1,4.A.3.b.6.I08.D14,https://aws.amazon.com/marketplace/pp/prodview-ldeqyl7ldbnpo,"Convert conversations into enriched tickets with user, device, system, priority, historical, and assignment context for faster triage and routing."
 ag_81028b3bf1,4.A.4.a.8.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-ldeqyl7ldbnpo,"Automate common approved requests such as password resets, access provisioning, software installs, troubleshooting steps, and knowledge-guided support."
 ag_81028b3bf1,4.A.4.b.6.I04.D02,https://aws.amazon.com/marketplace/pp/prodview-ldeqyl7ldbnpo,"Increase service desk productivity with AI-generated next-best actions, remediation steps, scripts, and knowledge recommendations."
-ag_8106f5b68a,4.A.1.a.1.I04.D05,https://github.com/ai4s-research/open-science,The agent can drive your own Chrome — profile and logins intact — to read the live web the way you do
-ag_8106f5b68a,4.A.3.b.1.I01.D03,https://github.com/ai4s-research/open-science,"exploration, literature survey, hypothesis, experiment code, analysis, figures, and
-write-up"
 ag_8106f5b68a,4.A.3.b.1.I05.D01,https://github.com/ai4s-research/open-science,"The agent can now operate desktop apps like ImageJ, Origin and instrument software"
-ag_8106f5b68a,4.A.3.b.6.I03.D03,https://github.com/ai4s-research/open-science,"exploration, literature survey, hypothesis, experiment code, analysis, figures, and
-write-up"
+ag_8106f5b68a,4.A.3.b.6.I03.D03,https://github.com/ai4s-research/open-science,"exploration, literature survey, hypothesis, experiment code, analysis, figures, and"
+ag_8106f5b68a,4.A.3.b.6.I08.D18,https://github.com/ai4s-research/open-science,are captured as reproducible run records
 ag_814b0adbc5,4.A.3.b.1.I01.D03,https://github.com/AFK-surf/Comma,A Loop is a small program that your agent writes.
 ag_814b0adbc5,4.A.3.b.1.I05.D01,https://github.com/AFK-surf/Comma,"When you turn on Allow operations, it can also change files, run
   commands, and hand work to Codex, Claude Code, Pi, or Kimi."
@@ -4271,9 +4280,10 @@ ag_814b0adbc5,4.A.4.b.4.I12.D37,https://github.com/AFK-surf/Comma,Comma automati
 ag_815758b7c5,4.A.1.a.2.I02.D20,https://github.com/trackersnailgrip/GitHub-Copilot-app,"Agent Merge helps carry pull requests through review, checks, and merge conditions so you stay focused on judgment, quality, and delivery."
 ag_815758b7c5,4.A.3.b.1.I01.D03,https://github.com/trackersnailgrip/GitHub-Copilot-app,"That means you can have Copilot investigate bugs, implement issues, address review feedback, or explore changes side by side without branches or files colliding."
 ag_815758b7c5,4.A.4.b.4.I12.D01,https://github.com/trackersnailgrip/GitHub-Copilot-app,Automations turn repeatable prompts and workflows into scheduled or background tasks.
-ag_8177187b62,4.A.1.a.2.I10.D03,https://github.com/Gnosil/semantix,`semantix-agent` displays the current turn's rate alongside the session average in its status line
-ag_8177187b62,4.A.2.a.4.I12.D02,https://github.com/Gnosil/semantix,Prefix hygiene** — per-request attribution markers are stripped and the tool array is canonicalized by name
-ag_8177187b62,4.A.3.b.1.I02.D02,https://github.com/Gnosil/semantix,semantix extract --input session.jsonl --db .semantix/project.db --project demo
+ag_8177187b62,4.A.1.a.1.I04.D07,https://github.com/Gnosil/semantix,Retrieve relevant slices and assemble a budgeted context block with provenance
+ag_8177187b62,4.A.2.a.2.I01.D02,https://github.com/Gnosil/semantix,L3 checks captured dependency files using mtimes and SHA-256 fingerprints.
+ag_8177187b62,4.A.3.b.1.I06.D12,https://github.com/Gnosil/semantix,`semantix-gateway` removes recognized attribution/billing marker lines from the head of the first system message and sorts tools by name by default.
+ag_8177187b62,4.A.3.b.6.I08.D14,https://github.com/Gnosil/semantix,"Semantix extracts reusable **slices** from finished sessions — task patterns, project knowledge, tool sequences and results — into a local scored library"
 ag_8187832c27,4.A.1.a.1.I04.D03,https://github.com/MODSetter/SurfSense,"Search Google and read its results, ads and related questions"
 ag_8187832c27,4.A.1.a.1.I04.D07,https://github.com/MODSetter/SurfSense,Research (cited answers)
 ag_8187832c27,4.A.2.a.4.I04.D02,https://github.com/MODSetter/SurfSense,"Analyse with pandas, chart the results"
@@ -4301,9 +4311,10 @@ ag_8231be2bc1,4.A.1.a.2.I10.D02,https://aws.amazon.com/marketplace/pp/prodview-n
 ag_8231be2bc1,4.A.2.b.1.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-n5mzrcw4jqwvq,"autonomously investigate alerts, identify probable root causes, and produce GenAI SMART notifications, with contextual findings and recommended remediation"
 ag_8231be2bc1,4.A.3.b.6.I08.D01,https://aws.amazon.com/marketplace/pp/prodview-n5mzrcw4jqwvq,Ops Assist integrates with ServiceNow to route SEIM findings and P1/P2 incidents as context-rich tickets prepopulated with investigation findings and recommended actions
 ag_8231be2bc1,4.A.4.a.2.I08.D01,https://aws.amazon.com/marketplace/pp/prodview-n5mzrcw4jqwvq,"produce GenAI SMART notifications, with contextual findings and recommended remediation"
-ag_8284878223,4.A.2.b.5.I03.D01,https://github.com/TencentCloud/Octop,manage your schedule
+ag_8284878223,4.A.1.a.1.I04.D07,https://github.com/TencentCloud/Octop,RAG over your documents; share corpora within a deployment and ground answers in your private data
 ag_8284878223,4.A.3.b.1.I01.D03,https://github.com/TencentCloud/Octop,delegate coding tasks to OpenCode / Claude Code via ACP
-ag_8284878223,4.A.3.b.6.I03.D06,https://github.com/TencentCloud/Octop,"let a dedicated agent write weekly reports, organize notes, and manage your schedule"
+ag_8284878223,4.A.3.b.1.I04.D02,https://github.com/TencentCloud/Octop,AI-assisted command execution and troubleshooting
+ag_8284878223,4.A.3.b.6.I15.D04,https://github.com/TencentCloud/Octop,"let a dedicated agent write weekly reports, organize notes, and manage your schedule"
 ag_82f7018645,4.A.2.b.2.I02.D01,https://github.com/ConardLi/easy-llm-cli,Write me a Discord bot that answers questions using a FAQ.md file I will provide
 ag_82f7018645,4.A.2.b.2.I02.D04,https://github.com/ConardLi/easy-llm-cli,Make a full-screen web app for a wall display to show our most interacted-with GitHub issues.
 ag_82f7018645,4.A.4.a.5.I01.D01,https://github.com/ConardLi/easy-llm-cli,Organize my PDF invoices by month of expenditure.
@@ -4386,8 +4397,8 @@ reads a person back from a LinkedIn URL already on their record"
 ag_84de2ecd8e,4.A.2.b.5.I02.D07,https://github.com/trycompai/crm,books its own follow-ups
 ag_84de2ecd8e,4.A.3.b.6.I08.D14,https://github.com/trycompai/crm,Strong evidence writes to the record.
 ag_84e3dd6197,4.A.1.a.2.I10.D01,https://www.blackbox.ai/,AI security agents watch every GPU machine your models run on and fix what they find.
-ag_84e3dd6197,4.A.1.a.2.I10.D03,https://www.blackbox.ai/,Security agents watch every GPU machine.
-ag_84e3dd6197,4.A.1.b.2.I08.D02,https://www.blackbox.ai/,Training agents keep improving your models against the benchmarks you set.
+ag_84e3dd6197,4.A.2.a.4.I12.D02,https://www.blackbox.ai/,AI security agents keep scanning every GPU machine your models run on.
+ag_84e3dd6197,4.A.3.b.1.I02.D01,https://www.blackbox.ai/,"all other inbound dropped, the ports Docker publishes too"
 ag_84e3dd6197,4.A.3.b.1.I03.D01,https://www.blackbox.ai/,security updates installed by name
 ag_855a5026a2,4.A.2.b.6.I02.D08,https://github.com/OpenBMB/XAgent,"It divides tasks into subtasks and generates milestones for them, allowing agents to solve tasks step by step."
 ag_855a5026a2,4.A.4.a.1.I04.D03,https://github.com/OpenBMB/XAgent,provides a web browser to search and visit webpages
@@ -4529,7 +4540,7 @@ ag_89585de686,4.A.2.a.3.I01.D04,https://aws.amazon.com/marketplace/pp/prodview-j
 ag_89585de686,4.A.3.b.1.I06.D06,https://aws.amazon.com/marketplace/pp/prodview-j222wziqh6hd6,"Extract structured and unstructured data from ISDA, CSA, KYC, onboarding, and trade confirmation documents"
 ag_89585de686,4.A.3.b.6.I08.D09,https://aws.amazon.com/marketplace/pp/prodview-j222wziqh6hd6,Maintain complete audit trails and end-to-end document lineage
 ag_89585de686,4.A.4.c.1.I01.D02,https://aws.amazon.com/marketplace/pp/prodview-j222wziqh6hd6,Ingest and automatically classify complex financial and legal documents
-ag_89851b73cf,4.A.1.a.1.I04.D03,https://github.com/osaurus-ai/osaurus,**Research** (web search with sources)
+ag_89851b73cf,4.A.1.a.1.I04.D03,https://github.com/osaurus-ai/osaurus,web search with sources
 ag_89851b73cf,4.A.2.b.2.I18.D20,https://github.com/osaurus-ai/osaurus,generate and edit images on-device with local image models
 ag_89851b73cf,4.A.3.b.6.I08.D16,https://github.com/osaurus-ai/osaurus,on-device transcription
 ag_89e8944659,4.A.1.a.1.I23.D08,https://github.com/evolution-foundation/evo-nexus,interviews you about your business
@@ -4597,10 +4608,10 @@ ag_8b7d2e221d,4.A.3.b.1.I04.D03,https://github.com/JetBrains/junie,Fix the faili
 ag_8b8470ee8f,4.A.1.a.1.I02.D07,https://github.com/myshell-ai/AIlice,The ability to read and analyze articles and scholarly works.
 ag_8b8470ee8f,4.A.2.b.2.I23.D04,https://github.com/myshell-ai/AIlice,In-depth research capabilities on specialized subjects.
 ag_8b8470ee8f,4.A.3.b.1.I01.D03,https://github.com/myshell-ai/AIlice,"Advanced automation in programming and script execution, functioning as a comprehensive coder and an efficient system management tool"
-ag_8b95fb0d0f,4.A.1.a.1.I04.D05,https://github.com/agentpit-io/hunter-community,查行情、拉新闻
-ag_8b95fb0d0f,4.A.2.a.3.I03.D02,https://github.com/agentpit-io/hunter-community,读 PDF 财报
+ag_8b95fb0d0f,4.A.1.a.1.I04.D05,https://github.com/agentpit-io/hunter-community,查行情、拉新闻、读 PDF 财报
 ag_8b95fb0d0f,4.A.2.a.4.I02.D04,https://github.com/agentpit-io/hunter-community,预测走势
-ag_8b95fb0d0f,4.A.2.a.4.I11.D04,https://github.com/agentpit-io/hunter-community,做个股深度分析
+ag_8b95fb0d0f,4.A.2.a.4.I03.D03,https://github.com/agentpit-io/hunter-community,portfolio_risk_check`（组合风险巡检）
+ag_8b95fb0d0f,4.A.2.a.4.I11.D02,https://github.com/agentpit-io/hunter-community,做个股深度分析
 ag_8bcc074091,4.A.1.a.1.I02.D01,https://github.com/AutoLab-SAI-SJTU/Paper2Rebuttal,🔍 **Issue Extraction**: Breaks down reviewer comments into actionable issues with priority levels
 ag_8bcc074091,4.A.1.a.1.I04.D07,https://github.com/AutoLab-SAI-SJTU/Paper2Rebuttal,📚 **Literature Search**: Automatically searches arXiv for relevant supporting papers
 ag_8bcc074091,4.A.2.a.1.I08.D01,https://github.com/AutoLab-SAI-SJTU/Paper2Rebuttal,| **Reference Analyzer** | Analyzes supporting literature |
@@ -4668,12 +4679,10 @@ ag_8d87c74bc0,4.A.2.b.2.I18.D14,https://github.com/s2b-dev/smart-second-brain,dr
 ag_8dc9c8896c,4.A.1.a.1.I04.D03,https://github.com/assafelovic/gpt-researcher,Use a crawler agent for gathering information for each question.
 ag_8dc9c8896c,4.A.2.b.2.I23.D01,https://github.com/assafelovic/gpt-researcher,Generate questions that collectively form an objective opinion on the task.
 ag_8dc9c8896c,4.A.3.b.6.I03.D03,https://github.com/assafelovic/gpt-researcher,"The agent produces detailed, factual, and unbiased research reports with citations."
-ag_8dcc0c1b05,4.A.1.a.2.I03.D06,https://www.lindy.ai/,"Every morning at 8am, I check spend, ROAS and CPA against target, pause what’s wasting money and move budget to what’s working."
-ag_8dcc0c1b05,4.A.2.b.5.I03.D01,https://www.lindy.ai/,Times found and booked across calendars and time zones.
-ag_8dcc0c1b05,4.A.3.b.1.I06.D06,https://www.lindy.ai/,Every call and deal logged as it happens.
+ag_8dcc0c1b05,4.A.2.a.2.I02.D06,https://www.lindy.ai/,"I research them, score the fit and draft a personal reply within minutes."
+ag_8dcc0c1b05,4.A.2.b.5.I03.D01,https://www.lindy.ai/,Appointments booked straight onto your calendar.
 ag_8dcc0c1b05,4.A.3.b.6.I03.D05,https://www.lindy.ai/,"Every Friday I pull each client’s numbers and draft their report in your format, ready for your OK."
-ag_8dcc0c1b05,4.A.3.b.6.I16.D03,https://www.lindy.ai/,"Every Thursday, I draft next week’s posts from this week’s news, calls and wins, and send them to you for approval."
-ag_8dcc0c1b05,4.A.4.a.2.I03.D10,https://www.lindy.ai/,"Every morning I send what changed across your clients overnight, what’s on today and the few things that need you."
+ag_8dcc0c1b05,4.A.4.a.3.I03.D11,https://www.lindy.ai/,"I pick up your calls and fill your calendar, day or night."
 ag_8dcc0c1b05,4.A.4.a.8.I03.D02,https://www.lindy.ai/,"Every new lead gets a fast, personal reply, even after hours, so nothing goes cold."
 ag_8dcc0c1b05,4.A.4.c.3.I04.D03,https://www.lindy.ai/,"Every week I follow up on open proposals and overdue invoices by email, and by phone when it drags on, until they’re signed or paid."
 ag_8dd6ca9c7f,4.A.3.b.1.I05.D01,https://github.com/AQBot-Desktop/AQBot,让模型在所选工作目录中读取/编辑文件、执行命令并分析代码
@@ -4726,6 +4735,13 @@ ag_8eeeef160f,4.A.2.b.5.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-z
 ag_8eeeef160f,4.A.3.b.6.I12.D10,https://aws.amazon.com/marketplace/pp/prodview-zftgdvz5ignlq,create training content
 ag_8eeeef160f,4.A.4.a.1.I02.D04,https://aws.amazon.com/marketplace/pp/prodview-zftgdvz5ignlq,facilitate easy access to HR policies
 ag_8eeeef160f,4.A.4.c.2.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-zftgdvz5ignlq,"Automates recruitment, training, and performance evaluation processes"
+ag_8efd3d3370,4.A.1.a.1.I02.D01,https://github.com/gmickel/flow-next,Reads the issue with the access you already have and routes on what it says.
+ag_8efd3d3370,4.A.1.a.1.I04.D07,https://github.com/gmickel/flow-next,"Answers from git history and the project's decision memory, with citations."
+ag_8efd3d3370,4.A.1.b.2.I08.D03,https://github.com/gmickel/flow-next,Measures the real page before touching anything.
+ag_8efd3d3370,4.A.3.b.1.I01.D03,https://github.com/gmickel/flow-next,"builds it, has it reviewed, and opens a PR"
+ag_8efd3d3370,4.A.3.b.1.I04.D03,https://github.com/gmickel/flow-next,"Turns the failure into a failing test, fixes the cause, and shows you the test going from red to green."
+ag_8efd3d3370,4.A.3.b.6.I08.D11,https://github.com/gmickel/flow-next,writes every call it made on your behalf into the PR
+ag_8efd3d3370,4.A.3.b.6.I09.D04,https://github.com/gmickel/flow-next,Writes a spec with numbered acceptance criteria
 ag_8effa64f16,4.A.1.a.2.I10.D03,https://aws.amazon.com/marketplace/pp/prodview-n25ztvlojfrsk,Every model call is traced with per-project cost accounting.
 ag_8effa64f16,4.A.1.b.2.I08.D03,https://aws.amazon.com/marketplace/pp/prodview-n25ztvlojfrsk,"Fabric's agents produce code as reviewable pull requests, plus tests, reviews, and eval suites"
 ag_8effa64f16,4.A.2.a.2.I01.D07,https://aws.amazon.com/marketplace/pp/prodview-n25ztvlojfrsk,Releases clear a negotiated eval bar before go-live.
@@ -4796,8 +4812,8 @@ ag_9074426ef7,4.A.4.c.3.I04.D03,https://aws.amazon.com/marketplace/pp/prodview-m
 ag_90915ec7b0,4.A.1.b.2.I06.D09,https://github.com/Agent-Field/pr-af,Posts inline GitHub review comments with evidence-grounded findings
 ag_90915ec7b0,4.A.2.a.1.I07.D09,https://github.com/Agent-Field/pr-af,PR-AF clusters related risks across files and evaluates whether isolated findings combine into a larger systemic issue.
 ag_90915ec7b0,4.A.4.b.6.I05.D12,https://github.com/Agent-Field/pr-af,"Findings that survive are returned with file, line, body, suggestion, and evidence."
-ag_909e033d03,4.A.3.b.1.I03.D01,https://github.com/NPC-Worldwide/npcsh,walks you through installing the `npcpy` Python backend
-ag_909e033d03,4.A.3.b.1.I05.D02,https://github.com/NPC-Worldwide/npcsh,"`npcsh` interprets bash and natural language seamlessly within a single interface, making the most of LLMs and agents through an interactive shell."
+ag_909e033d03,4.A.3.b.1.I05.D01,https://github.com/NPC-Worldwide/npcsh,"`npcsh` interprets bash and natural language seamlessly within a single interface, making the most of LLMs and agents through an interactive shell."
+ag_909e033d03,4.A.4.a.2.I03.D01,https://github.com/NPC-Worldwide/npcsh,Delegate to a coding agent:
 ag_90cef3740b,4.A.1.b.2.I08.D03,https://aws.amazon.com/marketplace/pp/prodview-xyxrkwgxsneqg,"Tester AI creates test suites covering unit, integration and end-to-end scenarios, generated from requirements."
 ag_90cef3740b,4.A.2.b.1.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-xyxrkwgxsneqg,"Debug AI (shared with OPERATE) analyzes errors, traces execution paths and identifies root causes during development, before code reaches production."
 ag_90cef3740b,4.A.2.b.2.I02.D10,https://aws.amazon.com/marketplace/pp/prodview-xyxrkwgxsneqg,"Coder AI generates code from architectural specifications, following your style guidelines and handling edge cases."
@@ -4872,8 +4888,9 @@ ag_9380a133eb,4.A.1.a.1.I04.D05,https://github.com/hexdocom/lemonai,Browser oper
 ag_9380a133eb,4.A.2.b.1.I07.D02,https://github.com/hexdocom/lemonai,"Lemon AI Editor lets you continuously edit, modify, and refine your generated HTML pages."
 ag_9380a133eb,4.A.3.b.1.I01.D03,https://github.com/hexdocom/lemonai,Code generation & data analysis
 ag_9380a133eb,4.A.3.b.6.I03.D03,https://github.com/hexdocom/lemonai,Deep search & research reports
-ag_93ea01cec4,4.A.3.b.1.I01.D03,https://github.com/he-yufeng/CoreCoder,"it reads the file, edits the code, runs it once to confirm, then reports back on its own"
-ag_93ea01cec4,4.A.3.b.1.I04.D03,https://github.com/he-yufeng/CoreCoder,"ask it to fix buggy.py and it reads the file, edits the code, runs it once to confirm"
+ag_93ea01cec4,4.A.1.b.2.I08.D03,https://github.com/he-yufeng/CoreCoder,"runs it once to confirm, then reports back on its own"
+ag_93ea01cec4,4.A.3.b.1.I01.D03,https://github.com/he-yufeng/CoreCoder,"it reads the file, edits the code, runs it once to confirm"
+ag_93ea01cec4,4.A.3.b.1.I04.D03,https://github.com/he-yufeng/CoreCoder,ask it to fix buggy.py and it reads the file
 ag_942a9a5386,4.A.1.b.2.I08.D03,https://aws.amazon.com/marketplace/pp/prodview-bybzif4r4zspe,enabling automated regression testing on every deployment
 ag_942a9a5386,4.A.2.b.2.I02.D07,https://aws.amazon.com/marketplace/pp/prodview-bybzif4r4zspe,"KushoAI intelligently updates test cases as APIs and workflows change, reducing maintenance overhead."
 ag_942a9a5386,4.A.2.b.4.I03.D15,https://aws.amazon.com/marketplace/pp/prodview-bybzif4r4zspe,"It automatically generates comprehensive API tests from your endpoints, schemas, and workflows"
@@ -4886,10 +4903,9 @@ ag_946048285b,4.A.3.b.6.I07.D01,https://aws.amazon.com/marketplace/pp/prodview-e
 ag_946048285b,4.A.4.a.8.I03.D06,https://aws.amazon.com/marketplace/pp/prodview-eh2mayr7ksdvc,Monce sends and follows up automatically on your schedule until the customer responds.
 ag_946048285b,4.A.4.c.1.I03.D10,https://aws.amazon.com/marketplace/pp/prodview-eh2mayr7ksdvc,"A customer sends a quote request by email, PDF, or phone."
 ag_946048285b,4.A.4.c.1.I05.D03,https://aws.amazon.com/marketplace/pp/prodview-eh2mayr7ksdvc,Monce sends it to the customer and follows up automatically on your schedule.
-ag_94a0976317,4.A.3.b.1.I02.D02,https://github.com/lambda-symbolics/autolith,"Autolith creates generations of this
-image that you or AL can roll back to."
-ag_94a0976317,4.A.3.b.1.I04.D03,https://github.com/lambda-symbolics/autolith,"AL will just reload into a recovery image and diagnose and optionally fix the
-issue."
+ag_94a0976317,4.A.2.b.2.I02.D07,https://github.com/lambda-symbolics/autolith,This lets Autolith adapt to the user's preferences or to what is needed
+ag_94a0976317,4.A.3.b.1.I02.D02,https://github.com/lambda-symbolics/autolith,Autolith creates generations of this
+ag_94a0976317,4.A.3.b.1.I04.D02,https://github.com/lambda-symbolics/autolith,AL will just reload into a recovery image and diagnose and optionally fix the
 ag_94a30841ad,4.A.2.a.2.I01.D07,https://aws.amazon.com/marketplace/pp/prodview-jhfbkyzzlhdh4,"Intelligent agents aggregate and validate data, uncover key drivers, update rolling forecasts, detect anomalies"
 ag_94a30841ad,4.A.2.a.4.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-jhfbkyzzlhdh4,generating probabilistic forecasts under various assumptions and quantifying risk
 ag_94a30841ad,4.A.2.a.4.I04.D02,https://aws.amazon.com/marketplace/pp/prodview-jhfbkyzzlhdh4,"Advanced time series analysis is applied to historical data, detecting trends, growth rates, cyclical patterns, and anomalies that may impact future performance."
@@ -5059,9 +5075,9 @@ ag_99b4f23c75,4.A.3.b.1.I01.D03,https://github.com/topapothecarycanal/ai--manus2
 ag_99b4f23c75,4.A.3.b.1.I05.D01,https://github.com/topapothecarycanal/ai--manus2.0,Manus is an autonomous AI agent designed to run code and control a browser on your behalf.
 ag_99b4f23c75,4.A.3.b.1.I06.D06,https://github.com/topapothecarycanal/ai--manus2.0,"Manus browser control lets the agent navigate websites, fill forms, and gather information without you manually clicking through every page."
 ag_99b972ae0d,4.A.2.b.6.I02.D08,https://github.com/MineDojo/Voyager,"Then, you can run task decomposition."
+ag_99d5e2cc1f,4.A.1.a.1.I04.D07,https://github.com/opencrabs/opencrabs,deep research
 ag_99d5e2cc1f,4.A.2.b.5.I02.D07,https://github.com/opencrabs/opencrabs,schedule tasks and events
 ag_99d5e2cc1f,4.A.3.b.1.I01.D03,https://github.com/opencrabs/opencrabs,"Build mobile apps, frontend, backend"
-ag_99d5e2cc1f,4.A.3.b.6.I08.D09,https://github.com/opencrabs/opencrabs,manages files
 ag_99e1cc2b68,4.A.2.b.6.I02.D09,https://github.com/felixbrock/lemon-agent,Via the UI the user then directly chats with the planner agent to define how to solve a given task.
 ag_99e1cc2b68,4.A.3.b.1.I01.D02,https://github.com/felixbrock/lemon-agent,Lemon Agent is a standalone supervised Plan and Solve Agent
 ag_99e1cc2b68,4.A.4.a.2.I03.D01,https://github.com/felixbrock/lemon-agent,"the planner agent then starts communicating with the solver agent, which, finally, executes a given workflow step by making use of the multiple tools that are available to the Lemon Agent."
@@ -5069,6 +5085,8 @@ ag_99fd99384c,4.A.1.a.2.I10.D01,https://github.com/google/mantis,"A modular, sta
 ag_99fd99384c,4.A.1.b.2.I08.D03,https://github.com/google/mantis,"Reproduce the vulnerability to varying degrees, depending on available"
 ag_99fd99384c,4.A.2.a.4.I12.D02,https://github.com/google/mantis,Triage/critique findings to combat hallucination and statically verify
 ag_99fd99384c,4.A.2.b.2.I08.D02,https://github.com/google/mantis,Automatically generate a threat model
+ag_9a20551456,4.A.1.a.1.I04.D05,https://www.getwren.ai/blog,"Wren retrieves the right business context, writes and validates the SQL, and runs it against your own database."
+ag_9a20551456,4.A.3.b.1.I01.D03,https://www.getwren.ai/blog,"Wren retrieves the right business context, writes and validates the SQL, and runs it against your own database."
 ag_9a56be8914,4.A.1.a.1.I04.D05,https://github.com/aden-hive/hive,checks the numbers against the Hacker News API
 ag_9a56be8914,4.A.2.a.2.I01.D07,https://github.com/aden-hive/hive,"She checks every row before she answers, and fixes one."
 ag_9a56be8914,4.A.3.b.6.I08.D03,https://github.com/aden-hive/hive,"Each follows her skill and writes its result to the colony's tracker, a shared SQLite table."
@@ -5138,6 +5156,11 @@ ag_9d3d7dd494,4.A.1.a.1.I04.D03,https://github.com/CRui5in/paper-ppt-agent,外�
 ag_9d3d7dd494,4.A.2.a.2.I01.D06,https://github.com/CRui5in/paper-ppt-agent,自动检测文字溢出、元素重叠、低对比度等问题并触发修复
 ag_9d3d7dd494,4.A.2.b.2.I18.D14,https://github.com/CRui5in/paper-ppt-agent,公式通过本地 MathJax 排版为可编辑矢量图形
 ag_9d3d7dd494,4.A.3.b.6.I12.D09,https://github.com/CRui5in/paper-ppt-agent,由 AI 完成内容提炼、结构规划、版式设计与视觉质量审查，最终输出可编辑的 PowerPoint 文件
+ag_9d4e078502,4.A.1.a.2.I10.D01,https://github.com/0sec-labs/0security,"**Map your attack surface**: domains, JavaScript, cloud and Entra ID posture"
+ag_9d4e078502,4.A.1.b.2.I08.D03,https://github.com/0sec-labs/0security,**Test AI agents** with prompt-injection campaigns
+ag_9d4e078502,4.A.2.a.4.I12.D02,https://github.com/0sec-labs/0security,"**Find vulnerabilities** in source code, web apps and APIs, MCP endpoints and packages"
+ag_9d4e078502,4.A.2.b.1.I06.D01,https://github.com/0sec-labs/0security,"**Verify and fix**: reproduce findings, generate patches and validate each one"
+ag_9d4e078502,4.A.3.b.6.I02.D06,https://github.com/0sec-labs/0security,**Disclose**: assemble GHSA-ready advisory drafts from saved findings
 ag_9d76006a79,4.A.1.a.1.I04.D03,https://github.com/abacusai/abacusai-bot,"Search the web and connected sources, monitor a topic, and produce cited reports."
 ag_9d76006a79,4.A.3.b.1.I01.D03,https://github.com/abacusai/abacusai-bot,"Ask for a fix at 2am. The bot edits the code, runs the tests, opens the pull request."
 ag_9d76006a79,4.A.3.b.6.I03.D03,https://github.com/abacusai/abacusai-bot,"Search the web and connected sources, monitor a topic, and produce cited reports."
@@ -5373,10 +5396,9 @@ ag_a4cdb38ac2,4.A.1.b.2.I08.D02,https://aws.amazon.com/marketplace/pp/prodview-n
 ag_a4cdb38ac2,4.A.2.a.2.I01.D07,https://aws.amazon.com/marketplace/pp/prodview-n2wm4xl2dicta,"Prioritize real risk with automated vulnerability triage, validating findings from tools such as Tenable and Qualys to eliminate false positives"
 ag_a4cdb38ac2,4.A.2.a.4.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-n2wm4xl2dicta,enabling organizations to identify and validate real-world exploitable risk across modern cloud environments
 ag_a50812c342,4.A.1.a.1.I04.D03,https://github.com/ai-job-search-dev/ai-job-search,/scrape finds new postings
-ag_a50812c342,4.A.2.a.1.I07.D09,https://github.com/ai-job-search-dev/ai-job-search,evaluate postings
-ag_a50812c342,4.A.3.b.6.I12.D10,https://github.com/ai-job-search-dev/ai-job-search,"tailor CVs, write cover letters, prep interviews"
-ag_a50812c342,4.A.3.b.6.I13.D04,https://github.com/ai-job-search-dev/ai-job-search,/apply tailors a CV and cover letter
-ag_a50812c342,4.A.3.b.6.I16.D03,https://github.com/ai-job-search-dev/ai-job-search,write cover letters
+ag_a50812c342,4.A.3.b.6.I08.D09,https://github.com/ai-job-search-dev/ai-job-search,/outcome tracks each result
+ag_a50812c342,4.A.4.b.6.I07.D06,https://github.com/ai-job-search-dev/ai-job-search,prepare you for interviews
+ag_a50812c342,4.A.4.c.1.I01.D04,https://github.com/ai-job-search-dev/ai-job-search,write cover letters
 ag_a50956619d,4.A.1.a.1.I04.D05,https://github.com/noho/dayu-agent,财报数据管线：美股 / A 股 / 港股财报下载，美股 / A 股 / 港股财报上传。
 ag_a50956619d,4.A.3.b.1.I06.D12,https://github.com/noho/dayu-agent,结果渲染：把 Markdown 报告渲染为 HTML / PDF / Word。
 ag_a50956619d,4.A.3.b.6.I03.D01,https://github.com/noho/dayu-agent,买方分析报告写作：下载、上传财报后，执行 `write` 写作。
@@ -5402,6 +5424,7 @@ ag_a5f4291220,4.A.3.b.6.I08.D30,https://aws.amazon.com/marketplace/pp/prodview-7
 ag_a5f4291220,4.A.3.b.6.I09.D02,https://aws.amazon.com/marketplace/pp/prodview-7qnp7un5xhdiq,"Rhino generates implementation-ready deliverables - user stories, test cases, ERDs, flow diagrams, and architecture documentation"
 ag_a60290ab21,4.A.2.b.2.I23.D01,https://github.com/Narcooo/inkos,Skill 只向 Chat Agent 提供专业说明和静态参考资料，不会增加执行权限
 ag_a6085ca9d3,4.A.3.b.1.I01.D03,https://github.com/QwenLM/qwen-code,An open-source AI coding agent that lives in your terminal.
+ag_a6085ca9d3,4.A.4.a.1.I01.D04,https://github.com/QwenLM/qwen-code,Explain this repository and show me where to start.
 ag_a6103b8ca9,4.A.1.a.2.I02.D10,https://aws.amazon.com/marketplace/pp/prodview-326msnm33wo2u,"purchase order processing, supplier coordination, and logistics tracking"
 ag_a6103b8ca9,4.A.2.a.4.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-326msnm33wo2u,"Qurrent's agents analyze historical sales data, seasonal trends, and external market signals to forecast demand with high precision."
 ag_a6103b8ca9,4.A.2.b.5.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-326msnm33wo2u,coordinating complex interview schedules for new operations staff
@@ -5583,9 +5606,9 @@ ag_ab31f268e2,4.A.2.a.3.I01.D04,https://aws.amazon.com/marketplace/pp/prodview-e
 ag_ab31f268e2,4.A.2.a.4.I11.D02,https://aws.amazon.com/marketplace/pp/prodview-excsgt3fhdaoi,"transform complex multi-cloud billing, security telemetry & GenAI usage data into transparent, actionable insights & closed-loop remediations"
 ag_ab31f268e2,4.A.3.b.1.I06.D11,https://aws.amazon.com/marketplace/pp/prodview-excsgt3fhdaoi,Spend is normalized to FOCUS 1.0 across USD and INR
 ag_ab31f268e2,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-excsgt3fhdaoi,answering complex infrastructure queries & orchestrating actions via specialized tools
-ag_ab68524f36,4.A.1.a.1.I02.D03,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"Turns it into a search: the titles, the skills and the places that fit you."
+ag_ab68524f36,4.A.1.a.1.I02.D01,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"Turns it into a search: the titles, the skills and the places that fit you."
 ag_ab68524f36,4.A.1.a.1.I04.D07,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"Millions of postings of the last 30 days from 37 public sources, rebuilt every five hours, searched on your computer."
-ag_ab68524f36,4.A.2.a.1.I01.D03,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"Asks of every posting, against your resume, one question: is it in line with you? How sure the answer is makes the score, from 1 to 5."
+ag_ab68524f36,4.A.2.a.1.I07.D09,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"Asks of every posting, against your resume, one question: is it in line with you? How sure the answer is makes the score, from 1 to 5."
 ag_ab68524f36,4.A.3.b.6.I08.D09,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"What each page said, with a screenshot, for every application."
 ag_ab68524f36,4.A.3.b.6.I13.D04,https://github.com/feder-cr/Jobs_Applier_AI_Agent,"Then a real Firefox opens the company's form, fills every required field, attaches your CV and sends."
 ag_ab7cdadfa5,4.A.2.a.2.I01.D07,https://aws.amazon.com/marketplace/pp/prodview-vkzpn3gmod7rq,enforce auto-approve or merge-blocking policies once review criteria are met
@@ -5738,8 +5761,8 @@ ag_afbd61af36,4.A.3.b.6.I12.D02,https://github.com/Ultimateakiln/ai--manus2.0,"M
 ag_afc2b4546a,4.A.1.a.2.I10.D03,https://aws.amazon.com/marketplace/pp/prodview-anoakxuo4xcx6,"Every Agentic AI deployment ships with LLM observability, drift detection, and real-time monitoring from day one."
 ag_afc2b4546a,4.A.2.b.1.I09.D03,https://aws.amazon.com/marketplace/pp/prodview-anoakxuo4xcx6,Automates multi-step workflows that currently require multiple people and handoffs
 ag_afc2b4546a,4.A.3.b.6.I08.D09,https://aws.amazon.com/marketplace/pp/prodview-anoakxuo4xcx6,"Every decision is logged, traceable, and auditable."
-ag_afe311f5b1,4.A.3.b.1.I05.D01,https://github.com/CopilotKit/OpenBot,Watch a Bot use its browser and tools
-ag_afe311f5b1,4.A.3.b.6.I08.D11,https://github.com/CopilotKit/OpenBot,with every action decided before it happens and recorded after
+ag_afe311f5b1,4.A.3.b.1.I05.D01,https://github.com/CopilotKit/OpenBot,"Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after."
+ag_afe311f5b1,4.A.4.a.2.I03.D15,https://github.com/CopilotKit/OpenBot,Agents built with different stacks can work in the same workspace.
 ag_afe5c11325,4.A.1.a.1.I03.D07,https://aws.amazon.com/marketplace/pp/prodview-wb5u4x7jn6m3m,"Mate operates 24/7, investigating every alert with full context."
 ag_afe5c11325,4.A.1.a.2.I10.D01,https://aws.amazon.com/marketplace/pp/prodview-wb5u4x7jn6m3m,"When Mate detects a suspicious login from Indonesia, it doesn't just flag it"
 ag_afe5c11325,4.A.2.a.4.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-wb5u4x7jn6m3m,"checks her approved travel dates, correlates with her manager's calendar, and resolves the alert in seconds"
@@ -5792,6 +5815,9 @@ ag_b0a8f84889,4.A.2.b.2.I02.D07,https://github.com/r1n7aro/Locus,"apply C# chang
 ag_b0a8f84889,4.A.2.b.2.I02.D08,https://github.com/r1n7aro/Locus,the agent can also build Unity editor UI with Vue.js
 ag_b0a8f84889,4.A.3.b.1.I01.D03,https://github.com/r1n7aro/Locus,"write C# code, read and modify Unity objects and assets, and complete the full feature development workflow"
 ag_b0a8f84889,4.A.3.b.6.I12.D07,https://github.com/r1n7aro/Locus,The agent summarizes fragmented conversation requests into design documents and saves working understanding into memory
+ag_b0b4d887b9,4.A.1.b.2.I06.D06,https://github.com/openqodex/openqodex,OpenQodex reviews your code change before you push it.
+ag_b0b4d887b9,4.A.2.a.4.I12.D02,https://github.com/openqodex/openqodex,"First, OpenQodex runs the scanners that fit the files you changed."
+ag_b0b4d887b9,4.A.3.b.6.I03.D02,https://github.com/openqodex/openqodex,"It writes `report.html`, `report.md`, `report.json` and `report.sarif`."
 ag_b0dc0c6cf9,4.A.1.a.1.I04.D03,https://aws.amazon.com/marketplace/pp/prodview-wpbs4oltqb3pk,"Lev8 searches across LinkedIn, GitHub, Google Maps, X, Instagram, YouTube, and dozens of other public sources, then delivers a structured list with verified identities and contact details."
 ag_b0dc0c6cf9,4.A.1.a.2.I08.D03,https://aws.amazon.com/marketplace/pp/prodview-wpbs4oltqb3pk,"Track job changes, funding rounds, tech stack swaps, competitor moves, and brand mentions."
 ag_b0dc0c6cf9,4.A.1.b.1.I02.D02,https://aws.amazon.com/marketplace/pp/prodview-wpbs4oltqb3pk,"Find anyone, anywhere online"
@@ -6001,6 +6027,9 @@ ag_b5c4ff274c,4.A.2.a.4.I07.D02,https://aws.amazon.com/marketplace/pp/prodview-r
 ag_b5c4ff274c,4.A.2.b.2.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-rfcjaekyg4yh6,crafts and validates SQL queries
 ag_b5c4ff274c,4.A.2.b.2.I18.D04,https://aws.amazon.com/marketplace/pp/prodview-rfcjaekyg4yh6,Generates visual representations and graphical insights from available data
 ag_b5c4ff274c,4.A.3.b.6.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-rfcjaekyg4yh6,"delivers clear, business-ready summaries"
+ag_b610e0215a,4.A.2.b.2.I18.D20,https://github.com/Devin-AXIS/iPolloWork,"use Design and Video views for presentations, websites and visual production, then keep editing the result."
+ag_b610e0215a,4.A.3.b.1.I01.D03,https://github.com/Devin-AXIS/iPolloWork,"editable code, documents, presentations, design, websites and video."
+ag_b610e0215a,4.A.4.b.4.I12.D39,https://github.com/Devin-AXIS/iPolloWork,"A main assistant coordinates specialists; people share context, follow progress and continue working together across code, documents, presentations, websites, design and video."
 ag_b6119c6735,4.A.1.a.1.I14.D05,https://aws.amazon.com/marketplace/pp/prodview-jzzamxorlowq6,"Continuously capture micro-signals across channels (e.g. pauses, hesitations, retries, silent drop-offs)."
 ag_b6119c6735,4.A.1.a.2.I08.D01,https://aws.amazon.com/marketplace/pp/prodview-jzzamxorlowq6,Listener Agents – Monitor behavioural signals continuously using dynamic listening rules tied to customer context and intent.
 ag_b6119c6735,4.A.2.a.4.I02.D06,https://aws.amazon.com/marketplace/pp/prodview-jzzamxorlowq6,"Analyse Agents – Enrich and interpret signals by applying semantic, contextual, and historical analysis to reveal deeper intent and needs."
@@ -6069,12 +6098,13 @@ ag_b7c4919495,4.A.1.a.1.I04.D07,https://github.com/pat-jj/harness-1,"The policy 
 which documents to inspect or curate, what claims to verify, and when the
 evidence is sufficient."
 ag_b7c4919495,4.A.2.a.2.I01.D02,https://github.com/pat-jj/harness-1,what claims to verify
-ag_b7d9659df7,4.A.1.a.2.I02.D02,https://github.com/VersusControl/versus-incident,"Versus Incident will keep track of your services, applications, and systems, detect new or unexpected problems, and provide your team with the evidence needed to investigate."
-ag_b7d9659df7,4.A.1.a.2.I10.D03,https://github.com/VersusControl/versus-incident,"Versus Incident will keep track of your services, applications, and systems, detect new or unexpected problems, and provide your team with the evidence needed to investigate."
-ag_b7d9659df7,4.A.3.b.6.I02.D06,https://github.com/VersusControl/versus-incident,"An AI SRE triages each one and writes the
-  summary, severity, and suggested next steps before the incident
-  is sent through every configured channel."
-ag_b7d9659df7,4.A.4.a.2.I08.D07,https://github.com/VersusControl/versus-incident,"Fan out every incident to Slack, Microsoft Teams, Telegram, Viber, Email, and Lark"
+ag_b7d9659df7,4.A.1.a.2.I02.D02,https://github.com/VersusControl/versus-incident,"Versus reads your cluster read-only, maps its
+   workloads, changes and health, and detects issues on its own."
+ag_b7d9659df7,4.A.1.a.2.I10.D03,https://github.com/VersusControl/versus-incident,"Versus Incident will keep track of your services, applications, and systems, detect new or unexpected problems"
+ag_b7d9659df7,4.A.4.a.2.I03.D10,https://github.com/VersusControl/versus-incident,"Versus
+   applies your template, sends the alert to every channel you enable, and
+   escalates to on-call if nobody acknowledges it."
+ag_b7d9659df7,4.A.4.a.2.I08.D07,https://github.com/VersusControl/versus-incident,sends it to your channels and on-call
 ag_b801e0c4a0,4.A.2.a.2.I01.D02,https://aws.amazon.com/marketplace/pp/prodview-wdrapfr2tgv52,enabling dynamic document generation and clause validation
 ag_b801e0c4a0,4.A.2.a.3.I01.D04,https://aws.amazon.com/marketplace/pp/prodview-wdrapfr2tgv52,"Agents are orchestrated to handle specific tasks such as regulatory alignment, and jurisdictional adaptation, ensuring that every SPA adheres to internal policies and external regulations."
 ag_b801e0c4a0,4.A.3.b.6.I13.D02,https://aws.amazon.com/marketplace/pp/prodview-wdrapfr2tgv52,enabling dynamic document generation and clause validation
@@ -6384,8 +6414,8 @@ ag_bff3b3efe8,4.A.1.a.1.I04.D05,https://aws.amazon.com/marketplace/pp/prodview-g
 ag_bff3b3efe8,4.A.3.b.6.I08.D22,https://aws.amazon.com/marketplace/pp/prodview-gsyhx4b74vmy6,"Resolution updates flow seamlessly back into ServiceNow, preserving audit trails and maintaining data integrity across your ITSM environment."
 ag_bff3b3efe8,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-gsyhx4b74vmy6,"End users can report issues through familiar chat interfaces, and the agent automatically captures necessary details and creates properly categorized tickets."
 ag_bff3b3efe8,4.A.4.c.1.I01.D10,https://aws.amazon.com/marketplace/pp/prodview-gsyhx4b74vmy6,"create new tickets with the right urgency classification, and post updates or resolutions without ever opening ServiceNow directly"
-ag_c017d7688b,4.A.2.b.2.I02.D01,https://github.com/geek-fun/dockit,"Query generation** — natural language to Elasticsearch DSL, PartiQL, MongoDB queries"
-ag_c017d7688b,4.A.4.c.1.I03.D01,https://github.com/geek-fun/dockit,Schema inspection** — agent reads and explains your database schema
+ag_c017d7688b,4.A.3.b.1.I01.D03,https://github.com/geek-fun/dockit,"the agent writes queries, inspects schemas, updates documents, deletes records, creates indexes, and returns results."
+ag_c017d7688b,4.A.3.b.1.I06.D05,https://github.com/geek-fun/dockit,"Data operations** — CRUD, index management, bulk actions through conversation"
 ag_c026bf4d83,4.A.2.b.2.I12.D01,https://github.com/Paper2Poster/Paper2Poster,We now support generate per section content in **parallel** for faster generation
 ag_c026bf4d83,4.A.2.b.2.I18.D14,https://github.com/Paper2Poster/Paper2Poster,"**PosterAgent** is a top-down, visual-in-the-loop multi-agent system from `paper.pdf` to **editable** `poster.pptx`."
 ag_c02f39bc43,4.A.1.a.1.I04.D05,https://aws.amazon.com/marketplace/pp/prodview-kkhtrkvsyicki,queries your live Cube Cloud semantic layer for answers
@@ -6430,10 +6460,9 @@ ag_c12c016b8e,4.A.3.b.6.I03.D02,https://github.com/Future-House/robin,Text summa
 ag_c14274d376,4.A.4.a.4.I01.D01,https://aws.amazon.com/marketplace/pp/prodview-uqw4xnhmj64b6,"connects Amazon S3, Amazon SQS, Amazon SNS, Amazon RDS, Amazon Redshift, Amazon Lambda, and many other AWS services with on prem and SaaS applications"
 ag_c14274d376,4.A.4.a.8.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-uqw4xnhmj64b6,automates resolutions with AI powered search and orchestration
 ag_c163b44018,4.A.3.b.1.I01.D03,https://github.com/vitalops/openvibe,"openvibe run ""fix the failing tests"""
-ag_c1cb30af4b,4.A.1.a.1.I03.D07,https://github.com/OpenOSINT/OpenOSINT,OpenOSINT is an open-source OSINT agent for investigators and security researchers
-ag_c1cb30af4b,4.A.1.a.1.I04.D03,https://github.com/OpenOSINT/OpenOSINT,21 public-source tools behind a natural-language interface
-ag_c1cb30af4b,4.A.1.a.1.I04.D05,https://github.com/OpenOSINT/OpenOSINT,"| [`search_dns`](https://openosint.tech/tools/#search_dns) | DNS records, SPF, DMARC | No |"
-ag_c1cb30af4b,4.A.2.a.3.I03.D01,https://github.com/OpenOSINT/OpenOSINT,"Real output, trimmed and re-wrapped"
+ag_c1cb30af4b,4.A.1.a.1.I04.D07,https://github.com/OpenOSINT/OpenOSINT,21 public-source tools behind a natural-language interface
+ag_c1cb30af4b,4.A.1.a.2.I10.D01,https://github.com/OpenOSINT/OpenOSINT,"Checks: email OK, registration OK (passive)"
+ag_c1cb30af4b,4.A.2.a.4.I12.D02,https://github.com/OpenOSINT/OpenOSINT,Grade: B  Score: 88/100
 ag_c1cb30af4b,4.A.3.b.6.I03.D05,https://github.com/OpenOSINT/OpenOSINT,run /openosint:osint example.com and get a report where every finding cites its tool call
 ag_c20a5615eb,4.A.1.a.2.I03.D02,https://github.com/wfnuser/OpenNof1,**Real-time Dashboard**: Live P&L tracking and position monitoring
 ag_c20a5615eb,4.A.2.b.1.I09.D05,https://github.com/wfnuser/OpenNof1,**Autonomous Trading**: AI-powered decision making with risk management
@@ -6460,21 +6489,19 @@ ag_c2a4193607,4.A.4.c.1.I03.D03,https://aws.amazon.com/marketplace/pp/prodview-r
 ag_c2a4193607,4.A.4.c.3.I06.D02,https://aws.amazon.com/marketplace/pp/prodview-rupbgy3omm2wm,From scheduling appointments and verifying insurance to handling referrals and prescription refills
 ag_c2bb433f3d,4.A.2.b.2.I02.D07,https://github.com/HazAT/ultimate,it runs this repository and can change its own code while you talk
 ag_c2bb433f3d,4.A.3.b.1.I01.D03,https://github.com/HazAT/ultimate,"It writes them as extensions, agents, and skills into `<project>/.ultimate/`"
-ag_c2bfd889de,4.A.2.a.2.I03.D03,https://github.com/Jamailar/Beav,每天 09:00 结合你的账号方向，整理今日计划和值得跟进的发现，每条都带来源链接
-ag_c2bfd889de,4.A.2.a.4.I02.D04,https://github.com/Jamailar/Beav,「适合我的账号」按匹配度给全网热点打分，并标出它在各平台榜单上的位置
-ag_c2bfd889de,4.A.2.b.1.I07.D02,https://github.com/Jamailar/Beav,边改边自动保存，右侧 AI 侧栏随时帮你改开头、换标题。
+ag_c2bfd889de,4.A.2.a.4.I02.D07,https://github.com/Jamailar/Beav,「适合我的账号」按匹配度给全网热点打分，并标出它在各平台榜单上的位置
 ag_c2bfd889de,4.A.2.b.1.I11.D01,https://github.com/Jamailar/Beav,AI 逐字转写、结合语义和停顿，找出口头语、重说和多余的句子，列成一张可核对的剪辑方案；确认后自动应用到时间线，再补上字幕、重点花字、画中画和讲解动画。
 ag_c2bfd889de,4.A.2.b.2.I12.D02,https://github.com/Jamailar/Beav,AI 会读取你存过的资料和账号档案，按平台写出完整作品：标题、正文、话题标签，必要时连配图一起生成，最后交付一个可以直接发布的**素材包**
-ag_c2bfd889de,4.A.2.b.2.I18.D20,https://github.com/Jamailar/Beav,点「使用模板」填文字、换参考图即可生成；看到喜欢的图片，也能让 AI 拆解成你自己的模板反复使用。
-ag_c2bfd889de,4.A.3.b.6.I08.D16,https://github.com/Jamailar/Beav,视频会自动下载和转写，评论区也能一起存。
-ag_c2bfd889de,4.A.3.b.6.I16.D03,https://github.com/Jamailar/Beav,AI 会读取你存过的资料和账号档案，按平台写出完整作品：标题、正文、话题标签，必要时连配图一起生成，最后交付一个可以直接发布的**素材包**
-ag_c2bfd889de,4.A.4.b.6.I05.D11,https://github.com/Jamailar/Beav,AI 会在输入框上方弹出问题卡片，点选项或数字键就能回答
-ag_c2d08f59d2,4.A.2.a.4.I02.D02,https://github.com/ZJU-REAL/Easel,聚合热榜、行业新闻、竞品动态和用户讨论，筛选真正适合账号的机会
-ag_c2d08f59d2,4.A.2.a.4.I02.D05,https://github.com/ZJU-REAL/Easel,读取播放、互动、评论和内容表现，把有效结构和偏好沉淀回账号画像
-ag_c2d08f59d2,4.A.2.b.1.I09.D04,https://github.com/ZJU-REAL/Easel,按平台适配标题、正文、画幅和媒体要求，执行发布前检查并发送到已登录账号
-ag_c2d08f59d2,4.A.2.b.1.I11.D01,https://github.com/ZJU-REAL/Easel,视频剪辑
-ag_c2d08f59d2,4.A.2.b.2.I03.D03,https://github.com/ZJU-REAL/Easel,把机会变成选题、标题、脚本和内容矩阵，写入内容日历
-ag_c2d08f59d2,4.A.2.b.2.I12.D02,https://github.com/ZJU-REAL/Easel,生成文案、卡片、海报、信息图、音频、视频、短剧和论文解读等可发布素材
+ag_c2bfd889de,4.A.2.b.5.I01.D04,https://github.com/Jamailar/Beav,稿件自动打包成各平台**素材包**，排进**内容日历**
+ag_c2bfd889de,4.A.3.b.1.I06.D09,https://github.com/Jamailar/Beav,视频自动下载转写
+ag_c2d08f59d2,4.A.2.a.3.I01.D01,https://github.com/ZJU-REAL/Easel,发布质量门禁、敏感与版权风险检查、平台搜索优化、发布 Checklist、多平台格式适配
+ag_c2d08f59d2,4.A.2.a.4.I02.D04,https://github.com/ZJU-REAL/Easel,聚合热榜、行业新闻、竞品动态和用户讨论，筛选真正适合账号的机会。
+ag_c2d08f59d2,4.A.2.a.4.I07.D09,https://github.com/ZJU-REAL/Easel,读取播放、互动、评论和内容表现，把有效结构和偏好沉淀回账号画像。
+ag_c2d08f59d2,4.A.2.b.1.I11.D01,https://github.com/ZJU-REAL/Easel,字幕与翻译、视频剪辑、长视频切片、直播高光、横竖版转换
+ag_c2d08f59d2,4.A.2.b.2.I03.D03,https://github.com/ZJU-REAL/Easel,把机会变成选题、标题、脚本和内容矩阵，写入内容日历。
+ag_c2d08f59d2,4.A.2.b.2.I18.D14,https://github.com/ZJU-REAL/Easel,小红书知识卡、海报、信息图、数据图表、思维导图、对比图、电商详情图、Meme、AI 生图
+ag_c2d08f59d2,4.A.2.b.5.I01.D04,https://github.com/ZJU-REAL/Easel,统一管理选题、草稿、待发、已发和平台活动，结合节日节点规划内容，并记录每一天的发布安排。
+ag_c2d08f59d2,4.A.3.b.6.I16.D03,https://github.com/ZJU-REAL/Easel,社媒文案、短视频与中长视频脚本、小红书笔记、长文、小说
 ag_c2d38cc85c,4.A.3.b.1.I01.D03,https://github.com/charmbracelet/crush,Glamourous agentic coding for all 💘
 ag_c2d73a3a0e,4.A.2.a.4.I11.D02,https://github.com/open-net-worth-ai/open-net-worth,Judges a ticker against your own investment thesis
 ag_c2d73a3a0e,4.A.3.b.6.I01.D02,https://github.com/open-net-worth-ai/open-net-worth,"Daily briefings, weekly and monthly reports"
@@ -6546,7 +6573,8 @@ ag_c54c3e0f4f,4.A.2.a.4.I02.D04,https://github.com/Xtra-Computing/CryptoTrade,Wr
 ag_c54c3e0f4f,4.A.2.a.4.I11.D04,https://github.com/Xtra-Computing/CryptoTrade,Write one concise paragraph to analyze the recent information and estimate the market trend accordingly.
 ag_c54c3e0f4f,4.A.2.b.1.I09.D05,https://github.com/Xtra-Computing/CryptoTrade,CryptoTrade incorporates a reflective mechanism specifically engineered to refine its daily trading decisions by analyzing the outcomes of prior trading decisions.
 ag_c5784d7fcb,4.A.3.b.1.I01.D01,https://github.com/HKUDS/PhoneCLI,"Online, those commands replay deterministically on the device"
-ag_c5784d7fcb,4.A.3.b.1.I05.D01,https://github.com/HKUDS/PhoneCLI,GUI mode handles screens the map has never seen
+ag_c5784d7fcb,4.A.3.b.1.I05.D01,https://github.com/HKUDS/PhoneCLI,"the agent runs *inside* the
+phone, and the target app is driven on a virtual display the user never sees"
 ag_c581ed7eb6,4.A.1.b.2.I06.D09,https://github.com/mattzcarey/shippie,Potential bugs or unhandled edge cases
 ag_c581ed7eb6,4.A.1.b.2.I08.D03,https://github.com/mattzcarey/shippie,"picking up issues a human reviewer would, such as:"
 ag_c581ed7eb6,4.A.3.b.6.I03.D06,https://github.com/mattzcarey/shippie,"reads your diff, explores the codebase with real developer tools, and posts focused review comments"
@@ -6651,10 +6679,8 @@ ag_c898550746,4.A.1.a.1.I04.D05,https://github.com/xai-org/grok-build,searches t
 ag_c898550746,4.A.3.b.1.I01.D03,https://github.com/xai-org/grok-build,"It runs as a
 full-screen TUI that understands your codebase, edits files, executes shell
 commands, searches the web, and manages long-running tasks"
-ag_c8ede7a595,4.A.1.a.1.I04.D03,https://github.com/alvinunreal/oh-my-opencode-slim,look up fresh documentation
-ag_c8ede7a595,4.A.2.a.1.I10.D01,https://github.com/alvinunreal/oh-my-opencode-slim,review architecture
-ag_c8ede7a595,4.A.2.b.6.I02.D03,https://github.com/alvinunreal/oh-my-opencode-slim,"The Orchestrator plans the work graph, dispatches specialists as background tasks, and reconciles their results before continuing."
-ag_c8ede7a595,4.A.3.b.1.I01.D03,https://github.com/alvinunreal/oh-my-opencode-slim,execute well-scoped implementation tasks under one orchestrator
+ag_c8ede7a595,4.A.2.b.6.I02.D07,https://github.com/alvinunreal/oh-my-opencode-slim,"The Orchestrator plans the work graph, dispatches specialists as background tasks, and reconciles their results before continuing."
+ag_c8ede7a595,4.A.4.b.4.I12.D01,https://github.com/alvinunreal/oh-my-opencode-slim,"The Orchestrator plans the work graph, dispatches specialists as background tasks, and reconciles their results before continuing."
 ag_c914348742,4.A.3.b.1.I05.D01,https://github.com/X-PLUG/MobileAgent,"GUI perception, grounding, and end-to-end operation capabilities"
 ag_c92c673810,4.A.2.b.1.I11.D01,https://github.com/0xsline/OpenChatCut,"Let Codex, Claude Code, and the built-in agent read, edit, and export real video projects that remain fully editable."
 ag_c92c673810,4.A.2.b.2.I18.D20,https://github.com/0xsline/OpenChatCut,"images, video, speech, music, sound effects, and online media search"
@@ -6721,6 +6747,7 @@ ag_caece43ed0,4.A.2.a.3.I04.D01,https://github.com/yuedai-pbc/FINESSE-Financial-
 ag_caece43ed0,4.A.2.a.4.I03.D03,https://github.com/yuedai-pbc/FINESSE-Financial-Reasoning-Agent,"The system combines five specialist roles - **Investment**, **Risk**, **Macro**, **Ethics**, and **Quantitative** analysis"
 ag_caece43ed0,4.A.2.a.4.I11.D02,https://github.com/yuedai-pbc/FINESSE-Financial-Reasoning-Agent,"FINESSE is a reference implementation of a multi-agent architecture for explainable, retrieval-grounded, and ethically verified financial reasoning."
 ag_cb4ccfec12,4.A.2.a.4.I11.D03,https://github.com/SilvioBaratto/optimizer,Portfolio optimization with a market-data pipeline and paper trading.
+ag_cb4ccfec12,4.A.3.b.6.I08.D14,https://github.com/SilvioBaratto/optimizer,that keeps PostgreSQL fresh
 ag_cb5154e211,4.A.1.b.2.I08.D03,https://github.com/Aider-AI/aider,Automatically lint and test your code every time aider makes changes.
 ag_cb5154e211,4.A.2.b.1.I07.D02,https://github.com/Aider-AI/aider,Aider automatically commits changes with sensible commit messages.
 ag_cb5154e211,4.A.3.b.1.I01.D03,https://github.com/Aider-AI/aider,Aider lets you pair program with LLMs to start a new project or build on your existing codebase.
@@ -6914,6 +6941,12 @@ ag_d0d010ed1d,4.A.2.a.4.I07.D05,https://aws.amazon.com/marketplace/pp/prodview-j
 ag_d0d010ed1d,4.A.2.b.6.I02.D07,https://aws.amazon.com/marketplace/pp/prodview-jxobmuxoewtjs,"The agent reads the literature for that biology, proposes an analysis plan, waits for approval"
 ag_d0d010ed1d,4.A.3.b.6.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-jxobmuxoewtjs,"The agent reads the literature for that biology, proposes an analysis plan, waits for approval, then runs every step in a sandbox and writes out results, figures and a report."
 ag_d0d010ed1d,4.A.3.b.6.I08.D18,https://aws.amazon.com/marketplace/pp/prodview-jxobmuxoewtjs,"Each step is recorded as it happens: the method, the parameters, the input files, the software versions and the model that made each decision."
+ag_d0d50c364f,4.A.2.b.2.I11.D01,https://github.com/credoksopho1984/blender-ai-copilot-studio,"Build complete layouts from a brief—27 supervised scene tools create primitives, lights, cameras, materials, parenting and transforms in ordered steps."
+ag_d0d50c364f,4.A.2.b.2.I21.D03,https://github.com/credoksopho1984/blender-ai-copilot-studio,"builds the pedestal, camera and lights, assigns the materials, and answers with a finished snapshot on the Studio task board."
+ag_d0d50c364f,4.A.3.a.3.I01.D01,https://github.com/credoksopho1984/blender-ai-copilot-studio,"Inspect the scene before every change—the copilot reads objects, structure and materials before it acts."
+ag_d0d50c364f,4.A.3.b.1.I05.D02,https://github.com/credoksopho1984/blender-ai-copilot-studio,Duplicate the selected object into a neatly spaced row of five and show the viewport.
+ag_d0d50c364f,4.A.4.a.2.I09.D09,https://github.com/credoksopho1984/blender-ai-copilot-studio,"Find and import assets mid-conversation—search Poly Haven, Sketchfab and Poly Pizza and import after your confirmation."
+ag_d0d50c364f,4.A.4.b.4.I12.D19,https://github.com/credoksopho1984/blender-ai-copilot-studio,"a manager splits the brief into assignments, workers execute, reviewers approve or return findings, and the task board tracks every attempt."
 ag_d10c1c85c3,4.A.2.a.4.I11.D03,https://aws.amazon.com/marketplace/pp/prodview-v6bsirqrg4cls,"Create, update, and analyze financial models using natural language commands."
 ag_d10c1c85c3,4.A.2.a.4.I11.D04,https://aws.amazon.com/marketplace/pp/prodview-v6bsirqrg4cls,"Structured analysis and screening for transactions, targets, buyers, people, benchmarking, and entity discovery."
 ag_d10c1c85c3,4.A.3.b.1.I06.D06,https://aws.amazon.com/marketplace/pp/prodview-v6bsirqrg4cls,Domain-trained AI agents extract and map KPIs from complex financial document types.
@@ -6943,6 +6976,7 @@ ag_d1a7c10701,4.A.2.a.4.I09.D04,https://aws.amazon.com/marketplace/pp/prodview-r
 ag_d1a7c10701,4.A.2.b.1.I09.D01,https://aws.amazon.com/marketplace/pp/prodview-ro55csdqfhf76,"Controls update automatically when regulations change, eliminating manual rework and keeping compliance current across multi-jurisdiction environments."
 ag_d1a7c10701,4.A.3.b.6.I08.D05,https://aws.amazon.com/marketplace/pp/prodview-ro55csdqfhf76,"Every compliance check, exception, and remediation is logged with timestamps and source references, producing audit-ready reports on demand."
 ag_d1a7c10701,4.A.3.b.6.I14.D05,https://aws.amazon.com/marketplace/pp/prodview-ro55csdqfhf76,"Assembles documentation for FDA IND, BLA, NDA, and 510(k), traceable to source evidence."
+ag_d1d1a5cca6,4.A.3.b.1.I03.D01,https://github.com/Soodok/Deepseek-Harness-Local-Android,**20 套工具链，一键装，装完就能编。**
 ag_d1d6dc36c4,4.A.1.a.1.I04.D07,https://github.com/hitsz-ids/airda,airda具有强大的数据处理和搜索能力，可以从成百上千张表中精准找数
 ag_d1d6dc36c4,4.A.1.a.1.I14.D05,https://github.com/hitsz-ids/airda,airda与用户建立对话，理解用户的需求。在这一阶段，airda会提出一系列问题，以便更准确地了解用户的需求。
 ag_d1d6dc36c4,4.A.2.b.2.I02.D01,https://github.com/hitsz-ids/airda,airda根据用户需求任务将结果数据转化为应用成果，如指标大屏展示、数据API服务和数据应用等
@@ -6975,10 +7009,10 @@ ag_d28b51c01d,4.A.1.a.2.I10.D01,https://github.com/fancydirty/mediary-scout,转�
 ag_d29c883c79,4.A.3.b.1.I05.D01,https://theagi.company/,an agent that sees the screen and acts across any app on Android
 ag_d29c883c79,4.A.4.a.5.I10.D05,https://theagi.company/,Find the fastest route to the airport and book a ride if the train is delayed
 ag_d29c883c79,4.A.4.c.1.I03.D09,https://theagi.company/,Order all the ingredients I need to make gluten-free spaghetti on Instacart
-ag_d2a8ef702b,4.A.1.a.2.I02.D16,https://www.qodo.ai/,"Monitor and understand the impact of rule violations, and track how often issues are resolved before code is merged."
-ag_d2a8ef702b,4.A.1.a.2.I03.D01,https://www.qodo.ai/,"Track review findings, resolution rates, and risk concentration across teams and repositories."
-ag_d2a8ef702b,4.A.1.b.2.I06.D09,https://www.qodo.ai/,"Specialized agents run on every pull request, surfacing real bugs, rule violations, and requirement gaps with full codebase context."
-ag_d2a8ef702b,4.A.2.a.1.I05.D03,https://www.qodo.ai/,"Specialized review agents reason over full codebase context to flag real bugs, rule violations, and requirements gaps with less noise."
+ag_d2a8ef702b,4.A.1.a.2.I10.D01,https://www.qodo.ai/,"Track review findings, resolution rates, and risk concentration across teams and repositories."
+ag_d2a8ef702b,4.A.2.a.3.I01.D02,https://www.qodo.ai/,Enforce organizational standards on every pull request.
+ag_d2a8ef702b,4.A.2.a.3.I01.D04,https://www.qodo.ai/,"Specialized agents run on every pull request, surfacing real bugs, rule violations, and requirement gaps with full codebase context."
+ag_d2a8ef702b,4.A.2.b.4.I01.D03,https://www.qodo.ai/,"Rules self-learned from patterns, conventions, and architectural decisions from your codebase and PR history."
 ag_d2a8ef702b,4.A.3.b.6.I08.D09,https://www.qodo.ai/,Every issue and compliance flag logged for full traceability.
 ag_d2bbc38102,4.A.3.b.1.I01.D03,https://github.com/e10nMa2k/cc-mini,"**9 built-in tools**: `Read`, `Edit`, `Write`, `Glob`, `Grep`, `Bash`, `AskUser`, `EnterPlanMode`, `ExitPlanMode`"
 ag_d2bbc38102,4.A.4.a.5.I08.D01,https://github.com/e10nMa2k/cc-mini,| `Write` | Write/create file | requires confirmation |
@@ -7028,8 +7062,10 @@ ag_d40d64e2bb,4.A.4.b.4.I12.D08,https://github.com/Ricky-7-Yan/intelligent-audit
 ag_d41045b130,4.A.2.a.4.I07.D12,https://thelobby.ai/,model judgment well enough that agents can act with full fidelity to who you are
 ag_d41045b130,4.A.3.b.1.I05.D01,https://thelobby.ai/,"coordinates email workflows across the tools you already use, without prompt."
 ag_d41045b130,4.A.4.a.2.I03.D01,https://thelobby.ai/,coordinates work without prompts
-ag_d434d86ea3,4.A.3.b.1.I01.D03,https://github.com/Dicklesworthstone/pi_agent_rust,"pi ""Help me refactor this function to use async/await"""
-ag_d434d86ea3,4.A.3.b.1.I02.D01,https://github.com/Dicklesworthstone/pi_agent_rust,"Two-stage extension `exec` enforcement: capability gate first, then command mediation that blocks critical shell classes by default"
+ag_d4198b87f3,4.A.2.a.4.I07.D03,https://aws.amazon.com/marketplace/pp/prodview-okvintj7ilkpi,"turning CRM, engagement and event data into insight in Amazon Quick"
+ag_d4198b87f3,4.A.4.a.4.I01.D03,https://aws.amazon.com/marketplace/pp/prodview-okvintj7ilkpi,flagging members and supporters at risk and coordinating renewal outreach
+ag_d434d86ea3,4.A.2.b.2.I02.D01,https://github.com/Dicklesworthstone/pi_agent_rust,"pi ""Help me refactor this function to use async/await"""
+ag_d434d86ea3,4.A.3.b.1.I01.D03,https://github.com/Dicklesworthstone/pi_agent_rust,High-performance AI coding agent CLI written in Rust with zero unsafe code
 ag_d449cf91ac,4.A.2.b.1.I09.D03,https://aws.amazon.com/marketplace/pp/prodview-mfd5nsi5b5n76,Automate Amazon Connect deployments and asset management using the Model Context Protocol (MCP).
 ag_d449cf91ac,4.A.3.b.1.I03.D04,https://aws.amazon.com/marketplace/pp/prodview-mfd5nsi5b5n76,Uses AWS IAM roles instead of stored access keys.
 ag_d464a727f8,4.A.1.a.1.I04.D05,https://github.com/gptme/gptme,browses the web
@@ -7044,10 +7080,10 @@ ag_d50a8879a8,4.A.2.b.2.I10.D02,https://aws.amazon.com/marketplace/pp/prodview-f
 ag_d50a8879a8,4.A.2.b.2.I12.D02,https://aws.amazon.com/marketplace/pp/prodview-fg5lglla4mwzw,Leverages generative AI to create highly realistic email templates mirroring current attack vectors
 ag_d50a8879a8,4.A.2.b.5.I02.D07,https://aws.amazon.com/marketplace/pp/prodview-fg5lglla4mwzw,continuously assessing risk to automatically create and schedule individualized phishing tests and training campaigns
 ag_d50a8879a8,4.A.3.b.6.I12.D10,https://aws.amazon.com/marketplace/pp/prodview-fg5lglla4mwzw,Generates custom deepfake training content featuring a leader from your own organization
-ag_d57de9c169,4.A.1.a.1.I04.D07,https://github.com/Pinvou/pinvou-agent,"**Local knowledge base** with file management, full-text and vector retrieval"
-ag_d57de9c169,4.A.1.a.2.I10.D03,https://github.com/Pinvou/pinvou-agent,"**Centralized monitoring** of GPU, memory, disk, model service, and context usage"
 ag_d57de9c169,4.A.2.b.2.I18.D14,https://github.com/Pinvou/pinvou-agent,Create posters and data visualizations in natural language.
 ag_d57de9c169,4.A.3.b.1.I01.D03,https://github.com/Pinvou/pinvou-agent,"The coding agent can read and edit a real project or an isolated temporary workspace, run commands"
+ag_d57de9c169,4.A.3.b.6.I08.D09,https://github.com/Pinvou/pinvou-agent,**Artifact panel** automatically collects every file the agent creates or edits
+ag_d57de9c169,4.A.3.b.6.I12.D05,https://github.com/Pinvou/pinvou-agent,"research, analyze, write, and deliver reusable files"
 ag_d5a620919e,4.A.1.a.1.I04.D03,https://github.com/MLSysOps/MLE-agent,Suggest the SOTA data science solutions by using the web search
 ag_d5a620919e,4.A.2.b.2.I02.D01,https://github.com/MLSysOps/MLE-agent,Automatically builds ML/AI baselines and solutions based on your requirements.
 ag_d5a620919e,4.A.3.b.1.I01.D03,https://github.com/MLSysOps/MLE-agent,MLE agent can participate in Kaggle competitions and finish coding and debugging from data preparation to model training
@@ -7060,6 +7096,13 @@ ag_d5a907abc7,4.A.2.b.1.I08.D01,https://aws.amazon.com/marketplace/pp/prodview-r
 ag_d5a907abc7,4.A.2.b.2.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-ruaj5n27qrruo,HAI Build transforms ideas into deployable code with remarkable speed and precision.
 ag_d5a907abc7,4.A.2.b.2.I07.D02,https://aws.amazon.com/marketplace/pp/prodview-ruaj5n27qrruo,"Intelligently organize and refine requirements into detailed Business, Product, Non-Functional, and User Interface specifications."
 ag_d5a907abc7,4.A.3.b.1.I01.D03,https://aws.amazon.com/marketplace/pp/prodview-ruaj5n27qrruo,"HAI Build transforms detailed tasks into executable code, supporting a variety of programming languages and frameworks."
+ag_d5e38a91ca,4.A.1.a.1.I04.D03,https://github.com/hitkeeen/blender-ai-mcp-addon,"`search_assets`, `import_asset`"
+ag_d5e38a91ca,4.A.2.b.2.I11.D04,https://github.com/hitkeeen/blender-ai-mcp-addon,"Ask the assistant to inspect your scene, create a product-display layout, arrange objects, assign materials or prepare an export."
+ag_d5e38a91ca,4.A.2.b.2.I18.D17,https://github.com/hitkeeen/blender-ai-mcp-addon,"Object creation | `add_cube`, `add_sphere`, `add_cylinder`, `add_plane`, `add_light`, `add_camera`"
+ag_d5e38a91ca,4.A.3.a.2.I01.D16,https://github.com/hitkeeen/blender-ai-mcp-addon,"Create a simple product-display scene with a pedestal, a camera and three lights."
+ag_d5e38a91ca,4.A.3.b.1.I01.D03,https://github.com/hitkeeen/blender-ai-mcp-addon,"`viewport_screenshot`, `execute_code`"
+ag_d5e38a91ca,4.A.3.b.6.I08.D30,https://github.com/hitkeeen/blender-ai-mcp-addon,"The task board exposes assignments, attempts and review findings as work progresses."
+ag_d5e38a91ca,4.A.4.b.4.I12.D37,https://github.com/hitkeeen/blender-ai-mcp-addon,Manager:** breaks the request into assignments and acceptance criteria.
 ag_d5ed4b21f2,4.A.3.b.1.I01.D03,https://github.com/aeonfun/aeon,"it ships features to your repos, privately discloses real vulnerabilities, deploys live apps, runs deep research, and writes new skills for itself"
 ag_d5f2006280,4.A.1.a.1.I04.D05,https://github.com/mims-harvard/TxAgent,TxAgent retrieves and synthesizes evidence from multiple biomedical sources
 ag_d5f2006280,4.A.2.a.1.I06.D04,https://github.com/mims-harvard/TxAgent,"assesses interactions between drugs and patient conditions, and refines treatment recommendations through iterative reasoning."
@@ -7069,11 +7112,11 @@ ag_d5f5d4c212,4.A.1.a.2.I02.D02,https://aws.amazon.com/marketplace/pp/prodview-w
 ag_d5f5d4c212,4.A.1.a.2.I02.D20,https://aws.amazon.com/marketplace/pp/prodview-wzgr5ycnkgvfu,Continuous operational visibility and execution monitoring
 ag_d5f5d4c212,4.A.4.c.1.I03.D11,https://aws.amazon.com/marketplace/pp/prodview-wzgr5ycnkgvfu,autonomously executes transactions within ERP and enterprise systems in real time
 ag_d60246fcee,4.A.2.b.5.I03.D01,https://workhub.ai/,Automatic service scheduling with real-time availability
-ag_d60246fcee,4.A.4.a.3.I03.D04,https://workhub.ai/,Could you please share your registered email or loyalty ID so I can check your points balance?
+ag_d60246fcee,4.A.4.a.3.I03.D05,https://workhub.ai/,Deliver 24/7 support via chat and voice.
 ag_d60246fcee,4.A.4.a.3.I03.D11,https://workhub.ai/,"Handle inbound and outbound calls with intelligent, voice-based AI agents that sound human."
-ag_d60246fcee,4.A.4.a.8.I03.D03,https://workhub.ai/,"Auto-handle FAQs, appointment bookings, order tracking, and more—all in real time."
+ag_d60246fcee,4.A.4.a.8.I03.D02,https://workhub.ai/,"Auto-handle FAQs, appointment bookings, order tracking, and more—all in real time."
 ag_d60246fcee,4.A.4.a.8.I03.D05,https://workhub.ai/,WorkBot AI agents work 24/7 to resolve queries quickly and boost customer satisfaction.
-ag_d60246fcee,4.A.4.a.8.I03.D06,https://workhub.ai/,"Automate email triage, prioritize queries, generate responses, and escalate critical issues to human reps with email ai agents —all from your inbox."
+ag_d60246fcee,4.A.4.a.8.I03.D06,https://workhub.ai/,"Automate email triage, prioritize queries, generate responses, and escalate critical issues to human reps with email ai agents"
 ag_d60720a988,4.A.4.a.5.I08.D01,https://github.com/openchamber/openchamber,"Start a session from a GitHub issue or pull request with its context attached. Send failed checks or review comments back to the agent, then update or merge the pull request from OpenChamber."
 ag_d61b692f2e,4.A.2.a.2.I03.D03,https://github.com/OWD-AI/AutoAgents,"Responsible for reflecting on whether the planner and the results in the execution process are reasonable, currently including reflection checks on Agents, Plan, and Action."
 ag_d61b692f2e,4.A.2.b.6.I02.D07,https://github.com/OWD-AI/AutoAgents,**Planner**: Determines the expert roles to be added and the specific execution plan according to the problem.
@@ -7237,7 +7280,6 @@ ag_db8ae4cfac,4.A.3.b.1.I01.D01,https://aws.amazon.com/marketplace/pp/prodview-c
 ag_db8ae4cfac,4.A.3.b.6.I01.D01,https://aws.amazon.com/marketplace/pp/prodview-ccmx6xffsse4a,Computes jurisdiction-specific sales and use taxes and provides clear explanations of applied rates and rules.
 ag_db8ae4cfac,4.A.3.b.6.I14.D05,https://aws.amazon.com/marketplace/pp/prodview-ccmx6xffsse4a,"Whether calculating taxes, filing returns, registering businesses, managing e-invoicing flows or managing cross-border shipments"
 ag_dbc4e586a4,4.A.3.a.3.I05.D04,https://github.com/openclaw/Peekaboo,"Peekaboo is a macOS CLI & optional MCP server that enables AI agents to capture screenshots of applications, or the entire system"
-ag_dbc4e586a4,4.A.3.b.1.I01.D01,https://github.com/openclaw/Peekaboo,"peekaboo type ""github.com/openclaw/Peekaboo"" --app Safari --window-id 12345"
 ag_dbc4e586a4,4.A.3.b.1.I05.D01,https://github.com/openclaw/Peekaboo,"Peekaboo is a macOS CLI and menu-bar app for screen capture, accessibility inspection, and native UI automation."
 ag_dbe87b6f17,4.A.1.a.1.I04.D07,https://github.com/ur-whitelab/chemcrow-public,"it uses a collection of chemical tools including RDKit, paper-qa, as well as some relevant databases in chemistry, like Pubchem and chem-space."
 ag_dbe87b6f17,4.A.1.a.1.I16.D04,https://github.com/ur-whitelab/chemcrow-public,ChemCrow is an open source package for the accurate solution of reasoning-intensive chemical tasks.
@@ -7257,16 +7299,15 @@ ag_dc1e597e55,4.A.2.b.1.I01.D06,https://aws.amazon.com/marketplace/pp/prodview-g
 ag_dc1e597e55,4.A.2.b.1.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-gep24ai2snzrm,"The agent designs and analyzes price tests, providing feedback on pricing hypotheses"
 ag_dc1e597e55,4.A.2.b.4.I01.D06,https://aws.amazon.com/marketplace/pp/prodview-gep24ai2snzrm,"Automated price governance streamlines approvals and flags exceptions, determining compliance with internal policies"
 ag_dc1e597e55,4.A.4.b.6.I02.D04,https://aws.amazon.com/marketplace/pp/prodview-gep24ai2snzrm,personalized pricing recommendations
-ag_dc367aad0d,4.A.3.b.1.I05.D01,https://github.com/milind-soni/OpenMausBot,"Each bot can use a cloud Linux desktop, an isolated Local VM, or—where the platform
-  safety boundary is currently certified—your own computer"
+ag_dc367aad0d,4.A.3.b.1.I05.D01,https://github.com/milind-soni/OpenMausBot,"Each bot can use a cloud Linux desktop, an isolated Local VM"
 ag_dc4fb02d5d,4.A.1.a.2.I06.D01,https://aws.amazon.com/marketplace/pp/prodview-opu5e2u4mwuzw,"their advanced speech analytics provide real-time agent monitoring, sentiment analysis, and compliance tracking."
 ag_dc4fb02d5d,4.A.1.a.2.I11.D04,https://aws.amazon.com/marketplace/pp/prodview-opu5e2u4mwuzw,"The platform is designed with ""compliance by design,"" meaning it builds in features to ensure adherence to regulations and provide comprehensive audit trails."
 ag_dc4fb02d5d,4.A.2.a.4.I07.D03,https://aws.amazon.com/marketplace/pp/prodview-opu5e2u4mwuzw,"An analytics platform that provides 360-degree insights into customer conversations, including sentiment analysis, behavior tracking, and agent performance monitoring."
 ag_dc4fb02d5d,4.A.4.a.6.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-opu5e2u4mwuzw,"This product helps businesses with lead generation and conversion by instantly engaging prospects, qualifying them, and nurturing them through the sales funnel."
 ag_dc4fb02d5d,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-opu5e2u4mwuzw,"Oriserve provides autonomous AI agents (voice, chat, and email bots) that automate the entire customer lifecycle, including lead qualification, sales, and support."
-ag_dc509cb063,4.A.1.a.1.I04.D03,https://github.com/whiteguo233/OpenBiliClaw,主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容
-ag_dc509cb063,4.A.1.a.1.I12.D04,https://github.com/whiteguo233/OpenBiliClaw,从你的跨平台使用、反馈和对话中持续深化心理画像
-ag_dc509cb063,4.A.4.b.6.I02.D04,https://github.com/whiteguo233/OpenBiliClaw,通用个性化内容推荐 Agent
+ag_dc509cb063,4.A.1.a.1.I04.D05,https://github.com/whiteguo233/OpenBiliClaw,带着对你的理解主动去 B 站、小红书、抖音、YouTube、TikTok、X、知乎、Reddit、Linux.do、Bangumi、V2EX、微博、GitHub、Instagram 与自定义网站、RSS 来源找内容
+ag_dc509cb063,4.A.1.a.1.I14.D02,https://github.com/whiteguo233/OpenBiliClaw,从你的跨平台使用、反馈和对话中持续深化心理画像
+ag_dc509cb063,4.A.4.b.6.I02.D04,https://github.com/whiteguo233/OpenBiliClaw,喜欢、不感兴趣、聊天反馈都会改变后续推荐
 ag_dc59756aa8,4.A.1.a.1.I20.D04,https://aws.amazon.com/marketplace/pp/prodview-y3gywfuypj7sm,research and summarize trial criteria
 ag_dc59756aa8,4.A.2.a.2.I05.D03,https://aws.amazon.com/marketplace/pp/prodview-y3gywfuypj7sm,These agents leverage advanced AI technologies to verify patient eligibility
 ag_dc5c2e2dc5,4.A.1.b.2.I06.D16,https://github.com/icip-cas/PPTAgent,`deepseek-v4-flash-vision` reviews the rendered images
@@ -7387,6 +7428,9 @@ ag_df6a6a13f5,4.A.3.b.1.I06.D06,https://github.com/Player-YN/BrowserKitten,"Dele
 ag_df6a6a13f5,4.A.3.b.6.I08.D09,https://github.com/Player-YN/BrowserKitten,"Save documents, HTML pages, data, and files in a session workspace."
 ag_df7a6be58c,4.A.3.b.1.I05.D01,https://github.com/suitedaces/computer-agent,"Give it natural language instructions and watch it take screenshots, move your mouse, click, type, and run terminal commands."
 ag_df7a6be58c,4.A.3.b.1.I05.D02,https://github.com/suitedaces/computer-agent,Local AI agent that controls your computer.
+ag_df811c4fd4,4.A.1.a.1.I04.D05,https://github.com/HKUDS/Vibe-Trading,"Historical bars and US option snapshots share a [local data gateway](agent/src/data_gateway/README.md) with source fallback, shared caching and bounded concurrency."
+ag_df811c4fd4,4.A.1.b.3.I03.D01,https://github.com/HKUDS/Vibe-Trading,"Options Lab and `options_payoff` calculate stock-plus-options strategies and compare multiple alternatives in one call, returning explicit costs, payoff bounds, and comparison directions."
+ag_df811c4fd4,4.A.2.a.2.I04.D01,https://github.com/HKUDS/Vibe-Trading,"Independently reconcile fees, cash, positions and NAV arithmetic from returned fills with the new `paper_trade_reconcile` Agent/MCP tool"
 ag_dfe19f13bc,4.A.3.b.1.I01.D03,https://github.com/tinyhumansai/openhuman,Finishes coding tasks in about 20 seconds
 ag_dfe19f13bc,4.A.3.b.6.I16.D02,https://github.com/tinyhumansai/openhuman,"Write me a story about agent harnesses in the form of an anime story, write it into an HTML page and open it for me."
 ag_dff969a99b,4.A.2.a.2.I03.D01,https://github.com/rasonyang/ai-native-callcenter,"Supervisors get a live wallboard, the queue
@@ -7476,9 +7520,10 @@ ag_e2e1f25627,4.A.3.b.6.I03.D03,https://github.com/frenzymath/Danus,"When you ha
 publishable LaTeX paper."
 ag_e2e1f25627,4.A.4.b.4.I01.D06,https://github.com/frenzymath/Danus,"A main
 agent (codex) steers a swarm of autonomous codex workers that prove"
-ag_e2fd299b51,4.A.1.a.1.I04.D05,https://github.com/avibe-bot/avibe,"Vibey searches the web and answers with a live page, not a wall of text."
+ag_e2fd299b51,4.A.1.a.1.I04.D03,https://github.com/avibe-bot/avibe,"Vibey searches the web and answers with a live page, not a wall of text."
 ag_e2fd299b51,4.A.2.b.5.I02.D07,https://github.com/avibe-bot/avibe,It sets the schedule itself and reports in the same conversation each week.
-ag_e2fd299b51,4.A.4.b.4.I01.D06,https://github.com/avibe-bot/avibe,Vibey hands the parts to the coding agents you already use and brings back the result.
+ag_e2fd299b51,4.A.4.a.3.I03.D06,https://github.com/avibe-bot/avibe,comes to find you when it is done or needs a decision
+ag_e2fd299b51,4.A.4.c.1.I01.D02,https://github.com/avibe-bot/avibe,"Sort these invoices into folders by month, and tell me what you moved."
 ag_e307e0bd30,4.A.2.a.2.I01.D07,https://aws.amazon.com/marketplace/pp/prodview-dawek4prg7sa4,PALM includes a built-in quality assurance loop that classifies extraction failures and routes them to the appropriate fix.
 ag_e307e0bd30,4.A.3.b.1.I01.D03,https://aws.amazon.com/marketplace/pp/prodview-dawek4prg7sa4,Pre-computed reasoning paths** - Public instructions or shareable templates can be analyzed by external cloud LLMs to generate reasoning and code ahead of time.
 ag_e307e0bd30,4.A.3.b.1.I06.D07,https://aws.amazon.com/marketplace/pp/prodview-dawek4prg7sa4,PALM is a self-contained Amazon Machine Image (AMI) that processes complex document understanding workloads entirely within your Amazon Virtual Private Cloud (VPC).
@@ -7592,18 +7637,13 @@ ag_e5e9c49ec4,4.A.1.a.2.I11.D04,https://aws.amazon.com/marketplace/pp/prodview-2
 ag_e5e9c49ec4,4.A.2.a.4.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-26zahvcaclo6s,"AI agents that execute continuous risk assessment, compliance validation, and remediation"
 ag_e5e9c49ec4,4.A.3.b.1.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-26zahvcaclo6s,smart in-PR security tests and auto-remediation
 ag_e5e9c49ec4,4.A.4.a.2.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-26zahvcaclo6s,"Jit orchestrates and automates them through a unified, intelligent layer"
-ag_e5ee9d2bbb,4.A.1.a.1.I04.D03,https://github.com/mindsdb/anton,the agent can query the live web and retrieve URL contents.
 ag_e5ee9d2bbb,4.A.1.a.1.I04.D05,https://github.com/mindsdb/anton,"Tell Anton to connect and ask questions about your data. It will find credentials in the vault, fetch the schema, and retrieve what it needs."
-ag_e5ee9d2bbb,4.A.2.a.4.I07.D02,https://github.com/mindsdb/anton,"I hold 50 AAPL, 200 NVDA, and 10 AMZN. Get today's prices, calculate my
-total portfolio value, show me the 30-day performance of each stock"
-ag_e5ee9d2bbb,4.A.2.b.5.I03.D01,https://github.com/mindsdb/anton,"Manage calendars** — summarize your day, create meetings, block time, and more, all just by asking."
-ag_e5ee9d2bbb,4.A.2.b.5.I03.D03,https://github.com/mindsdb/anton,"Manage calendars** — summarize your day, create meetings, block time, and more, all just by asking."
+ag_e5ee9d2bbb,4.A.2.a.4.I04.D02,https://github.com/mindsdb/anton,"Anton scans your inbox, classifies emails by signal vs. noise"
 ag_e5ee9d2bbb,4.A.3.b.1.I01.D03,https://github.com/mindsdb/anton,"scrapes live prices, writes code on the fly, crunches the numbers, and builds you a full dashboard"
-ag_e5ee9d2bbb,4.A.3.b.1.I03.D01,https://github.com/mindsdb/anton,"It writes the integration code itself, sets it up, and gets it running"
-ag_e5ee9d2bbb,4.A.3.b.1.I04.D02,https://github.com/mindsdb/anton,"System administration** — audit configurations, generate reports, fix issues."
-ag_e5ee9d2bbb,4.A.3.b.6.I03.D05,https://github.com/mindsdb/anton,"pull from multiple databases, crunch numbers, deliver a report on a schedule."
+ag_e5ee9d2bbb,4.A.3.b.1.I03.D04,https://github.com/mindsdb/anton,"It writes the integration code itself, sets it up, and gets it running"
+ag_e5ee9d2bbb,4.A.3.b.6.I03.D05,https://github.com/mindsdb/anton,"Automated reporting** — pull from multiple databases, crunch numbers, deliver a report on a schedule."
+ag_e5ee9d2bbb,4.A.4.a.1.I03.D01,https://github.com/mindsdb/anton,"Research & synthesis** — scrape the web, summarize findings, build a reference document."
 ag_e5ee9d2bbb,4.A.4.c.1.I01.D04,https://github.com/mindsdb/anton,"Send emails** — connect accounts, draft messages, or even send them on your behalf."
-ag_e5ee9d2bbb,4.A.4.c.1.I01.D10,https://github.com/mindsdb/anton,"clear your inbox, manage your calendar and CRM, book flights, and more."
 ag_e61e6290e7,4.A.2.b.1.I11.D01,https://github.com/ChrisChen667788/wind-comic,Editor (j-cut/l-cut + BGM per act + CJK subtitles)
 ag_e61e6290e7,4.A.2.b.2.I18.D02,https://github.com/ChrisChen667788/wind-comic,Storyboard (vision-audited)
 ag_e61e6290e7,4.A.3.b.6.I16.D02,https://github.com/ChrisChen667788/wind-comic,"script, character bible, multi-shot storyboards, voice-acted lines, BGM"
@@ -7771,6 +7811,7 @@ ag_eab303df7e,4.A.2.a.4.I02.D04,https://github.com/195440/nof1.ai,通过赋予 A
 ag_eab303df7e,4.A.2.a.4.I03.D03,https://github.com/195440/nof1.ai,AI 控制的仓位规模和杠杆管理
 ag_eab303df7e,4.A.4.c.1.I03.D04,https://github.com/195440/nof1.ai,Trade Execution Decisions
 ag_ead964922e,4.A.1.a.1.I04.D03,https://github.com/PurpleDoubleD/locally-uncensored,LU asks five search services in turn and needs no key for any of them.
+ag_ead964922e,4.A.2.b.2.I18.D17,https://github.com/PurpleDoubleD/locally-uncensored,"A video made in the chat plays in the chat, and a long one renders in the background while you write on."
 ag_ead964922e,4.A.2.b.2.I18.D20,https://github.com/PurpleDoubleD/locally-uncensored,Chat that draws your images
 ag_ead964922e,4.A.3.b.1.I01.D03,https://github.com/PurpleDoubleD/locally-uncensored,The coding agent shows the diff first
 ag_eb06914860,4.A.1.a.1.I04.D05,https://aws.amazon.com/marketplace/pp/prodview-5qfgayfaf2xqg,Bank Statement Retrieval: AI can auto-fetch and normalize bank data from multiple formats and sources.
@@ -7808,6 +7849,8 @@ ag_ec1f467282,4.A.2.b.5.I03.D03,https://aws.amazon.com/marketplace/pp/prodview-f
 ag_ec1f467282,4.A.3.b.6.I08.D14,https://aws.amazon.com/marketplace/pp/prodview-fxjlnajds7e4w,"Native CRM sync with pipeline, tasks, and meetings updated automatically in real time."
 ag_ec1f467282,4.A.4.a.6.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-fxjlnajds7e4w,"automates personalized outbound engagement across email, LinkedIn, calls, and WhatsApp"
 ag_ec1f467282,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-fxjlnajds7e4w,"Inbound and outbound management handled simultaneously, 24/7."
+ag_ec2790ed11,4.A.2.a.4.I07.D17,https://github.com/AndyShaman/BYDMate,BYDMate берёт данные напрямую из BMS (energydata) и показывает реальное потребление.
+ag_ec2790ed11,4.A.3.b.6.I08.D19,https://github.com/AndyShaman/BYDMate,trips/charges journal
 ag_ec30ac8ae8,4.A.1.b.1.I02.D02,https://agpt.co/?utm_source=awesome-ai-agents,Prospect lists and first drafts
 ag_ec30ac8ae8,4.A.3.b.6.I16.D01,https://agpt.co/?utm_source=awesome-ai-agents,"Briefs, drafts and page fixes"
 ag_ec30ac8ae8,4.A.4.c.1.I01.D10,https://agpt.co/?utm_source=awesome-ai-agents,"Inbox sorted, meetings prepped"
@@ -7857,6 +7900,11 @@ ag_edb524c0f3,4.A.2.a.4.I07.D06,https://aws.amazon.com/marketplace/pp/prodview-t
 ag_edb524c0f3,4.A.2.a.4.I07.D14,https://aws.amazon.com/marketplace/pp/prodview-txc4gyanmhygk,flag anomalies in vendor performance
 ag_edb524c0f3,4.A.2.b.1.I08.D13,https://aws.amazon.com/marketplace/pp/prodview-txc4gyanmhygk,"Models the full state of your enterprise in real time, enabling scenario planning and operational awareness"
 ag_edb524c0f3,4.A.4.b.6.I05.D12,https://aws.amazon.com/marketplace/pp/prodview-txc4gyanmhygk,"it autonomously discovers insights, predicts outcomes, and recommends actions"
+ag_edc7a5a393,4.A.2.b.2.I18.D04,https://github.com/liujh0729-jpg/AI-enterprise-OEM,智能问数、图表、仪表板
+ag_edc7a5a393,4.A.2.b.2.I18.D17,https://github.com/liujh0729-jpg/AI-enterprise-OEM,对话直接产出图片 / 视频，结果进本账号的 AIPDD 数字资产
+ag_edc7a5a393,4.A.3.b.1.I05.D01,https://github.com/liujh0729-jpg/AI-enterprise-OEM,Agent 经 CDP 驱动绑定窗口
+ag_edc7a5a393,4.A.4.a.8.I03.D02,https://github.com/liujh0729-jpg/AI-enterprise-OEM,真人接待 + AI 三种应答模式
+ag_edc7a5a393,4.A.4.c.1.I01.D04,https://github.com/liujh0729-jpg/AI-enterprise-OEM,按话术草拟或自动回复
 ag_edef03279a,4.A.2.b.5.I02.D07,https://aws.amazon.com/marketplace/pp/prodview-gzl2oigybosks,"By using Agentic AI to automatically design, schedule, and optimize data collection"
 ag_edef03279a,4.A.2.b.6.I02.D09,https://aws.amazon.com/marketplace/pp/prodview-gzl2oigybosks,"enabling collection planning and execution across a virtual constellation of 3,500+ sensors"
 ag_edf8319144,4.A.1.a.1.I02.D07,https://aws.amazon.com/marketplace/pp/prodview-d4nrlsgkaks4q,parse intricate tender documents
@@ -7998,13 +8046,10 @@ ag_f1bb76e75c,4.A.4.a.2.I03.D10,https://aws.amazon.com/marketplace/pp/prodview-e
 ag_f1bb76e75c,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-erk26grwl6eog,"For customer self-service, Computer answers questions and completes requests across chat, email, and voice"
 ag_f1bb76e75c,4.A.4.a.8.I03.D03,https://aws.amazon.com/marketplace/pp/prodview-erk26grwl6eog,Simple customer questions get instant answers.
 ag_f1bb76e75c,4.A.4.b.6.I04.D02,https://aws.amazon.com/marketplace/pp/prodview-erk26grwl6eog,"Computer answers employee questions and executes complex workflows, from creating ServiceNow tickets and updating HR records to approving access in Okta."
-ag_f1ca9d5ba4,4.A.1.a.1.I02.D03,https://github.com/eracle/OpenOutreach,"it discovers matching people from a
-**licensed data provider**"
-ag_f1ca9d5ba4,4.A.1.b.1.I02.D02,https://github.com/eracle/OpenOutreach,"You describe your product and your target market; it discovers matching people from a
-**licensed data provider**"
-ag_f1ca9d5ba4,4.A.2.a.1.I01.D03,https://github.com/eracle/OpenOutreach,"judges each one against the ICP it learned from your description, hands
-you the ones that fit **with the reason each was chosen written out**"
-ag_f1ca9d5ba4,4.A.4.a.6.I03.D05,https://github.com/eracle/OpenOutreach,and emails them from your mailbox
+ag_f1ca9d5ba4,4.A.1.a.1.I14.D03,https://github.com/eracle/OpenOutreach,buys a verified work address for each
+ag_f1ca9d5ba4,4.A.1.b.1.I02.D02,https://github.com/eracle/OpenOutreach,"The AI finds the people who fit, tells you why each one does, and emails them."
+ag_f1ca9d5ba4,4.A.2.a.1.I01.D03,https://github.com/eracle/OpenOutreach,judges each one against the ICP it learned from your description
+ag_f1ca9d5ba4,4.A.4.a.6.I03.D05,https://github.com/eracle/OpenOutreach,emails them from your mailbox
 ag_f1ea239345,4.A.2.a.1.I02.D03,https://github.com/zubair-trabzada/ai-ads-claude,"Audit existing ad performance — identify wasted spend, underperforming campaigns, optimization opportunities."
 ag_f1ea239345,4.A.2.a.4.I02.D02,https://github.com/zubair-trabzada/ai-ads-claude,"Competitive ad intelligence — what competitors are running, where they spend, gaps to exploit."
 ag_f1ea239345,4.A.2.a.4.I02.D06,https://github.com/zubair-trabzada/ai-ads-claude,"Build detailed audience personas with demographics, psychographics, platform preferences, and targeting parameters."
@@ -8058,6 +8103,11 @@ ag_f39d6e9700,4.A.2.b.2.I02.D01,https://github.com/ZSeven-W/openpencil,"Export t
 ag_f39d6e9700,4.A.2.b.2.I18.D20,https://github.com/ZSeven-W/openpencil,Describe any UI in natural language. Watch it appear on the infinite canvas in real-time with streaming animation.
 ag_f3f3be7cb5,4.A.1.b.1.I02.D03,https://github.com/pipiku915/FinMem-LLM-StockTrading,"Decision-making, to convert insights gained from memories into investment decisions"
 ag_f3f3be7cb5,4.A.2.a.4.I11.D04,https://github.com/pipiku915/FinMem-LLM-StockTrading,"Memory, with layered processing, to aid the agent in assimilating realistic hierarchical financial data"
+ag_f400a27339,4.A.1.b.2.I06.D09,https://github.com/precygtrucqui1981/blender-ai-copilot-lab,reviewer agents approve the result or return specific findings
+ag_f400a27339,4.A.2.b.1.I05.D01,https://github.com/precygtrucqui1981/blender-ai-copilot-lab,reviewer agents approve each result or return findings
+ag_f400a27339,4.A.2.b.2.I21.D03,https://github.com/precygtrucqui1981/blender-ai-copilot-lab,worker agents execute each one as ordered scene operations
+ag_f400a27339,4.A.2.b.6.I02.D07,https://github.com/precygtrucqui1981/blender-ai-copilot-lab,a manager agent breaks it into assignments with acceptance criteria
+ag_f400a27339,4.A.3.b.6.I08.D05,https://github.com/precygtrucqui1981/blender-ai-copilot-lab,every mutation leaves a named undo step
 ag_f449bfa836,4.A.2.b.5.I03.D01,https://github.com/hkjarral/AVA-AI-Voice-Agent-for-Asterisk,Calendly booking
 ag_f449bfa836,4.A.4.a.3.I03.D11,https://github.com/hkjarral/AVA-AI-Voice-Agent-for-Asterisk,"transfers, extension availability, voicemail, and hangup"
 ag_f45a2c5f0b,4.A.1.a.1.I02.D01,https://aws.amazon.com/marketplace/pp/prodview-g4folque3irua,"The 2501 gateway reads it, picks the right host and agent, and creates a job."
@@ -8258,10 +8308,15 @@ ag_fb48dcb510,4.A.3.b.6.I08.D09,https://aws.amazon.com/marketplace/pp/prodview-p
 ag_fb48dcb510,4.A.4.a.3.I03.D05,https://aws.amazon.com/marketplace/pp/prodview-prhc4co2ihkuq,handling web chat and email tickets automatically from day one
 ag_fb48dcb510,4.A.4.a.8.I03.D02,https://aws.amazon.com/marketplace/pp/prodview-prhc4co2ihkuq,"AI agents that handle incoming web chat and support tickets automatically, pulling answers from your knowledge base and escalating to your team when needed"
 ag_fb48dcb510,4.A.4.a.8.I03.D03,https://aws.amazon.com/marketplace/pp/prodview-prhc4co2ihkuq,pulling answers from your knowledge base
-ag_fb4adeae21,4.A.3.b.1.I06.D06,https://github.com/ForeactLabs/OpenExecutive,"it looks at the page you're on, clicks, types, fills in forms and opens pages until the task is done"
-ag_fb4adeae21,4.A.3.b.6.I08.D09,https://github.com/ForeactLabs/OpenExecutive,"The Executive then keeps private, dated notes of what they said"
-ag_fb4adeae21,4.A.4.b.6.I05.D10,https://github.com/ForeactLabs/OpenExecutive,Open Executive provides a single coherent executive voice backed by nine specialist AI agents
-ag_fb4adeae21,4.A.4.c.1.I01.D04,https://github.com/ForeactLabs/OpenExecutive,"it drafts email in their own voice, from their own Gmail, for them to review and send"
+ag_fb4adeae21,4.A.2.b.1.I03.D04,https://github.com/ForeactLabs/OpenExecutive,A cost goes to the person whose approval range covers it.
+ag_fb4adeae21,4.A.2.b.4.I03.D17,https://github.com/ForeactLabs/OpenExecutive,"Out of the box it supports approval levels, spend approval ranges, integration with corporate knowledge systems, and defined governance for how it interacts with human colleagues and other AI systems."
+ag_fb4adeae21,4.A.2.b.5.I03.D01,https://github.com/ForeactLabs/OpenExecutive,**As me** lets it act in its own name: book a meeting
+ag_fb4adeae21,4.A.3.b.1.I06.D06,https://github.com/ForeactLabs/OpenExecutive,"clicks, types, fills in forms and opens pages until the task is done"
+ag_fb4adeae21,4.A.3.b.6.I08.D09,https://github.com/ForeactLabs/OpenExecutive,"After every response, a background `claude-haiku-5-5` pass extracts key decisions, initiatives, and advice into SQLite."
+ag_fb4adeae21,4.A.4.a.5.I10.D09,https://github.com/ForeactLabs/OpenExecutive,"**As me** lets it act in its own name: book a meeting, follow up with someone, update a sheet, answer a customer."
+ag_fb4adeae21,4.A.4.a.8.I03.D03,https://github.com/ForeactLabs/OpenExecutive,"**As me** lets it act in its own name: book a meeting, follow up with someone, update a sheet, answer a customer."
+ag_fb4adeae21,4.A.4.b.6.I05.D10,https://github.com/ForeactLabs/OpenExecutive,"**Chief Strategy Officer** — competitive analysis, M&A, market positioning, OKRs"
+ag_fb4adeae21,4.A.4.c.1.I01.D04,https://github.com/ForeactLabs/OpenExecutive,"with **As you** switched on, it drafts email in their own voice, from their own Gmail or Outlook"
 ag_fb7f602cab,4.A.1.b.2.I08.D03,https://github.com/joshpxyne/gpt-migrate,It tests the new code on `--targetport` against these unit tests.
 ag_fb7f602cab,4.A.2.b.2.I02.D07,https://github.com/joshpxyne/gpt-migrate,It recursively rebuilds new `--targetlang` code from your existing code starting from your designated `--sourceentry` file.
 ag_fb7f602cab,4.A.2.b.4.I03.D15,https://github.com/joshpxyne/gpt-migrate,It develops unit tests using Python's unittest framework
@@ -8317,9 +8372,9 @@ ag_fca6a6841c,4.A.2.a.2.I03.D03,https://github.com/n8n-io/nod,"Every morning, No
 ag_fca6a6841c,4.A.3.b.6.I08.D01,https://github.com/n8n-io/nod,"Every morning, Nod reads your threads, your calendar, and the client's latest news,<br />then writes a one-page brief for each call."
 ag_fca6a6841c,4.A.4.a.2.I03.D10,https://github.com/n8n-io/nod,It checks a page on your schedule and tells you only when something changes.
 ag_fca6a6841c,4.A.4.c.1.I03.D06,https://github.com/n8n-io/nod,"It chases invoices, preps your calls and cancels trials, on real websites."
-ag_fcac594315,4.A.2.b.6.I02.D07,https://github.com/vastsa/PI-Desktop,The agent studies the project first and produces an implementation plan.
+ag_fcac594315,4.A.1.b.2.I08.D03,https://github.com/vastsa/PI-Desktop,"Read code, edit files, run commands, test, and iterate."
+ag_fcac594315,4.A.2.b.6.I02.D08,https://github.com/vastsa/PI-Desktop,The agent studies the project first and produces an implementation plan.
 ag_fcac594315,4.A.3.b.1.I01.D03,https://github.com/vastsa/PI-Desktop,"Read code, edit files, run commands, test, and iterate."
-ag_fcac594315,4.A.4.b.4.I01.D06,https://github.com/vastsa/PI-Desktop,Delegate independent work to background agents:
 ag_fcb954dccf,4.A.1.b.2.I06.D06,https://aws.amazon.com/marketplace/pp/prodview-efyzjxseyzaxi,"Review code against your full, cross-repo codebase to catch breaking changes, dependency conflicts, architecture-level issues, and other hidden risks."
 ag_fcb954dccf,4.A.2.a.3.I01.D04,https://aws.amazon.com/marketplace/pp/prodview-efyzjxseyzaxi,enforce your team's governance and security standards at scale
 ag_fcb954dccf,4.A.3.b.6.I12.D05,https://aws.amazon.com/marketplace/pp/prodview-efyzjxseyzaxi,Qodo runs specialized agents across every PR to write descriptions
@@ -8407,6 +8462,7 @@ ag_fed412adc4,4.A.1.b.1.I02.D06,https://aws.amazon.com/marketplace/pp/prodview-i
 ag_fed412adc4,4.A.3.b.1.I01.D03,https://aws.amazon.com/marketplace/pp/prodview-i7pte5zt2yysa,Generates and executes approved Python/bash remediation scripts after human sign-off.
 ag_fed412adc4,4.A.3.b.1.I04.D02,https://aws.amazon.com/marketplace/pp/prodview-i7pte5zt2yysa,JEFFE.ai deploys AI agents that cut AWS waste and fix issues automatically
 ag_fed412adc4,4.A.3.b.6.I08.D05,https://aws.amazon.com/marketplace/pp/prodview-i7pte5zt2yysa,"Maintains a complete log of every agent action, approval, and execution."
+ag_fedd323955,4.A.3.b.1.I05.D01,https://github.com/miuuyy/Octopus-SI-OS,"they read and write your files, drive a browser, use your desktop, call your apps and accounts"
 ag_fefbc421be,4.A.3.b.1.I05.D01,https://github.com/sanbuphy/nanoAgent,"The agent can execute bash commands, read files, and write files."
 ag_ff0512ed58,4.A.2.a.3.I01.D04,https://github.com/OrchestratorInc/agent-orchestrator,A reviewer agent can read every PR before a person does.
 ag_ff0512ed58,4.A.2.b.6.I02.D02,https://github.com/OrchestratorInc/agent-orchestrator,"It plans the work, starts a worker for each piece in its own worktree"
@@ -8421,7 +8477,6 @@ ag_ff3a04bf24,4.A.2.a.3.I01.D04,https://aws.amazon.com/marketplace/pp/prodview-7
 ag_ff3a04bf24,4.A.2.a.4.I03.D01,https://aws.amazon.com/marketplace/pp/prodview-7a4dgcbk6dt52,"AI agents that handle policy drafting, vendor risk scoring, questionnaire responses, and evidence review, and more"
 ag_ff3a04bf24,4.A.2.b.4.I01.D01,https://aws.amazon.com/marketplace/pp/prodview-7a4dgcbk6dt52,"AI agents that handle policy drafting, vendor risk scoring, questionnaire responses, and evidence review, and more"
 ag_ff3a04bf24,4.A.4.a.3.I03.D08,https://aws.amazon.com/marketplace/pp/prodview-7a4dgcbk6dt52,questionnaire responses
-ag_ff4b7b1cd4,4.A.1.a.1.I04.D07,https://github.com/pulseaiclub/phi,"plus `grep`, `find`, and `ls`"
 ag_ff4b7b1cd4,4.A.3.b.1.I01.D03,https://github.com/pulseaiclub/phi,"A fast coding agent, rpc plugin, sub-agents, sloppy edits, and mcp"
 ag_ff4e96aa8c,4.A.2.b.2.I02.D01,https://www.kuafuai.net/,平台即可自动完成需求解析、代码生成、测试优化及多端部署
 ag_ff4e96aa8c,4.A.2.b.2.I02.D04,https://www.kuafuai.net/,10分钟内生成完整可用的应用程序
