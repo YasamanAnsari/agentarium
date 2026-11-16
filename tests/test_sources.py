@@ -1,10 +1,23 @@
-"""URL routing, link extraction and star-range splitting, checked with literal values."""
+"""URL routing, link extraction, star-range splitting and request retries, checked with literal values."""
 
+import io
 import json
+import time
+import urllib.request
+import urllib.response
+from email.message import Message
 from pathlib import Path
 
 import pytest
-from agentarium.sources import candidate, github_repo, is_product_link, web_key, write_manifests
+
+from agentarium import sources
+from agentarium.sources import (
+    candidate,
+    github_repo,
+    is_product_link,
+    web_key,
+    write_manifests,
+)
 from agentarium.sources.awesome_lists import extract_links
 from agentarium.sources.aws_marketplace import listing_text
 from agentarium.sources.github import SEARCH_CAP, star_ranges
@@ -123,3 +136,22 @@ def test_manifest_keeps_entries_for_files_no_longer_on_disk(tmp_path: Path) -> N
 def test_star_ranges_refuse_a_single_value_over_the_cap() -> None:
     with pytest.raises(RuntimeError, match="exactly 5 stars"):
         star_ranges(5, 5, lambda low, high: SEARCH_CAP + 1)
+
+
+def test_api_requests_retry_a_dropped_connection(monkeypatch: pytest.MonkeyPatch) -> None:
+    calls = []
+
+    def urlopen(req, timeout):
+        calls.append(req.full_url)
+        if len(calls) == 1:
+            raise ConnectionResetError(104, "Connection reset by peer")
+        return urllib.response.addinfourl(io.BytesIO(b"[1, 2]"), Message(), req.full_url)
+
+    monkeypatch.setattr(urllib.request, "urlopen", urlopen)
+    monkeypatch.setattr(time, "sleep", lambda seconds: None)
+    assert sources.get_json("https://example.com/api") == [1, 2]
+    assert len(calls) == 2
+    calls.clear()
+    with pytest.raises(ConnectionResetError):
+        sources.request("https://example.com/page")
+    assert len(calls) == 1, "a product page is not retried"

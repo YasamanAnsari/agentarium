@@ -46,11 +46,14 @@ def category_id(client: Any, name: str) -> str:
 def collect(category: str) -> Counter[str]:
     """Save every listing in the category to data/raw/aws/; API failures become RuntimeError."""
     import boto3  # the optional `pulls` extra
+    from botocore.config import Config
     from botocore.exceptions import BotoCoreError, ClientError
 
     counts: Counter[str] = Counter()
     try:
-        client = boto3.client("marketplace-discovery", region_name=REGION)
+        # The API throttles at about five listings a second; adaptive retries slow down instead of failing.
+        config = Config(retries={"mode": "adaptive", "max_attempts": 10})
+        client = boto3.client("marketplace-discovery", region_name=REGION, config=config)
         category_filter = [{"filterType": "CATEGORY", "filterValues": [category_id(client, category)]}]
         for page in client.get_paginator("search_listings").paginate(filters=category_filter):
             for summary in page["listingSummaries"]:

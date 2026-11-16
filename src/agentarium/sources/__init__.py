@@ -46,10 +46,12 @@ class SkipRecord(Exception):
 
 
 def request(
-    url: str, headers: dict[str, str] | None = None, max_bytes: int | None = None
+    url: str, headers: dict[str, str] | None = None, max_bytes: int | None = None, retry_network: bool = False
 ) -> tuple[bytes, Message, str]:
     """GET a URL, waiting out rate limits and retrying server errors.
 
+    With retry_network, dropped connections and timeouts are retried too. APIs ask for that;
+    product pages do not, so a dead site costs one timeout instead of several.
     Returns the body, the response headers and the final URL after redirects.
     """
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, **(headers or {})})
@@ -67,11 +69,17 @@ def request(
                 raise
             log.warning("HTTP %s from %s; retrying in %d s", err.code, urlsplit(url).hostname, wait)
             time.sleep(wait)
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as err:
+            if not retry_network or attempt == MAX_ATTEMPTS:
+                raise
+            wait = 5 * 2**attempt
+            log.warning("%s from %s; retrying in %d s", err, urlsplit(url).hostname, wait)
+            time.sleep(wait)
     raise AssertionError("unreachable")
 
 
 def get_json(url: str, headers: dict[str, str] | None = None) -> Any:
-    body, _, _ = request(url, headers)
+    body, _, _ = request(url, headers, retry_network=True)
     return json.loads(body)
 
 
