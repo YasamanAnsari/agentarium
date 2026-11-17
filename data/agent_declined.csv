@@ -31,3 +31,8 @@ date,reason,count
 2026-11-16,model_refused,1
 2026-11-16,not_an_agent,48
 2026-11-16,quote_not_in_text,2
+2026-11-17,model_refused,1
+2026-11-17,no_description,2
+2026-11-17,not_an_agent,281
+2026-11-17,quote_not_in_text,3
+2026-11-17,recheck_not_an_agent,11
