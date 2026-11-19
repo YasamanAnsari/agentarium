@@ -42,3 +42,10 @@ date,reason,count
 2026-11-18,not_an_agent,339
 2026-11-18,quote_not_in_text,8
 2026-11-18,recheck_not_an_agent,1
+2026-11-19,duplicate_task,1
+2026-11-19,model_refused,2
+2026-11-19,no_description,3
+2026-11-19,not_an_agent,337
+2026-11-19,quote_not_in_text,2
+2026-11-19,recheck_not_an_agent,3
+2026-11-19,unknown_activity,1

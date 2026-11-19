@@ -4,6 +4,7 @@ ag_00136a4dbf,handle_customer_support,https://aws.amazon.com/marketplace/pp/prod
 ag_0029efd8dd,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-esvw7kgyusbqa,"the system analyzes network telemetry, forecasts demand, and executes closed-loop actions"
 ag_0030ee847c,research_topic,https://aws.amazon.com/marketplace/pp/prodview-ysfnohl72bbgk,"Falconer's agent searches across your documents, code, and connected tools to answer your teams questions, citing each answer to the correct source."
 ag_0030ee847c,write_document,https://aws.amazon.com/marketplace/pp/prodview-ysfnohl72bbgk,"Prompt it to write new docs, draft runbooks and specs, file Linear issues, start working on meeting action items, and reorganize your knowledge structure into a clean hierarchy."
+ag_003c03ad44,review_code,https://github.com/cookieY/Yearning,the AI Review Agent inspects only **1 representative anonymized SQL per group**
 ag_0099b28aaf,analyze_data,https://github.com/AgriciDaniel/claude-seo,"Give it any website and it runs a full SEO audit in 10 to 15 minutes, then hands you a clear action plan, sorted by what matters most."
 ag_0099b28aaf,write_code,https://github.com/AgriciDaniel/claude-seo,"Finds, validates and writes Schema.org markup for rich results."
 ag_00d3eb8226,write_code,https://github.com/agents-universe/agents-universe,需求、代码、PR 都由智能体们在对话中完成
@@ -29,7 +30,7 @@ ag_021c8c226a,browse_web,https://github.com/Ne0nd0g/merlin,Configure a [listener
 ag_021c8c226a,operate_computer,https://github.com/Ne0nd0g/merlin,Start Merlin
 ag_021c8c226a,write_code,https://github.com/Ne0nd0g/merlin,Merlin is a cross-platform post-exploitation HTTP/2 Command & Control  server and agent written in golang.
 ag_021c8c226a,write_document,https://github.com/Ne0nd0g/merlin,View the [Blog Posts](https://merlin-c2.readthedocs.io/en/latest/misc/blogs.html) page for additional information
-ag_0232dcbe9c,write_code,https://github.com/Tencent/LoopForge,"it opens a Docker sandbox, checks out your repositories, delegates to project roles, and opens the PR"
+ag_0232dcbe9c,write_code,https://github.com/Tencent/LoopForge,"Describe what you need to **Main Bot** in chat: it opens a Docker sandbox, checks out your repositories, delegates to project roles, and opens the PR."
 ag_023a6df955,write_code,https://github.com/FerroxLabs/wayland,"Cowork operates directly on your files with the built-in tools (Read, Write, Edit, Bash, Grep, Glob), processes real documents, and plans multi-step work."
 ag_023a6df955,write_document,https://github.com/FerroxLabs/wayland,"You cowork with the system to get whole jobs done: write the book, run the multi-week project, take an idea all the way to shipped."
 ag_0258b6c752,research_topic,https://github.com/oneshot-agent/oneshot-gtm,"Each message opens with an offer specific to their firm, written from research and your product brief, in your voice."
@@ -58,6 +59,7 @@ ag_03f1e50f73,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-nksxcf
 ag_0401fcf3af,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-nzpg22fhm77la,"It enables analysts to ingest, clean, and analyze large volumes of enterprise data and documents quickly, improving research efficiency by over 30%."
 ag_045febe22f,review_code,https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It can do anything that a person could do with the GitHub API, from labeling issues to reviewing pull requests."
 ag_045febe22f,write_code,https://e2b.dev/resources/building-open-source-codebase-copilot-with-code-execution-layer?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=awesome-ai-agents,"It can run tests or try to reproduce an issue or an error or even write code, commit it, and open a pull request."
+ag_0461fe7fca,write_document,https://github.com/GML-MMGroup/AdCraft,"the system automatically generates the **ad script, product visual plan, character settings, scene design, storyboard script, storyboard images, storyboard videos, background music, and the final composition plan.**"
 ag_0472c44d05,write_code,https://github.com/shyamsaktawat/OpenAlpha_Evolve,"an intelligent system that iteratively writes, tests, and improves code using Large Language Models (LLMs) via LiteLLM, guided by the principles of evolution."
 ag_04a9d30f03,research_topic,https://github.com/rotemweiss57/gpt-newspaper,Reporters search the news with [Tavily](https://tavily.com)
 ag_04a9d30f03,write_document,https://github.com/rotemweiss57/gpt-newspaper,"Writes a cited article from the sources, plus a headline, summary and pull quote, in your language."
@@ -148,10 +150,9 @@ ag_0c65b435ad,write_code,https://github.com/jayminwest/overstory,"Overstory turn
 ag_0c6d405b84,browse_web,https://github.com/Open-Curiosity/gini-agent,the agent hands you a live view of its own browser to sign in or complete the step
 ag_0ca7d59147,review_code,https://github.com/larlarua/AutoCVE,它可直接分析项目源码，并结合 ReAct Loop、专项工具调用、Nudge 纠偏及 `FinalizeFinding` 结构化终止机制，最终产出符合 CVE 申报条件的高价值漏洞。
 ag_0ca7d59147,write_document,https://github.com/larlarua/AutoCVE,实现从项目筛选、仓库导入、审计任务创建、Agent 漏洞挖掘到 CVE 申报报告生成的全流程自动化。
-ag_0ce2b46481,review_code,https://github.com/kenn-io/roborev,"roborev runs in the background, reviews every commit as agents write code,
-and surfaces issues in seconds -- before they compound."
-ag_0ce2b46481,write_code,https://github.com/kenn-io/roborev,"`roborev fix` shows the review findings to an agent, which applies
-changes and commits."
+ag_0ce2b46481,review_code,https://github.com/kenn-io/roborev,"roborev runs in the background, reviews every commit as agents write code,"
+ag_0ce2b46481,write_code,https://github.com/kenn-io/roborev,"`roborev fix` feeds review findings to an agent that
+  applies fixes and commits."
 ag_0d05653079,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-ry7uic2wtbkbe,"AI-powered contact center platform that replaces traditional IVR with natural voice interactions across seven languages, using Amazon Bedrock and Nova Sonic to resolve customer inquiries automatically"
 ag_0d3b4b028f,review_code,https://github.com/qiz029/dscode,"After a code change passes its relevant checks, the agent sends the Git diff—or, outside a repository, the changes since a snapshot taken when the task began—to a separate read-only model and fixes concrete findings before ending the turn."
 ag_0d3b4b028f,write_code,https://github.com/qiz029/dscode,"DSCODE is a terminal coding agent for macOS and Linux, built on [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)."
@@ -238,6 +239,7 @@ ag_145145e4d4,write_document,https://github.com/zubair-trabzada/ai-agency-claude
 ag_14e8fb3dba,research_topic,https://github.com/LazyAGI/LazyMind,Search sources → retrieve evidence → compare → synthesize → review
 ag_14e8fb3dba,write_document,https://github.com/LazyAGI/LazyMind,Organize sources → outline → draft sections → revise → final review
 ag_150203bc94,research_topic,https://aws.amazon.com/marketplace/pp/prodview-2dgcuyuvjtszu,Each study is powered by multiple AI agents that plan research explore social signals simulate interviews and synthesize insights together.
+ag_152548e9bc,write_document,https://aws.amazon.com/marketplace/pp/prodview-wxsxligr7wgfu,"When gaps are identified, the agent generates detailed reports with actionable recommendations organized by implementation timeline."
 ag_15573bb4dc,write_code,https://github.com/flizzywine/dsh-tavern,缺什么能力，也可以让 Agent 帮你写一个自定义工具。
 ag_1587ebe4a3,write_code,https://github.com/Yeachan-Heo/oh-my-claudecode,"/autopilot ""build a REST API for managing tasks"""
 ag_1590361431,write_code,https://github.com/MoonshotAI/kimi-code,"Kimi Code CLI is an AI coding agent that runs in your terminal — it can read and edit code, run shell commands, search files, fetch web pages, and choose the next step based on the feedback it receives."
@@ -247,7 +249,7 @@ ag_1597521031,write_code,https://github.com/Mangi-11/Eta,它可以处理文件�
 ag_15a7cadc0f,analyze_data,https://github.com/K-Dense-AI/agentic-data-scientist,Agentic Data Scientist is an open-source framework that uses a sophisticated multi-agent workflow to tackle complex data science tasks.
 ag_15a7cadc0f,write_code,https://github.com/K-Dense-AI/agentic-data-scientist,Quick coding tasks without planning overhead
 ag_15bb35ac95,analyze_data,https://github.com/pgalko/BambooAI,"Given a dataset and a question, the Analyst explores the data, writes and executes code, examines results and develops its analysis iteratively."
-ag_15bb35ac95,write_code,https://github.com/pgalko/BambooAI,"the Analyst explores the data, writes and executes code, examines results and develops its analysis iteratively."
+ag_15bb35ac95,write_code,https://github.com/pgalko/BambooAI,"It can explore datasets, write and execute code, examine results, consult documents and external sources, and decide what to investigate next."
 ag_15bb35ac95,write_document,https://github.com/pgalko/BambooAI,"Other specialised roles handle supporting tasks such as document reading, figure generation and report rewriting."
 ag_15d50fb147,browse_web,https://github.com/pamelafox/personal-linkedin-agent,The agent uses [Pydantic AI](https://ai.pydantic.dev/) for LLM-based decisions and [Playwright](https://playwright.dev/python/) for browser automation.
 ag_15e7621893,analyze_data,https://github.com/datagallery-ai/dataagent,"runs complex multi-table, multi-step analysis inside read-only boundaries"
@@ -297,6 +299,8 @@ target; it does the security assessment on its own and hands you a report"
 ag_19a979e177,operate_computer,https://testdriver.ai/,"clicking, typing, and reading the screen to prove the new behavior works"
 ag_19a979e177,review_code,https://testdriver.ai/,TestDriver reviews every pull request automatically. The vision agent reads the diff to understand what changed
 ag_19a979e177,write_code,https://testdriver.ai/,"Once the agent has a passing test, it opens a fresh pull request with the generated test code committed for you."
+ag_19b07c58e6,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-bwrtcbhzr7rb2,"The solution runs multi-echelon and safety-stock models, recommends optimal inventory placement across locations, identifies excess stock, and proposes and books stock transfers between sites."
+ag_19b73ab22f,review_code,https://github.com/yologdev/yoyo-evolve,Reads its own source code
 ag_19b73ab22f,write_code,https://github.com/yologdev/yoyo-evolve,"yoyo reads its own source, picks what to improve, implements it, runs tests, and commits — every few hours, on its own."
 ag_19dbf82484,review_code,https://about.gitlab.com/gitlab-duo-agent-platform/,Automate code reviews
 ag_19dbf82484,write_code,https://about.gitlab.com/gitlab-duo-agent-platform/,Automatically transform issues into production-ready code.
@@ -339,6 +343,7 @@ ag_1e3b0079ee,research_topic,https://github.com/K-Dense-AI/claude-scientific-wri
 ag_1e3b0079ee,write_document,https://github.com/K-Dense-AI/claude-scientific-writer,"Generate publication-ready scientific papers, reports, posters, grant proposals, literature reviews, and more academic documents"
 ag_1e43f6ebcb,research_topic,https://github.com/InternScience/InternAgent,"The Deep Research (DR) module decomposes a research question into subtasks, gathers information from academic databases and the web in parallel, and synthesizes findings into a direct answer or structured report."
 ag_1e43f6ebcb,write_code,https://github.com/InternScience/InternAgent,"This code repository can be used for full-cycle autonomous scientific research, ranging from hypothesis generation to automated experimental execution."
+ag_1e63dfdc66,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-zwi7cu4taqgiy,"It compares the extracted results field by field against your ground truth labels, calculating precision, recall, and accuracy scores for each data point."
 ag_1e7c960ddd,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-ktnjvdnhtgy6w,"it analyzes incoming 911/999 calls, operational priorities, unit availability, and response time SLAs to optimize dispatch decisions in real time"
 ag_1e9607f408,analyze_data,https://github.com/google-gemini/gemini-cli,Query and edit large codebases
 ag_1e9607f408,write_code,https://github.com/google-gemini/gemini-cli,"Generate new apps from PDFs, images, or sketches using multimodal capabilities"
@@ -434,6 +439,7 @@ ag_27567dd8b9,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-42oosp
 ag_2756e4a3c7,browse_web,https://github.com/elder-plinius/T3MP3ST,"Point it at an authorized target and the kill chain runs itself: **recon → exploit → report**, from a browser War Room or the CLI, driven by the agent you're *already* signed into — Claude Code, Codex, Hermes, OpenCode, Oh My Pi — or a model you run **fully offline** (Ollama, LM Studio, vLLM)."
 ag_2756e4a3c7,research_topic,https://github.com/elder-plinius/T3MP3ST,"Point it at an authorized target and the kill chain runs itself: **recon → exploit → report**, from a browser War Room or the CLI, driven by the agent you're *already* signed into — Claude Code, Codex, Hermes, OpenCode, Oh My Pi — or a model you run **fully offline** (Ollama, LM Studio, vLLM)."
 ag_2756e4a3c7,write_code,https://github.com/elder-plinius/T3MP3ST,The AI coding agent already on your machine is the backbone.
+ag_278141c41f,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-iyul5c533e54e,evaluates each deduction based on its validity and expected recovery
 ag_27825d1635,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-sdz3tesmy5pbg,USAN builds AI voice and chat bots on Amazon Connect that personalize every conversation and resolve customer inquiries
 ag_27a6ab013e,write_code,https://aws.amazon.com/marketplace/pp/prodview-kllccta3zgs2q,"Clark, the Superblocks AI agent, turns natural language into apps, workflows, and jobs connected to your databases, SaaS tools, and internal APIs."
 ag_27ad26abb4,research_topic,https://github.com/RUC-NLPIR/Search-o1,allowing models itself to dynamically retrieve external knowledge whenever they encounter uncertain information.
@@ -477,8 +483,9 @@ ag_29a8a4e874,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-ap6n7i
 ag_29df60858d,browse_web,https://github.com/topconstableinlet67/ai--manus2.0,"Manus browser control lets the agent navigate websites, fill forms, and gather information without you manually clicking through every page."
 ag_29df60858d,research_topic,https://github.com/topconstableinlet67/ai--manus2.0,Manus autonomous tasks cover everything from simple file checks to multi-page web research
 ag_29df60858d,write_code,https://github.com/topconstableinlet67/ai--manus2.0,"It can write and execute scripts, open web pages, interact with elements, and carry out multi-step tasks with minimal supervision."
-ag_2a0df2c841,review_code,https://github.com/gi-dellav/zerostack,"switch between system prompt modes at runtime (`code`, `plan`, `review`, `debug`, etc.) to tailor the agent's behavior to the task"
+ag_2a0df2c841,review_code,https://github.com/gi-dellav/zerostack,"switch between system prompt modes at runtime (`code`, `plan`, `review`, `debug`, etc.) to tailor the agent's behavior to the task without having to manage Skills."
 ag_2a0df2c841,write_code,https://github.com/gi-dellav/zerostack,"Minimal coding agent written in Rust, inspired by [pi](https://pi.dev/docs/latest/usage) and [opencode](https://opencode.ai/)."
+ag_2ad06540bc,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-zzaz2omnpcz6y,"Automatically extracts invoice data, matches invoices with purchase orders and receipts, detects duplicates and anomalies, and resolves price and quantity variances within approved limits."
 ag_2b1fc0aec7,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-nbcqvnscq5bo6,"Balance inquiries, transaction history, loan simulations, and general banking support — all through WhatsApp."
 ag_2b4b1081ee,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-iyn5x6x6p2i2i,"Automatically generates, validates, and executes SQL against PostgreSQL (OLTP) and Amazon Redshift (OLAP) databases."
 ag_2b54a14f5f,write_document,https://aws.amazon.com/marketplace/pp/prodview-3t6iv6ewbdfzq,"Action Agents for enforcing policies, generating audit reports, and managing escalations"
@@ -539,7 +546,7 @@ ag_309ec83796,research_topic,https://github.com/H-mmer/pentest-agents,"A complet
 ag_309ec83796,review_code,https://github.com/H-mmer/pentest-agents,python3 -m tools.installer render --check        # exits 1 if drift
 ag_309ec83796,write_code,https://github.com/H-mmer/pentest-agents,python3 -m tools.installer install --targets all --scope project
 ag_309ec83796,write_document,https://github.com/H-mmer/pentest-agents,python3 -m tools.installer render --targets all
-ag_30b7d18e56,operate_computer,https://github.com/onehumanbeing/esp32-iphone-agent,Any app a person can use: it sees the screen and moves a pointer
+ag_30b7d18e56,operate_computer,https://github.com/onehumanbeing/esp32-iphone-agent,An AI agent uses a real iPhone like a person.
 ag_30bc2cffa9,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-wcssigfyqtzmy,"calculates metrics in real-time, providing a robust foundation for financial analysis"
 ag_30bc2cffa9,write_document,https://aws.amazon.com/marketplace/pp/prodview-wcssigfyqtzmy,"generating comprehensive, natural language summaries and visual reports tailored for leadership reviews"
 ag_30d7c46ead,review_code,https://github.com/snarktank/antfarm,Nothing ships without a code review.
@@ -555,6 +562,8 @@ ag_31fcdc15d9,handle_customer_support,https://aws.amazon.com/marketplace/pp/prod
 ag_32308532a9,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-yt3zgiljxllda,"Crogl pulls the host and identity context, queries your EDR for process lineage, and checks the authentication record. It pivots to your data lake for anything the SIEM did not retain, then reads the relevant threat advisory."
 ag_32308532a9,research_topic,https://aws.amazon.com/marketplace/pp/prodview-yt3zgiljxllda,"The paid annual plan adds unlimited users and investigations, autonomous investigation and threat hunting"
 ag_3252406820,research_topic,https://github.com/IAmTomShaw/stock-tracker-agent,Runs a research pipeline to analyze news and market events
+ag_32e016fa28,research_topic,https://aws.amazon.com/marketplace/pp/prodview-rwxcxx2enqk4k,"CloudThinker’s investigation agents pull context from logs, metrics, recent deploys and code, identify the root cause, and propose a fix."
+ag_32e016fa28,review_code,https://aws.amazon.com/marketplace/pp/prodview-rwxcxx2enqk4k,"The same agents also review pull requests, find reachable CVEs, investigate cost spikes, and run routine operations on a schedule."
 ag_32e923f9f8,write_document,https://github.com/hewliyang/office-agents,"can read/write documents through built-in tools, a sandboxed shell, and a virtual filesystem"
 ag_3302668709,write_document,https://github.com/Spark-To-Paper-Skills/paperjury,系统会起草最小补丁，通过护栏检查后再应用。
 ag_33134247d3,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-zfpyaw5uw6u5g,"Delivers day-ahead, intraday, and near-real-time renewable generation and load forecasts using AWS-native machine learning and weather data."
@@ -563,6 +572,7 @@ ag_333477e168,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-25jquf
 ag_333477e168,research_topic,https://aws.amazon.com/marketplace/pp/prodview-25jquf5pbuggk,"Agentic AI automates knowledge retrieval, report generation, and research workflows"
 ag_333477e168,write_document,https://aws.amazon.com/marketplace/pp/prodview-25jquf5pbuggk,"AI agents extract insights from documents, emails, CRMs, and databases, then generate formatted, editable reports that fit existing workflows."
 ag_3363d7b902,write_code,https://aws.amazon.com/marketplace/pp/prodview-wfslyrimbqsk2,Build full-stack apps and agents using English
+ag_336b2610b5,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-gjvhz4vsigtpk,This AI agent analyzes extraction results to identify fields with persistent failures.
 ag_3377a17dd0,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-6yrlvdyr5w32u,"By holistically analyzing aggregated telemetry and alert data, it develops a deep, contextual understanding of your system architecture."
 ag_33b18c44fb,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-vfupd63r2v3pk,"While routine inquiries and transactions can be resolved automatically, complex interactions are seamlessly transferred to human agents with complete conversation context"
 ag_3433a94e78,handle_customer_support,https://github.com/JC0v0/Customer-Agent,电商AI客服桌面应用程序，基于 PyQt6 构建，支持多平台渠道集成，集成 AI 大模型实现智能自动回复。
@@ -575,6 +585,8 @@ ag_34dead5bab,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-lzpvqz
 ag_34dead5bab,write_document,https://aws.amazon.com/marketplace/pp/prodview-lzpvqzcp3hmcm,"AI agents prepare nominations, confirmations, allocations, and regulatory production reports with full context and a complete audit trail"
 ag_350ea5d32f,research_topic,https://aws.amazon.com/marketplace/pp/prodview-z5ax4sxkwqh3g,research and summarize trial criteria
 ag_356dcf9608,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-rhiy4f3zpsric,"it continuously reconciles bank statements with ERP and accounting systems using intelligent matching, AI-driven explanations, and audit-ready controls"
+ag_35ab5d0b14,browse_web,https://github.com/simplexai-labs/linger,an agent uses the browser and waits for approval before sending an email
+ag_35de8a02c0,write_code,https://github.com/leo1oel/lattice,"The agent reads your project and papers, fixes build errors and edits files; every change shows as a diff you can review or undo."
 ag_35de8a02c0,write_document,https://github.com/leo1oel/lattice,"Annotate the source or the PDF, then revise from your annotations in rounds: the agent proposes an edit for each one and you accept or reject it in place."
 ag_35f362b16f,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-4p22bjgwhhitg,"Compares source and target datasets across diverse platforms including AWS S3 CSVs, cloud data warehouses, and relational databases."
 ag_35f362b16f,write_code,https://aws.amazon.com/marketplace/pp/prodview-4p22bjgwhhitg,"The module automatically generates executable, read-only SQL assertions that flag violations on returned rows, persisting pass/fail telemetry to a central repository."
@@ -613,7 +625,7 @@ ag_3a56560002,write_code,https://github.com/twinnydotdev/twinny,"lets the model 
 ag_3aadf95f7e,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-l5uumkdwikgye,Extract actionable insights from data with AI-powered analytics and visualization.
 ag_3aadf95f7e,write_code,https://aws.amazon.com/marketplace/pp/prodview-l5uumkdwikgye,Convert COBOL to Python while preserving business logic with AI-powered refactoring.
 ag_3b1105be2c,browse_web,https://github.com/OSU-NLP-Group/SeeAct,SeeAct is a system for generalist web agents that autonomously carry out tasks on any given website
-ag_3b171f9677,write_document,https://github.com/glanderness/BeefTV,从剧本架构、8 镜分镜表，到角色、场景、镜头首帧、视频与中文旁白，过程和素材都留在画布上
+ag_3b171f9677,write_document,https://github.com/glanderness/BeefTV,从剧本架构、8 镜分镜表，到角色、场景、镜头首帧、视频与中文旁白
 ag_3b525c797f,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-qj6w7rxaxvlxw,"Automate document classification, image analysis, and evidence collection"
 ag_3bad96f336,write_code,https://github.com/plandex-ai/plandex,Plandex is a terminal-based AI development tool that can **plan and execute** large coding tasks that span many steps and touch dozens of files.
 ag_3bbf2282aa,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-qk2t4wiwxr3mm,"Cross-reference logs, infrastructure data, and Slack messages for root cause identification"
@@ -664,7 +676,7 @@ ag_3e51592369,research_topic,https://github.com/ltjed/freephdlabor,automates the
 ag_3e51592369,review_code,https://github.com/ltjed/freephdlabor,**ReviewerAgent**: Reviews and provides feedback
 ag_3e51592369,write_code,https://github.com/ltjed/freephdlabor,"**ExperimentationAgent**: Draft code, execute experiment"
 ag_3e51592369,write_document,https://github.com/ltjed/freephdlabor,**WriteupAgent**: Creates academic papers with LaTeX
-ag_3e60941aa7,operate_computer,https://github.com/DIYgod/pinky,"Let AI use your iPhone or Android phone, with you in the loop"
+ag_3e60941aa7,operate_computer,https://github.com/DIYgod/pinky,let it work on a hidden background screen while you keep using the phone
 ag_3ec3a514e1,review_code,https://github.com/kirodotdev/Kiro,"Kiro is an agentic AI development platform that helps developers and teams plan, build, and review software."
 ag_3ec3a514e1,write_code,https://github.com/kirodotdev/Kiro,"Kiro is an agentic AI development platform that helps developers and teams plan, build, and review software."
 ag_3ed542a95d,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-uuaq6rh7cceue,"Discovery Agent autonomously pinpoints key documents, identifies custodians, reconstructs timelines, and visualizes complex communication patterns across channels and languages."
@@ -740,7 +752,8 @@ ag_45c2eb14bd,review_code,https://aws.amazon.com/marketplace/pp/prodview-jbphmrb
 ag_45c2eb14bd,write_code,https://aws.amazon.com/marketplace/pp/prodview-jbphmrbh7enpy,"Point Systaumate at a product brief and it grooms the requirements, then conceives, designs, architects, builds, tests, deploys and operates the product."
 ag_45c2eb14bd,write_document,https://aws.amazon.com/marketplace/pp/prodview-jbphmrbh7enpy,"Systaumate hands back the source code and every artifact it produces, including specifications, designs, architecture decision records, tests and runbooks, committed to your own repositories with a per-release Git audit trail, branch-per-release isolation and human-only merge to main."
 ag_45e504d40b,write_code,https://aws.amazon.com/marketplace/pp/prodview-dwrvorg374e3u,Developers can effortlessly generate unit test code by simply uploading the source file or adding GIT Repo.
-ag_45ea9f1d00,operate_computer,https://github.com/JosssphZhou/poki,"Poki is an app that operates your iPhone. It reads the screen, taps, types and scrolls in real apps."
+ag_45ea9f1d00,browse_web,https://github.com/JosssphZhou/poki,look things up in the built-in browser
+ag_45ea9f1d00,operate_computer,https://github.com/JosssphZhou/poki,"The Poki app runs directly on your iPhone, reads the screen, and taps, types, and scrolls inside real apps using your own model account."
 ag_45eb8ec51c,browse_web,https://github.com/raroque/boop-agent,"spawned agents can use a Patchright-backed Chrome profile for login-required services, visual workflows, or pages that reject ordinary automation"
 ag_462a86a393,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-ttw6uer5bwecc,"It reconstructs logs and actions into a timeline of the attack, showing what happened, what it means, and where it may be headed next."
 ag_4685566cbf,research_topic,https://github.com/mogons/noraz-agent,"Open-source Robinhood trading agent infrastructure with MCP-powered DEX research, autonomous trading, agent wallets, and copy-trading capabilities"
@@ -1002,7 +1015,7 @@ ag_59ec2ff996,write_code,https://github.com/openJiuwen-ai/jiuwenswarm,"Most dail
 ag_59ec2ff996,write_document,https://github.com/openJiuwen-ai/jiuwenswarm,Conduct an in-depth research on the new energy vehicle industry and generate an analysis report.
 ag_5a74805eb6,write_code,https://github.com/opensec-git/Pi-Bolt,"Pi, the coding agent, compiled ahead of time to one native executable."
 ag_5acfef6e27,browse_web,https://github.com/alexsergivan/kwant,Each bot job gets its own page in its team's browser
-ag_5acfef6e27,review_code,https://github.com/alexsergivan/kwant,when the PR goes green a fresh-eyes reviewer gives its advice
+ag_5acfef6e27,review_code,https://github.com/alexsergivan/kwant,a fresh-eyes reviewer gives its advice
 ag_5acfef6e27,write_code,https://github.com/alexsergivan/kwant,Failed CI checks and review comments on a bot's PR go back to that bot as one Fix-it item
 ag_5b6f78ab1a,research_topic,https://github.com/Harvil1/codeAgent,你用自然语言下指令，它读代码、改文件、跑命令、查资料，把活干完。
 ag_5b6f78ab1a,write_code,https://github.com/Harvil1/codeAgent,"It understands your repository, plans multi-step changes, writes and edits files, runs commands and tests, and iterates until the task is done"
@@ -1080,7 +1093,7 @@ ag_60ac14325b,write_document,https://aws.amazon.com/marketplace/pp/prodview-zjd7
 ag_60bed32857,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-gdbshz2rjajws,"It queries literature and data, running complex analyses, and even executing code or simulations tailored to your field."
 ag_60bed32857,research_topic,https://aws.amazon.com/marketplace/pp/prodview-gdbshz2rjajws,It helps you automate the entire systematic literature review process.
 ag_60bed32857,write_document,https://aws.amazon.com/marketplace/pp/prodview-gdbshz2rjajws,We help with everything from grant writing to automated Systematic Literature Reviews.
-ag_60d4d66ee2,research_topic,https://github.com/aipoch/open-science,The open-source AI research workbench for scientific research and agent workflows.
+ag_60d4d66ee2,research_topic,https://github.com/aipoch/open-science,The built-in agent can search the web and read public pages
 ag_60d92dc243,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-4vuv6caw2iryu,"Ask about security, observability, cost or governance in plain language and WeWatch answers from your actual infrastructure, not from documentation or guesswork."
 ag_60eb461a57,operate_computer,https://aws.amazon.com/marketplace/pp/prodview-nivfzhu3or5wo,Installs and explores your app on real Android emulators
 ag_60eb461a57,write_document,https://aws.amazon.com/marketplace/pp/prodview-nivfzhu3or5wo,Generates executive-ready penetration test reports
@@ -1168,6 +1181,7 @@ ag_6768882c36,research_topic,https://aws.amazon.com/marketplace/pp/prodview-2r7b
 ag_676f6530d3,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-gicrjsjmbmkqu,"generates contextually relevant responses by leveraging the company’s existing knowledge base, including website content and internal documents."
 ag_67ded71a49,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-n3d5sr3odfe6w,the agent sends personalized acknowledgement messages confirming receipt and assessment status
 ag_67ded71a49,write_document,https://aws.amazon.com/marketplace/pp/prodview-n3d5sr3odfe6w,"It generates weekly executive reports summarizing incidents, risk trends, response times, and resolution outcomes"
+ag_67e8b7b539,write_document,https://aws.amazon.com/marketplace/pp/prodview-7ylasqfebol7u,Every proposed change triggers the automatic generation of a formal change request document.
 ag_68389ec226,handle_customer_support,https://github.com/ro-anderson/multi-agent-rag-customer-support,This project implements a multi-agent Retrieval-Augmented Generation (RAG) system for customer support.
 ag_6839307f7c,analyze_data,https://www.getwren.ai/,Type a business question in plain English. Wren builds a dashboard on your data that you can drill into and filter.
 ag_683a61600e,browse_web,https://github.com/sunmughan/meta-automation,"an autonomous, principal-aware browser agent runtime that learns who it represents, reasons over live web state, and safely executes verified work across social channels and client marketplaces."
@@ -1357,7 +1371,7 @@ ag_79ec89fba9,research_topic,https://github.com/Pluviobyte/saas-growth-agents,"F
 ag_79ec89fba9,write_document,https://github.com/Pluviobyte/saas-growth-agents,"Three reports a day on newly searchable terms: new AI products, models, memes, templates."
 ag_79f73ed176,browse_web,https://aws.amazon.com/marketplace/pp/prodview-gsldfjccyzp6c,Browser automation
 ag_7a2a099fea,write_document,https://github.com/principia-ai/WriteHERE,WriteHERE is an open-source framework that revolutionizes long-form writing through human-like adaptive planning.
-ag_7a2f64c990,review_code,https://maige.app,It can also review PRs
+ag_7a2f64c990,review_code,https://maige.app,"Maige can label, assign, comment, review code, and even run simple code snippets."
 ag_7a2f64c990,write_code,https://maige.app,Code generation
 ag_7a38a1b49b,operate_computer,https://aws.amazon.com/marketplace/pp/prodview-7ihkhko4wbhqe,all driven by an AI assistant called Banana Chat that executes commands directly inside Revit
 ag_7a5dfaad13,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-7bqcxsflhy3wi,"Connects to external data sources (e.g., weather APIs, geopolitical risk feeds) to enrich disruption analysis."
@@ -1408,6 +1422,8 @@ ag_7d52b0179e,browse_web,https://github.com/openai/openai-cua-sample-app,one run
 ag_7d52b0179e,operate_computer,https://github.com/openai/openai-cua-sample-app,"the other runs Python with **PyAutoGUI** to control a desktop through screenshots, mouse input, and keystrokes."
 ag_7d613c420e,review_code,https://aws.amazon.com/marketplace/pp/prodview-blcdlrm366htg,"The Code Reverse Engineering Agent (CRE Agent) analyzes complex legacy codebases to uncover architecture, dependencies, and technical debt."
 ag_7d613c420e,write_document,https://aws.amazon.com/marketplace/pp/prodview-blcdlrm366htg,"Visual outputs and structured reports accelerate decision-making for audits, onboarding, and modernization planning."
+ag_7d881ca7b0,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-6o5mivvxqdwyu,identifies and explains gaps between plans
+ag_7d881ca7b0,write_document,https://aws.amazon.com/marketplace/pp/prodview-6o5mivvxqdwyu,drafts meeting pre-reads
 ag_7da53be3ee,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-jgtsgw64vyvly,"standardizes inconsistent supplier quotes (PDF/Excel), and conducts ""what-if"" scenario planning for supplier splits."
 ag_7da9204ccd,write_document,https://aws.amazon.com/marketplace/pp/prodview-tpld76jxextpe,"automatically generates detailed bug reports complete with video clips, event logs, and reproduction steps"
 ag_7dae8a154c,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-mzbffx5vvddom,AI Answers resolves customer questions
@@ -1449,7 +1465,7 @@ reproducible analysis workflows."
 ag_7fc01846ba,write_document,https://github.com/AMA-CMFAI/LAMBDA,"LAMBDA will inspect the
 dataset, plan the analysis, run code, build charts, and produce a report."
 ag_80057f7b73,write_code,https://aws.amazon.com/marketplace/pp/prodview-nnvi6wff6ef6m,helping engineers ship code faster
-ag_80154719b4,write_document,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,AI 帮你规划世界与角色、逐章写作、检查和保存，让长篇创作有一条可以继续走下去的路。
+ag_80154719b4,write_document,https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant,V2 围绕授权范围推进近期规划、章节任务、场景、正文、检查与保存
 ag_80543e5310,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-spuwfzrt2fkga,"Analyses storage capacity, picking efficiency, space utilisation, and operational constraints to align inventory decisions with warehouse capabilities and labour productivity."
 ag_80571d43a2,write_code,https://marketplace.visualstudio.com/items?itemName=blinky.blinky,Blinky is an open-source AI debugging agent for VSCode that uses LLMs to help identify and fix backend code errors
 ag_80629be084,research_topic,https://github.com/Doriandarko/make-it-heavy,User: Research the latest developments in AI and summarize them
@@ -1503,7 +1519,6 @@ ag_8410bfb052,handle_customer_support,https://aws.amazon.com/marketplace/pp/prod
 ag_8425b3d2d6,analyze_data,https://github.com/kkjiangk/agent-py,"A personal engineering project for investigating alerts with tool-backed evidence, retrieving runbooks, and reviewing remediation proposals."
 ag_84706fefa6,browse_web,https://github.com/TaxyAI/browser-extension,Taxy uses GPT-4 to control your browser and perform repetitive actions on your behalf.
 ag_847ccea6c8,operate_computer,https://github.com/vostride/agent-qa,"Describe a user journey in plain language. agent-qa tests it on web, Android or iOS and keeps the evidence."
-ag_84a2d5846a,research_topic,https://www.bardeen.ai/,"Research or generate leads at scale using leading AI and websearch providers, or leverage AI to instantly find answers on a website."
 ag_84b15c7b43,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-6qpi7poun2ci2,"AIDA acts as a virtual data analyst by automatically generating queries, analyzing historical data, identifying trends, and comparing metrics across time periods, categories, and segments."
 ag_84bc97e8f9,review_code,https://github.com/langchain-ai/open-swe,"Run on-demand or opt-in automatic reviews, publish findings to GitHub, and learn from historical feedback."
 ag_84bc97e8f9,write_code,https://github.com/langchain-ai/open-swe,"Investigate repositories, edit code, run focused validation, and open or update pull requests."
@@ -1532,6 +1547,7 @@ ag_86446ac6d0,write_code,https://github.com/superagent-ai/grok-cli,"grok --promp
 ag_865221d3a8,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-4ztxmetardw6y,"Calculates total cost of ownership for each option, factoring in loan interest rates, lease rates based on money Factor/APR & Lease term(months), depreciation, maintenance expenses, insurance, taxes, and potential resale value."
 ag_865221d3a8,research_topic,https://aws.amazon.com/marketplace/pp/prodview-4ztxmetardw6y,"AutoAdvisor automates research, analysis, and dealer/seller outreach, reducing the time and complexity involved in vehicle acquisition."
 ag_868a66ccf0,write_code,https://aws.amazon.com/marketplace/pp/prodview-qd4eeyvgv64iu,"They manage version upgrades, handle breaking changes, update files, images or configurations as needed, and even add tests if coverage is missing."
+ag_868c20ac68,research_topic,https://github.com/alphaXiv/OpenResearch,"Launch research agents that can review literature, develop hypotheses, run experiments, and produce research artifacts."
 ag_86b02ca800,analyze_data,https://github.com/The-Swarm-Corporation/AutoHedge,Quant Agent: technical and statistical analysis
 ag_86fa678bee,write_code,https://github.com/open-inspect/background-agents,Open-Inspect provides a hosted background coding agent that can:
 ag_872b06e371,analyze_data,https://github.com/meridianlabs-ai/inspect_petri,Scores transcripts with a judge model using a consistent rubric
@@ -1611,8 +1627,8 @@ ag_8d77cfa6b7,browse_web,https://github.com/m1guelpf/browser-agent,"This project
 ag_8d87c74bc0,write_document,https://github.com/s2b-dev/smart-second-brain,"that read and write your notes, draw charts and dashboards live from them as"
 ag_8dc9c8896c,research_topic,https://github.com/assafelovic/gpt-researcher,GPT Researcher the first open deep research agent designed for both web and local research on any given task.
 ag_8dc9c8896c,write_document,https://github.com/assafelovic/gpt-researcher,"The agent produces detailed, factual, and unbiased research reports with citations."
-ag_8dcc0c1b05,analyze_data,https://www.lindy.ai/,"Dashboards and weekly reports on every client’s data, built from a sentence and kept up to date."
 ag_8dcc0c1b05,handle_customer_support,https://www.lindy.ai/,Customer support
+ag_8dcc0c1b05,write_document,https://www.lindy.ai/,"Every Friday I pull each client’s numbers and draft their report in your format, ready for your OK."
 ag_8dd6ca9c7f,write_code,https://github.com/AQBot-Desktop/AQBot,让模型在所选工作目录中读取/编辑文件、执行命令并分析代码
 ag_8de204401f,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-jci7cixv6pbyy,teams can “chat with data” at both the document and repository level to analyze results and drive decisions
 ag_8df2547fa2,write_document,https://github.com/AlmanacCode/codealmanac,"A living wiki for your codebase, maintained by AI coding agents."
@@ -1786,7 +1802,7 @@ ag_9cede50ad5,analyze_data,https://github.com/zhaoyingjun/chatbot,批量分析�
 ag_9cede50ad5,browse_web,https://github.com/zhaoyingjun/chatbot,浏览器自动化：自动打开网页并进行截图操作
 ag_9d3d7dd494,research_topic,https://github.com/CRui5in/paper-ppt-agent,外部研究增强（arXiv / Semantic Scholar / Web），相关性自动过滤
 ag_9d3d7dd494,write_document,https://github.com/CRui5in/paper-ppt-agent,基于多智能体协作的学术论文演示文稿自动生成工具。上传论文 PDF 或 TeX 源码，由 AI 完成内容提炼、结构规划、版式设计与视觉质量审查，最终输出可编辑的 PowerPoint 文件。
-ag_9d4e078502,review_code,https://github.com/0sec-labs/0security,"0 threads send new ""Review ./your-repo for security problems"""
+ag_9d4e078502,review_code,https://github.com/0sec-labs/0security,Review ./your-repo for security problems
 ag_9d76006a79,browse_web,https://github.com/abacusai/abacusai-bot,"Use a browser, edit workspace files, run commands, and operate supported mobile devices."
 ag_9d76006a79,operate_computer,https://github.com/abacusai/abacusai-bot,"Use a browser, edit workspace files, run commands, and operate supported mobile devices."
 ag_9d76006a79,research_topic,https://github.com/abacusai/abacusai-bot,"Search the web and connected sources, monitor a topic, and produce cited reports."
@@ -1834,8 +1850,8 @@ ag_a00e3fea08,review_code,https://github.com/warpdotdev/warp,"Watch thousands of
 ag_a00e3fea08,write_code,https://github.com/warpdotdev/warp,"Watch thousands of [Warp Factory](warp.dev/factories) agents triage issues, write specs, implement changes, and review PRs"
 ag_a0429056c4,analyze_data,https://github.com/cuga-project/cuga-agent,"Match a contact list against CRM, join account data, calculate revenue percentiles, and draft a report."
 ag_a0429056c4,browse_web,https://github.com/cuga-project/cuga-agent,Combine structured API calls with browser interactions for workflows spanning services and web interfaces.
-ag_a0429056c4,research_topic,https://github.com/cuga-project/cuga-agent,"Search company documents, answer with citations"
-ag_a0429056c4,write_document,https://github.com/cuga-project/cuga-agent,draft a report
+ag_a0429056c4,research_topic,https://github.com/cuga-project/cuga-agent,"Search company documents, answer with citations, and combine shared reference material with documents uploaded to a conversation."
+ag_a0429056c4,write_document,https://github.com/cuga-project/cuga-agent,"Match a contact list against CRM, join account data, calculate revenue percentiles, and draft a report."
 ag_a05b93551a,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-amwenxm6hc562,"analyze documents, PDFs, spreadsheets, presentations and data"
 ag_a05b93551a,operate_computer,https://aws.amazon.com/marketplace/pp/prodview-amwenxm6hc562,"Delegate multi-step tasks that can use browsers, computer applications, local files, tools and connectors to complete work across your digital workspace."
 ag_a05b93551a,research_topic,https://aws.amazon.com/marketplace/pp/prodview-amwenxm6hc562,conduct deep research
@@ -1926,6 +1942,7 @@ ag_a88a8238e4,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-o34ug2
 ag_a89f195ec1,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-5hc7hc5bz2vu6,"Fin works across every channel - email, phone, live chat, social, and more - resolving queries end to end, triaging issues, and collaborating with your team to deliver consistent, high-quality experiences everywhere."
 ag_a8b2271746,research_topic,https://github.com/yc-software/qm,"Search internal notes, email, documents, databases, and the web together"
 ag_a8b2271746,write_code,https://github.com/yc-software/qm,"Work in an existing repository: run tests, open PRs, monitor CI, check system logs"
+ag_a8bb4fb840,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-si7z2gvptssms,"The solution continuously monitors and analyzes clinical data across multiple sources, automatically identifying patient populations based on complex criteria including diagnosis codes, treatment histories, biomarker profiles, and outcomes data."
 ag_a8c2ffbc09,research_topic,https://aws.amazon.com/marketplace/pp/prodview-bjypx4egkwme6,"Wyzard AI agents continuously research target accounts, build deep buyer context, personalize outreach, and orchestrate multi-channel engagement."
 ag_a8cc2f4295,browse_web,https://github.com/Tongyi-MAI/OpenGCUA,"OpenGCUA
 researches travel essentials and fills your shopping cart."
@@ -1989,6 +2006,7 @@ ag_ada683b9bf,browse_web,https://github.com/tornadonovicewhirl40/ai--manus2.0,"M
 ag_ada683b9bf,research_topic,https://github.com/tornadonovicewhirl40/ai--manus2.0,Manus autonomous tasks cover everything from simple file checks to multi-page web research
 ag_ada683b9bf,write_code,https://github.com/tornadonovicewhirl40/ai--manus2.0,"It can write and execute scripts, open web pages, interact with elements, and carry out multi-step tasks with minimal supervision."
 ag_adb92200fa,browse_web,https://github.com/browser-use/web-ui,This UI is designed to be user-friendly and enables easy interaction with the browser agent.
+ag_adce448916,write_code,https://github.com/smallnest/pigo,"pigo 可以读写文件、执行命令、检索代码、抓取网页，并借助大模型完成从""读懂需求""到""改好代码""的闭环。"
 ag_adefa0643f,write_code,https://github.com/rcarmo/piclaw,pi coding agent in a technicolor web trenchcoat
 ag_adff400f13,analyze_data,https://powerdrill.ai/,AI Data Analysis Workspace with Memory
 ag_ae28c774ca,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-pmkikphowc65g,"The agent explains allocation variances with driver analysis, provides real-time profitability calculations with drill-down capabilities, and automates the posting of allocation journal entries with full audit trails."
@@ -2058,7 +2076,7 @@ ag_b2cbbaa9f6,research_topic,https://aws.amazon.com/marketplace/pp/prodview-5anh
 ag_b2d7ff8a91,browse_web,https://github.com/AAswordman/Operit2,"Web access, browser automation, workspace browsers, and runtime WebView session projections"
 ag_b2f58cce1f,review_code,https://github.com/vinhnx/VTCode,"`review` inspects uncommitted
 changes without the agent loop."
-ag_b2f58cce1f,write_code,https://github.com/vinhnx/VTCode,"| Run a task headlessly   | `vtcode exec ""refactor main.rs""`                   |"
+ag_b2f58cce1f,write_code,https://github.com/vinhnx/VTCode,"`vtcode exec ""refactor main.rs""`"
 ag_b30ee5b445,write_code,https://aws.amazon.com/marketplace/pp/prodview-4b4ajjf2d2pkk,"Translate approved blueprints into configured SaaS components, infrastructure-as-code, and reviewable GitHub pull requests."
 ag_b31de72ca1,write_code,https://github.com/agentty-org/agentty,"`agentty run ""fix the failing test""` runs one prompt with tools and prints the answer."
 ag_b336e01348,operate_computer,https://github.com/IPADS-SAI/MobiAgent,If you would like to try MobiAgent with python scripts which leverage Android Debug Bridge (ADB) to control your phone
@@ -2132,9 +2150,6 @@ ag_b99e77b08c,handle_customer_support,https://aws.amazon.com/marketplace/pp/prod
 ag_b9a9a143e7,browse_web,https://github.com/actionbook/actionbook,"Actionbook is an AI agent in your browser. It reads data behind your logins,<br>operates websites you already use, and delivers finished work, not answers."
 ag_b9a9a143e7,research_topic,https://github.com/actionbook/actionbook,"delivers finished work, not answers: a sourced report, a clean CSV, or ready-to-send drafts"
 ag_b9ac46dec2,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-rkl5sxs3holya,It can automatically analyze and interact with:
-ag_b9d729bc49,write_document,https://github.com/KitionAI/kition,"A video timeline, a motion graphic, a layered
-image, a slide deck, a spreadsheet, a Word document, a PDF, a note or a whiteboard: each is an
-ordinary file in your workspace folder, opened by a **kit**, the editor for that kind of file."
 ag_b9d814d544,review_code,https://github.com/Hash-7777/HashCortX,"Agents that inspect untrusted code for malware, prompt injection and suspicious logic"
 ag_b9d814d544,write_code,https://github.com/Hash-7777/HashCortX,"A coding agent on your real project: file tree, diffs, terminal, Undo"
 ag_b9ec433c49,review_code,https://aws.amazon.com/marketplace/pp/prodview-uusc5en5tx5ey,enforcing code quality reviews
@@ -2229,7 +2244,7 @@ ag_c29a301706,review_code,https://cursor.com/,"Cursor runs in your terminal, col
 ag_c29a301706,write_code,https://cursor.com/,"Built to make you extraordinarily productive, agents turn ideas into code."
 ag_c2a4193607,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-rupbgy3omm2wm,"PX automates high-volume patient interactions with human-like intelligence across voice, web, and digital channels."
 ag_c2bb433f3d,write_code,https://github.com/HazAT/ultimate,it runs this repository and can change its own code while you talk.
-ag_c2bfd889de,write_document,https://github.com/Jamailar/Beav,拿刚存的内容找选题、写稿、做封面、剪视频，最后打包成各平台的素材包。
+ag_c2bfd889de,write_document,https://github.com/Jamailar/Beav,拿刚存的内容找选题、写稿、做封面、剪视频，最后打包成各平台的素材包
 ag_c2d08f59d2,research_topic,https://github.com/ZJU-REAL/Easel,聚合热榜、行业新闻、竞品动态和用户讨论，筛选真正适合账号的机会。
 ag_c2d08f59d2,write_document,https://github.com/ZJU-REAL/Easel,社媒文案、短视频与中长视频脚本、小红书笔记、长文、小说、去 AI 感改写、风格迁移、论文解读
 ag_c2d38cc85c,write_code,https://github.com/charmbracelet/crush,Glamourous agentic coding for all 💘
@@ -2238,6 +2253,9 @@ ag_c2e307d2ea,research_topic,https://github.com/kyky2347/ALTA,"Autonomous Scouts
 ag_c34b3a2ec4,research_topic,https://github.com/sunbigfly/ppt-agent-skills,P2A 联网检索
 ag_c34b3a2ec4,write_document,https://github.com/sunbigfly/ppt-agent-skills,将一句话需求输出为专业级 PPTX 文件
 ag_c38d6e7986,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-ucyutjeyr5nfy,"Analytical schedules and trend analyses are produced by AI, complete with variance explanations and benchmarking against historical and industry data, providing auditors with deeper insights."
+ag_c40d1895d2,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-xgtwoo4piivxk,"Specialized AI agents coordinate analysis, interpretation, and exploration across datasets, adapting workflows as research questions evolve."
+ag_c40d1895d2,research_topic,https://aws.amazon.com/marketplace/pp/prodview-xgtwoo4piivxk,"AI agents search, process, compare and test hypotheses across studies and data types."
+ag_c40d1895d2,write_document,https://aws.amazon.com/marketplace/pp/prodview-xgtwoo4piivxk,"Turn analyses and observations into structured, publication-ready reports with the supporting context and evidence captured along the way."
 ag_c45eda1bf1,research_topic,https://aws.amazon.com/marketplace/pp/prodview-fju3u36ip6mec,"Regulatory scouting agents continuously scan official sources, interpret impact, and alert compliance teams"
 ag_c45eda1bf1,write_document,https://aws.amazon.com/marketplace/pp/prodview-fju3u36ip6mec,audit-response agents auto-discover supporting data and generate audit-ready documentation on demand
 ag_c46607ba7d,write_code,https://github.com/provos/ironcurtain,IronCurtain's own LLM agent writes TypeScript snippets that execute in a V8 sandbox.
@@ -2270,7 +2288,7 @@ ag_c6d9037115,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-5rrw4k
 ag_c6d9037115,write_code,https://aws.amazon.com/marketplace/pp/prodview-5rrw4kuczjwz2,"Remediation pull requests on findings proven exploitable, with autonomy configurable per agent"
 ag_c6f48add9d,research_topic,https://github.com/byt3bl33d3r/SILENTTRINITY,The aim of this tool and the BYOI concept is to shift the paradigm back to PowerShell style like attacks (as it offers much more flexibility over traditional C# tradecraft) only without using PowerShell in anyway.
 ag_c6f48add9d,write_code,https://github.com/byt3bl33d3r/SILENTTRINITY,"As of the time of writing the most useful thing you can contribute are post-ex modules: this would allow me to concentrate efforts on the framework itself, user experience, QOL features etc..."
-ag_c722367528,operate_computer,https://github.com/Mixar-AI/mixar-app,It adds an AI chat agent that can drive Blender
+ag_c722367528,operate_computer,https://github.com/Mixar-AI/mixar-app,"an in-app chat agent that can plan and execute multi-step tasks against your scene: model from prompts, paint textures, set up materials, fix UVs, suggest fixes, etc."
 ag_c72df532e9,research_topic,https://aws.amazon.com/marketplace/pp/prodview-ag2tae5d6rzsu,A powerful multi-agent web research engine surfaces AI opportunities tailored to your business context.
 ag_c72df532e9,write_code,https://aws.amazon.com/marketplace/pp/prodview-ag2tae5d6rzsu,"a full-stack application generator that deploys multi-agentic applications automatically across Amazon Bedrock AgentCore, SageMaker, Amplify, and Lambda"
 ag_c72df532e9,write_document,https://aws.amazon.com/marketplace/pp/prodview-ag2tae5d6rzsu,"Automatically generates business cases, ROI models, architecture blueprints, and technical specifications for every prioritised use case."
@@ -2300,7 +2318,7 @@ ag_c914348742,browse_web,https://github.com/X-PLUG/MobileAgent,supporting **desk
 ag_c914348742,operate_computer,https://github.com/X-PLUG/MobileAgent,supporting **desktop/mobile/browser** automation and achieving **SOTA results on 20+ GUI benchmarks**
 ag_c958426174,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-if2wpwqal6en4,"Empower business users to query data using plain English and receive immediate, visualized answers."
 ag_c99ab7480f,research_topic,https://github.com/LiPu-jpg/Openwrite,默认支持通过宿主 `web_search / web_fetch` 联网调研（免第三方 Key）
-ag_c99ab7480f,write_document,https://github.com/LiPu-jpg/Openwrite,确认后再开始连续写章
+ag_c99ab7480f,write_document,https://github.com/LiPu-jpg/Openwrite,按动态上下文装配预算与前文/设定约束生成新章节
 ag_c9bb4632d7,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-yox63hyply27i,"Ask natural language questions and the AI finds the right datasets, writes the query, and returns answers with charts, tables, or plain English."
 ag_c9bb4632d7,write_code,https://aws.amazon.com/marketplace/pp/prodview-yox63hyply27i,"Describe what you need, and Informer's AI builds production-ready applications with authentication, databases, hosting, and your data already connected."
 ag_c9cbda8b82,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-gmhvety2q7lfs,"Specialized AI agents transform portfolio data into actionable intelligence for underwriters, actuaries, and product teams"
@@ -2309,8 +2327,9 @@ ag_c9ded95a65,research_topic,https://aws.amazon.com/marketplace/pp/prodview-ptdj
 ag_c9e7dda0e8,write_code,https://github.com/YishenTu/claudian,"embeds AI coding agents (Claude Code, Codex, Grok Build, Antigravity CLI, OpenCode, Pi, DeepSeek Harness, and more to come) in your vault"
 ag_ca45e7a63f,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-pvpb65y4oevku,"It reasons over feedback and operational data together (surveys, reviews, call transcripts, POS and operations), rules out false causes, identifies the real root cause, and attaches a revenue estimate."
 ag_ca5576e4b9,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-hmovfm44spw5i,RIPPL-AI enables users to interact with complex datasets using natural language via LLM Query
-ag_ca55884a20,analyze_data,https://github.com/Datus-ai/Datus-agent,answers business questions from metric definitions instead of improvising SQL
+ag_ca55884a20,analyze_data,https://github.com/Datus-ai/Datus-agent,[AskMetrics](https://docs.datus.ai/latest/subagent/ask_metrics/) answers business questions from metric definitions instead of improvising SQL
 ag_ca55884a20,write_code,https://github.com/Datus-ai/Datus-agent,"Datus handles SQL authoring and validation, semantic model and metric construction, and the generation of pipelines, reports, and dashboards."
+ag_ca55884a20,write_document,https://github.com/Datus-ai/Datus-agent,produce self-contained [HTML reports and interactive dashboards](https://docs.datus.ai/latest/subagent/gen_visual_report/) straight from chat
 ag_ca64c48ad5,research_topic,https://github.com/ApodexAI/FrontierAgent,"FrontierAgent is an open-source agent runtime, terminal product, and evaluation
 suite for long-horizon research and file-based work."
 ag_ca64c48ad5,write_document,https://github.com/ApodexAI/FrontierAgent,"one stateful agent researches, reads files, writes deliverables,
@@ -2447,16 +2466,16 @@ ag_d5a907abc7,operate_computer,https://aws.amazon.com/marketplace/pp/prodview-ru
 ag_d5a907abc7,write_code,https://aws.amazon.com/marketplace/pp/prodview-ruaj5n27qrruo,"HAI Build transforms detailed tasks into executable code, supporting a variety of programming languages and frameworks."
 ag_d5a907abc7,write_document,https://aws.amazon.com/marketplace/pp/prodview-ruaj5n27qrruo,"Intelligently organize and refine requirements into detailed Business, Product, Non-Functional, and User Interface specifications."
 ag_d5ed4b21f2,research_topic,https://github.com/aeonfun/aeon,runs deep research
-ag_d5ed4b21f2,write_code,https://github.com/aeonfun/aeon,ships features to your repos
+ag_d5ed4b21f2,write_code,https://github.com/aeonfun/aeon,it ships features to your repos
 ag_d5f2006280,research_topic,https://github.com/mims-harvard/TxAgent,"TxAgent retrieves and synthesizes evidence from multiple biomedical sources, assesses interactions between drugs and patient conditions, and refines treatment recommendations through iterative reasoning."
 ag_d60246fcee,handle_customer_support,https://workhub.ai/,Automate customer support with WorkBot AI chatbot software.
 ag_d60720a988,write_code,https://github.com/openchamber/openchamber,"OpenChamber is an open-source workspace for running and reviewing AI coding work on desktop, web, VS Code, and mobile."
 ag_d63a19c8ac,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-rnxu2svlvg3ds,"compare statement line-item data to the accounting system, validate the comparison and create the reconciliation report"
 ag_d64ffef166,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-sqidoshlcw3nw,LangGraph workflows** enable AI agents to query relational databases with precision and context.
-ag_d68de12e59,analyze_data,https://github.com/mateaix/mateclaw,Data Analyst
-ag_d68de12e59,handle_customer_support,https://github.com/mateaix/mateclaw,Customer Support
-ag_d68de12e59,research_topic,https://github.com/mateaix/mateclaw,Research Analyst
-ag_d68de12e59,review_code,https://github.com/mateaix/mateclaw,Code Reviewer
+ag_d68de12e59,analyze_data,https://github.com/mateaix/mateclaw,General Assistant · Product Assistant · Research Analyst · Customer Support · Data Analyst · Code Reviewer
+ag_d68de12e59,handle_customer_support,https://github.com/mateaix/mateclaw,General Assistant · Product Assistant · Research Analyst · Customer Support · Data Analyst · Code Reviewer
+ag_d68de12e59,research_topic,https://github.com/mateaix/mateclaw,General Assistant · Product Assistant · Research Analyst · Customer Support · Data Analyst · Code Reviewer
+ag_d68de12e59,review_code,https://github.com/mateaix/mateclaw,General Assistant · Product Assistant · Research Analyst · Customer Support · Data Analyst · Code Reviewer
 ag_d6f20b6a58,browse_web,https://github.com/freddy-schuetz/n8n-claw,"drives a real Chromium via Browser Use to perform agentic actions on websites: newsletter signups, contact forms, click flows, login-gated content."
 ag_d6f20b6a58,research_topic,https://github.com/freddy-schuetz/n8n-claw,searches the web via built-in SearXNG instance (no API key needed)
 ag_d6f20b6a58,write_code,https://github.com/freddy-schuetz/n8n-claw,"delegate coding tasks to an autonomous AI agent that can build websites, apps, and run shell commands"
@@ -2561,7 +2580,6 @@ ag_df6a6a13f5,write_document,https://github.com/Player-YN/BrowserKitten,"Save do
 ag_df7a6be58c,browse_web,https://github.com/suitedaces/computer-agent,Uses Chrome DevTools Protocol for web automation and terminal for everything else.
 ag_df7a6be58c,operate_computer,https://github.com/suitedaces/computer-agent,"Give it natural language instructions and watch it take screenshots, move your mouse, click, type, and run terminal commands."
 ag_df811c4fd4,analyze_data,https://github.com/HKUDS/Vibe-Trading,Agent/MCP tools compare named option strategies on shared price and IV grids.
-ag_df811c4fd4,research_topic,https://github.com/HKUDS/Vibe-Trading,"Research answers stream without automatic numeric redaction, forced rewrites, or format-based completion gates."
 ag_dfe19f13bc,write_code,https://github.com/tinyhumansai/openhuman,"Finishes coding tasks in about 20 seconds, the fastest of seven AI agent tools we tested."
 ag_dff969a99b,handle_customer_support,https://github.com/rasonyang/ai-native-callcenter,AI agents answer every call; humans take over without dropping it.
 ag_e04fc722e6,write_code,https://github.com/meta-pytorch/KernelAgent,KernelAgent turns PyTorch programs into verified Triton kernels and optimize its performance.
@@ -2624,9 +2642,10 @@ ag_e594e926a1,write_code,https://aws.amazon.com/marketplace/pp/prodview-4bgvutje
 ag_e596f92341,handle_customer_support,https://aws.amazon.com/marketplace/pp/prodview-5s2yrqgxvqls6,"automate post-contact operations - complaints, disputes, QA, issue management, and customer support - from intake through resolution"
 ag_e596f92341,write_document,https://aws.amazon.com/marketplace/pp/prodview-5s2yrqgxvqls6,assists in drafting response materials within defined workflows
 ag_e5a36f89dd,write_code,https://github.com/SWE-agent/mini-swe-agent,The 100 line AI agent that solves GitHub issues or helps you in your command line.
-ag_e5afbaa0a1,analyze_data,https://github.com/dosco/graphjin,"Query operational databases, warehouses, MongoDB, object stores, local files, CodeSQL source indexes, workflows, and GraphJin system roots through GraphQL and MCP."
+ag_e5afbaa0a1,analyze_data,https://github.com/dosco/graphjin,"It answers questions and carries out operations across the systems a real company already has: databases, warehouses, files, source code, workflows, metadata, and security policy."
 ag_e5ba6f04c1,research_topic,https://aws.amazon.com/marketplace/pp/prodview-asbstpwkxkmis,"Incident and alert investigation: picks up alerts, pipeline failures and ticket events, gathers the evidence and proposes the fix."
 ag_e5ba6f04c1,write_code,https://aws.amazon.com/marketplace/pp/prodview-asbstpwkxkmis,"Infrastructure as code: generates Terraform from your live infrastructure, detects drift and ClickOps changes, and converts manual changes back into code."
+ag_e5e8ce33fb,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-y3qzclbdcmbe6,"An AI agent that diagnoses why LLM-based extraction solutions fail by analyzing evaluation results, tracing errors to specific fields and prompt instructions, and ranking root causes by accuracy impact."
 ag_e5e9c49ec4,review_code,https://aws.amazon.com/marketplace/pp/prodview-26zahvcaclo6s,"Developers enjoy a unified experience of smart in-PR security tests and auto-remediation, without suffering from a vulnerability flood."
 ag_e5ee9d2bbb,analyze_data,https://github.com/mindsdb/anton,"scrapes live prices, writes code on the fly, crunches the numbers, and builds you a full dashboard"
 ag_e5ee9d2bbb,research_topic,https://github.com/mindsdb/anton,"**Research & synthesis** — scrape the web, summarize findings, build a reference document."
@@ -2683,7 +2702,7 @@ ag_ea93d987ad,review_code,https://github.com/momozi1996/momo-code,"Reviews sessi
 ag_ea93d987ad,write_code,https://github.com/momozi1996/momo-code,"momo ""帮我写一个快速排序""          # 单次任务模式"
 ag_eaa3b3b566,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-nol56464mk2mi,"AI agents forecast cash inflows using machine learning models that analyze AR aging, collection patterns, and sales forecasts"
 ag_eaa3b3b566,write_document,https://aws.amazon.com/marketplace/pp/prodview-nol56464mk2mi,generate dynamic liquidity reports
-ag_ead964922e,write_code,https://github.com/PurpleDoubleD/locally-uncensored,"rebuilds the coding agent (review changes hunk by hunk, steer a running task, rewind to before any message)"
+ag_ead964922e,write_code,https://github.com/PurpleDoubleD/locally-uncensored,The coding agent shows the diff first
 ag_eb06914860,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-5qfgayfaf2xqg,"Intelligent agents handle bank statement retrieval, payment identification, matching, exception handling, and reporting."
 ag_eb06914860,write_document,https://aws.amazon.com/marketplace/pp/prodview-5qfgayfaf2xqg,Reporting & Audit Trail: AI auto-generates reports and indexes them for audit readiness.
 ag_eb504d75db,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-7eikvehfbnns2,"Our AI agents do the work deduplicating findings across tools, investigating asset ownership, creating actionable tickets with context engineering teams need, tracking exceptions, and proving closure with evidence."
@@ -2695,7 +2714,8 @@ ag_ebd32e81b1,write_code,https://github.com/Lifecycle-Innovations-Limited/claude
 ag_ebdd494e98,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-h5igybcvvk7xc,"users can ask business questions in natural language, and the agent generates and runs the SQL on the fly against the schema it just learned"
 ag_ebdd494e98,write_code,https://aws.amazon.com/marketplace/pp/prodview-h5igybcvvk7xc,"It then uses this design to generate a complete dbt project (sources, staging, marts, tests, macros) and a MetricFlow-compatible semantic layer"
 ag_ec1f467282,research_topic,https://aws.amazon.com/marketplace/pp/prodview-fxjlnajds7e4w,"Before any message goes out, MILA researches the prospect, including company signals, recent news, LinkedIn activity, role context, and buying intent"
-ag_ec30ac8ae8,write_document,https://agpt.co/?utm_source=awesome-ai-agents,"Briefs, drafts and page fixes"
+ag_ec30ac8ae8,write_document,https://agpt.co/?utm_source=awesome-ai-agents,Write the opening of our first article.
+ag_ec5e359871,analyze_data,https://aws.amazon.com/marketplace/pp/prodview-b7cvwyuhhemk4,scores disruption probability by lane and supplier
 ag_ed18dc967f,research_topic,https://aws.amazon.com/marketplace/pp/prodview-mcttw3u6gixsi,Summarizer Agent - Summarizes the crawled data and generates a comprehensive report compliance and impact report
 ag_ed18dc967f,write_document,https://aws.amazon.com/marketplace/pp/prodview-mcttw3u6gixsi,Generate a comprehensive report on the changes and sending at pre-defined interval to key stakeholders
 ag_ed2d74104a,write_code,https://aws.amazon.com/marketplace/pp/prodview-esmpzuio5f5um,"automatically generates, runs, and self-heals end-to-end, API, and UI tests"
