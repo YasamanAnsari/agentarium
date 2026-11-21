@@ -5,6 +5,7 @@ ag_2dd1272269,swe-bench-lite,180,2025-04-25,https://github.com/SWE-bench/experim
 ag_2dd1272269,swe-bench-multimodal,184,2025-06-11,https://github.com/SWE-bench/experiments/tree/main/evaluation/multimodal/20250611_Refact_Agent_claude-4-sonnet
 ag_2dd1272269,swe-bench-verified,352,2025-05-15,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250515_Refact_Agent
 ag_2dd1272269,swe-bench-verified,372,2025-06-03,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250603_Refact_Agent_claude-4-sonnet
+ag_49a9b3b3c6,swe-bench-verified,388,2025-11-27,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20251127_openhands_claude-opus-4-5
 ag_5d620f2c72,swe-bench-verified,353,2025-05-19,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250519_trae
 ag_5d620f2c72,swe-bench-verified,376,2025-06-12,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250612_trae
 ag_5d620f2c72,swe-bench-verified,394,2025-09-28,https://github.com/SWE-bench/experiments/tree/main/evaluation/verified/20250928_trae_doubao_seed_code
