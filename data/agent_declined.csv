@@ -62,3 +62,9 @@ date,reason,count
 2026-11-21,quote_not_in_text,11
 2026-11-21,recheck_not_an_agent,3
 2026-11-21,unknown_activity,1
+2026-11-22,duplicate_attribute,1
+2026-11-22,model_refused,4
+2026-11-22,no_description,1
+2026-11-22,not_an_agent,236
+2026-11-22,quote_not_in_text,12
+2026-11-22,recheck_not_an_agent,7
