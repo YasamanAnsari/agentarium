@@ -132,87 +132,9 @@ let sortBy='stars',sortDirection=-1;
 let activeSection=0;
 const sections=$$('.depth-section');
 const depths=sections.map(el=>Number(el.dataset.depth));
-const levelNavigationQuery=window.matchMedia('(min-width: 801px) and (min-height: 650px) and (hover: hover) and (pointer: fine)');
-let diveFrame=0;
-let diveAnimating=false;
-let settleTimer=0;
-let lastWheelAt=0;
-let gestureDirection=0;
-let gestureActive=false;
-let pointerDown=false;
-
-function cancelDive(){
-  if(diveFrame)cancelAnimationFrame(diveFrame);
-  clearTimeout(settleTimer);
-  diveFrame=0;diveAnimating=false;
-}
-
-function navigateToSection(index,{settling=false}={}){
+function navigateToSection(index){
   const section=sections[Math.max(0,Math.min(sections.length-1,index))];
-  const start=window.scrollY;
-  const destination=Math.min(section.offsetTop,document.documentElement.scrollHeight-window.innerHeight);
-  const distance=destination-start;
-  cancelDive();
-  if(!settling)gestureActive=false;
-  if(reducedQuery.matches||Math.abs(distance)<2){window.scrollTo(0,destination);gestureActive=false;updateScroll();return;}
-  const duration=settling?Math.min(460,Math.max(140,Math.abs(distance)*.43)):Math.min(650,420+Math.abs(distance)/12);
-  const began=performance.now();
-  diveAnimating=true;
-  function glide(now){
-    const progress=Math.min(1,(now-began)/duration);
-    const eased=1-Math.pow(1-progress,3);
-    window.scrollTo(0,start+distance*eased);
-    if(progress<1)diveFrame=requestAnimationFrame(glide);
-    else{diveFrame=0;diveAnimating=false;gestureActive=false;updateScroll();}
-  }
-  diveFrame=requestAnimationFrame(glide);
-}
-
-function useLevelNavigation(){
-  document.documentElement.classList.toggle('level-navigation',levelNavigationQuery.matches&&!reducedQuery.matches);
-  gestureActive=false;
-  clearTimeout(settleTimer);
-}
-
-function settleAtLevel(){
-  if(!gestureActive||diveAnimating||pointerDown||!levelNavigationQuery.matches||reducedQuery.matches||$$('dialog[open]').length)return;
-  const position=window.scrollY;
-  let nearest=0,distance=Infinity;
-  sections.forEach((section,i)=>{const d=Math.abs(section.offsetTop-position);if(d<distance){distance=d;nearest=i;}});
-  // Passive wheel events may arrive after the compositor has already scrolled.
-  // Choose from the visible interval and input direction, never a sampled start Y.
-  const threshold=Math.min(48,window.innerHeight*.05);
-  for(let i=0;i<sections.length-1;i++){
-    const lower=sections[i].offsetTop,upper=sections[i+1].offsetTop;
-    if(position>=lower&&position<upper){
-      if(gestureDirection>0&&position-lower>=threshold)nearest=i+1;
-      if(gestureDirection<0&&upper-position>=threshold)nearest=i;
-      break;
-    }
-  }
-  navigateToSection(nearest,{settling:true});
-}
-
-function scheduleSettle(){
-  clearTimeout(settleTimer);
-  if(gestureActive&&!diveAnimating&&!pointerDown)settleTimer=setTimeout(settleAtLevel,150);
-}
-
-// Wheel input always scrolls natively. Only after the gesture and its inertia
-// finish do we gently align the page. Every new input immediately cancels alignment.
-function onDiveWheel(event){
-  if(event.ctrlKey||event.shiftKey||Math.abs(event.deltaX)>Math.abs(event.deltaY)||!event.deltaY||$$('dialog[open]').length)return;
-  const target=event.target instanceof Element?event.target:null;
-  if(target?.closest('select,textarea,[contenteditable="true"]'))return;
-  const now=performance.now();
-  const wasAligning=diveAnimating;
-  cancelDive();
-  if(!gestureActive||wasAligning||now-lastWheelAt>250){
-    gestureActive=true;
-  }
-  gestureDirection=Math.sign(event.deltaY);
-  lastWheelAt=now;
-  scheduleSettle();
+  window.scrollTo({top:section.offsetTop,behavior:reducedQuery.matches?'auto':'smooth'});
 }
 
 // Colour a creature by the task being filtered on, so every fish in a filtered view matches the chip.
@@ -486,11 +408,10 @@ function showLoadError(error){
   console.error(error);
 }
 
-renderScenery();applyMotion();useLevelNavigation();resize();requestAnimationFrame(animation);
+renderScenery();applyMotion();resize();requestAnimationFrame(animation);
 loadCatalog().then(renderCatalog,showLoadError);
 $('#habitat-shuffle').addEventListener('click',renderCreatures);
-reducedQuery.addEventListener('change',e=>{motionPaused=e.matches;applyMotion();cancelDive();useLevelNavigation();});
-levelNavigationQuery.addEventListener('change',()=>{cancelDive();useLevelNavigation();});
+reducedQuery.addEventListener('change',e=>{motionPaused=e.matches;applyMotion();});
 $('#habitat-pause').addEventListener('click',()=>{habitatPaused=!habitatPaused;$('#habitat-ocean').classList.toggle('is-paused',habitatPaused);$('#habitat-pause').textContent=habitatPaused?'> Resume habitat':'II Pause habitat';$('#habitat-pause').setAttribute('aria-pressed',String(habitatPaused));});
 $('#catalog-search').addEventListener('input',()=>{page=0;renderTable();});
 $('#catalog-function').addEventListener('change',()=>{page=0;renderTable();});
@@ -516,21 +437,8 @@ $$('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{
   if(link.classList.contains('skip-link')){target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}
 }));
 window.addEventListener('popstate',()=>{const target=document.getElementById(location.hash.slice(1))||sections[0];const section=target.closest('.depth-section');if(section)navigateToSection(sections.indexOf(section));});
-window.addEventListener('wheel',onDiveWheel,{passive:true});
-window.addEventListener('touchstart',()=>{cancelDive();gestureActive=false;},{passive:true});
-window.addEventListener('pointerdown',()=>{pointerDown=true;cancelDive();gestureActive=false;},{passive:true});
-window.addEventListener('pointerup',()=>{pointerDown=false;},{passive:true});
-window.addEventListener('scroll',()=>{updateScroll();scheduleSettle();},{passive:true});
+window.addEventListener('scroll',updateScroll,{passive:true});
 window.addEventListener('resize',resize,{passive:true});
-document.addEventListener('keydown',event=>{
-  if($$('dialog[open]').length||/INPUT|SELECT|TEXTAREA|BUTTON/.test(document.activeElement.tagName))return;
-  if(!['PageDown','PageUp','ArrowDown','ArrowUp',' ','Home','End'].includes(event.key))return;
-  cancelDive();
-  gestureActive=true;
-  gestureDirection=event.key==='PageUp'||event.key==='ArrowUp'||event.key==='Home'||(event.key===' '&&event.shiftKey)?-1:1;
-  lastWheelAt=performance.now();
-  scheduleSettle();
-});
 
 // Scatter of every GitHub agent: repository creation date across, stars up on a log scale, colour = main task.
 function renderObservationField(){
