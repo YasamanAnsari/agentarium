@@ -112,9 +112,9 @@ ag_04fc8c3dfd,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_04fc8c3dfd,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-ytpy5jwoqutam,opening pull requests for your review
 ag_04fc8c3dfd,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-ytpy5jwoqutam,"ticketing systems like GitHub, Jira, or Linear"
 ag_04fc8c3dfd,tool_class,file_system,https://aws.amazon.com/marketplace/pp/prodview-ytpy5jwoqutam,Cosine clones your repository and analyzes the code to understand the context.
-ag_0533423315,autonomy,observer,https://github.com/JuliusBrussee/caveman-code,"Autopilot, no permission prompts"
-ag_0533423315,tool_class,code_execution,https://github.com/JuliusBrussee/caveman-code,"Per-tool line caps (bash 80 · read 300 · grep 120), ANSI strip, blank-line collapse, semantic JSON/XML extraction."
-ag_0533423315,tool_class,file_system,https://github.com/JuliusBrussee/caveman-code,"Files fingerprinted per session — re-reads return a stub, not the bytes."
+ag_0533423315,audience,practitioner,https://github.com/caveman-ai/caveman-code,Run multiple agents in parallel on your laptop or hand sessions off to persistent Firecracker computers on Caveman Cloud.
+ag_0533423315,autonomy,approver,https://github.com/caveman-ai/caveman-code,"Workspaces, git worktrees, approval rules, MCP servers, and session journals stay in sync so you can start a task in the terminal and inspect diffs or approvals in Desktop without switching tools."
+ag_0533423315,tool_class,file_system,https://github.com/caveman-ai/caveman-code,"Local daemon per computer: event log, projections, git worktrees, checkpoints, MCP host, and Cloud sync."
 ag_053d6b36b1,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-dkimmxypuku6c,"UniGuide is an AI product expert that embeds in any software you build, lifting activation 5-15%, cutting early churn 10-25% and support tickets 30-50%."
 ag_053d6b36b1,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-dkimmxypuku6c,"It highlights exactly where to click and, with the user's permission, completes multi-step tasks inside your UI."
 ag_053d6b36b1,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-dkimmxypuku6c,"It can also run live SQL against your database during a conversation, so users get answers about their own data, not just about the product."
@@ -211,14 +211,12 @@ ag_0942da9d2a,tool_class,file_system,https://github.com/21st-dev/1code,"See bash
 ag_0942da9d2a,tool_class,search_retrieval,https://github.com/21st-dev/1code,"See bash commands, file edits, and web searches as they happen"
 ag_0953012997,tool_class,code_execution,https://github.com/nearai/ironclaw,Isolated container execution with per-job tokens and orchestrator/worker pattern
 ag_0953012997,tool_class,file_system,https://github.com/nearai/ironclaw,"Flexible path-based storage for notes, logs, and context"
-ag_0961684724,autonomy,approver,https://github.com/beenuar/AiSOC,proposes responses a human approves
+ag_0961684724,autonomy,approver,https://github.com/beenuar/AiSOC,a human approves before anything reaches a vendor
 ag_09b27820fe,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-7hq5trt2tgjrm,"Designed for enterprise NLP workflows, it improves precision, reduces manual effort, and continuously adapts to new data and domains without the need for retraining."
 ag_09b27820fe,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-7hq5trt2tgjrm,RefiNER achieves progressive accuracy improvement without manual intervention.
 ag_09b27820fe,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-7hq5trt2tgjrm,"Enables safe, policy-enforced connectivity to external tools and web-based APIs (e.g., Tavily) through AgentCore Gateway, ensuring all requests are authenticated, monitored & aligned with enterprise security governance."
 ag_09b27820fe,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-7hq5trt2tgjrm,"Real-Time Validation: Enhances reliability by validating uncertain entities through live web and knowledge sources, combining LLM reasoning with tool-driven verification for trustworthy extraction."
-ag_0a363d0548,autonomy,collaborator,https://github.com/liliu-z/stashbase,Side by side with your agent.
 ag_0a363d0548,tool_class,file_system,https://github.com/liliu-z/stashbase,"It can read, search, and edit supported files in the project you select."
-ag_0a363d0548,tool_class,search_retrieval,https://github.com/liliu-z/stashbase,"It can read, search, and edit supported files in the project you select."
 ag_0a7f7cbe12,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-24izgzgjzjsdw,"Claims-AI enables insurers to reduce cycle times, improve claim accuracy, and scale automation across property, casualty, auto, and commercial lines."
 ag_0a7f7cbe12,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-24izgzgjzjsdw,Human in the loop-Underwriter checkpoints enable review and override.
 ag_0a7f7cbe12,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-24izgzgjzjsdw,integration points for policy and claims systems
@@ -330,19 +328,25 @@ reviews each one before acting; the evidence makes that review fast."
 ag_0ef4718c02,tool_class,custom_apis,https://github.com/visa/visa-vulnerability-agentic-harness,"Each model-driven role can run on Anthropic models or on any
 OpenAI-compatible endpoint"
 ag_0ef4718c02,tool_class,file_system,https://github.com/visa/visa-vulnerability-agentic-harness,S5 checks every finding against the code on disk
+ag_0f1e37e78c,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-oxehmpmpurguc,**QA Leads** who own a growing repository and need authoring to keep coverage current and healing to end brittle maintenance.
+ag_0f1e37e78c,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-oxehmpmpurguc,"patches the case flagged for review with a confidence score, so a QA Lead decides whether to trust the change rather than discovering it later."
+ag_0f1e37e78c,tool_class,browser,https://aws.amazon.com/marketplace/pp/prodview-oxehmpmpurguc,"Execution runs against real browsers and APIs and captures traces, console output, screenshots and video as evidence attached to the result."
+ag_0f1e37e78c,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-oxehmpmpurguc,"Runs those cases against real browsers and APIs, captures evidence, and triages what comes back."
 ag_0f3ad27626,tool_class,code_execution,https://github.com/codefuse-ai/codefuse-chatbot,沙盒环境，安全地执行代码编译和动作。
 ag_0f3ad27626,tool_class,custom_apis,https://github.com/codefuse-ai/codefuse-chatbot,API 管理工具，实现对开源组件和运维平台的快速集成。
 ag_0f3ad27626,tool_class,search_retrieval,https://github.com/codefuse-ai/codefuse-chatbot,多源网络爬虫，提供对指定 URL 的爬取功能，以搜集所需信息。
 ag_0f3f0c3f26,tool_class,custom_apis,https://github.com/Tracer-Cloud/opensre,"Connect the [integrations](#integrations) you run, such as EKS, EC2, CloudWatch, Kubernetes, Grafana (Loki, Mimir/PromQL, Tempo), Alertmanager, Datadog, Slack, and GitHub."
 ag_0f558b948e,audience,practitioner,https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool,"Built for agencies and freelancers, specifically"
 ag_0f558b948e,tool_class,custom_apis,https://github.com/IamRamgarhia/All-In-One-Free-SEO-Tool,"Search Console, Analytics, PageSpeed, Trends and autocomplete are all Google APIs you can call yourself, and that's exactly what this does."
+ag_0f5f955519,autonomy,collaborator,https://github.com/sdi2200262/agentic-project-management,"You can let the agents carry most of the work, or step in wherever and however you see fit"
+ag_0f5f955519,tool_class,file_system,https://github.com/sdi2200262/agentic-project-management,The session's state lives in shared files that outlast any conversation.
 ag_0f626817a9,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-6ap5oz47p5sjc,Revenue operations leads
 ag_0f626817a9,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-6ap5oz47p5sjc,You approve until you trust it.
 ag_0f626817a9,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/prodview-6ap5oz47p5sjc,Mail goes out through your own SES and models run on your own Bedrock account.
 ag_0f626817a9,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-6ap5oz47p5sjc,"Reads your competitors and your Search Console, works out what is worth writing, writes it, and publishes it to your site."
 ag_0f626817a9,tool_class,voice,https://aws.amazon.com/marketplace/pp/prodview-6ap5oz47p5sjc,Dial from the contact record.
-ag_0f893b90e3,audience,non_expert,https://github.com/cloudflare/cloudflare-os,"applies guardrails to both agents and apps such that non-technical users can safely ""go nuts"" and nothing bad will happen."
-ag_0f893b90e3,autonomy,approver,https://github.com/cloudflare/cloudflare-os,"For any action which has side effects, provides the human user an opportunity to approve or deny the action (""human in the loop"")."
+ag_0f893b90e3,audience,organization,https://github.com/cloudflare/cloudflare-os,We are making Cloudflare OS open source so that others can copy it and customize it for their own company.
+ag_0f893b90e3,autonomy,approver,https://github.com/cloudflare/cloudflare-os,"For any action which has side effects, provides the human user an opportunity to approve or deny the action"
 ag_0f893b90e3,tool_class,custom_apis,https://github.com/cloudflare/cloudflare-os,Provides a clean Cap'n Web API to the service (wrapping whatever API the service provides natively).
 ag_0fbb3dbd7b,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-vn4wpn7u4afrq,"The company enables organizations to run teams of AI software engineers in the cloud, autonomously and continuously"
 ag_0fbb3dbd7b,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-vn4wpn7u4afrq,Ona does the work. You review the PRs.
@@ -460,8 +464,7 @@ ag_145129b996,tool_class,voice,https://aws.amazon.com/marketplace/pp/prodview-fo
 ag_145145e4d4,audience,practitioner,https://github.com/zubair-trabzada/ai-agency-claude,"**Built for agency owners, freelancers, and consultants who want to sell AI-powered services to real businesses.**"
 ag_145145e4d4,autonomy,observer,https://github.com/zubair-trabzada/ai-agency-claude,Type one command. Five parallel AI agents audit a business simultaneously.
 ag_145145e4d4,tool_class,file_system,https://github.com/zubair-trabzada/ai-agency-claude,Full report saved to AGENCY-ONBOARD-ExampleBusiness.md
-ag_14e8fb3dba,audience,organization,https://github.com/LazyAGI/LazyMind,deploy it as a shared enterprise service
-ag_14e8fb3dba,autonomy,approver,https://github.com/LazyAGI/LazyMind,Users can approve checkpoints
+ag_14e8fb3dba,autonomy,approver,https://github.com/LazyAGI/LazyMind,"Users can approve checkpoints, edit an artifact, or rerun from the failed step instead of restarting the whole task."
 ag_14e8fb3dba,tool_class,search_retrieval,https://github.com/LazyAGI/LazyMind,"Multi-source ingestion, OCR, hybrid retrieval, reranking, and source traceability"
 ag_150203bc94,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-2dgcuyuvjtszu,Designed for product teams marketers founders and researchers atypica AI helps organizations move from raw information to meaningful narratives.
 ag_150203bc94,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-2dgcuyuvjtszu,Users simply describe what they want to learn and the system handles planning exploration analysis and reporting.
@@ -469,6 +472,7 @@ ag_152548e9bc,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_152548e9bc,tool_class,file_system,https://aws.amazon.com/marketplace/pp/prodview-wxsxligr7wgfu,"Amazon S3 provides secure, scalable storage for compliance documentation and audit evidence."
 ag_15573bb4dc,audience,non_expert,https://github.com/flizzywine/dsh-tavern,不用懂卡片字段，告诉 Agent 哪里不喜欢、想改成什么样
 ag_15573bb4dc,autonomy,approver,https://github.com/flizzywine/dsh-tavern,它先给方案，你确认后才写入
+ag_15573bb4dc,tool_class,file_system,https://github.com/flizzywine/dsh-tavern,Agent 会读取这局的实际游玩记录和日志，分析原因并修改相关资源
 ag_15573bb4dc,tool_class,search_retrieval,https://github.com/flizzywine/dsh-tavern,内置记忆检索工具，需要什么记忆，Agent 自行检索原文
 ag_1590361431,autonomy,approver,https://github.com/MoonshotAI/kimi-code,"Run local commands at key points to gate risky tool calls, audit decisions, trigger desktop notifications, or connect to your own automation."
 ag_1590361431,tool_class,code_execution,https://github.com/MoonshotAI/kimi-code,"it can read and edit code, run shell commands, search files, fetch web pages"
@@ -484,7 +488,8 @@ ag_15a7cadc0f,audience,practitioner,https://github.com/K-Dense-AI/agentic-data-s
 ag_15a7cadc0f,tool_class,file_system,https://github.com/K-Dense-AI/agentic-data-scientist,"By default, files are saved to `./agentic_output/` in your current directory and preserved after completion."
 ag_15a7cadc0f,tool_class,search_retrieval,https://github.com/K-Dense-AI/agentic-data-scientist,"By default, agents have access to network tools (web search and URL fetching)."
 ag_15bb35ac95,autonomy,collaborator,https://github.com/pgalko/BambooAI,"You can follow the investigation as it unfolds, ask follow-up questions, revisit earlier steps or branch into a different line of enquiry without losing the previous work."
-ag_15bb35ac95,tool_class,code_execution,https://github.com/pgalko/BambooAI,"It can explore datasets, write and execute code, examine results, consult documents and external sources, and decide what to investigate next."
+ag_15bb35ac95,tool_class,code_execution,https://github.com/pgalko/BambooAI,At its core is an LLM Analyst working in a persistent Python environment.
+ag_15bb35ac95,tool_class,search_retrieval,https://github.com/pgalko/BambooAI,"It can explore datasets, write and execute code, examine results, consult documents and external sources, and decide what to investigate next."
 ag_15d50fb147,tool_class,browser,https://github.com/pamelafox/personal-linkedin-agent,The agent uses [Pydantic AI](https://ai.pydantic.dev/) for LLM-based decisions and [Playwright](https://playwright.dev/python/) for browser automation.
 ag_15e7621893,audience,organization,https://github.com/datagallery-ai/dataagent,An enterprise-grade Data Agent workbench
 ag_15f186a39f,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-767ldpyxm55pi,AIM empowers restaurants and retailers to deliver exceptional ordering experiences
@@ -548,9 +553,6 @@ ag_19102dbbe4,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/pr
 ag_19102dbbe4,tool_class,voice,https://aws.amazon.com/marketplace/pp/prodview-izmy4apzfdx4u,"Chaos Gears deploys an AI-powered voice agent that handles your inbound and outbound calls with human-like empathy, intelligence, and a fully configurable personality."
 ag_191e8fa5f2,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-x7z2mj32yt56a,**SEO professionals** who need autonomous execution across both traditional SEO and generative engine optimization
 ag_191e8fa5f2,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-x7z2mj32yt56a,executing improvements through your configured permissions and approval workflows
-ag_19a979e177,audience,practitioner,https://testdriver.ai/,Trusted by leading engineering teams
-ag_19a979e177,autonomy,approver,https://testdriver.ai/,"Review the diff, approve it, and the coverage lands in your repo alongside the change it protects"
-ag_19a979e177,tool_class,code_execution,https://testdriver.ai/,"TestDriver automatically runs every pull request in a real desktop sandbox, finds bugs, and builds regression tests."
 ag_19b07c58e6,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-bwrtcbhzr7rb2,"helping organizations optimize inventory levels, improve demand forecast accuracy, and release working capital."
 ag_19b07c58e6,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-bwrtcbhzr7rb2,Planners review and approve each change before it reaches the ERP system.
 ag_19b07c58e6,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-bwrtcbhzr7rb2,"Approved planning parameters are written back to the ERP, and planners can ask questions about inventory positions using natural language."
@@ -574,7 +576,7 @@ ag_1a7d2a2e75,autonomy,observer,https://github.com/vercel-labs/deepsec,"works un
 ag_1a7d2a2e75,tool_class,code_execution,https://github.com/vercel-labs/deepsec,Treat `deepsec` like a coding agent with full shell access on the enviroment that it is
 ag_1adf989a7a,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-lis2zvfu2tg7g,This enables engineering teams to move from days of manual impact analysis to hours.
 ag_1adf989a7a,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-lis2zvfu2tg7g,"AWS Bedrock AgentCore Knowledge Base - provides contextual retrieval of business domain knowledge, API contracts, and integration specifications"
-ag_1ae7afa5e8,audience,practitioner,https://github.com/WhiteNightShadow/firefox-reverse,能像一名专业逆向工程师那样**自己**抓包、读代码、在**引擎 C++ 内核层**观测、补环境、写脚本、实打接口验证
+ag_1ae7afa5e8,audience,practitioner,https://github.com/WhiteNightShadow/firefox-reverse,像一名专业逆向工程师那样**自己**抓包、读代码
 ag_1ae7afa5e8,autonomy,approver,https://github.com/WhiteNightShadow/firefox-reverse,中途不打扰，只在真需要你（登录态/验证码/纯业务决策）或完成时停
 ag_1ae7afa5e8,tool_class,browser,https://github.com/WhiteNightShadow/firefox-reverse,覆盖页面操作、网络抓包与离线回放、固定随机数、代码搜索、Cookie、WebAPI trace、JSVMP、WASM、文件读写、Skills、扩展与环境管理及 Node/Python 实打验证
 ag_1ae7afa5e8,tool_class,code_execution,https://github.com/WhiteNightShadow/firefox-reverse,覆盖页面操作、网络抓包与离线回放、固定随机数、代码搜索、Cookie、WebAPI trace、JSVMP、WASM、文件读写、Skills、扩展与环境管理及 Node/Python 实打验证
@@ -585,8 +587,10 @@ ag_1b65d2ba7d,tool_class,email_calendar,https://github.com/GortexAI/franco,"send
 ag_1b65d2ba7d,tool_class,search_retrieval,https://github.com/GortexAI/franco,"Franco finds businesses, reads their websites, picks the right person, and drafts a personalized sequence with the model."
 ag_1b7ca916e8,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-qkec5blj7jbz6,Purpose-built on AWS for continuous security validation across your application portfolio.
 ag_1b7ca916e8,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-qkec5blj7jbz6,A Security deploys fully autonomous AI agents that continuously penetration test your web applications the way skilled attackers do.
-ag_1bc81e2864,tool_class,code_execution,https://github.com/eosphoros-ai/DB-GPT,"Run code and tools in isolated environments for safer, more reliable analysis."
-ag_1bc81e2864,tool_class,search_retrieval,https://github.com/eosphoros-ai/DB-GPT,"Combine **code, SQL, retrieval, and tools** in a single agentic workflow"
+ag_1bc81e2864,autonomy,approver,https://github.com/eosphoros-ai/DB-GPT,Dashboard plans and proposed edits can be reviewed before application.
+ag_1bc81e2864,tool_class,code_execution,https://github.com/eosphoros-ai/DB-GPT,"**Models and runtimes** let you select providers and local or container execution, with configured dependencies and tool access."
+ag_1bc81e2864,tool_class,custom_apis,https://github.com/eosphoros-ai/DB-GPT,**Connectors** integrate external tools through configured MCP services.
+ag_1bc81e2864,tool_class,search_retrieval,https://github.com/eosphoros-ai/DB-GPT,**Knowledge bases** provide document context for retrieval.
 ag_1bf59b8c52,audience,practitioner,https://github.com/Pythagora-io/gpt-pilot,"GPT Pilot aims to research how much LLMs can be utilized to generate fully working, production-ready apps while the developer oversees the implementation."
 ag_1bf59b8c52,tool_class,file_system,https://github.com/Pythagora-io/gpt-pilot,All generated code will be stored in the folder `workspace` inside the folder named after the app name you enter upon starting the pilot.
 ag_1c018fcc5b,tool_class,code_execution,https://github.com/Zhou-Shilin/Aether,Includes an automatically installed Alpine Linux environment to run shell commands and tools out of the box.
@@ -656,9 +660,8 @@ ag_1e9607f408,tool_class,file_system,https://github.com/google-gemini/gemini-cli
 ag_1ea75b896c,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-q6iohl5o35q72,"This solution reduces manual effort, improves accuracy, and helps ensure timely payments, enhancing operational efficiency and supplier relationships."
 ag_1ea75b896c,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-q6iohl5o35q72,Booking to ERP: AI auto-codes GL entries and ensures compliance with booking rules.
 ag_1ea75b896c,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/prodview-q6iohl5o35q72,"Invoice Receipt: AI monitors inboxes and portals, classifies invoice types, and initiates intake automatically."
-ag_1eb5827234,autonomy,approver,https://github.com/ZJU-REAL/HugAgentOS,"actions that need approval are approved on the web, with
-  a reminder in IM; until you answer, the task waits instead of acting on its own."
-ag_1eb5827234,tool_class,email_calendar,https://github.com/ZJU-REAL/HugAgentOS,It needs to send an email
+ag_1eb5827234,autonomy,approver,https://github.com/ZJU-REAL/HugAgentOS,Waiting for your approval or answer doesn't consume the execution budget.
+ag_1eb5827234,tool_class,email_calendar,https://github.com/ZJU-REAL/HugAgentOS,"Email, computer input and session writes need approval"
 ag_1eb5827234,tool_class,file_system,https://github.com/ZJU-REAL/HugAgentOS,working files live in a dedicated persistent sandbox
 ag_1ebbd96dc9,autonomy,approver,https://github.com/hhszzzz/taibu,先研究、经用户批准再执行
 ag_1ebbd96dc9,tool_class,search_retrieval,https://github.com/hhszzzz/taibu,经 Exa / Tavily 等 MCP 服务路由的联网搜索与读网页
@@ -819,12 +822,12 @@ ag_25d1d29743,tool_class,search_retrieval,https://github.com/phodal/auto-dev,"Bu
 ag_25dc02015e,audience,organization,https://github.com/runvendo/vendo,Vendo is for B2B SaaS teams whose customers keep asking for bespoke features.
 ag_25dc02015e,autonomy,approver,https://github.com/runvendo/vendo,"Plain language in, standing automation out, every tool gated by approval."
 ag_25dc02015e,tool_class,custom_apis,https://github.com/runvendo/vendo,Vendo reads your API and turns it into tools the agent executes as the signed-in user.
+ag_260642c451,audience,practitioner,https://github.com/KevRojo/Dulus,Your AI teammate for the desktop and terminal.
 ag_260642c451,autonomy,approver,https://github.com/KevRojo/Dulus,"A command that can't be undone asks first, right in the chat: approve it once, or always."
 ag_260642c451,tool_class,browser,https://github.com/KevRojo/Dulus,"It browses for you in WebDrive, a real browser inside the app, and reads the page back."
 ag_260642c451,tool_class,code_execution,https://github.com/KevRojo/Dulus,"Open the terminal and watch Dulus run its commands in a real shell, line by line."
-ag_260642c451,tool_class,custom_apis,https://github.com/KevRojo/Dulus,"Pick one from the market, install it, sign in, and its tools are ready."
-ag_260642c451,tool_class,file_system,https://github.com/KevRojo/Dulus,"It works in your files, your shell, your browser and your screen"
-ag_260642c451,tool_class,search_retrieval,https://github.com/KevRojo/Dulus,"it searches, reads and runs the test"
+ag_260642c451,tool_class,file_system,https://github.com/KevRojo/Dulus,"It works in your files, your shell, your browser and your screen — on any model you choose."
+ag_260642c451,tool_class,search_retrieval,https://github.com/KevRojo/Dulus,"it searches, reads and runs the test, takes a steer mid-task, fixes the cause and runs the suite again"
 ag_264a1d85c7,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-fjvwivbdtsjgs,Wipro’s QET GenAI Accelerator augments quality engineering productivity.
 ag_264a1d85c7,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-fjvwivbdtsjgs,Amazon Bedrock for RAG on a pretrained LLM model
 ag_2708c6328e,tool_class,browser,https://github.com/nico-martin/gemma4-browser-extension,The agent can manage your browser tabs through natural language:
@@ -857,7 +860,9 @@ ag_2801fd6ab7,tool_class,code_execution,https://github.com/qwen-code-dev-bot/oh-
 edits files and runs shell commands under a strict, inspectable safety plane"
 ag_2801fd6ab7,tool_class,file_system,https://github.com/qwen-code-dev-bot/oh-my-cli,"a terminal CLI that reads and
 edits files and runs shell commands under a strict, inspectable safety plane"
-ag_28226922d0,tool_class,search_retrieval,https://github.com/TauricResearch/TradingAgents,"Aggregates news headlines, StockTwits, and Reddit chatter into a single sentiment read to gauge short-term market mood."
+ag_28226922d0,audience,practitioner,https://github.com/TauricResearch/TradingAgents,Start your agentic finance research with Tauric!
+ag_28226922d0,autonomy,collaborator,https://github.com/TauricResearch/TradingAgents,"Shift+Tab switches to plan mode, where the agent proposes a research plan first."
+ag_28226922d0,tool_class,search_retrieval,https://github.com/TauricResearch/TradingAgents,reads what the question needs with its data tools
 ag_2829322201,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-x5jlmudv7tp2e,"Mine General Managers, Production Superintendents, Mill/Plant Metallurgists, and Operations Excellence leaders running open-pit, underground, and processing operations who need a single conversational interface across production, haulage, and metallurgy."
 ag_2829322201,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-x5jlmudv7tp2e,"ready integration to your production, ERP, and historian systems."
 ag_2834d84e2e,audience,practitioner,https://github.com/topconstableinlet67/GitHub-Copilot-app,The GitHub Copilot app is an agent-native desktop experience for managing software work from idea to pull request.
@@ -866,7 +871,7 @@ ag_285458975b,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodvi
 ag_285458975b,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-vzhctzezs2n42,it retrieves historical account data
 ag_287220dcae,autonomy,approver,https://github.com/aaif-goose/goose,"Your app sends prompts and receives streamed responses, tool activity, and permission requests."
 ag_287220dcae,tool_class,code_execution,https://github.com/aaif-goose/goose,"an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
-ag_28a225d36a,autonomy,collaborator,https://github.com/JetBrains/thinkrail,"work together on a shared plan: the agent updates it, and you review and edit."
+ag_28a225d36a,autonomy,collaborator,https://github.com/JetBrains/thinkrail,"work together on a shared plan: the agent updates it, and you review and edit"
 ag_28aff56335,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-vma3xjja4qrmi,"Designed for modern on-call, SRE, and DevOps teams, Vibe AI ensures faster, smarter incident resolution around the clock."
 ag_28aff56335,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-vma3xjja4qrmi,"resolves incidents end to end, without human bottlenecks"
 ag_28aff56335,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-vma3xjja4qrmi,"Vibe integrates seamlessly with tools like Slack, Jira, PagerDuty, and Datadog to proactively detect issues, surface context, and suggest fixes"
@@ -1030,7 +1035,7 @@ ag_309c062eab,autonomy,observer,https://github.com/raucvr/Group-Goki,"lock a fil
 ag_309c062eab,tool_class,custom_apis,https://github.com/raucvr/Group-Goki,HTTP client for SEC EDGAR APIs (rate-limited)
 ag_309c062eab,tool_class,file_system,https://github.com/raucvr/Group-Goki,Immutable JSON watchlist persistence
 ag_309c062eab,tool_class,search_retrieval,https://github.com/raucvr/Group-Goki,"Full-text search across EDGAR filings by ticker, form type, and date range"
-ag_30b7d18e56,tool_class,voice,https://github.com/onehumanbeing/esp32-iphone-agent,The board forwards AirPlay audio and the iPhone turns it into words
+ag_30b7d18e56,audience,non_expert,https://github.com/onehumanbeing/esp32-iphone-agent,"Fine for a developer, a wall for everyone else. Here the board does the computer's job, so the phone is all you need."
 ag_30bc2cffa9,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-wcssigfyqtzmy,can transform the way organizations manage and monitor their financial performance metrics
 ag_30bc2cffa9,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-wcssigfyqtzmy,"The agent proactively investigates the root causes of KPI changes, correlating financial metrics with operational drivers and external factors."
 ag_30d7c46ead,autonomy,observer,https://github.com/snarktank/antfarm,Zero babysitting.
@@ -1121,6 +1126,7 @@ ag_35de8a02c0,autonomy,approver,https://github.com/lattice-writer/lattice,the ag
 ag_35de8a02c0,tool_class,file_system,https://github.com/lattice-writer/lattice,"The agent reads your project and papers, fixes build errors and edits files; every change shows as a diff you can review or undo."
 ag_35f362b16f,tool_class,code_execution,https://aws.amazon.com/marketplace/pp/prodview-4p22bjgwhhitg,"Automatically generates and executes comprehensive SQL test cases using mapping sheets, user-defined rules, and AI-generated rule recommendations."
 ag_35f79f7a9b,tool_class,file_system,https://github.com/HKUDS/nanobot,edits files
+ag_361ebb53fb,tool_class,code_execution,https://github.com/huggingface/Repo2RLEnv,recipes execute target code on **Modal or Daytona** workers
 ag_3628392595,audience,non_expert,https://aws.amazon.com/marketplace/pp/prodview-7fjkqxoizghvm,Medeloop puts rigorous patient-data analysis in the hands of anyone with a question.
 ag_363358c92f,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-kdwflghyszzry,Harmony.ai is an AI call center for sales and service teams.
 ag_363358c92f,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-kdwflghyszzry,live transfers calls to your team with full notes in your CRM.
@@ -1195,7 +1201,7 @@ ag_3aadf95f7e,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodvi
 ag_3b1105be2c,autonomy,observer,https://github.com/OSU-NLP-Group/SeeAct,SeeAct is a system for generalist web agents that autonomously carry out tasks on any given website
 ag_3b1105be2c,tool_class,browser,https://github.com/OSU-NLP-Group/SeeAct,"The SeeAct tool enables running web agents on live websites through [PlayWright](https://playwright.dev/), 
 serving as an interface between an agent and a web browser."
-ag_3b171f9677,autonomy,approver,https://github.com/glanderness/BeefTV,用户说明创作顺序并确认生成方案，Agent 自行搭建了 **25 个节点、48 条连线**
+ag_3b171f9677,autonomy,approver,https://github.com/glanderness/BeefTV,需由界面或 `beeftv approve` 确认
 ag_3b525c797f,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-qj6w7rxaxvlxw,"Property & Casualty insurers face rising claim volumes, persistent fraud exposure, regulatory scrutiny, and pressure to resolve claims faster without adding operational cost."
 ag_3b525c797f,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-qj6w7rxaxvlxw,"escalating to human reviewers whenever a claim meets defined thresholds for value, complexity, or regulatory sensitivity"
 ag_3b525c797f,tool_class,file_system,https://aws.amazon.com/marketplace/pp/prodview-qj6w7rxaxvlxw,Amazon Simple Storage Service (Amazon S3) stores claim documents and evidence
@@ -1227,7 +1233,7 @@ ag_3c2d476c0f,autonomy,approver,https://duckie.ai/,Refund > $200 → human appro
 ag_3c2d476c0f,tool_class,business_systems,https://duckie.ai/,"For data discrepancy issues that look like system bugs, file a Jira ticket to the data-engineering team"
 ag_3c2d476c0f,tool_class,custom_apis,https://duckie.ai/,"Any tool — MCP, APIs, native integrations"
 ag_3c2d476c0f,tool_class,search_retrieval,https://duckie.ai/,"learning from your knowledge base to deliver instant, accurate responses 24/7."
-ag_3c3f77903c,autonomy,collaborator,https://github.com/nodetool-ai/nodetool,"take over at any point. Each editor exposes its actions to the agent as tools,"
+ag_3c3f77903c,autonomy,approver,https://github.com/nodetool-ai/nodetool,"Approve each still before you pay for its clip, reshoot any shot on its own,"
 ag_3c41e1725d,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-r6sgv3vbdgmku,"Ideal For: Enterprises with complex, multi-source data environments"
 ag_3c41e1725d,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-r6sgv3vbdgmku,"REST API tool bindings, Git-synced instruction management, and custom agent creation mean new capabilities can be added without touching the codebase."
 ag_3c41e1725d,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-r6sgv3vbdgmku,a RAG agent for document Q&A
@@ -1281,7 +1287,7 @@ ag_3e51592369,autonomy,collaborator,https://github.com/ltjed/freephdlabor,✅ Na
 ag_3e51592369,tool_class,code_execution,https://github.com/ltjed/freephdlabor,Code execution environment
 ag_3e51592369,tool_class,file_system,https://github.com/ltjed/freephdlabor,"File editing, web search, etc."
 ag_3e51592369,tool_class,search_retrieval,https://github.com/ltjed/freephdlabor,"File editing, web search, etc."
-ag_3e60941aa7,autonomy,approver,https://github.com/DIYgod/pinky,"Payments, trades and transfers wait for your click"
+ag_3e60941aa7,autonomy,approver,https://github.com/DIYgod/pinky,"approve risky steps, take over and review what happened"
 ag_3ec3a514e1,audience,practitioner,https://github.com/kirodotdev/Kiro,"Kiro is an agentic AI development platform that helps developers and teams plan, build, and review software."
 ag_3ec3a514e1,autonomy,approver,https://github.com/kirodotdev/Kiro,Set access boundaries with [permissions](https://kiro.dev/docs/permissions/)
 ag_3ec3a514e1,tool_class,code_execution,https://github.com/kirodotdev/Kiro,"Terminal-native work, headless automation, and CI/CD"
@@ -1308,6 +1314,8 @@ ag_401119333b,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_401119333b,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-ctcrm3444e24c,The solution facilitates human-in-the-loop review for dissemination
 ag_401119333b,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-ctcrm3444e24c,streaming data through APIs and database connections to generate written and audio notifications
 ag_401f35e14c,tool_class,search_retrieval,https://github.com/Neon549/AlphaStock,文档与新闻检索结合词法检索、向量检索、RRF 融合
+ag_40373df876,tool_class,code_execution,https://github.com/affaan-m/claude-swarm,description: Writes and runs tests
+ag_40373df876,tool_class,file_system,https://github.com/affaan-m/claude-swarm,"tools: [Read, Write, Edit, Bash]"
 ag_4051d6212a,autonomy,observer,https://github.com/disler/infinite-agentic-loop,"Continuous generation in waves until context limits are reached, with progressive sophistication."
 ag_4051d6212a,tool_class,file_system,https://github.com/disler/infinite-agentic-loop,Analyzes existing iterations to determine starting point
 ag_4066bfd5c5,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-rgnmuwtd7jbb6,F5 AI Red Team empowers teams with a vast and continuously updated prompt database to test for vulnerabilities and streamline insights into implementation.
@@ -1401,6 +1409,7 @@ ag_45e504d40b,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodvi
 ag_45ea9f1d00,audience,non_expert,https://github.com/JosssphZhou/poki,Skip multi-app tapping for everyday errands.
 ag_45ea9f1d00,autonomy,approver,https://github.com/JosssphZhou/poki,"payments, deletions, and Wallet actions always stop for your confirmation."
 ag_45ea9f1d00,tool_class,browser,https://github.com/JosssphZhou/poki,look things up in the built-in browser
+ag_45ea9f1d00,tool_class,voice,https://github.com/JosssphZhou/poki,start a hands-free spoken chat with Talk to Poki while Dynamic Island tracks each step.
 ag_45eb8ec51c,autonomy,approver,https://github.com/raroque/boop-agent,any external action stages a draft first; the agent only commits when the user confirms
 ag_45eb8ec51c,tool_class,browser,https://github.com/raroque/boop-agent,"spawned agents can use a Patchright-backed Chrome profile for login-required services, visual workflows, or pages that reject ordinary automation"
 ag_45eb8ec51c,tool_class,custom_apis,https://github.com/raroque/boop-agent,"one API key unlocks 1000+ toolkits. Connect Gmail, Slack, GitHub, Linear, Notion, Drive, HubSpot, etc. with a click from the debug dashboard."
@@ -1413,9 +1422,11 @@ ag_46a9cf2ec2,tool_class,search_retrieval,https://github.com/nickscamara/open-de
 ag_46ea1ec646,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-3bxtohhutikpi,PAIStrike is an enterprise-grade agentic offensive security platform built by Scantist
 ag_46ea1ec646,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-3bxtohhutikpi,augment manual penetration testing teams with autonomous testing capacity.
 ag_46ea1ec646,tool_class,browser,https://aws.amazon.com/marketplace/pp/prodview-3bxtohhutikpi,"PAIStrike provides an embedded browser where users authenticate naturally, then hands valid sessions to AI agents for deep testing"
-ag_4753700f38,audience,organization,https://github.com/Tencent/WeKnora,"an open-source, LLM-powered knowledge framework for enterprise document understanding, semantic retrieval and reasoning"
+ag_4753700f38,audience,organization,https://github.com/Tencent/WeKnora,"WeKnora](https://weknora.weixin.qq.com) is an open-source, LLM-powered knowledge framework for enterprise document understanding, semantic retrieval and reasoning."
 ag_4753700f38,tool_class,browser,https://github.com/Tencent/WeKnora,Through the BrowserSkill extension the agent operates the user's own Chrome or Edge
 ag_4753700f38,tool_class,code_execution,https://github.com/Tencent/WeKnora,Skills installed from ClawHub / SkillHub / Git / ZIP run in session-persistent Docker / E2B / Cube sandboxes
+ag_4753700f38,tool_class,custom_apis,https://github.com/Tencent/WeKnora,external MCP services (OAuth included) can be connected and enabled tool by tool
+ag_4753700f38,tool_class,search_retrieval,https://github.com/Tencent/WeKnora,"Use RAG to look things up, the agent for multi-step tasks, and the wiki to organize knowledge."
 ag_4768e2d39e,autonomy,approver,https://github.com/Nano-Collective/nanocoder,"Boot directly into a development mode (normal, auto-accept, yolo, plan, architect)"
 ag_47af61ee43,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-sn4noicgwvvh2,purpose-built for Communications Service Providers (CSPs)
 ag_47af61ee43,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-sn4noicgwvvh2,enabling agents to retrieve relevant passages via semantic search during extraction and classification.
@@ -1469,7 +1480,8 @@ ag_4a0044a493,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_4a0044a493,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-irugtgirwtcue,An administrator edits and approves it. Only an approved methodology produces a final result.
 ag_4a02fb99e8,tool_class,code_execution,https://github.com/Tura-AI/tura,"Instead of exposing dozens of small tools to the model, it exposes one macro tool: `command_run`. The agent can then build a multi-step execution tree and run related actions in one LLM turn."
 ag_4a02fb99e8,tool_class,file_system,https://github.com/Tura-AI/tura,"""command_type"": ""apply_patch"""
-ag_4a0c7ce363,tool_class,file_system,https://github.com/newo-ether/Agora,"web search, memory, past-conversation RAG, image generation, MCP servers, Tasks/Loops, remote shell/files, durable Conch jobs, and an F-Droid Alpine sandbox"
+ag_4a0c7ce363,tool_class,code_execution,https://github.com/newo-ether/Agora,"can extend agent runs with MCP, automation, search, memory, local models, and remote shell tools"
+ag_4a0c7ce363,tool_class,file_system,https://github.com/newo-ether/Agora,remote shell/files
 ag_4a0c7ce363,tool_class,search_retrieval,https://github.com/newo-ether/Agora,"web search, memory, past-conversation RAG, image generation, MCP servers, Tasks/Loops, remote shell/files, durable Conch jobs, and an F-Droid Alpine sandbox"
 ag_4a1db2d421,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-7t4ty67mn7m7k,"It enables organizations to search, analyze, and visualize enterprise data distributed across documents, databases, and business systems"
 ag_4a1db2d421,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-7t4ty67mn7m7k,"Combines structured data (databases, CRM, ERP) with unstructured data (documents, manuals, FAQs) in a single conversational workflow."
@@ -1563,9 +1575,10 @@ ag_4dfd2ad2e0,tool_class,file_system,https://github.com/ShepAlderson/copilot-orc
 ag_4e07ce0d1a,autonomy,observer,https://github.com/SakanaAI/AI-Scientist-v2,Fully autonomous scientific research systems are becoming increasingly capable
 ag_4e07ce0d1a,tool_class,code_execution,https://github.com/SakanaAI/AI-Scientist-v2,This codebase will execute Large Language Model (LLM)-written code.
 ag_4e07ce0d1a,tool_class,search_retrieval,https://github.com/SakanaAI/AI-Scientist-v2,interacting with tools like Semantic Scholar to check for novelty.
-ag_4e116e90f6,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-h6y43bjqbnpvs,built for site reliability teams
+ag_4e116e90f6,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-h6y43bjqbnpvs,"Aiden for SRE automates alert validation, root cause analysis, and incident triage before engineers are paged - with policy guardrails and full audit trails for enterprise teams."
 ag_4e116e90f6,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-h6y43bjqbnpvs,Policies control what it may do on its own versus what needs a person's approval.
-ag_4e116e90f6,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-h6y43bjqbnpvs,"Aiden connects to PagerDuty, Squadcast, Grafana, ObserveNow, Datadog, New Relic, Dynatrace, GitHub, GitLab, and more."
+ag_4e116e90f6,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-h6y43bjqbnpvs,"- **Incident Management:** PagerDuty, Squadcast, Jira"
+ag_4e116e90f6,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-h6y43bjqbnpvs,It integrates with the tools your teams already use:
 ag_4e4600fa23,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-aowylq4hh2gum,"The solution is well suited for engineering organizations modernizing DevOps practices, platform teams standardizing CI/CD environments, and enterprises operating in regulated industries that require traceable development processes."
 ag_4e4600fa23,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-aowylq4hh2gum,Design artifacts can be transformed into functional frontend code with approval workflows that maintain developer control.
 ag_4e5edf0ec8,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-skwtb3wxjiypc,Perfect for organizations with complex cloud deployments
@@ -1679,6 +1692,10 @@ ag_5340b09561,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/
 ag_5340b09561,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/prodview-cosruboltjxqo,Send email using AWS SES
 ag_539f59952a,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-3iejvxclk6xyu,it integrates external APIs via Lambda
 ag_539f59952a,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-3iejvxclk6xyu,searches data using OpenSearch to create virtual customers
+ag_53d4694b2a,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-n7l2eaa5qhste,**Platform and DevOps owners** who want automation they can still explain.
+ag_53d4694b2a,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-n7l2eaa5qhste,"Every stage that needs a human decision stops and waits for one, and a run parked at a gate stays parked indefinitely rather than timing out or proceeding on its own."
+ag_53d4694b2a,tool_class,code_execution,https://aws.amazon.com/marketplace/pp/prodview-n7l2eaa5qhste,Test** - Write and run the tests that prove the change.
+ag_53d4694b2a,tool_class,file_system,https://aws.amazon.com/marketplace/pp/prodview-n7l2eaa5qhste,"Build** - Write the code, in your repository, on its own branch."
 ag_540b98c1c7,tool_class,browser,https://github.com/zhayujie/CowAgent,"Built-in file I/O, terminal, browser, scheduler, memory retrieval, web search, and 10+ more tools — with native MCP integration"
 ag_540b98c1c7,tool_class,file_system,https://github.com/zhayujie/CowAgent,"Built-in file I/O, terminal, browser, scheduler, memory retrieval, web search, and 10+ more tools — with native MCP integration"
 ag_540b98c1c7,tool_class,search_retrieval,https://github.com/zhayujie/CowAgent,"Built-in file I/O, terminal, browser, scheduler, memory retrieval, web search, and 10+ more tools — with native MCP integration"
@@ -1692,7 +1709,6 @@ ag_548fc9dd25,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/pr
 ag_54a9f20c34,audience,practitioner,https://github.com/snap-stanford/Biomni,Biomni helps scientists dramatically enhance research productivity and generate testable hypotheses.
 ag_54a9f20c34,autonomy,observer,https://github.com/snap-stanford/Biomni,Biomni is a general-purpose biomedical AI agent designed to autonomously execute a wide range of research tasks across diverse biomedical subfields.
 ag_54a9f20c34,tool_class,code_execution,https://github.com/snap-stanford/Biomni,By integrating cutting-edge large language model (LLM) reasoning with retrieval-augmented planning and code-based execution
-ag_54bdbeb5ea,tool_class,search_retrieval,https://github.com/alphasecio/langchain-examples,"An agent that searches the web, reads pages and answers with cited sources."
 ag_54c27cb9fb,tool_class,search_retrieval,https://github.com/1517005260/graph-rag-agent,同时执行多种搜索策略，综合利用不同知识来源
 ag_54decd4108,autonomy,observer,https://github.com/browser-use/browsercode,The agent will control a Browser Use Cloud browser and give you a link to watch it.
 ag_54decd4108,tool_class,browser,https://github.com/browser-use/browsercode,A streamlined coding agent that drives real browsers through unconstrained CDP.
@@ -1853,7 +1869,8 @@ ag_5a378efd2a,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_5a74805eb6,tool_class,file_system,https://github.com/opensec-git/Pi-Bolt,Writing a 400 KB file through a tool call
 ag_5acfef6e27,autonomy,approver,https://github.com/alexsergivan/kwant,"Press **Approve**, **Send back** with a note, or **Roll back**."
 ag_5acfef6e27,tool_class,browser,https://github.com/alexsergivan/kwant,Each bot job gets its own page in its team's browser
-ag_5acfef6e27,tool_class,file_system,https://github.com/alexsergivan/kwant,and the bot works in its folder
+ag_5acfef6e27,tool_class,code_execution,https://github.com/alexsergivan/kwant,a teammate on another model runs its checks again in a clean copy of the files
+ag_5acfef6e27,tool_class,file_system,https://github.com/alexsergivan/kwant,the bot works in its folder
 ag_5b6f78ab1a,audience,practitioner,https://github.com/Harvil1/codeAgent,CodeAgent 是一个跑在终端里的 AI 编程助手：你用自然语言下指令，它读代码、改文件、跑命令、查资料，把活干完。
 ag_5b6f78ab1a,autonomy,approver,https://github.com/Harvil1/codeAgent,危险命令 / 白名单外写文件的**审批面板**：允许一次 / 总是允许 / 拒绝三选，面板答完自擦不污染上下文
 ag_5b6f78ab1a,tool_class,code_execution,https://github.com/Harvil1/codeAgent,"writes and edits files, runs commands and tests, and iterates until the task is done"
@@ -1962,7 +1979,7 @@ ag_60bed32857,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodvi
 ag_60bed32857,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-gdbshz2rjajws,SciSpace can autonomously handle the heavy lifting.
 ag_60bed32857,tool_class,code_execution,https://aws.amazon.com/marketplace/pp/prodview-gdbshz2rjajws,"It queries literature and data, running complex analyses, and even executing code or simulations tailored to your field."
 ag_60bed32857,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-gdbshz2rjajws,"It queries literature and data, running complex analyses, and even executing code or simulations tailored to your field."
-ag_60d4d66ee2,tool_class,code_execution,https://github.com/aipoch/open-science,"Local-first, model-agnostic desktop app with extensible skills, MCP tools and connectors, Python/R execution and traceable artifacts for reproducible research on macOS, Windows and Linux."
+ag_60d4d66ee2,tool_class,code_execution,https://github.com/aipoch/open-science,"Python/R execution and traceable artifacts for reproducible research on macOS, Windows and Linux."
 ag_60d92dc243,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-4vuv6caw2iryu,WeWatch connects to your AWS accounts through a read-only IAM role and builds a live topology graph of what you run.
 ag_60eb461a57,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-nivfzhu3or5wo,"Trusted by fintech companies, healthcare organizations, and Fortune 500 enterprises to secure their mobile applications before they reach production."
 ag_60eb461a57,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-nivfzhu3or5wo,Enterprise plans include AI-driven dynamic analysis that autonomously:
@@ -2028,11 +2045,10 @@ ag_6309a7cf89,tool_class,payments,https://github.com/olaxbt/ai-market-maker,"Fet
 ag_6330a31a52,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-5ch3sp7v6u43g,"enables emergency services and public safety organizations to detect, investigate, and respond to cybersecurity incidents across CJIS-regulated environments"
 ag_6330a31a52,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-5ch3sp7v6u43g,Escalates operationally impactful actions for mandatory human approval
 ag_6330a31a52,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-5ch3sp7v6u43g,Identity and access management platforms
-ag_633d288a46,audience,organization,https://github.com/pipeshub-ai/pipeshub-ai,PipesHub](https://www.pipeshub.com/)</strong> is an open-source platform for connecting AI applications to the knowledge stored across your company's business systems.
+ag_633d288a46,audience,organization,https://github.com/pipeshub-ai/pipeshub-ai,is an open-source platform for connecting AI applications to the knowledge stored across your company's business systems
 ag_633d288a46,tool_class,search_retrieval,https://github.com/pipeshub-ai/pipeshub-ai,"semantic and keyword retrieval, so it matches both meaning and exact terms"
-ag_634680b566,audience,practitioner,https://github.com/automateyournetwork/netclaw,A CCIE-level AI network engineering coworker that runs on [OpenClaw](https://github.com/openclaw/openclaw) or [Hermes](https://github.com/NousResearch/hermes-agent)
 ag_634680b566,autonomy,approver,https://github.com/automateyournetwork/netclaw,"carry out approved changes with baselines, verification and an immutable audit trail"
-ag_634680b566,tool_class,search_retrieval,https://github.com/automateyournetwork/netclaw,NetClaw can refine a search within a bounded budget and report when the corpus cannot answer.
+ag_634680b566,tool_class,search_retrieval,https://github.com/automateyournetwork/netclaw,"Hybrid semantic and keyword search, local reranking and structure-aware chunks return"
 ag_63515cfd01,autonomy,approver,https://github.com/blendi-remade/agentcraft,Risky commands ask first.
 ag_63515cfd01,tool_class,code_execution,https://github.com/blendi-remade/agentcraft,"calls, test runs, red and green diffs."
 ag_63515cfd01,tool_class,file_system,https://github.com/blendi-remade/agentcraft,Reads and edits inside the worktree are allowed.
@@ -2272,7 +2288,8 @@ ag_6efe5fb4d0,tool_class,custom_apis,https://github.com/Hesper-Labs/owly,**Trigg
 ag_6efe5fb4d0,tool_class,email_calendar,https://github.com/Hesper-Labs/owly,**Send internal emails** to notify team members about urgent issues
 ag_6efe5fb4d0,tool_class,voice,https://github.com/Hesper-Labs/owly,Twilio Voice with OpenAI Whisper (STT) and ElevenLabs (TTS) for natural voice conversations.
 ag_6f01b03962,tool_class,file_system,https://github.com/code-yeongyu/lazycodex,writes local guidance near the code that needs it
-ag_6f174c8873,tool_class,file_system,https://github.com/bytedance/deer-flow,"it ships with everything an agent needs out of the box: a filesystem, memory, skills, sandbox-aware execution, and the ability to plan and spawn sub-agents for complex, multi-step tasks."
+ag_6f174c8873,tool_class,code_execution,https://github.com/bytedance/deer-flow,sandbox-aware execution
+ag_6f174c8873,tool_class,file_system,https://github.com/bytedance/deer-flow,"a filesystem, memory, skills, sandbox-aware execution"
 ag_6f174c8873,tool_class,search_retrieval,https://github.com/bytedance/deer-flow,DeerFlow has newly integrated the intelligent search and crawling toolset independently developed by BytePlus
 ag_6f3aada5fc,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-5jmnmwnkhvonc,"connecting to platforms like Salesforce, HubSpot, and more to continuously ingest and map metadata into a Unified Metadata Graph."
 ag_6f46d79b04,autonomy,collaborator,https://github.com/voocel/ainovel-cli,写作过程中随时在输入框注入修改意见（无需暂停），系统自动评估影响范围并重写受影响章节
@@ -2303,6 +2320,8 @@ ag_70caadf8db,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_70caadf8db,autonomy,operator,https://aws.amazon.com/marketplace/pp/prodview-zuk3xoo5hhfxa,Teams interact with agents using natural language to ask business questions.
 ag_70caadf8db,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-zuk3xoo5hhfxa,"Integrate with OA systems, internal portals, CRM platforms, and custom applications"
 ag_70ef1cbfd8,autonomy,approver,https://github.com/MayDay-wpf/snow-cli,"Background task creation, task management interface, sensitive command approval, task to session conversion"
+ag_70ffedefd9,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-fkkl5zshgwvz4,"**SRE and platform teams** who want automated remediation they can bound, audit and explain."
+ag_70ffedefd9,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-fkkl5zshgwvz4,Where the line is that an agent may not cross without a person
 ag_7116f6c671,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-henzrerjxo4tu,SupplierX runs the entire procurement cycle on one platform
 ag_7116f6c671,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-henzrerjxo4tu,"through L2-L3 Review, where proposals queue for a one-click human approve"
 ag_7116f6c671,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-henzrerjxo4tu,"Every step writes back to your ERP, so there is no end-of-month reconciliation between systems."
@@ -2359,9 +2378,9 @@ ag_74897c8446,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_74897c8446,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-6hrfsa5ec2cqw,"The orchestrator automatically selects the right specialist(s) for each query, eliminating the need to manually choose tools or configure search strategies."
 ag_74897c8446,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-6hrfsa5ec2cqw,**Database Search Agent** - Queries your SQL and MongoDB data stores to retrieve structured information.
 ag_74897c8446,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-6hrfsa5ec2cqw,**Web Search Agent** - Queries the live web via Tavily and Brave Search to find current information and online resources.
-ag_748d2808ef,autonomy,approver,https://github.com/webbrain-one/webbrain,Three modes control what the agent is allowed to do:
+ag_748d2808ef,autonomy,observer,https://github.com/webbrain-one/webbrain,"hand it a task and let it click,
+type, and navigate its way through."
 ag_748d2808ef,tool_class,browser,https://github.com/webbrain-one/webbrain,"Clicks, types, navigates, uploads, downloads, fills forms."
-ag_748d2808ef,tool_class,search_retrieval,https://github.com/webbrain-one/webbrain,"Read-only. Reads the page, answers questions, fetches URLs."
 ag_74a7283b47,audience,practitioner,https://github.com/xxPcy/PharmaLLM-Agent,可读团队代号、科室、管理员/医生/审核员；医生提交结果后，审核员在授权范围内复核。
 ag_74a7283b47,autonomy,approver,https://github.com/xxPcy/PharmaLLM-Agent,Ask for approval 逐次确认，Full access 对已授权的分割请求自动执行。
 ag_74b0d623cd,tool_class,search_retrieval,https://github.com/NirDiamant/Controllable-RAG-Agent,"If retrieving, fetch relevant information from vector stores and distill it."
@@ -2386,16 +2405,14 @@ ag_755c861b19,tool_class,custom_apis,https://github.com/Yourdaylight/stock_datas
 ag_75a15bf9a8,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-76q4p3nhuqgj4,ResolveAI is the AI SRE platform that runs your production reliably.
 ag_75a15bf9a8,autonomy,collaborator,https://aws.amazon.com/marketplace/pp/prodview-76q4p3nhuqgj4,Collaborative canvas for humans and agents to get to RCA and remediation quickly.
 ag_75a15bf9a8,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-76q4p3nhuqgj4,"Extend ResolveAI via MCP, API, and Skills to Claude Code, Codex, Cursor, Slack, MS Teams, or your custom agents."
-ag_75dee2b145,audience,practitioner,https://github.com/codewhale-hq/Codewhale,"An open-source coding agent for your terminal, written in Rust."
-ag_75dee2b145,autonomy,approver,https://github.com/codewhale-hq/Codewhale,"By default it applies file edits there without asking and asks
-   before each shell command that is not read-only."
-ag_75dee2b145,tool_class,code_execution,https://github.com/codewhale-hq/Codewhale,"Give Codewhale a task and it reads the repository, edits files and runs
-commands until the task is done or it needs your input."
-ag_75dee2b145,tool_class,custom_apis,https://github.com/codewhale-hq/Codewhale,"Connect [MCP servers](docs/MCP.md), add [skills](docs/SKILLS.md) and
-[plugins](docs/PLUGINS.md), and run [hooks](docs/HOOKS.md) on session and tool
-events."
-ag_75dee2b145,tool_class,file_system,https://github.com/codewhale-hq/Codewhale,"Give Codewhale a task and it reads the repository, edits files and runs
-commands until the task is done or it needs your input."
+ag_75dee2b145,audience,practitioner,https://github.com/codewhale-hq/Codewhale,Open-source Rust coding agent for your terminal.
+ag_75dee2b145,autonomy,approver,https://github.com/codewhale-hq/Codewhale,"Mutating shell commands prompt for
+approval: `y` runs once, `a` allows matching commands for the rest of the
+session, and `n` denies."
+ag_75dee2b145,tool_class,code_execution,https://github.com/codewhale-hq/Codewhale,"ran 2 passing tests, and reported the result."
+ag_75dee2b145,tool_class,custom_apis,https://github.com/codewhale-hq/Codewhale,"Attach [MCP servers](docs/MCP.md),"
+ag_75dee2b145,tool_class,file_system,https://github.com/codewhale-hq/Codewhale,"`/undo` reverts the last turn in one step;
+  `/restore` rolls the workspace back to an earlier snapshot"
 ag_75f66c322d,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-vff4xpk3h2uns,accelerates close cycles for finance teams in complex organizations.
 ag_75f66c322d,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-vff4xpk3h2uns,"Recurring journal entries are posted automatically, with intelligent updates to amounts and accounts, eliminating manual data entry and helping reduce errors."
 ag_75fbd97e91,autonomy,observer,https://github.com/rooneyrulz/agentic-stock-research-system,"Click ""Start Analysis"" and wait for results!"
@@ -2482,7 +2499,7 @@ ag_79f73ed176,tool_class,browser,https://aws.amazon.com/marketplace/pp/prodview-
 ag_79f73ed176,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/prodview-gsldfjccyzp6c,Inbox management; Email automation; Calendar management
 ag_7a2a099fea,autonomy,observer,https://github.com/principia-ai/WriteHERE,This option provides a web interface to visualize and monitor the writing process in real-time.
 ag_7a2a099fea,tool_class,search_retrieval,https://github.com/principia-ai/WriteHERE,SerpAPI (for search functionality in report generation)
-ag_7a2f64c990,tool_class,code_execution,https://maige.app,There's also a code sandbox that it can spin up
+ag_7a2f64c990,tool_class,code_execution,https://maige.app,"Maige can label, assign, comment, review code, and even run simple code snippets."
 ag_7a2f64c990,tool_class,custom_apis,https://maige.app,Maige works flexibly with the GitHub API to find a way.
 ag_7a38a1b49b,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-7ihkhko4wbhqe,seeking large-office drawing production capacity without scaling headcount
 ag_7a38a1b49b,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-7ihkhko4wbhqe,"Every AI-generated output goes through a human review cycle. Approve correct work, edit where needed, or deny and retrain."
@@ -2523,7 +2540,8 @@ ag_7b1cc8ef20,tool_class,custom_apis,https://github.com/Miasyster/QuantGPT,├�
 ag_7b1cc8ef20,tool_class,search_retrieval,https://github.com/Miasyster/QuantGPT,│   ├── list_operators         ← 60+ 算子文档
 ag_7b45c12642,audience,practitioner,https://github.com/eliasstravik/shepherdr,For developers who run coding agents with herdr-core on macOS or Linux
 ag_7b45c12642,autonomy,approver,https://github.com/eliasstravik/shepherdr,asks you on a card when it needs a decision
-ag_7b45c12642,tool_class,browser,https://github.com/eliasstravik/shepherdr,"the agent's browser and desktop, to watch and take over"
+ag_7b45c12642,tool_class,browser,https://github.com/eliasstravik/shepherdr,"a Screen: the agent's browser and desktop, to watch and take over"
+ag_7b45c12642,tool_class,voice,https://github.com/eliasstravik/shepherdr,you can dictate or run the whole app by voice
 ag_7b591ee9be,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-vtz26kzy3sabi,"access integrations with MCP to connect to 1,000+ apps"
 ag_7b591ee9be,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-vtz26kzy3sabi,Quick connects to your information across internal repositories like wikis and intranets
 ag_7b89c11639,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-234w3rx7gbwts,makes it easy for businesses to automatically resolve the greatest number of customer service conversations
@@ -2564,6 +2582,9 @@ ag_7ce4360f6c,tool_class,code_execution,https://github.com/crane-in-clear-sky/Wo
 ag_7ce4360f6c,tool_class,custom_apis,https://github.com/crane-in-clear-sky/WorkWit-AI-Agent,connect to standard MCP servers via `data/mcp.json`
 ag_7ce4360f6c,tool_class,email_calendar,https://github.com/crane-in-clear-sky/WorkWit-AI-Agent,"built-in tools (web search, web fetch, charts, email, text-to-image/video, PPT/Word generation, contract risk analysis, and more)"
 ag_7ce4360f6c,tool_class,search_retrieval,https://github.com/crane-in-clear-sky/WorkWit-AI-Agent,"built-in tools (web search, web fetch, charts, email, text-to-image/video, PPT/Word generation, contract risk analysis, and more)"
+ag_7ce8942c26,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-jawpb6ym7ov4g,"Mave helps enterprises and MSSPs expand security coverage, accelerate investigations, and get more security work done."
+ag_7ce8942c26,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-jawpb6ym7ov4g,"Execute authorized security actions within customer-defined permissions, while maintaining human oversight and approval for high-impact changes."
+ag_7ce8942c26,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-jawpb6ym7ov4g,"Mave deploys specialized AI agents that work with an organization's existing security tools to investigate, analyze, hunt, and respond to threats."
 ag_7cf3c610c4,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-6a5tcxxogj2dg,this agent is purpose-built for finance teams looking to gain deeper insights and take action across systems in their technology stack
 ag_7cf3c610c4,autonomy,operator,https://aws.amazon.com/marketplace/pp/prodview-6a5tcxxogj2dg,"Users simply type a question in plain language and get an immediate, accurate answer"
 ag_7cf3c610c4,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-6a5tcxxogj2dg,it extends the power of Sage Copilot to key external systems - including your CRM
@@ -2572,7 +2593,6 @@ ag_7d03542ef8,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_7d03542ef8,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-ds2pb7hyljcgm,Integrate with your existing HRIS or HCM tools
 ag_7d03542ef8,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-ds2pb7hyljcgm,Surface top candidates instantly across internal and external databases
 ag_7d28e5f0e5,tool_class,custom_apis,https://v0.app/,"Build with your favorite tools and APIs. Automatic integration, no accounts required."
-ag_7d28e5f0e5,tool_class,file_system,https://v0.app/,Connect to GitHub and push code directly to your repository.
 ag_7d4403b922,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-hhcmwpxckg2qc,"Artemis is an AI-native Protection Platform for security teams that need real answers, not more alerts."
 ag_7d4403b922,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-hhcmwpxckg2qc,"When Artemis identifies a potential incident, it automatically investigates - pulling in related activity across every connected source and building a complete security case."
 ag_7d4403b922,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-hhcmwpxckg2qc,"Artemis connects to your existing sources such as AWS CloudTrail, Okta, Microsoft Entra ID, CrowdStrike, and applies AI-powered detection and investigation across all of them simultaneously."
@@ -2647,7 +2667,10 @@ ag_7ec3cfafe4,tool_class,file_system,https://github.com/heshengtao/super-agent-p
 ag_7ecb1d7283,audience,practitioner,https://github.com/mims-harvard/AutoScientists,**AutoScientists** is a decentralized team of AI agents for long-running computational scientific experimentation.
 ag_7ecb1d7283,autonomy,observer,https://github.com/mims-harvard/AutoScientists,"The orchestrator is a pure coordinator — it launches agents and harvests their results, never trains anything itself."
 ag_7ef68e8208,tool_class,browser,https://github.com/THUDM/AutoWebGLM,"We enhance the model's webpage comprehension, browser operations, and efficient task decomposition abilities"
+ag_7ef84f4ab4,audience,practitioner,https://github.com/ccfos/nightingale,Nightingale includes an AI agent you can use directly in the web UI.
 ag_7ef84f4ab4,autonomy,approver,https://github.com/ccfos/nightingale,The built-in tools for updating existing alert rules and dashboards present proposed changes for confirmation.
+ag_7ef84f4ab4,tool_class,custom_apis,https://github.com/ccfos/nightingale,"The agent runs inside Nightingale, calls tools to inspect your monitoring data and configuration, and works through tasks over multiple steps."
+ag_7ef84f4ab4,tool_class,search_retrieval,https://github.com/ccfos/nightingale,"Query related metrics and logs, inspect affected hosts, and explain findings using the data it retrieves."
 ag_7f26ccac26,autonomy,approver,https://github.com/bcefghj/smart-cs-multi-agent,敏感问题自动暂停，等待人工确认
 ag_7f26ccac26,tool_class,business_systems,https://github.com/bcefghj/smart-cs-multi-agent,`ticket_create` / `ticket_update` — 工单创建和更新
 ag_7f26ccac26,tool_class,search_retrieval,https://github.com/bcefghj/smart-cs-multi-agent,`kb_search` — 知识库全文搜索
@@ -2695,11 +2718,9 @@ ag_80c92208a7,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_80c92208a7,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-deko62qeonm6c,"An analyst confirms, overrides, or escalates at every decision point"
 ag_80c92208a7,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-deko62qeonm6c,"entitlement, withholding-tax, FX, and fractional-share engines run as AWS Lambda functions invoked as tools"
 ag_80c92208a7,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-deko62qeonm6c,Amazon OpenSearch Service retrieves comparable historical events and prior analyst corrections as evidence for break diagnosis
-ag_80c9e53687,autonomy,approver,https://github.com/fuyuxiang/echo-agent,浏览器副作用操作与电脑任务采用不同的确认流程；Computer Use 在授权任务内连续执行
-ag_80c9e53687,tool_class,browser,https://github.com/fuyuxiang/echo-agent,任务隔离的 Browser Use
-ag_80c9e53687,tool_class,custom_apis,https://github.com/fuyuxiang/echo-agent,执行本地工具，连接外部工具服务
-ag_80c9e53687,tool_class,file_system,https://github.com/fuyuxiang/echo-agent,桌面端通过 React、Tauri 与进程内嵌入的 Rust Agent 引擎，在同一个工作台中呈现计划、工具活动、文件变更和交付物。
-ag_80c9e53687,tool_class,search_retrieval,https://github.com/fuyuxiang/echo-agent,召回有效记忆，检索知识库，为任务组织上下文
+ag_80c9e53687,autonomy,approver,https://github.com/fuyuxiang/echo-agent,让 Agent 操作网页或已授权的桌面应用，在任务中查看操作记录和权限请求。
+ag_80c9e53687,tool_class,browser,https://github.com/fuyuxiang/echo-agent,让 Agent 操作网页或已授权的桌面应用，在任务中查看操作记录和权限请求。
+ag_80c9e53687,tool_class,file_system,https://github.com/fuyuxiang/echo-agent,让 Agent 在授权的目录中修改代码，在会话中检查文件改动和验证结果。
 ag_81028b3bf1,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-ldeqyl7ldbnpo,"Scogo AI is designed for enterprise IT operations, service desk, helpdesk, endpoint management, security operations, and platform teams."
 ag_81028b3bf1,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-ldeqyl7ldbnpo,"Reduce operational risk by enforcing authorization, approval workflows, audit logs, and scoped integrations before actions are executed."
 ag_81028b3bf1,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-ldeqyl7ldbnpo,"Agent Fabric orchestrates approved actions across 100+ ITSM, IAM, endpoint, cloud, observability, collaboration, and SaaS tools."
@@ -2766,6 +2787,11 @@ ag_8410bfb052,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/pr
 ag_8425b3d2d6,autonomy,approver,https://github.com/kkjiangk/agent-py,Graph --> Approval[Human approval and dispatch outbox]
 ag_8425b3d2d6,tool_class,custom_apis,https://github.com/kkjiangk/agent-py,It uses actual configured MCP tools and model providers for diagnosis.
 ag_8425b3d2d6,tool_class,search_retrieval,https://github.com/kkjiangk/agent-py,"Markdown/PDF ingestion, durable indexing, Milvus vector recall, BM25L lexical recall, reciprocal rank fusion, and reranking with traceable citations"
+ag_845009b9b7,autonomy,approver,https://github.com/w01fb0ss/PiBot,while every risky step waits for your approval.
+ag_845009b9b7,tool_class,browser,https://github.com/w01fb0ss/PiBot,browse the web and use your computer
+ag_845009b9b7,tool_class,code_execution,https://github.com/w01fb0ss/PiBot,"Commands run in
+  a sandbox"
+ag_845009b9b7,tool_class,file_system,https://github.com/w01fb0ss/PiBot,"Bots work inside folders you choose. Every change is listed,"
 ag_84706fefa6,autonomy,observer,https://github.com/TaxyAI/browser-extension,"The user stopped the task's execution. The user can stop the LLM's execution at any time, without waiting for it to complete."
 ag_84706fefa6,tool_class,browser,https://github.com/TaxyAI/browser-extension,Taxy uses GPT-4 to control your browser and perform repetitive actions on your behalf.
 ag_847ccea6c8,audience,practitioner,https://github.com/vostride/agent-qa,Open-source self-improving QA agent for software teams.
@@ -2796,6 +2822,7 @@ ag_855a5026a2,tool_class,custom_apis,https://github.com/OpenBMB/XAgent,provides 
 ag_855a5026a2,tool_class,file_system,https://github.com/OpenBMB/XAgent,"provides a text editing tool to write, read, and modify files"
 ag_8598df38ad,autonomy,observer,https://github.com/nealbridges/VulnHunter,"Unattended operator: clone → hunt → find-results → write/validate the scan manifest, with explicit stop rules and no improvisation"
 ag_8598df38ad,tool_class,code_execution,https://github.com/nealbridges/VulnHunter,"Executable PoC + impact number in the finding (rows exposed, requests amplified, key-hours stranded)"
+ag_85abe75fc2,tool_class,search_retrieval,https://github.com/THU-MAIC/OpenMAIC,"web research — Kimi, DeepSeek and Firecrawl search, and a hosted `webFetch` reader."
 ag_85ae556468,audience,practitioner,https://github.com/MaxKmet/idea-validation-agents,Built for developers who'd rather validate in 10 minutes than regret in six months.
 ag_85ae556468,autonomy,consultant,https://github.com/MaxKmet/idea-validation-agents,"The agent interviews you about your background, skills, and interests — then researches what's actually trending — and generates 7–10 scored app ideas matched specifically to you."
 ag_85ae556468,tool_class,file_system,https://github.com/MaxKmet/idea-validation-agents,All analysis results are saved to the `memory/` folder so nothing is lost between sessions.
@@ -2876,6 +2903,7 @@ ag_88afe54bd7,tool_class,voice,https://aws.amazon.com/marketplace/pp/prodview-fs
 ag_88d3f3a524,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-ujlqkn2k62q2q,"designed to help organizations build, manage, and scale Omnichannel AI Agents"
 ag_88d3f3a524,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-ujlqkn2k62q2q,Agents are equipped with an advanced document stack (OCR) and API connectors
 ag_88d3f3a524,tool_class,voice,https://aws.amazon.com/marketplace/pp/prodview-ujlqkn2k62q2q,its voice capabilities are engineered for clarity and speed (Sub 1.5 second latency)
+ag_8919534861,tool_class,payments,https://github.com/qrak/LLM_trader,then checks the answer with deterministic rules before a paper trade is booked.
 ag_892e4112d0,autonomy,approver,https://github.com/simular-ai/Agent-S,"**This Mac** works in your apps, Terminal, and files with approvals for actions."
 ag_892e4112d0,tool_class,file_system,https://github.com/simular-ai/Agent-S,"**This Mac** works in your apps, Terminal, and files with approvals for actions."
 ag_895657be90,autonomy,observer,https://github.com/Chen-zexi/LangAlpha,"**Autonomous Research:** Agents collaboratively gather diverse data types (news, market data, fundamentals, web content)."
@@ -2888,7 +2916,7 @@ ag_89585de686,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-j
 ag_89851b73cf,autonomy,approver,https://github.com/osaurus-ai/osaurus,showing an approval card first. Nothing changes until you confirm.
 ag_89851b73cf,tool_class,browser,https://github.com/osaurus-ai/osaurus,a per-agent browser session
 ag_89851b73cf,tool_class,code_execution,https://github.com/osaurus-ai/osaurus,agents run code in an isolated Linux VM
-ag_89851b73cf,tool_class,email_calendar,https://github.com/osaurus-ai/osaurus,**Courier** (Mail)
+ag_89851b73cf,tool_class,email_calendar,https://github.com/osaurus-ai/osaurus,"**Planner** (Calendar and Reminders), **Courier** (Mail)"
 ag_89851b73cf,tool_class,file_system,https://github.com/osaurus-ai/osaurus,**Files** (your chat's working folder)
 ag_89851b73cf,tool_class,search_retrieval,https://github.com/osaurus-ai/osaurus,**Research** (web search with sources)
 ag_89851b73cf,tool_class,voice,https://github.com/osaurus-ai/osaurus,"on-device transcription, wake word, and a system-wide dictation hotkey"
@@ -2976,6 +3004,7 @@ ag_8dc9c8896c,tool_class,browser,https://github.com/assafelovic/gpt-researcher,�
 ag_8dc9c8896c,tool_class,search_retrieval,https://github.com/assafelovic/gpt-researcher,Use a crawler agent for gathering information for each question.
 ag_8dcc0c1b05,autonomy,approver,https://www.lindy.ai/,"At first, anything with outside impact waits for your OK. Once you trust me with a job, I can run it end to end on my own."
 ag_8dcc0c1b05,tool_class,business_systems,https://www.lindy.ai/,Lead added to HubSpot
+ag_8dcc0c1b05,tool_class,custom_apis,https://www.lindy.ai/,"I work in Slack, email, text and your calendar, with 3,000+ integrations + MCP."
 ag_8dcc0c1b05,tool_class,email_calendar,https://www.lindy.ai/,"I work in Slack, email, text and your calendar, with 3,000+ integrations + MCP."
 ag_8dcc0c1b05,tool_class,voice,https://www.lindy.ai/,"Every week I follow up on open proposals and overdue invoices by email, and by phone when it drags on, until they’re signed or paid."
 ag_8dd6ca9c7f,autonomy,approver,https://github.com/AQBot-Desktop/AQBot,支持每次询问、自动接受编辑和完全访问等权限模式，实时展示工具调用与审批
@@ -2998,10 +3027,10 @@ ag_8e3126ded9,tool_class,search_retrieval,https://github.com/HsienW/chat-gun,內
 ag_8e3c9a99b6,audience,non_expert,https://github.com/toppatronweave/ai--manus2.0,so you do not need to be a developer to get results
 ag_8e3c9a99b6,tool_class,browser,https://github.com/toppatronweave/ai--manus2.0,"Manus browser control lets the agent navigate websites, fill forms, and gather information without you manually clicking through every page."
 ag_8e3c9a99b6,tool_class,code_execution,https://github.com/toppatronweave/ai--manus2.0,Manus AI agent runs code on its own to complete tasks
-ag_8e50a3c156,tool_class,browser,https://github.com/Sylinko/Everywhere,• Web Browser<br>
-ag_8e50a3c156,tool_class,code_execution,https://github.com/Sylinko/Everywhere,• Terminal Script Execution<br>
-ag_8e50a3c156,tool_class,file_system,https://github.com/Sylinko/Everywhere,• Local File System<br>
-ag_8e50a3c156,tool_class,search_retrieval,https://github.com/Sylinko/Everywhere,quickly search and verify the reliability of the information
+ag_8e50a3c156,tool_class,browser,https://github.com/Sylinko/Everywhere,Web Browser
+ag_8e50a3c156,tool_class,code_execution,https://github.com/Sylinko/Everywhere,Terminal Script Execution
+ag_8e50a3c156,tool_class,file_system,https://github.com/Sylinko/Everywhere,Local File System
+ag_8e50a3c156,tool_class,search_retrieval,https://github.com/Sylinko/Everywhere,will quickly search and verify the reliability of the information
 ag_8e65624c90,autonomy,observer,https://github.com/FinStep-AI/ContestTrade,它能在无人工干预的情况下自主扫描全市场
 ag_8e85394979,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-we2smevqp27ek,"Organisations need a way to give staff timely answers from approved content, enforce department-level access and maintain a record of requests."
 ag_8e85394979,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-we2smevqp27ek,"Connect to ERP, CRM, HRIS and ticketing systems."
@@ -3113,8 +3142,8 @@ ag_9380a133eb,tool_class,code_execution,https://github.com/hexdocom/lemonai,It f
 ag_9380a133eb,tool_class,file_system,https://github.com/hexdocom/lemonai,"This sandbox **​protects your machine's files and operating system​** by safely handling all code writing, executing, and editing tasks."
 ag_9380a133eb,tool_class,search_retrieval,https://github.com/hexdocom/lemonai,Browser operations & web search
 ag_93ea01cec4,autonomy,approver,https://github.com/he-yufeng/CoreCoder,Anything that would mutate your disk or run a command stops for your consent first.
-ag_93ea01cec4,tool_class,code_execution,https://github.com/he-yufeng/CoreCoder,"reads and writes files, executes shell, spawns sub-agents, compacts context in three tiers"
-ag_93ea01cec4,tool_class,file_system,https://github.com/he-yufeng/CoreCoder,"reads and writes files, executes shell, spawns sub-agents, compacts context in three tiers"
+ag_93ea01cec4,tool_class,code_execution,https://github.com/he-yufeng/CoreCoder,executes shell
+ag_93ea01cec4,tool_class,file_system,https://github.com/he-yufeng/CoreCoder,"reads and writes files, executes shell, spawns sub-agents"
 ag_942a9a5386,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-bybzif4r4zspe,"Built for modern engineering teams, KushoAI helps improve release confidence, reduce bugs in production, and accelerate development cycles"
 ag_942a9a5386,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-bybzif4r4zspe,"The platform supports end-to-end API testing by intelligently chaining requests, extracting data from responses, and reusing it across dependent steps."
 ag_946048285b,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-eh2mayr7ksdvc,"Monce AI generates, sends, and follows up B2B quotes in seconds cutting response time from days to 2 minutes"
@@ -3122,10 +3151,13 @@ ag_946048285b,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-e
 ag_946048285b,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-eh2mayr7ksdvc,It pulls catalog and pricing data from your ERP.
 ag_946048285b,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-eh2mayr7ksdvc,"Output is delivered via REST API, EDI, or direct push to your CRM."
 ag_946048285b,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/prodview-eh2mayr7ksdvc,It reads quote requests from your existing mailbox.
+ag_94a0976317,autonomy,observer,https://github.com/lambda-symbolics/autolith,"Pursue goals autonomously, with explicit verification
+  criteria, scheduled continuations, and persistent plans."
 ag_94a0976317,tool_class,code_execution,https://github.com/lambda-symbolics/autolith,"Autolith is
 a full kitchen-sink Common Lisp runtime, and there is no difference between
 Lisp evaluation, tool calls, and commands."
-ag_94a0976317,tool_class,custom_apis,https://github.com/lambda-symbolics/autolith,"Extend its capabilities through tools, skills, [[https://modelcontextprotocol.io/][MCP]] servers, and direct integration with editors and other software."
+ag_94a0976317,tool_class,search_retrieval,https://github.com/lambda-symbolics/autolith,"Use [[https://arxiv.org/abs/2512.24601][Recursive Language Models (RLM)]] to process
+  enormous amounts of information without flooding its context window."
 ag_94a30841ad,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-jhfbkyzzlhdh4,"enabling finance teams to deliver more accurate, dynamic, and actionable forecasts for strategic decision-making"
 ag_94bee3124e,tool_class,code_execution,https://github.com/fafrd/aquarium,Execute command in docker VM
 ag_94dc2592c6,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-p5r3cxcwgq53y,"Sevii is advancing autonomous cyber defense to help organizations reduce risk, lower costs, and outpace modern adversaries."
@@ -3190,10 +3222,9 @@ ag_9853da453e,tool_class,email_calendar,https://github.com/ComposioHQ/trustclaw,
 ag_9853da453e,tool_class,search_retrieval,https://github.com/ComposioHQ/trustclaw,the agent gets a `glen_search` tool to search what the team already worked out
 ag_9897d54384,autonomy,approver,https://github.com/HKUDS/AutoSwarm,"One window to coordinate agents, share context, review approvals, and track progress."
 ag_98bfbfd84e,tool_class,file_system,https://github.com/capitalone/VulnHunter,tight tool envelope (Read/Write/Edit/Glob/Grep/Agent
-ag_98cb2ff624,audience,practitioner,https://github.com/can1357/oh-my-pi,Most agents are still sprinkling print statements.
-ag_98cb2ff624,tool_class,code_execution,https://github.com/can1357/oh-my-pi,"Ours runs persistent Python and a Bun worker, and either kernel can call back into the agent's own tools"
-ag_98cb2ff624,tool_class,file_system,https://github.com/can1357/oh-my-pi,The agent loads a CSV with tool.read from inside Python
-ag_98cb2ff624,tool_class,search_retrieval,https://github.com/can1357/oh-my-pi,Searches that return instantly.
+ag_98cb2ff624,audience,practitioner,https://github.com/can1357/oh-my-pi,A coding agent with the IDE wired in.
+ag_98cb2ff624,tool_class,code_execution,https://github.com/can1357/oh-my-pi,"Ours runs persistent Python and a Bun worker, and either kernel can call back into the agent's own tools — read, search, task — over a loopback bridge."
+ag_98cb2ff624,tool_class,file_system,https://github.com/can1357/oh-my-pi,Edits that land on the first attempt. Reads that summarize files instead of dumping their content.
 ag_98e2af298e,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-4wbipgiracfno,This professional service is designed for organizations seeking to improve supply chain and logistics operations through Agentic AI and intelligent order automation.
 ag_98e2af298e,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-4wbipgiracfno,"extracting line items, shipping details, and order terms to create validated orders in the customer's existing ERP system"
 ag_98e2af298e,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/prodview-4wbipgiracfno,extracting shipment details from vendor emails and preparing ready-to-send quotes
@@ -3273,6 +3304,9 @@ ag_9cede50ad5,autonomy,operator,https://github.com/zhaoyingjun/chatbot,自然语
 ag_9cede50ad5,tool_class,browser,https://github.com/zhaoyingjun/chatbot,浏览器自动化：自动打开网页并进行截图操作
 ag_9cede50ad5,tool_class,file_system,https://github.com/zhaoyingjun/chatbot,数据导出：将分析结果导出为Excel文件
 ag_9d3d7dd494,tool_class,search_retrieval,https://github.com/CRui5in/paper-ppt-agent,外部研究增强（arXiv / Semantic Scholar / Web），相关性自动过滤
+ag_9d4e078502,audience,practitioner,https://github.com/0sec-labs/0security,"Scan, fix, SBOM and evidence from a terminal or a script"
+ag_9d4e078502,autonomy,approver,https://github.com/0sec-labs/0security,One branch and PR per finding. It never pushes to your base branch.
+ag_9d4e078502,tool_class,file_system,https://github.com/0sec-labs/0security,"That scans the folder, prints a report and stops at a $5 budget."
 ag_9d76006a79,audience,non_expert,https://github.com/abacusai/abacusai-bot,"AbacusAI Bot is built for personal assistance, research, communication, recurring work, and tasks that cross several apps."
 ag_9d76006a79,autonomy,observer,https://github.com/abacusai/abacusai-bot,"They can edit files, run commands, send messages, and act through connected accounts without the approval mode used by supervised sessions."
 ag_9d76006a79,tool_class,browser,https://github.com/abacusai/abacusai-bot,"Use a browser, edit workspace files, run commands, and operate supported mobile devices."
@@ -3306,6 +3340,12 @@ ag_9e297e724b,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodv
 ag_9e29cf586d,audience,non_expert,https://github.com/trackersnailgrip/ai--manus2.0,so you do not need to be a developer to get results
 ag_9e29cf586d,tool_class,browser,https://github.com/trackersnailgrip/ai--manus2.0,"Manus browser control lets the agent navigate websites, fill forms, and gather information without you manually clicking through every page."
 ag_9e29cf586d,tool_class,code_execution,https://github.com/trackersnailgrip/ai--manus2.0,Manus AI agent runs code on its own to complete tasks
+ag_9e4b8b7162,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-4gtczyztdudds,Built for z/OS engineers.
+ag_9e4b8b7162,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-4gtczyztdudds,"Mutating actions such as writing a member, submitting a job, or installing a CICS resource pause for your explicit approval before anything on the mainframe changes."
+ag_9e4b8b7162,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-4gtczyztdudds,"Sign-on, transaction execution, resource installation, and CEDA defines"
+ag_9e4b8b7162,tool_class,code_execution,https://aws.amazon.com/marketplace/pp/prodview-4gtczyztdudds,"Submit JCL, wait for completion, read spool output, and classify failures"
+ag_9e4b8b7162,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-4gtczyztdudds,"It connects through the z/OS interfaces you already run - TN3270, FTP, and z/OSMF"
+ag_9e4b8b7162,tool_class,file_system,https://aws.amazon.com/marketplace/pp/prodview-4gtczyztdudds,"List, read, write, and allocate sequential datasets, PDSes, and members"
 ag_9eaf67871a,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-guumunyezqrri,"mIAgenda is a SaaS platform that deploys a conversational AI agent on WhatsApp to automate patient engagement, lead qualification, and appointment booking for clinics and medical centers."
 ag_9eaf67871a,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-guumunyezqrri,"Real-time slot queries, appointment creation, cancellations, and rescheduling"
 ag_9eaf67871a,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-guumunyezqrri,Connect with your existing medical software or ERP (available in advanced plans)
@@ -3335,12 +3375,13 @@ ag_9fab37d551,tool_class,code_execution,https://github.com/riba2534/happyclaw,�
 ag_9fab37d551,tool_class,file_system,https://github.com/riba2534/happyclaw,可以读写项目文件
 ag_9fd39089e6,autonomy,approver,https://github.com/CopilotKit/OpenDuet,"Before it sends, pays, signs, or deletes anything, it shows you exactly what it is about to do and waits for your answer."
 ag_9fd39089e6,tool_class,browser,https://github.com/CopilotKit/OpenDuet,"Hand it a task and it carries on in a computer of its own: a real browser, its own files, and only the tools you grant."
-ag_9fd39089e6,tool_class,code_execution,https://github.com/CopilotKit/OpenDuet,"Keeps working in its own browser, `/workspace`, and shell while you are away."
-ag_9fd39089e6,tool_class,email_calendar,https://github.com/CopilotKit/OpenDuet,"It already reads your Gmail and calendar, sorts what needs you from what can wait, and makes the morning brief."
+ag_9fd39089e6,tool_class,email_calendar,https://github.com/CopilotKit/OpenDuet,It already reads your Gmail and calendar
 ag_9fd39089e6,tool_class,file_system,https://github.com/CopilotKit/OpenDuet,"Hand it a task and it carries on in a computer of its own: a real browser, its own files, and only the tools you grant."
 ag_9fd39089e6,tool_class,search_retrieval,https://github.com/CopilotKit/OpenDuet,"Search public sources, read selected pages and make a brief with source links after an administrator grants the research tools."
-ag_9fe7e78892,autonomy,approver,https://github.com/ersinkoc/AI-Video-Factory,The web Studio keeps the process visible and puts approvals in your hands.
-ag_9fe7e78892,tool_class,custom_apis,https://github.com/ersinkoc/AI-Video-Factory,"The episode budget caps paid image, voice and video APIs."
+ag_9fe7e78892,audience,non_expert,https://github.com/ersinkoc/AI-Video-Factory,"Turn a topic into a narrated, animated YouTube video."
+ag_9fe7e78892,autonomy,approver,https://github.com/ersinkoc/AI-Video-Factory,`--manual` stops at approval gates.
+ag_9fe7e78892,tool_class,custom_apis,https://github.com/ersinkoc/AI-Video-Factory,"Media providers supply voice, images and clips; Remotion renders the final cut."
+ag_9fe7e78892,tool_class,file_system,https://github.com/ersinkoc/AI-Video-Factory,"Assets, the cost ledger and episodes are stored under `.data` by default."
 ag_9fff9c3c59,tool_class,file_system,https://github.com/OpenBMB/PilotDeck,finally lands deliverables as local files with a summary report waiting for you
 ag_a0429056c4,audience,organization,https://github.com/cuga-project/cuga-agent,"CUGA turns business requests into actions across your applications, APIs, and documents."
 ag_a0429056c4,autonomy,approver,https://github.com/cuga-project/cuga-agent,"Block disallowed intents, require approval for selected tools, guide workflows with playbooks, and configure tool-level guards."
@@ -3436,7 +3477,7 @@ ag_a4a8486caf,tool_class,search_retrieval,https://github.com/zgsfsec/Full-Chain-
 ag_a4aa0ed3c1,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-dthrim72paa5u,Sirion offers organizations a unified contracting experience on a truly AI-native platform.
 ag_a4aa0ed3c1,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-dthrim72paa5u,"Ensure agents operate within defined governance boundaries, acting autonomously when safe and escalating to human oversight where required"
 ag_a4cdb38ac2,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-n2wm4xl2dicta,enabling organizations to identify and validate real-world exploitable risk across modern cloud environments.
-ag_a50812c342,tool_class,file_system,https://github.com/ai-job-search-dev/ai-job-search,"writes your personal data (name,"
+ag_a50812c342,tool_class,file_system,https://github.com/ai-job-search-dev/ai-job-search,"`/setup` (step 3 below) writes your personal data (name,"
 ag_a50812c342,tool_class,search_retrieval,https://github.com/ai-job-search-dev/ai-job-search,`/scrape` searches with WebSearch
 ag_a50956619d,audience,practitioner,https://github.com/noho/dayu-agent,`大愚 Agent` 是每个投资者的助理分析师。
 ag_a50956619d,tool_class,search_retrieval,https://github.com/noho/dayu-agent,联网搜索默认可走 `auto`，若配置了 Tavily / Serper，会优先使用对应 provider。
@@ -3460,8 +3501,6 @@ ag_a5b4e20774,autonomy,approver,https://github.com/tigicion/dao-code,"executing 
 ag_a5b4e20774,tool_class,code_execution,https://github.com/tigicion/dao-code,"it reads code, writes code, runs commands, and fixes bugs right in your terminal"
 ag_a5b4e20774,tool_class,file_system,https://github.com/tigicion/dao-code,"it reads code, writes code, runs commands, and fixes bugs right in your terminal"
 ag_a5ce039c7f,autonomy,observer,https://github.com/amruth-sn/kong,"A single command runs the complete analysis. Triage, function analysis, cleanup, semantic synthesis, and export. No manual intervention required."
-ag_a5cf93dc8c,autonomy,observer,https://github.com/nyldn/claude-octopus,"You review the output, not every step."
-ag_a5cf93dc8c,tool_class,search_retrieval,https://github.com/nyldn/claude-octopus,"Codex, Antigravity CLI, Copilot, Qwen, Ollama, Perplexity, OpenRouter, OrcaRouter, OpenCode, Cursor CLI, Grok, and Kimi Code"
 ag_a5e1ebcb32,tool_class,code_execution,https://github.com/jina-ai/dev-gpt,"During this time, GPT iteratively builds your microservice until it finds a strategy that make your test scenario pass."
 ag_a5e1ebcb32,tool_class,file_system,https://github.com/jina-ai/dev-gpt,A `path` on the local drive where the microservice will be generated.
 ag_a5f4291220,audience,practitioner,https://aws.amazon.com/marketplace/pp/prodview-7qnp7un5xhdiq,"giving modernization teams a structured, queryable foundation to build from with confidence"
@@ -3588,7 +3627,9 @@ ag_ab7cdadfa5,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-v
 ag_ab7cdadfa5,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-vkzpn3gmod7rq,"Teams can extend it with natural-language automation rules, connect Slack/Jira/Linear"
 ag_ab96d63b90,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-cp7zw5ow4nlmu,a network of AI agents that take on operational reliability work while teams keep ownership and approvals
 ag_aba6129a9e,audience,practitioner,https://github.com/zoharbabin/due-diligence-agents,"Corp dev teams screening targets, PE firms running portfolio DD, legal teams doing contract review, advisors accelerating workstreams."
+ag_ac0f6b256a,autonomy,approver,https://github.com/tontinton/maki,Maki uses tree-sitter to parse the bash command and figure out the permissions requested are `git *` and `rm *`.
 ag_ac0f6b256a,tool_class,code_execution,https://github.com/tontinton/maki,`code_execution` tool - uses [monty](https://github.com/pydantic/monty) to run an interpreter that has all other tools available as async functions.
+ag_ac0f6b256a,tool_class,file_system,https://github.com/tontinton/maki,"Every builtin tool (`read`, `bash`, `edit`, even `batch`) is itself a Lua plugin"
 ag_ac30840d38,tool_class,file_system,https://github.com/sugarforever/chat-ollama,use built-in file and shell tools
 ag_ac30840d38,tool_class,search_retrieval,https://github.com/sugarforever/chat-ollama,"upload PDF, Markdown, and plain-text documents,
   then ask questions with source citations."
@@ -3661,6 +3702,11 @@ ag_af92a16843,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-c
 ag_af92a16843,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-cgmmm5tsusqcq,"PitCrew connects to CRMs, data platforms, email, storage, and scheduling."
 ag_af92a16843,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-cgmmm5tsusqcq,"Each integration uses native APIs with proper authentication (OAuth, API keys, SFTP)."
 ag_af92a16843,tool_class,email_calendar,https://aws.amazon.com/marketplace/pp/prodview-cgmmm5tsusqcq,"PitCrew connects to CRMs, data platforms, email, storage, and scheduling."
+ag_af9896335d,autonomy,observer,https://github.com/Jeomon/Windows-Use,Give it a task in plain English. It handles the rest.
+ag_af9896335d,tool_class,browser,https://github.com/Jeomon/Windows-Use,Scrape web pages via the browser accessibility tree
+ag_af9896335d,tool_class,code_execution,https://github.com/Jeomon/Windows-Use,Run PowerShell commands and read their output
+ag_af9896335d,tool_class,file_system,https://github.com/Jeomon/Windows-Use,Read and write files on the filesystem
+ag_af9896335d,tool_class,voice,https://github.com/Jeomon/Windows-Use,Speak and listen via STT/TTS (voice input and output)
 ag_afb25950af,audience,practitioner,https://github.com/vanzan01/claude-code-sub-agent-collective,I built it to speed up my own MVP development work.
 ag_afb25950af,tool_class,browser,https://github.com/vanzan01/claude-code-sub-agent-collective,Browser testing with Playwright
 ag_afb25950af,tool_class,search_retrieval,https://github.com/vanzan01/claude-code-sub-agent-collective,Use Context7 to pull real documentation
@@ -3727,10 +3773,10 @@ ag_b158df2ecf,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-h
 ag_b18ac61bb4,audience,practitioner,https://github.com/openteams-lab/openteams,"helps indie developers plan, build, and ship software faster with an AI team they can control"
 ag_b1926c3c0d,audience,organization,https://github.com/langchain-ai/design-agent,"Add your brand and deploy it
 to your team's Slack with Managed Deep Agents."
-ag_b1926c3c0d,autonomy,consultant,https://github.com/langchain-ai/design-agent,anything you add mid-job reaches the work in progress.
-ag_b1926c3c0d,tool_class,code_execution,https://github.com/langchain-ai/design-agent,"Everything it makes is code in a project folder
-  there (a slide is HTML, a film is an animation timeline), so a change is an edit and a re-render,
-  not a restart."
+ag_b1926c3c0d,autonomy,observer,https://github.com/langchain-ai/design-agent,"On a big job the main agent plans, splits the work and starts subagents in
+  the background on the same sandbox and files."
+ag_b1926c3c0d,tool_class,code_execution,https://github.com/langchain-ai/design-agent,"Each thread gets its own LangSmith sandbox: a Linux machine with
+  Chrome, FFmpeg, [HyperFrames](https://hyperframes.heygen.com), D2 and your fonts"
 ag_b1926c3c0d,tool_class,custom_apis,https://github.com/langchain-ai/design-agent,"Image, voice and music models run as tools outside the sandbox, and MCP servers like Notion,
   Linear, GitHub and Figma connect through MDA, with each person signed in as themselves."
 ag_b1926c3c0d,tool_class,file_system,https://github.com/langchain-ai/design-agent,"Everything it makes is code in a project folder
@@ -3756,12 +3802,14 @@ ag_b25ce73a78,tool_class,browser,https://contextqa.com/,Your tests run in parall
 ag_b25f0f47c2,tool_class,browser,https://github.com/steel-dev/surf.new,Real-time browser interaction visualization
 ag_b2cbbaa9f6,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-5anh7j3aei5go,"Trusted by banks and fintechs including Pleo, Santander Leasing, Mercuryo, and Phantom."
 ag_b2cbbaa9f6,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-5anh7j3aei5go,"Processes automatically trigger checks, update records, and launch follow-up actions"
-ag_b2d7ff8a91,autonomy,approver,https://github.com/AAswordman/Operit2,"Whether an operation can actually be executed depends on the target node's Host description, system permissions, installed services, and current user approval."
-ag_b2d7ff8a91,tool_class,browser,https://github.com/AAswordman/Operit2,browser automation
-ag_b2d7ff8a91,tool_class,file_system,https://github.com/AAswordman/Operit2,file operations
+ag_b2d7ff8a91,autonomy,approver,https://github.com/AAswordman/Operit2,"start a task on a phone, let a suitable device continue executing it, view or approve it on a desktop, and finally return to the phone to receive the result"
+ag_b2d7ff8a91,tool_class,browser,https://github.com/AAswordman/Operit2,"Web access, browser automation, workspace browsers, and runtime WebView session projections"
+ag_b2d7ff8a91,tool_class,code_execution,https://github.com/AAswordman/Operit2,"Terminal sessions, PTY input, and output streams"
+ag_b2d7ff8a91,tool_class,file_system,https://github.com/AAswordman/Operit2,"Workspaces, file operations, project templates, commands, and backup/import/export"
 ag_b2d7ff8a91,tool_class,voice,https://github.com/AAswordman/Operit2,"speech recognition, speech synthesis"
-ag_b2f58cce1f,audience,practitioner,https://github.com/vinhnx/VTCode,"VT Code is a terminal-first coding agent for your repo, in the CLI and native macOS app."
 ag_b2f58cce1f,autonomy,approver,https://github.com/vinhnx/VTCode,"`exec` needs workspace trust: approve the TTY prompt, or set"
+ag_b2f58cce1f,tool_class,code_execution,https://github.com/vinhnx/VTCode,"only
+`exec` runs the full tool loop."
 ag_b2f58cce1f,tool_class,file_system,https://github.com/vinhnx/VTCode,"Scaffolds vtcode.toml, .vtcode/, and AGENTS.md; review before committing."
 ag_b30ee5b445,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-4b4ajjf2d2pkk,"Apply deterministic validation and human approval checkpoints, keeping engineering teams in control."
 ag_b31de72ca1,tool_class,code_execution,https://github.com/agentty-org/agentty,Every shell command runs behind a wall the operating system enforces
@@ -3789,6 +3837,7 @@ ag_b3a9323970,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-n
 ag_b3a9323970,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-nbh4n7p6wgn3g,"Connected to SIS, VLE, accommodation, finance, service desk, and case management systems, the Conversational Assistant resolves requests end-to-end rather than just answering questions."
 ag_b3a9323970,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-nbh4n7p6wgn3g,"MCP and A2A protocols allow agents to be invoked from external AI tools and platforms, and to invoke external services in turn."
 ag_b3b2e5595e,autonomy,approver,https://cal.com/ai,"Most changes come up as a card first, and run once you confirm."
+ag_b3b2e5595e,tool_class,business_systems,https://cal.com/ai,"It books, moves and cancels meetings, creates and edits workflows and routing forms, and sets your out of office."
 ag_b3b2e5595e,tool_class,email_calendar,https://cal.com/ai,"It reads the events on your connected calendars, so it knows when you're busy."
 ag_b3b2e5595e,tool_class,voice,https://cal.com/ai,"From a workflow, Cal.ai calls a guest to confirm, remind or rebook, in the voice and script you set, from your own number."
 ag_b3b92a5666,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-s6igqlu35tq4k,"designed to help lenders, credit teams and portfolio managers streamline financial covenant oversight"
@@ -3885,7 +3934,7 @@ ag_b8752e2c08,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/
 ag_b8820be1d8,autonomy,consultant,https://github.com/josstei/maestro-orchestrate,"asks the required design questions, produces an implementation plan when needed, delegates execution to specialists"
 ag_b8820be1d8,tool_class,file_system,https://github.com/josstei/maestro-orchestrate,archives the session state in `docs/maestro/`
 ag_b8b6996815,autonomy,approver,https://github.com/arcships/dim,In this session Dim asks to run `ls -la` in `runtime/plugins`.
-ag_b8b6996815,tool_class,code_execution,https://github.com/arcships/dim,In this session Dim asks to run `ls -la` in `runtime/plugins`.
+ag_b8b6996815,tool_class,code_execution,https://github.com/arcships/dim,"Once the plugin loads, Dim can call the tool on its next model request, edit the implementation and reload it in the same session."
 ag_b8b6996815,tool_class,file_system,https://github.com/arcships/dim,Read-only mode allows workspace reads and refuses agent file writes and shell commands.
 ag_b8d7f46fa0,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-smuuksfgawbi6,GenAI powered marketing content generation grounded on your organization's sales collaterals
 ag_b8d7f46fa0,autonomy,observer,https://aws.amazon.com/marketplace/pp/prodview-smuuksfgawbi6,triggering the agent to autonomously generate platform-specific content
@@ -4047,9 +4096,8 @@ ag_bff3b3efe8,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_bff3b3efe8,autonomy,operator,https://aws.amazon.com/marketplace/pp/prodview-gsyhx4b74vmy6,"Support teams can query incidents by number or description, check status and assignment details, and update tickets conversationally during troubleshooting sessions."
 ag_bff3b3efe8,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-gsyhx4b74vmy6,"Users interact with the agent through natural language to retrieve incident details instantly, create new tickets with the right urgency classification, and post updates or resolutions without ever opening ServiceNow directly."
 ag_bff3b3efe8,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-gsyhx4b74vmy6,the agent integrates with ServiceNow through secure REST APIs
-ag_c017d7688b,audience,practitioner,https://github.com/geek-fun/dockit,DocKit replaces browser consoles like Kibana and AWS Console with a single native desktop app.
 ag_c017d7688b,autonomy,approver,https://github.com/geek-fun/dockit,confirmation gate for destructive ops
-ag_c017d7688b,tool_class,custom_apis,https://github.com/geek-fun/dockit,"Describe what you need in natural language — the agent writes queries, inspects schemas, updates documents, deletes records, creates indexes, and returns results."
+ag_c017d7688b,tool_class,custom_apis,https://github.com/geek-fun/dockit,"the agent writes queries, inspects schemas, updates documents, deletes records, creates indexes, and returns results."
 ag_c026bf4d83,tool_class,code_execution,https://github.com/Paper2Poster/Paper2Poster,refines each panel by executing rendering code and using VLM feedback to eliminate overflow and ensure alignment
 ag_c026bf4d83,tool_class,search_retrieval,https://github.com/Paper2Poster/Paper2Poster,To use Google Custom Search for more reliable logo search
 ag_c02f39bc43,audience,non_expert,https://aws.amazon.com/marketplace/pp/prodview-kkhtrkvsyicki,without requiring any data science expertise
@@ -4160,7 +4208,7 @@ ag_c54541beeb,tool_class,file_system,https://github.com/siddsachar/row-bot,"work
 ag_c54541beeb,tool_class,search_retrieval,https://github.com/siddsachar/row-bot,"web search, files, shell, Row-Bot's own browser, opt-in Computer"
 ag_c54541beeb,tool_class,voice,https://github.com/siddsachar/row-bot,"dictation, read-aloud and hands-free Talk you"
 ag_c54c3e0f4f,tool_class,payments,https://github.com/Xtra-Computing/CryptoTrade,CryptoTrade incorporates a reflective mechanism specifically engineered to refine its daily trading decisions by analyzing the outcomes of prior trading decisions.
-ag_c5784d7fcb,audience,non_expert,https://github.com/HKUDS/PhoneGo,"Tell PhoneGo what you want. It opens and operates the right apps, gets the task done, and reports back."
+ag_c5784d7fcb,audience,non_expert,https://github.com/HKUDS/PhoneGo,Describe the task** in natural language.
 ag_c5784d7fcb,autonomy,observer,https://github.com/HKUDS/PhoneGo,"**PhoneGo works in the background**, so your phone remains yours to use."
 ag_c581ed7eb6,audience,practitioner,https://github.com/mattzcarey/shippie,"picking up issues a human reviewer would, such as:"
 ag_c581ed7eb6,autonomy,observer,https://github.com/mattzcarey/shippie,"It runs an agent loop that reads your diff, explores the codebase with real developer tools, and posts focused review comments"
@@ -4276,8 +4324,9 @@ ag_ca64c48ad5,tool_class,file_system,https://github.com/ApodexAI/FrontierAgent,"
 ag_ca64c48ad5,tool_class,search_retrieval,https://github.com/ApodexAI/FrontierAgent,"Set `WEB_SEARCH_PROVIDER=parallel` to use the free, keyless
 [Parallel Search MCP](https://docs.parallel.ai/integrations/mcp/search-mcp) for
 `web_search`."
-ag_ca8d55371f,tool_class,file_system,https://github.com/Marker-Inc-Korea/AutoRAG,let the agent triage or organize new files for you
-ag_ca8d55371f,tool_class,search_retrieval,https://github.com/Marker-Inc-Korea/AutoRAG,Hybrid keyword + meaning search with a reranker finds files by what is inside them
+ag_ca8d55371f,audience,non_expert,https://github.com/Marker-Inc-Korea/AutoRAG,Ask the way you'd ask a teammate.
+ag_ca8d55371f,tool_class,file_system,https://github.com/Marker-Inc-Korea/AutoRAG,"Watch a folder, pick a trigger, and let the agent triage or organize new files for you."
+ag_ca8d55371f,tool_class,search_retrieval,https://github.com/Marker-Inc-Korea/AutoRAG,"Hybrid keyword + meaning search with a reranker finds files by what is inside them, and every answer links the passage it came from."
 ag_ca9d159114,autonomy,approver,https://github.com/microsoft/magentic-ui,MagenticLite stops and checks in before taking critical actions.
 ag_ca9d159114,tool_class,browser,https://github.com/microsoft/magentic-ui,Browser sessions run inside a lightweight VM sandbox
 ag_ca9d159114,tool_class,file_system,https://github.com/microsoft/magentic-ui,"Web research, form filling, file management — in one workflow."
@@ -4299,14 +4348,12 @@ ag_cbafd18752,tool_class,custom_apis,https://github.com/daveshap/OpenAI_Agent_Sw
 ag_cbee680406,autonomy,observer,https://github.com/Muvon/octomind,so the same session can run with nobody watching
 ag_cbee680406,tool_class,code_execution,https://github.com/Muvon/octomind,"read and edit files, run shells, search code, delegate to sub-agents"
 ag_cbee680406,tool_class,file_system,https://github.com/Muvon/octomind,"read and edit files, run shells, search code, delegate to sub-agents"
-ag_cbee680406,tool_class,search_retrieval,https://github.com/Muvon/octomind,"read and edit files, run shells, search code, delegate to sub-agents"
 ag_cbf089e395,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-zo7tydjapczug,"enabling enterprises to rapidly create, validate, and manage high-quality datasets for machine learning"
 ag_cbf089e395,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-zo7tydjapczug,Human-in-the-loop (HITL) workflows powered by Amazon SageMaker Ground Truth enable expert review for low-confidence or complex annotations.
 ag_cbf089e395,tool_class,custom_apis,https://aws.amazon.com/marketplace/pp/prodview-zo7tydjapczug,"Automated data ingestion, job triggers, and workflow execution using Amazon S3, Lambda, and EventBridge with real-time status tracking."
-ag_cc21ea81bb,audience,practitioner,https://github.com/getkimchi/kimchi,kimchi gives you an AI-powered development assistant in your terminal
-ag_cc21ea81bb,autonomy,approver,https://github.com/getkimchi/kimchi,"`phase:plan` in plan mode, `phase:build` in every other permission mode"
-ag_cc30a48d83,audience,organization,https://hex.tech/capability/ai/,"Hex is your organization’s first line of defense for quick questions, freeing up your data team to focus on what matters most."
-ag_cc30a48d83,autonomy,collaborator,https://hex.tech/capability/ai/,The Hex agent is a pair programmer that can write and edit code
+ag_cc21ea81bb,tool_class,code_execution,https://github.com/getkimchi/kimchi,"an executing verifier subagent (read/bash/grep/find/ls, unlimited turns and duration)"
+ag_cc21ea81bb,tool_class,file_system,https://github.com/getkimchi/kimchi,"an executing verifier subagent (read/bash/grep/find/ls, unlimited turns and duration)"
+ag_cc30a48d83,audience,non_expert,https://hex.tech/capability/ai/,"anyone, regardless of technical proficiency, is comfortable using data to answer their own questions"
 ag_cc30a48d83,tool_class,search_retrieval,https://hex.tech/capability/ai/,"grounded in context from your data, the web, and the tools your team works in every day."
 ag_cc6fca1a3d,tool_class,browser,https://github.com/xark-argo/argo,"web crawlers, browser control, local file management, and more"
 ag_cc6fca1a3d,tool_class,file_system,https://github.com/xark-argo/argo,"web crawlers, browser control, local file management, and more"
@@ -4314,6 +4361,10 @@ ag_cc6fca1a3d,tool_class,search_retrieval,https://github.com/xark-argo/argo,"Sup
 ag_cc70ed2602,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-wqkjmxmrlqyjw,"Gatekeeper brings vendor risk, contracts, compliance and spend into one system of truth for lean Finance, Procurement and Legal teams."
 ag_cc89fee31f,tool_class,code_execution,https://github.com/ggozad/haiku.rag,"it searches, runs sandboxed Python over the documents for counting and aggregation, and cites page numbers and headings"
 ag_cc89fee31f,tool_class,search_retrieval,https://github.com/ggozad/haiku.rag,"it searches, runs sandboxed Python over the documents for counting and aggregation, and cites page numbers and headings"
+ag_ccad53cc6f,autonomy,approver,https://github.com/joexk1/JoeBro,"Approvals, finished work and notes from your agents, in one list"
+ag_ccad53cc6f,tool_class,custom_apis,https://github.com/joexk1/JoeBro,"Skills, API tools, MCP servers and plugins live in one pool, and the model can call any of them in the same conversation."
+ag_ccad53cc6f,tool_class,file_system,https://github.com/joexk1/JoeBro,"Agents work on the folders you bind, in place."
+ag_ccad53cc6f,tool_class,search_retrieval,https://github.com/joexk1/JoeBro,"Many sources in, a cited report out"
 ag_ccaf7428b2,autonomy,approver,https://github.com/zhu1090093659/dsh-trading,dry-run by default with human approval on every live order
 ag_ccaf7428b2,tool_class,custom_apis,https://github.com/zhu1090093659/dsh-trading,Twenty-three connectors
 ag_ccaf7428b2,tool_class,payments,https://github.com/zhu1090093659/dsh-trading,"before a real order goes out, every single one passes an approval gate that only your hand can click"
@@ -4441,8 +4492,7 @@ ag_d28b51c01d,tool_class,file_system,https://github.com/fancydirty/mediary-scout
 ag_d28b51c01d,tool_class,search_retrieval,https://github.com/fancydirty/mediary-scout,你说要哪部电影、剧或番，agent 自己去搜资源，挑最合适的转存进你自己的网盘（夸克 / UC / 115 / 光鸭 / 123 / 天翼），转完读回来确认真的到了，之后缺哪集还会接着补。
 ag_d29c883c79,audience,non_expert,https://theagi.company/,"Focus on your life, not your screen."
 ag_d29c883c79,autonomy,observer,https://theagi.company/,"Let AGI handle the busywork, so your days feel lighter."
-ag_d2a8ef702b,audience,practitioner,https://www.qodo.ai/,"With Qodo, our engineers review PRs even faster and with increased confidence in what they’re pushing to production."
-ag_d2a8ef702b,tool_class,business_systems,https://www.qodo.ai/,Aligns technical execution with project goals by pulling context directly from your tickets and specs.
+ag_d2a8ef702b,audience,organization,https://www.qodo.ai/,Enforce organizational standards on every pull request.
 ag_d2a8ef702b,tool_class,search_retrieval,https://www.qodo.ai/,Jensen Huang shares how Qodo’s context engine provides deep agentic code search and retrieval for engineering teams at NVIDIA.
 ag_d2bbc38102,audience,practitioner,https://github.com/e10nMa2k/cc-mini,Your coding companion lives in the terminal.
 ag_d2bbc38102,autonomy,approver,https://github.com/e10nMa2k/cc-mini,"**Permission system** — mode-aware (default/plan), reads auto-approved, writes/bash ask for confirmation"
@@ -4452,6 +4502,8 @@ ag_d2fac51d6a,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/
 ag_d328d0ce56,tool_class,search_retrieval,https://github.com/nikmcfly/MiroFish-Offline,"A ReportAgent analyzes the post-simulation environment, interviews a focus group of agents, searches the knowledge graph for evidence, and generates a structured analysis."
 ag_d32a6093b6,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-zwdoaspdovvog,"Low-risk messages proceed automatically through straight-through processing, while uncertain scenarios and genuine exceptions route to operations teams with full context."
 ag_d32a6093b6,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-zwdoaspdovvog,Amazon OpenSearch Service retrieves rule sets and comparable prior cases
+ag_d35ae36579,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-c4flbly7plbuq,**Product organisations** replacing agency spend and assistants that stop at the build slice.
+ag_d35ae36579,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-c4flbly7plbuq,Every producer AI Agent is paired with an independent reviewer AI Agent behind human approval gates
 ag_d3762aa45c,autonomy,approver,https://github.com/ai-timon/timon,"They ask before
 they push, publish or delete anything."
 ag_d3762aa45c,tool_class,code_execution,https://github.com/ai-timon/timon,"Works in its own git worktree, runs the checks, commits step by step"
@@ -4620,7 +4672,7 @@ ag_dbc4e586a4,tool_class,file_system,https://github.com/openclaw/Peekaboo,peekab
 ag_dbe87b6f17,tool_class,custom_apis,https://github.com/ur-whitelab/chemcrow-public,"By default, ChemCrow relies on the RXN4Chem API for retrosynthetic planning and reaction product prediction."
 ag_dbe87b6f17,tool_class,search_retrieval,https://github.com/ur-whitelab/chemcrow-public,You can optionally use Serp API:
 ag_dc1e597e55,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-gep24ai2snzrm,"it empowers organizations to maximize revenue, improve margins, and respond rapidly to market changes with data-driven pricing decisions."
-ag_dc367aad0d,autonomy,approver,https://github.com/milind-soni/OpenMausBot,Watch them work. Approve what matters.
+ag_dc367aad0d,autonomy,approver,https://github.com/milind-soni/OpenMausBot,Talk to them like contacts. Watch them work. Approve what matters.
 ag_dc367aad0d,tool_class,custom_apis,https://github.com/milind-soni/OpenMausBot,plus 500+ apps through Composio
 ag_dc4fb02d5d,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-opu5e2u4mwuzw,Oriserve is a deep tech conversational AI company that specializes in building and deploying AI-powered chatbots and voice bots for businesses.
 ag_dc4fb02d5d,tool_class,voice,https://aws.amazon.com/marketplace/pp/prodview-opu5e2u4mwuzw,"Capable of speaking over 50 global languages, including seamless language transfer (e.g., Hindi to English)."
@@ -4636,7 +4688,8 @@ ag_dc832ff084,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/
 ag_dc9ebaca1d,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-xmklx5z77yjug,"HelpMate.AI brings Agentic AI automation to enterprise IT support — deployed entirely in your AWS environment for maximum security, compliance, and flexibility."
 ag_dc9ebaca1d,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-xmklx5z77yjug,Complete audit trail with rollback and human-approval workflow options
 ag_dc9ebaca1d,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-xmklx5z77yjug,"across systems like ServiceNow, ManageEngine, Zoho Desk, Jira Service Management, Okta, Azure AD, Intune, and AWS Systems Manager."
-ag_dcc5053b11,autonomy,approver,https://github.com/BaaRai/ARTEX,"every autonomous action passes through scope rules, approval gates and budgets"
+ag_dcc5053b11,audience,practitioner,https://github.com/BaaRai/ARTEX,"Self-hosted multi-agent offensive security. A planner explores, workers run real tools,"
+ag_dcc5053b11,autonomy,approver,https://github.com/BaaRai/ARTEX,"Human-in-the-loop approvals, argv-prefix rules, scope/deny gates,"
 ag_dcde23e754,audience,practitioner,https://github.com/OpenLAIR/dr-claw,designed to help researchers and builders execute end-to-end projects across different domains
 ag_dce5f5efce,autonomy,collaborator,https://github.com/UniVA-Verse/UniVA,Talk like a director; UniVA iterates shots & stories with you
 ag_dce5f5efce,tool_class,custom_apis,https://github.com/UniVA-Verse/UniVA,"Wavespeed API Key for generation tools (image, video, audio)"
@@ -4693,7 +4746,6 @@ ag_df7a6be58c,autonomy,observer,https://github.com/suitedaces/computer-agent,You
 ag_df7a6be58c,tool_class,browser,https://github.com/suitedaces/computer-agent,Uses Chrome DevTools Protocol for web automation and terminal for everything else.
 ag_df7a6be58c,tool_class,code_execution,https://github.com/suitedaces/computer-agent,"Give it natural language instructions and watch it take screenshots, move your mouse, click, type, and run terminal commands."
 ag_df7a6be58c,tool_class,voice,https://github.com/suitedaces/computer-agent,`⌃⇧C` - push-to-talk → computer use mode
-ag_df811c4fd4,tool_class,custom_apis,https://github.com/HKUDS/Vibe-Trading,OpenAlgo provides read-only access to account and position data.
 ag_dff969a99b,tool_class,voice,https://github.com/rasonyang/ai-native-callcenter,Calls arrive at FreeSWITCH and are answered by a voice model over a
 ag_e04fc722e6,audience,practitioner,https://github.com/meta-pytorch/KernelAgent,It was designed around KernelBench workloads and combines:
 ag_e04fc722e6,autonomy,observer,https://github.com/meta-pytorch/KernelAgent,Autonomous GPU Kernel Generation & Optimization via Deep Agents
@@ -4835,7 +4887,7 @@ ag_e65d6455a3,audience,non_expert,https://aws.amazon.com/marketplace/pp/prodview
 ag_e67285b526,tool_class,browser,https://github.com/849879772/recruitops-agent,在软件内打开招聘官网、保留登录状态、扫描表单并进行简历闪填
 ag_e67285b526,tool_class,email_calendar,https://github.com/849879772/recruitops-agent,通过只读 IMAP 同步招聘邮件，识别投递、测评、笔试、面试和拒信
 ag_e6757e8a11,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-22ttsmmpmugfs,empowering organizations to optimize funding utilization and reduce administrative burden.
-ag_e6841a07fd,audience,practitioner,https://github.com/alibaba/open-code-review,it has served tens of thousands of developers and identified millions of code defects.
+ag_e6841a07fd,audience,practitioner,https://github.com/alibaba/open-code-review,"over the past two years, it has served tens of thousands of developers and identified millions of code defects"
 ag_e6841a07fd,tool_class,file_system,https://github.com/alibaba/open-code-review,"The agent can read full file contents, search the codebase, inspect other changed files for context, and produce deep reviews"
 ag_e6841a07fd,tool_class,search_retrieval,https://github.com/alibaba/open-code-review,"The agent can read full file contents, search the codebase, inspect other changed files for context, and produce deep reviews"
 ag_e68a59462f,tool_class,code_execution,https://github.com/techjarves/Mobile-Harness,Execute real Linux commands and scripts with instant output.
@@ -4972,7 +5024,6 @@ ag_ed773f91ac,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_ed773f91ac,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-3cvx47bpqdigm,AI-generated outputs require human review at pre-defined checkpoints
 ag_ed773f91ac,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-3cvx47bpqdigm,"Salesforce, Microsoft Dynamics via standard connectors"
 ag_ed94c77971,autonomy,approver,https://github.com/labring/sealos,"Review change plans before execution, check the result and roll back a deployment when needed."
-ag_eda061db89,tool_class,custom_apis,https://www.superagent.sh/,"Connect Amazon ECR and Google Artifact Registry, investigate container vulnerabilities, and verify replacement images with exploit evidence."
 ag_eda5017dff,audience,organization,https://aws.amazon.com/marketplace/pp/prodview-u6sc6czin2rqg,Beetrix AI Parking Infringement Agent is an AI decision-support solution that helps local councils manage parking infringement appeals.
 ag_eda5017dff,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-u6sc6czin2rqg,Council officers review and approve every decision before anything is sent to the customer.
 ag_eda5017dff,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-u6sc6czin2rqg,"Symphony3's SmartGlue integration layer connects the agent to the council's form, infringement, payment and parking systems, so data is collected automatically rather than looked up by hand."
@@ -5088,6 +5139,9 @@ ag_f2fc825df2,audience,organization,https://aws.amazon.com/marketplace/pp/prodvi
 ag_f2fc825df2,tool_class,business_systems,https://aws.amazon.com/marketplace/pp/prodview-onel6qydbljvs,"the solution connects underwriting workbenches, broker submissions, exposure data, and institutional knowledge sources"
 ag_f2fc825df2,tool_class,search_retrieval,https://aws.amazon.com/marketplace/pp/prodview-onel6qydbljvs,"Leverages Amazon Bedrock and retrieval-augmented generation (RAG) to provide citation-backed risk evaluation, pricing support, and renewal decisioning"
 ag_f3627f4530,autonomy,approver,https://aws.amazon.com/marketplace/pp/prodview-wrsp7sonflo7e,"Agentic AI agents handle routine tasks, allowing human experts to focus on exceptions"
+ag_f376346454,audience,practitioner,https://github.com/pierridotite/mobile-agent-testers,Maestro or Appium run the tests you write. These agents look for what nobody thought to test
+ag_f376346454,autonomy,observer,https://github.com/pierridotite/mobile-agent-testers,"No test scripts to write. Each tester is a Claude Code agent with its own iOS
+Simulator or Android emulator on GitHub Actions."
 ag_f37c401b07,tool_class,browser,https://github.com/OpenMinis/OpenMinis,The agent can browse and interact with the web on your behalf.
 ag_f37c401b07,tool_class,code_execution,https://github.com/OpenMinis/OpenMinis,"the agent can install packages, run scripts, and work with real files."
 ag_f37c401b07,tool_class,email_calendar,https://github.com/OpenMinis/OpenMinis,"Health, Calendar, Reminders, Contacts, HomeKit, Bluetooth, Clipboard, Media, Alarms and more, exposed to the agent as tools."
