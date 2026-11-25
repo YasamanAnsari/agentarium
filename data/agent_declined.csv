@@ -79,3 +79,8 @@ date,reason,count
 2026-11-24,not_an_agent,327
 2026-11-24,quote_not_in_text,8
 2026-11-24,recheck_not_an_agent,5
+2026-11-25,model_refused,7
+2026-11-25,no_description,3
+2026-11-25,not_an_agent,341
+2026-11-25,quote_not_in_text,3
+2026-11-25,recheck_not_an_agent,2
